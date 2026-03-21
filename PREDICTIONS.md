@@ -79,8 +79,33 @@ NiP ML @1.75 edge became **+34%** post-veto (was +7.9%)
 
 **Final recommendation:** NiP ML @1.75 (primary), NiP +1.5 @1.23 (safer)
 
-**Result:** TBD
-**Correct:** TBD
+**MAP-LEVEL PREDICTIONS (post-veto):**
+
+| Map | Our P(NiP) | Bookie likely favors | Value bet threshold | Notes |
+|-----|-----------|---------------------|---------------------|-------|
+| Map 1: Nuke (NiP pick) | **78%** | NiP ~1.30-1.40 | NiP @1.40+ → bet | NiP 5-map win streak, 71% WR |
+| Map 2: Mirage (Liq pick) | **62%** | Liquid ~1.60-1.80 | NiP @2.00+ → bet | Bookie будет давать Liquid т.к. их пик, но NiP имеет edge |
+| Map 3: Ancient (decider) | **72%** | NiP ~1.50-1.65 | NiP @1.50+ → bet | Только если серия 1-1. NiP 63% vs Liquid 25% |
+
+**Score prediction:**
+| Score | Our prob | Est. bookie odds | Value? |
+|-------|----------|-----------------|--------|
+| NiP 2-0 | **48%** | ~2.20-2.80 | ✅ если @2.10+ |
+| NiP 2-1 | **31%** | ~3.50-4.50 | ✅ если @3.20+ |
+| Liquid 2-1 | **12%** | ~6.00-8.00 | skip |
+| Liquid 2-0 | **8%** | ~8.00-12.00 | skip |
+
+**Map bets actually placed:**
+| Map | Bet | Odds | Our prob | Edge | Result |
+|-----|-----|------|----------|------|--------|
+| Map 1 (Nuke) | TBD | TBD | 78% NiP | TBD | TBD |
+| Map 2 (Mirage) | TBD | TBD | 62% NiP | TBD | TBD |
+| Map 3 (Ancient) | TBD | TBD | 72% NiP | TBD | TBD |
+
+**Series result:** TBD
+**Score:** TBD
+**Correct (series):** TBD
+**Correct (maps):** TBD / 3
 
 ---
 
@@ -265,8 +290,11 @@ NiP ML @1.75 edge became **+34%** post-veto (was +7.9%)
 ### Value Bets Tracking
 | Date | Bet | Odds | Edge | Stake | Result | P&L |
 |------|-----|------|------|-------|--------|-----|
-| 2026-03-21 | NiP ML | 1.75 | +7.9% | 1.6u | TBD | TBD |
+| 2026-03-21 | NiP ML | 1.75 | +7.9% pre / +34% post-veto | 1.6u | TBD | TBD |
 | 2026-03-21 | NiP +1.5 | 1.23 | +6.7% | 5.4u | TBD | TBD |
+| 2026-03-21 | NiP Map1 (Nuke) win | TBD | ~+6% if @1.40 | TBD | TBD | TBD |
+| 2026-03-21 | NiP Map2 (Mirage) win | TBD | ~+14% if @2.00 | TBD | TBD | TBD |
+| 2026-03-21 | NiP 2-0 | TBD | value if @2.10+ | TBD | TBD | TBD |
 | 2026-03-21 | 9z ML | 7.60 | +18.8% | 2.5u | TBD | TBD |
 | 2026-03-21 | PARI +1.5 | 1.60 | +9.5% | 3.3u | TBD | TBD |
 | 2026-03-21 | MongolZ +1.5 | 2.33 | +12.1% | 2.7u | TBD | TBD |
