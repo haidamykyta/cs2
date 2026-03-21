@@ -37,6 +37,25 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 - Liquid picks: Vertigo (NiP 33% there)
 - Decider: Mirage (most likely)
 
+**ACTUAL VETO (confirmed):**
+1. NiP ban: Inferno ✅ (predicted correctly)
+2. Liquid ban: Overpass ❌ (predicted Nuke — Liquid left NiP's best map open!)
+3. NiP pick: **Nuke** (71% WR) ❌ (predicted Dust2/Ancient — but low pick% was misleading, opponents always banned Nuke so it never appeared as a pick)
+4. Liquid pick: **Mirage** ❌ (predicted Vertigo — NiP has 56% WR on Mirage, odd choice by Liquid)
+5. NiP ban: Dust2
+6. Liquid ban: Anubis
+7. Decider: **Ancient** (NiP 63% WR vs Liquid 25%)
+
+**REVISED probabilities after actual veto:**
+| Map | NiP WR | Liquid WR | P(NiP wins) |
+|-----|--------|-----------|-------------|
+| Nuke (NiP pick) | 71% | 29% | ~78% |
+| Mirage (Liq pick) | 56% | 38% | ~62% |
+| Ancient (decider) | 63% | 25% | ~72% |
+
+Revised BO3: NiP **~80%** | Liquid ~20% (was 65% pre-veto)
+NiP ML @1.75 edge became **+34%** post-veto (was +7.9%)
+
 **Player comparison (last 3 months):**
 | Role      | NiP        | Rating | Liquid     | Rating | Edge   |
 |-----------|------------|--------|------------|--------|--------|
@@ -256,6 +275,14 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 ---
 
 ## Model Calibration Notes
+
+### Veto calibration finding (2026-03-21, NiP vs Liquid)
+- **Problem:** NiP had 3% historical first pick rate on Nuke → I predicted Dust2/Ancient
+- **Reality:** NiP picked Nuke (71% WR) the moment Liquid didn't ban it
+- **Root cause:** Low pick% = opponents always ban it, not that team avoids it. When ban doesn't happen → team grabs best map instantly.
+- **New rule:** If WR >65% on a map AND opponent doesn't ban it → near-certain pick, ignore historical pick%.
+- **Liquid mistake:** Banned Overpass instead of Nuke → left NiP's best map open, picked Mirage where NiP has 56% WR.
+- **Impact:** Pre-veto NiP 65%, post-veto NiP ~80% after actual veto revealed.
 
 ### Known weaknesses (as of 2026-03-21)
 - **CIS/SA teams:** Sparse DB data → low confidence. Override with manual analysis.
