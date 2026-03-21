@@ -105,7 +105,7 @@ NiP ML @1.75 edge became **+34%** post-veto (was +7.9%)
 | Map | Bet | Odds | Our prob | Edge | Result |
 |-----|-----|------|----------|------|--------|
 | Map 1 (Nuke) | NiP win | — | 78% NiP | — | **NiP 13:3 WIN ✅** |
-| Map 2 (Mirage) | TBD | TBD | 62% NiP | TBD | TBD |
+| Map 2 (Mirage) | NiP YES (Polymarket) | 54¢ | 62% NiP | +8% ✅ | TBD |
 | Map 3 (Ancient) | TBD | TBD | 72% NiP | TBD | TBD |
 
 **Map 1 scoreboard (Nuke):**
@@ -303,7 +303,7 @@ Liquid: NAF 13K/103.1, EliGE 10K/57.6, siuhy 5K/47.6, ultimate 4K/45.4, malbsMd 
 | 2026-03-21 | NiP ML | 1.75 | +7.9% pre / +34% post-veto | 1.6u | TBD | TBD |
 | 2026-03-21 | NiP +1.5 | 1.23 | +6.7% | 5.4u | TBD | TBD |
 | 2026-03-21 | NiP Map1 (Nuke) win | TBD | ~+6% if @1.40 | TBD | TBD | TBD |
-| 2026-03-21 | NiP Map2 (Mirage) win | TBD | ~+14% if @2.00 | TBD | TBD | TBD |
+| 2026-03-21 | NiP Map2 (Mirage) win | 54¢ PM | +8% | 4.3% | TBD | TBD |
 | 2026-03-21 | NiP 2-0 | TBD | value if @2.10+ | TBD | TBD | TBD |
 | 2026-03-21 | 9z ML | 7.60 | +18.8% | 2.5u | TBD | TBD |
 | 2026-03-21 | PARI +1.5 | 1.60 | +9.5% | 3.3u | TBD | TBD |
