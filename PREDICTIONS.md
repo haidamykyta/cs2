@@ -65,11 +65,11 @@ NiP ML @1.75 edge became **+34%** post-veto (was +7.9%)
 | Rifler    | es3tag     | 1.05   | malbsMd    | 1.02   | NiP    |
 | IGL       | HEAP       | 0.97   | Twistzz    | 1.18   | Liquid |
 
-⚠️ **ROSTER ERROR:** Actual rosters were different from analysis data.
-- NiP actual: sjuush, xKacpersky, Snappi, r1nkle, cairne
-- Liquid actual: NAF, EliGE, siuhy, ultimate, malbsMd
+⚠️ **ANALYSIS ERROR:** User provided correct rosters from HLTV at start of session, but after context compression I used stale DB data instead.
+- NiP correct: sjuush, xKacpersky, Snappi, r1nkle, cairne
+- Liquid correct: NAF, EliGE, siuhy, ultimate, malbsMd
 - Map pool WR data was still valid (team-level stats). Player duel section was wrong.
-- **Calibration note:** Always verify current roster before analysis — player data in DB may be stale.
+- **Rule:** ALWAYS use rosters from user's HLTV paste, never from DB. DB player data is always stale.
 
 **Model output:**
 - NiP win probability: **65%** (Liquid 35%)
@@ -327,6 +327,7 @@ Liquid: NAF 13K/103.1, EliGE 10K/57.6, siuhy 5K/47.6, ultimate 4K/45.4, malbsMd 
 - **Post-roster-change teams:** Glicko-2 lags behind actual strength for 2-3 months.
 - **LAN vs online:** Model not fully separating LAN performance. Add `lan_bonus` feature.
 - **Veto math is most reliable signal** — when pick/ban rates are available, use them first.
+- **ROSTER DATA:** Always use rosters from user's HLTV paste. DB player data is always stale. Never substitute DB players when user provided the actual lineup.
 
 ### Planned improvements
 - [ ] Collect 90-day LAN-only stats separately
