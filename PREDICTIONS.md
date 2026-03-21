@@ -65,6 +65,12 @@ NiP ML @1.75 edge became **+34%** post-veto (was +7.9%)
 | Rifler    | es3tag     | 1.05   | malbsMd    | 1.02   | NiP    |
 | IGL       | HEAP       | 0.97   | Twistzz    | 1.18   | Liquid |
 
+⚠️ **ROSTER ERROR:** Actual rosters were different from analysis data.
+- NiP actual: sjuush, xKacpersky, Snappi, r1nkle, cairne
+- Liquid actual: NAF, EliGE, siuhy, ultimate, malbsMd
+- Map pool WR data was still valid (team-level stats). Player duel section was wrong.
+- **Calibration note:** Always verify current roster before analysis — player data in DB may be stale.
+
 **Model output:**
 - NiP win probability: **65%** (Liquid 35%)
 - Confidence: Medium (limited DB data for recent Liquid roster)
@@ -98,14 +104,18 @@ NiP ML @1.75 edge became **+34%** post-veto (was +7.9%)
 **Map bets actually placed:**
 | Map | Bet | Odds | Our prob | Edge | Result |
 |-----|-----|------|----------|------|--------|
-| Map 1 (Nuke) | TBD | TBD | 78% NiP | TBD | TBD |
+| Map 1 (Nuke) | NiP win | — | 78% NiP | — | **NiP 13:3 WIN ✅** |
 | Map 2 (Mirage) | TBD | TBD | 62% NiP | TBD | TBD |
 | Map 3 (Ancient) | TBD | TBD | 72% NiP | TBD | TBD |
 
-**Series result:** TBD
+**Map 1 scoreboard (Nuke):**
+NiP: sjuush 17K/106.1ADR, xKacpersky 15K/91.1, Snappi 13K/88.3, r1nkle 12K/74.8, cairne 12K/73.3
+Liquid: NAF 13K/103.1, EliGE 10K/57.6, siuhy 5K/47.6, ultimate 4K/45.4, malbsMd 4K/36.2
+
+**Series result:** TBD (leading 1-0)
 **Score:** TBD
 **Correct (series):** TBD
-**Correct (maps):** TBD / 3
+**Correct (maps):** 1/1 so far
 
 ---
 
