@@ -165,12 +165,83 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 ---
 
+### Match 4: The MongolZ vs Vitality
+**Time:** 19:30 | **Format:** BO3 | **Bracket:** Upper SF (Group B)
+
+**Data used:**
+- HLTV full lineups + map stats (pick%, ban%, win%, played) — 3 months
+- HLTV player ratings (3-month + event-specific)
+- bo3.gg full H2H + 6-month map data
+- Handicap data (15 MZ matches, 14 Vitality matches)
+
+**Map Pool Analysis:**
+| Map | MongolZ W% | N | Pick% | Ban% | Vitality W% | N | Pick% | Ban% | Edge |
+|-----|-----------|---|-------|------|------------|---|-------|------|------|
+| Mirage | 64% | 11 | 51% | 0% | 40% | 5 | 8% | 0% | MongolZ ★★ |
+| Nuke | 62% | 8 | 3% | 3% | 100% | 4 | 18% | 0% | Even (low N Vit) |
+| Dust2 | 43% | 7 | 0% | 3% | 100% | 9 | 31% | 0% | Vitality ★★ |
+| Inferno | 40% | 5 | 11% | 3% | 75% | 8 | 26% | 0% | Vitality ★ |
+| Overpass | 0% | 1 | 0% | 3% | 100% | 8 | 13% | 0% | Vitality ★★ |
+| Ancient | 20% | 5 | 30% | 0% | 100% | 1 | 0% | 90% | (both ban) |
+| Anubis | — | 0 | 0% | 35% | 100% | 3 | 0% | 5% | (MZ ban) |
+
+**Predicted veto:**
+- MongolZ bans: Anubis (35% ban)
+- Vitality bans: Ancient (90% ban)
+- MongolZ picks: Mirage (51% first pick, 64% WR) ← guaranteed
+- Vitality picks: Dust2 (100% WR, 9-map win streak) ← guaranteed
+- MongolZ bans: Overpass (Vitality 100% on 8 maps)
+- Vitality bans: Nuke (MZ 5-map win streak)
+- Decider: Inferno (Vitality 75% vs MongolZ 40%)
+
+**Per-map probabilities:**
+- Mirage (MZ pick): MongolZ 65%, Vitality 35%
+- Dust2 (Vit pick): MongolZ 15%, Vitality 85%
+- Inferno (decider): MongolZ 30%, Vitality 70%
+
+**Player comparison (3-month / event rating):**
+| Player (MongolZ) | 3m | Event | | Player (Vitality) | 3m | Event |
+|---|---|---|---|---|---|---|
+| Techno | 0.94 | 1.73 (+0.79) | | ZywOo | 1.44 | 1.91 (+0.47) |
+| 910 | 1.12 | 1.44 (+0.32) | | flameZ | 1.26 | 1.57 (+0.31) |
+| cobrazera | 1.02 | 1.41 (+0.39) | | ropz | 1.09 | 1.38 (+0.29) |
+| mzinho | 1.02 | 0.99 (-0.03) | | apEX | 1.00 | 1.15 (+0.15) |
+| bLitz | 0.88 | 0.75 (-0.13) | | mezii | 1.05 | 1.01 (-0.04) |
+
+**H2H (recent):**
+- Feb 21, 2026: Vitality 2-0 (Dust2 13-3, Mirage 16-13 OT)
+- Feb 15, 2026: Vitality 2-1 (MZ won Mirage 13-10, lost Nuke+Dust2)
+- Dec 11, 2025: Vitality 2-0 (Dust2 13-4, Mirage 13-5)
+- Aug 23, 2025: MongolZ 2-1 (Nuke+Mirage)
+- Overall: Vitality 3-0 in last 3 series
+
+**Model output:**
+- Vitality win probability: **72%** (MongolZ 28%)
+- Confidence: High (both teams well-represented, clear veto pattern)
+- BO3 math: MZ 2-0 = 9.8%, MZ 2-1 = 18.2%, Vit 2-1 = 42.2%, Vit 2-0 = 29.8%
+- Key signal: ZywOo at 1.91 event rating — god mode. But MZ get Mirage where they have real edge.
+
+**Value bets:**
+| Bet | Odds | Implied | Our prob | Edge | Kelly (1/4) |
+|-----|------|---------|----------|------|-------------|
+| MongolZ +1.5 maps | 2.33 | 42.9% | ~55% | +12.1% ✅ | 2.7% bankroll |
+| MongolZ ML | 5.80 | 17.2% | 28% | +10.8% ✅ | 1.1% |
+| Vitality 2-0 | 1.56 | 64.1% | ~45% | -19.1% ❌ | skip |
+| Vitality ML | 1.15 | 87.0% | 72% | -15% ❌ | skip |
+
+**Final recommendation:** MongolZ +1.5 @2.33 (primary). MongolZ take Mirage (their pick, 64% WR) — Vitality 2-0 is overpriced.
+
+**Result:** TBD
+**Correct:** TBD
+
+---
+
 ## Accuracy Tracking
 
 | Date | Matches | Correct | Wrong | Accuracy |
 |------|---------|---------|-------|----------|
-| 2026-03-21 | 3 | TBD | TBD | TBD |
-| **Total** | **3** | **TBD** | **TBD** | **TBD** |
+| 2026-03-21 | 4 | TBD | TBD | TBD |
+| **Total** | **4** | **TBD** | **TBD** | **TBD** |
 
 ### Value Bets Tracking
 | Date | Bet | Odds | Edge | Stake | Result | P&L |
@@ -179,6 +250,8 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 | 2026-03-21 | NiP +1.5 | 1.23 | +6.7% | 5.4u | TBD | TBD |
 | 2026-03-21 | 9z ML | 7.60 | +18.8% | 2.5u | TBD | TBD |
 | 2026-03-21 | PARI +1.5 | 1.60 | +9.5% | 3.3u | TBD | TBD |
+| 2026-03-21 | MongolZ +1.5 | 2.33 | +12.1% | 2.7u | TBD | TBD |
+| 2026-03-21 | MongolZ ML | 5.80 | +10.8% | 1.1u | TBD | TBD |
 
 ---
 
