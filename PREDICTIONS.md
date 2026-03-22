@@ -443,10 +443,186 @@ MongolZ: Techno 1.15, cobrazera 0.91, 910 0.84, mzinho 0.65, bLitz 0.50
 - Net positive despite 4 losses. Kelly sizing protected from ruin.
 - **Rule:** Trust edge > trust direction. If edge >10% on underdog, bet even if model says they lose.
 
+---
+
+## POST-MORTEM: 2026-03-21 BLAST Rotterdam — Full HLTV Error Analysis
+
+### ERROR 1: NiP vs Liquid (predicted NiP 65-80%, Liquid won 2-1)
+
+**What HLTV data I had but ignored:**
+
+| Signal | Data available | What I did | Should have done |
+|--------|---------------|-----------|-----------------|
+| H2H series | Liquid 4-1 vs NiP last 5 series | Ignored, focused on map WR | H2H 4-1 = subtract 20% from underdog |
+| H2H Nuke | Liquid won Nuke 13-6 (Jan 2026) | Gave NiP 78% on Nuke | Check H2H map WR first |
+| H2H Ancient | Liquid won Ancient 16-13 OT (Jan 2026) | Gave NiP 72% on Ancient | Liquid owns this matchup on Ancient |
+| Player event ratings | NiP players: normal ratings at event | No flag raised | If no overperformance at event → no boost |
+| Handicap data | NiP: 33.3% 0-2 losses, 20% 2-0 wins | Not weighted | NiP doesn't close series clean → OT risk |
+
+**Root cause:** Overall map WR (71% Nuke) was calculated vs ALL teams including weak EU opponents.
+vs Liquid specifically:
+- Nuke H2H: NiP 23% (6-month, bo3.gg)
+- Mirage H2H: NiP 16%
+- Ancient H2H: NiP 9%
+
+**Actual match proof:**
+- Nuke: NiP 13-3 (finally got their best map, won easily)
+- Mirage: NiP lost 17-19 OT (even on their "pick" by Liquid, they barely lost)
+- Ancient: NiP 9-13 (historic pattern repeated — Liquid owns this matchup here)
+
+**xKacpersky** was POTY (1.24 rating, 94 ADR all 3 maps) — NiP had a good player but Liquid's team structure wins on these specific maps.
+
+---
+
+### ERROR 2: MOUZ vs 9z (predicted MOUZ 68%, 9z won 2-1)
+
+**What HLTV data I had but ignored:**
+
+| Signal | Data available | What I did | Should have done |
+|--------|---------------|-----------|-----------------|
+| MOUZ recent form | Lost 3 of last 5 to MongolZ (top team) | Said "MOUZ 68%" | 3 losses to same team = pattern, not variance |
+| Brollan decline | 0.75 rating in match | Not checked pre-match | Brollan was MOUZ weakest link for weeks |
+| 9z opponent quality | Only beat SA/BR teams pre-event | Sparse DB data flag | SA champion ≠ weak. Vitality series shows 9z quality |
+| Bookmaker odds | MOUZ @1.10 = 91% implied | Only noted edge | 91% at LAN BO3 = impossible. Red flag for favorite side |
+| Map pool | 9z won Inferno (MOUZ's pick!) | N/A | MOUZ picking Inferno vs 9z was an error by MOUZ |
+
+**Key insight from actual match:**
+- MOUZ picked Inferno thinking it's their safe map → 9z won 13-8
+- 9z picked Dust2 → MOUZ won 13-11 (barely)
+- Nuke decider → 9z won 13-9
+
+**9z were NOT underdogs skill-wise.** They were priced as 91% underdogs but reality was 60/40.
+luchov (MVP 1.21), dgt (1.11), HUASOPEEK (1.13) all outperformed their expected ratings.
+
+**Rule:** When @1.10 (91%) is the favorite price at LAN BO3 → ALWAYS assume market error. Real max for any team at LAN BO3 = ~80%.
+
+---
+
+### ERROR 3: PARI vs Spirit (predicted Spirit 66%, PARI won 2-0)
+
+**What HLTV data I had but ignored:**
+
+| Signal | Data available | What I did | Should have done |
+|--------|---------------|-----------|-----------------|
+| H2H | PARI 2-1 vs Spirit (Jan 2026) | Noted but underweighted | Recent H2H favors PARI → adjust by 10-15% |
+| Spirit roster balance | donk carrying 4 weak players | Said "Spirit star players" | magixx (0.59), tN1R (0.67) = structural drag |
+| Spirit recent form | Lost to Liquid 2-0 (pre-tournament) | Not flagged | Liquid beat them right before = momentum against |
+| donk swing | +1.93% positive but team losing | Didn't calculate | If star swing positive and team still loses = carrying |
+| PARI structure | 5 balanced players, Jame IGL | "Disciplined but outgunned" | Balanced 5 beats solo-carry vs organized opponents |
+
+**Donk paradox:** donk was EVP with 1.55 rating (best in the match!). But his team lost 0-2. This is the ultimate solo-carry signal:
+- donk: 37K, 110.7 ADR, 1.55 rating
+- magixx: 14K, 52.9 ADR, 0.59 rating
+- tN1R: 15K, 49.5 ADR, 0.67 rating
+
+**Three players below 0.70** = team can't function even with one god-tier player.
+
+**Veto mistake I missed:** Spirit picked Anubis (their own pick) and lost 13-3. This means PARI's CT-side on Anubis was perfect. Jame's stalling IGL style works perfectly on Anubis CT-side. I knew PARI had Jame but didn't connect this to Anubis specifically.
+
+---
+
+### ERROR 4: MongolZ +1.5 (Vitality 2-0, MZ couldn't win a single map)
+
+**What HLTV data I had and correctly used:**
+
+| Signal | Data | Used correctly? |
+|--------|------|----------------|
+| Vitality direction | 72% win probability | YES ✅ |
+| H2H series | Vitality 3-0 last 3 series | Noted ✅ |
+| ZywOo event rating | 1.91 (vs 1.44 average) | Noted ✅ |
+| flameZ event rating | 1.57 (vs 1.26 average) | Noted ✅ |
+| Vitality 2-0 rate | 78.6% (handicap data) | NOT USED ❌ |
+
+**What I got wrong:** MZ +1.5 required MZ to win at least 1 map.
+
+**H2H Mirage deep dive (what I had):**
+- Feb 21 2026: Vitality won Mirage 16-13 OT ← recent
+- Feb 15 2026: MZ won Mirage 13-10 ← 1 month older
+- Dec 11 2025: Vitality won Mirage 13-5 ← Vitality trend
+
+Vitality winning Mirage trend. MZ's 64% overall Mirage WR was vs non-top teams.
+
+**Critical missed signal: Vitality handicap data**
+- Vitality 2-0 wins: **78.6%** (11 of 14 matches!)
+- Vitality 0-2 losses: **0%** (Vitality never gets swept)
+- 12-match win streak entering this match
+
+With 78.6% 2-0 rate and 12-win streak, Vitality 2-0 probability was ~55-60%, not the 30% I calculated.
+MZ +1.5 was based on a faulty assumption that MZ's Mirage pick would guarantee them 1 map.
+
+**Actual match:**
+- Mirage (MZ pick): 4-13 → demolished. MZ Mirage WR vs tier-1 teams ≠ 64%
+- Overpass: Vitality 16-13 OT (bLitz 0.50 rating, mzinho 0.65 → dead weight)
+
+---
+
+## REVISED MODEL FRAMEWORK (v2.0)
+
+### Step-by-step probability calculation (NEW ORDER):
+
+```
+1. BASELINE: Glicko-2 rating difference → starting prob (e.g. 60/40)
+
+2. H2H ADJUSTMENT (most important):
+   - Last 5 series: each series win for team A = +3% (max ±15%)
+   - If 4-1 or worse → automatic -15% to underdog
+
+3. VETO MATH (use H2H map WR, not overall):
+   - For each map in actual veto: use H2H WR if N≥3, else use overall WR
+   - Multiply per-map probs for BO3 outcomes
+
+4. EVENT FORM ADJUSTMENT:
+   - Current win streak > 5: +5% to team
+   - Player event rating delta > +0.3 for star: +3%
+   - Player event rating delta < -0.2 for 2+ players: -5%
+
+5. PLAYER BALANCE CHECK:
+   - If 2+ players below 0.85 3-month rating: -8% (solo-carry risk)
+   - If all 5 players above 1.00: +5% (balanced team bonus)
+
+6. HANDICAP SANITY CHECK:
+   - Check 2-0 rate from handicap data
+   - If team has >70% 2-0 rate → Vitality 2-0 much more likely than model says
+   - Adjust clean sweep probability accordingly
+
+7. BOOKMAKER SANITY CAP:
+   - NO team gets above 80% probability for BO3 LAN
+   - If my model says 80%+ → something is wrong, recalculate
+   - @1.10 favorite odds = automatic red flag, check what's being missed
+```
+
+### Pre-Match Checklist (mandatory before every analysis):
+
+```
+HLTV CHECKS:
+[ ] Read head-to-head section — note series wins/losses last 12 months
+[ ] Check map-by-map H2H scores in recent series (not just who won)
+[ ] Note player event ratings vs 3-month for BOTH teams
+[ ] Check handicap data: 2-0 rate, avg rounds lost in wins per map
+[ ] Verify current roster from HLTV (never use DB)
+[ ] Note win/loss streak and who they beat/lost to
+
+BO3.GG CHECKS:
+[ ] Open H2H map WR section — record % for each map in pool
+[ ] Check team balance: are all 5 players contributing?
+[ ] Check if star player swing is positive while team losing (carry signal)
+
+VETO PREDICTION:
+[ ] If WR >65% on map AND opponent historically bans it → they pick it if not banned
+[ ] Check pick% first, then WR — high pick% = team confidence on that map
+[ ] Use H2H map WR (not overall WR) for per-map probability
+
+ODDS SANITY:
+[ ] No team above 80% at LAN BO3 — if bookie says >85%, there's value on other side
+[ ] Calculate Kelly with H2H-adjusted probs, not overall WR probs
+[ ] If edge >10% on underdog → bet even if model direction is wrong
+```
+
 ### Planned improvements
 - [ ] Add opponent-quality-adjusted WR (top-10 only vs all opponents)
-- [ ] Weight H2H last 6 months more heavily (currently underweighted)
+- [ ] Weight H2H last 6 months more heavily (new formula: H2H WR × 0.6 + overall WR × 0.4)
 - [ ] OT flag: don't recommend map handicaps on maps where expected score diff < 3 rounds
-- [ ] Team cohesion metric: check if top fragger has high swing (carrying) vs balanced team
+- [ ] Team cohesion metric: if top player swing > +3% and team negative swing → carry flag
 - [ ] Collect 90-day LAN-only stats separately
-- [ ] Add event-specific player rating delta as feature
+- [ ] Vitality 2-0 rate (78.6%) must be input to model — handicap data is underused
+- [ ] Track per-map round handicap stats from HLTV match history
