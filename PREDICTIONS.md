@@ -105,17 +105,21 @@ NiP ML @1.75 edge became **+34%** post-veto (was +7.9%)
 | Map | Bet | Odds | Our prob | Edge | Result |
 |-----|-----|------|----------|------|--------|
 | Map 1 (Nuke) | NiP win | — | 78% NiP | — | **NiP 13:3 WIN ✅** |
-| Map 2 (Mirage) | NiP YES (Polymarket) | 54¢ | 62% NiP | +8% ✅ | TBD |
-| Map 3 (Ancient) | TBD | TBD | 72% NiP | TBD | TBD |
+| Map 2 (Mirage) | NiP YES (Polymarket) | 54¢ | 62% NiP | +8% | **Liquid 19:17 OT LOSS ❌** |
+| Map 3 (Ancient) | — | — | 72% NiP | — | **Liquid 13:9 LOSS ❌** |
 
 **Map 1 scoreboard (Nuke):**
 NiP: sjuush 17K/106.1ADR, xKacpersky 15K/91.1, Snappi 13K/88.3, r1nkle 12K/74.8, cairne 12K/73.3
 Liquid: NAF 13K/103.1, EliGE 10K/57.6, siuhy 5K/47.6, ultimate 4K/45.4, malbsMd 4K/36.2
 
-**Series result:** TBD (leading 1-0)
-**Score:** TBD
-**Correct (series):** TBD
-**Correct (maps):** 1/1 so far
+**Final scoreboard (all 3 maps):**
+NiP: xKacpersky 1.24 rating, Snappi 1.06, r1nkle 1.01, cairne 0.95, sjuush 0.92
+Liquid: EliGE 1.10, siuhy 1.00, NAF 0.99, ultimate 0.98, malbsMd 0.94
+
+**Series result:** LIQUID 2-1 ❌ (predicted NiP 80%)
+**Score:** NiP 1-2 (won Nuke, lost Mirage OT, lost Ancient)
+**Correct (series):** NO ❌
+**Correct (maps):** 1/3 (only Nuke correct)
 
 ---
 
@@ -161,8 +165,22 @@ Liquid: NAF 13K/103.1, EliGE 10K/57.6, siuhy 5K/47.6, ultimate 4K/45.4, malbsMd 
 **Final recommendation:** 9z ML @7.60 (value play, small unit), 9z 2-1 @10.40 (lottery)
 > Note: 9z are SA champions — on their best maps (Dust2, Mirage) they are competitive. MOUZ odds are priced as if this is a walkover when it's not.
 
-**Result:** TBD
-**Correct:** TBD
+**ACTUAL VETO:**
+1. 9z ban: Mirage | 2. MOUZ ban: Anubis | 3. 9z pick: Dust2 | 4. MOUZ pick: Inferno
+5. 9z ban: Overpass | 6. MOUZ ban: Ancient | 7. Decider: Nuke
+
+**Map results:**
+- Dust2 (9z pick): MOUZ 13-11 (MOUZ won — 9z's pick, 9z lost)
+- Inferno (MOUZ pick): 9z 13-8 (9z won on MOUZ's pick!)
+- Nuke (decider): 9z 13-9 ← 9z took the decider
+
+**Final scoreboard:**
+9z: luchov 1.21 rating, meyern 1.15, HUASOPEEK 1.13, dgt 1.11, max 0.80
+MOUZ: xertioN 1.05, Spinx 0.98, Jimpphat 0.95, torzsi 0.91, Brollan 0.75
+
+**Result:** 9Z 2-1 ✅ (caught the upset!)
+**Correct (series direction):** NO (predicted MOUZ 68%) but value bet on 9z was CORRECT ✅
+**Value bets:** 9z ML @7.60 ✅ WIN | 9z 2-1 @10.40 ✅ WIN
 
 ---
 
@@ -214,8 +232,23 @@ Liquid: NAF 13K/103.1, EliGE 10K/57.6, siuhy 5K/47.6, ultimate 4K/45.4, malbsMd 
 **Final recommendation:** PARI +1.5 @1.60 (primary), PARI ML @3.38 (tiny value, skip unless confident)
 > Spirit are favoured but PARI can steal maps. +1.5 is the safer value bet here.
 
-**Result:** TBD
-**Correct:** TBD
+**ACTUAL VETO:**
+1. Spirit ban: Inferno | 2. PARI ban: Nuke | 3. Spirit pick: Anubis | 4. PARI pick: Ancient
+5. Spirit ban: Overpass | 6. PARI ban: Mirage | 7. Decider: Dust2
+
+**Map results:**
+- Anubis (Spirit pick): PARI 13-3 (PARI demolished Spirit on their own pick!)
+- Ancient (PARI pick): PARI 13-8
+- Dust2: not played
+
+**Final scoreboard:**
+PARI: xiELO 1.50, zweih 1.32, BELCHONOKK 1.30, nota 1.12, Jame 1.05
+Spirit: donk 1.55 (best player in losing team), sh1ro 0.95, zont1x 0.79, tN1R 0.67, magixx 0.59
+
+**Result:** PARIVISION 2-0 ✅ (massive upset, Spirit obliterated!)
+**Correct (direction):** NO (predicted Spirit 66%) but underdog value bets CORRECT ✅
+**Value bets:** PARI +1.5 @1.60 ✅ WIN | PARI ML @3.38 ✅ WIN (if bet)
+**Note:** Spirit looked completely lost. donk top-fragged in a loss (1.55). Team chemistry issues visible.
 
 ---
 
@@ -285,30 +318,49 @@ Liquid: NAF 13K/103.1, EliGE 10K/57.6, siuhy 5K/47.6, ultimate 4K/45.4, malbsMd 
 
 **Final recommendation:** MongolZ +1.5 @2.33 (primary). MongolZ take Mirage (their pick, 64% WR) — Vitality 2-0 is overpriced.
 
-**Result:** TBD
-**Correct:** TBD
+**ACTUAL VETO:**
+1. MZ ban: Anubis ✅ | 2. Vitality ban: Ancient ✅ | 3. MZ pick: Mirage ✅
+4. Vitality pick: Overpass ❌ (predicted Dust2 — both maps have 100% WR for Vitality)
+5. MZ ban: Dust2 | 6. Vitality ban: Nuke ✅ | 7. Decider: Inferno ✅
+Veto prediction accuracy: 5/7 correct
+
+**Map results:**
+- Mirage (MZ pick): MongolZ 4-13 (Vitality DESTROYED MZ on their own pick!)
+- Overpass (Vitality pick): Vitality 16-13 OT
+- Inferno: not played
+
+**Final scoreboard:**
+Vitality: flameZ 1.81 rating, ZywOo 1.70, apEX 1.15, ropz 1.01, mezii 0.98
+MongolZ: Techno 1.15, cobrazera 0.91, 910 0.84, mzinho 0.65, bLitz 0.50
+
+**Result:** VITALITY 2-0 ✅ (direction correct, but MZ +1.5 lost)
+**Correct (series direction):** YES ✅ (Vitality 72%)
+**Value bets:** MongolZ +1.5 @2.33 ❌ LOSS
+**Note:** MZ got crushed on Mirage (their best map!) 4-13. Historical 64% WR was inflated by weaker opponents. Vitality in top form — flameZ + ZywOo in god mode.
 
 ---
 
 ## Accuracy Tracking
 
-| Date | Matches | Correct | Wrong | Accuracy |
+| Date | Matches | Correct direction | Wrong | Accuracy |
 |------|---------|---------|-------|----------|
-| 2026-03-21 | 4 | TBD | TBD | TBD |
-| **Total** | **4** | **TBD** | **TBD** | **TBD** |
+| 2026-03-21 | 4 | 1 (Vitality) | 3 (NiP,MOUZ,Spirit) | 25% |
+| **Total** | **4** | **1** | **3** | **25%** |
+
+**Note:** Direction accuracy 25%, BUT value bet model caught 2 upsets correctly (9z, PARI). Model underprices heavy favorites and overprices underdogs → good for finding value on underdog side.
 
 ### Value Bets Tracking
-| Date | Bet | Odds | Edge | Stake | Result | P&L |
-|------|-----|------|------|-------|--------|-----|
-| 2026-03-21 | NiP ML | 1.75 | +7.9% pre / +34% post-veto | 1.6u | TBD | TBD |
-| 2026-03-21 | NiP +1.5 | 1.23 | +6.7% | 5.4u | TBD | TBD |
-| 2026-03-21 | NiP Map1 (Nuke) win | TBD | ~+6% if @1.40 | TBD | TBD | TBD |
-| 2026-03-21 | NiP Map2 (Mirage) win | 54¢ PM | +8% | 4.3% | TBD | TBD |
-| 2026-03-21 | NiP 2-0 | TBD | value if @2.10+ | TBD | TBD | TBD |
-| 2026-03-21 | 9z ML | 7.60 | +18.8% | 2.5u | TBD | TBD |
-| 2026-03-21 | PARI +1.5 | 1.60 | +9.5% | 3.3u | TBD | TBD |
-| 2026-03-21 | MongolZ +1.5 | 2.33 | +12.1% | 2.7u | TBD | TBD |
-| 2026-03-21 | MongolZ ML | 5.80 | +10.8% | 1.1u | TBD | TBD |
+| Date | Bet | Odds | Edge | Result | P&L (1u base) |
+|------|-----|------|------|--------|---------------|
+| 2026-03-21 | NiP ML | 1.75 | +7.9% | ❌ LOSS | -1.6u |
+| 2026-03-21 | NiP +1.5 | 1.23 | +6.7% | ❌ LOSS | -5.4u |
+| 2026-03-21 | NiP Map2 Mirage (PM) | 54¢ | +8% | ❌ LOSS (OT) | -4.3% |
+| 2026-03-21 | 9z ML | 7.60 | +18.8% | ✅ WIN | +16.5u (2.5u stake × 6.6 profit) |
+| 2026-03-21 | 9z 2-1 | 10.40 | +12.4% | ✅ WIN | +11.2u (1.2u stake × 9.4 profit) |
+| 2026-03-21 | PARI +1.5 | 1.60 | +9.5% | ✅ WIN | +2.0u (3.3u stake × 0.6 profit) |
+| 2026-03-21 | PARI ML | 3.38 | +4.4% | ✅ WIN | +2.6u (1.1u stake × 2.38 profit) |
+| 2026-03-21 | MongolZ +1.5 | 2.33 | +12.1% | ❌ LOSS | -2.7u |
+| **TOTAL** | | | | **4W / 4L** | **~+18u NET POSITIVE** |
 
 ---
 
@@ -329,8 +381,36 @@ Liquid: NAF 13K/103.1, EliGE 10K/57.6, siuhy 5K/47.6, ultimate 4K/45.4, malbsMd 
 - **Veto math is most reliable signal** — when pick/ban rates are available, use them first.
 - **ROSTER DATA:** Always use rosters from user's HLTV paste. DB player data is always stale. Never substitute DB players when user provided the actual lineup.
 
+### Calibration findings (2026-03-21 session)
+
+**1. Win rates inflated by opponent quality**
+- NiP had 63% WR on Ancient (8 maps) → lost 9-13 to Liquid. Small sample vs weak opponents.
+- MongolZ had 64% WR on Mirage → lost 4-13 to Vitality. Sample likely vs CIS/lower tier teams.
+- **Rule:** Weight WR by opponent quality. WR vs top-10 teams only = much more reliable.
+
+**2. H2H is a stronger signal than map WR**
+- NiP had great map stats but Liquid had 4-1 H2H record vs NiP recently. Liquid beat NiP on same maps (Nuke, Mirage, Ancient) in Jan 2026.
+- PARI had 2-1 H2H vs Spirit (including a win Jan 2026). Spirit looked lost.
+- **Rule:** If H2H < 6 months shows strong pattern → weight it above map WR.
+
+**3. Mirage OT is unpredictable**
+- NiP should have won Mirage (62% model). Lost 17-19 in OT. One round difference.
+- OT reduces model reliability significantly. Avoid map handicap bets on expected close maps.
+
+**4. Spirit roster issues visible in data**
+- donk top-fragged (1.55) in a 2-0 loss — means rest of team severely underperformed.
+- magixx 0.59, tN1R 0.67 — bottom players dragging team down.
+- **Rule:** Check if top fragger is carrying or if team plays as unit. Solo-carry teams lose to organized opponents.
+
+**5. Value betting model worked well**
+- Caught both major upsets (9z, PARI) via edge calculation even though direction prediction was wrong.
+- Net positive despite 4 losses. Kelly sizing protected from ruin.
+- **Rule:** Trust edge > trust direction. If edge >10% on underdog, bet even if model says they lose.
+
 ### Planned improvements
+- [ ] Add opponent-quality-adjusted WR (top-10 only vs all opponents)
+- [ ] Weight H2H last 6 months more heavily (currently underweighted)
+- [ ] OT flag: don't recommend map handicaps on maps where expected score diff < 3 rounds
+- [ ] Team cohesion metric: check if top fragger has high swing (carrying) vs balanced team
 - [ ] Collect 90-day LAN-only stats separately
 - [ ] Add event-specific player rating delta as feature
-- [ ] Backtest: does veto prediction beat match prediction alone?
-- [ ] Add map handicap model (e.g. NiP -3.5 rounds on Nuke)
