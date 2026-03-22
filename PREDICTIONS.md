@@ -467,6 +467,178 @@ Falcons: 28.1% (conservative: 38%)
 
 ---
 
+### Match 6: FURIA vs NRG
+**Time:** 14:30 | **Format:** BO3 | **Bracket:** Group A lower bracket SF
+
+**Lineups:** FURIA: FalleN, YEKINDAR, yuurih, KSCERATO, molodoy | NRG: nitr0, Grim, Sonic, oSee, br0
+**H2H:** 1 series only (FURIA 2-1, 1 year ago) → minimal adjustment
+
+**Event ratings:**
+| NRG | 3m | Event | | FURIA | 3m | Event |
+|---|---|---|---|---|---|---|
+| Sonic | 1.05 | 1.23 (+0.18) | | KSCERATO | 1.14 | 1.24 (+0.10) |
+| Grim | 1.15 | 1.23 (+0.08) | | FalleN | 0.89 | 1.00 (+0.11) |
+| oSee | 1.14 | 1.08 (-0.06) | | molodoy | 1.13 | 0.99 (-0.14) |
+| br0 | 1.12 | 1.03 (-0.09) | | YEKINDAR | 1.05 | 1.00 (-0.05) |
+| nitr0 | 0.99 | 0.80 (-0.19) ⚠️ | | yuurih | 0.94 | 0.91 (-0.03) |
+
+Balance flags: nitr0 0.80 IGL drag for NRG. FURIA balanced.
+
+**Key map stats:** NRG Mirage 75% WR (12 maps, first pick) | FURIA Inferno 30% first pick but only 42% WR (weird) | Ancient: both ban | NRG Dust2: 6-map LOSING STREAK!
+
+**Predicted veto:**
+1. NRG ban: Ancient (65%) | 2. FURIA ban: Mirage (NRG 75% WR)
+3. NRG pick: Inferno (60% WR) | 4. FURIA pick: Nuke (57% WR, NRG only 25%)
+5. NRG ban: Overpass | 6. FURIA ban: Dust2 (NRG 6-map losing streak)
+7. Decider: Anubis (FURIA 75%)
+
+**Per-map probabilities:**
+```
+Inferno (NRG pick): NRG 62%, FURIA 38%
+Nuke (FURIA pick): FURIA 68%, NRG 32%
+Anubis (decider): FURIA 70%, NRG 30%
+
+P(FURIA 2-0) = 0.38 × 0.68 = 25.8%
+P(FURIA 2-1) = 38%
+P(NRG 2-0) = 0.62 × 0.32 = 19.8%
+P(NRG 2-1) = 16.2%
+FURIA: 63.8% | NRG: 36%
+```
+
+**Value bets:**
+| Bet | Odds | Implied | Our prob | Edge | Kelly 1/4 |
+|-----|------|---------|----------|------|-----------|
+| NRG ML | 4.00 | 25.0% | 36% | +11% ✅ | 2% bankroll |
+| NRG +1.5 | 1.88 | 53.2% | ~80% | +27% ✅ | 3% bankroll |
+| FURIA ML | 1.25 | 80% | 64% | -16% ❌ | SKIP |
+
+**Final recommendation:** NRG +1.5 @1.88 (primary), NRG ML @4.00 small unit
+**Result:** TBD | **Correct:** TBD
+
+---
+
+### Match 7: MongolZ vs Liquid
+**Time:** 17:00 | **Format:** BO3 | **Bracket:** Group B lower bracket SF
+
+**Lineups:** MZ: Techno, bLitz, mzinho, 910, cobrazera | Liquid: EliGE, NAF, malbsMd, siuhy, ultimate
+**H2H:** MZ won 5 series vs Liquid in 2025 (+7%) BUT Liquid changed roster (malbsMd <5 matches with core). H2H is against OLD Liquid roster → reduced weight.
+
+**Event ratings:**
+| MZ | 3m | Event | | Liquid | 3m | Event |
+|---|---|---|---|---|---|---|
+| Techno | 0.95 | 1.41 (+0.46) ★ | | EliGE | 1.06 | 1.13 (+0.07) |
+| cobrazera | 1.02 | 1.13 (+0.11) | | NAF | 1.09 | 1.01 (-0.08) |
+| 910 | 1.11 | 1.12 (+0.01) | | ultimate | 0.98 | 0.97 (-0.01) |
+| mzinho | 0.99 | 0.80 (-0.19) ⚠️ | | malbsMd | 1.01 | 0.92 (-0.09) |
+| bLitz | 0.86 | 0.61 (-0.25) ⚠️⚠️ | | siuhy | 0.91 | 0.92 (+0.01) |
+
+Balance: MZ — bLitz 0.61 + mzinho 0.80 → TWO players below threshold → -8% (solo-carry risk, Techno carrying)
+Liquid: All 0.92-1.13, balanced. Beat NiP 2-1 yesterday = momentum.
+Form: MZ lost 0-2 to Vitality 12 hours ago (fatigue/tilt risk).
+
+**H2H Map WR:** NOT APPLIED — from old Liquid roster, values (MZ 5% Mirage, 9% Nuke) are from different matchup.
+
+**Predicted veto:**
+1. Liquid ban: Overpass (97%) | 2. MZ ban: Anubis (38%)
+3. MZ pick: Mirage (51% first pick, 58% WR) | 4. Liquid pick: Inferno (50% WR, MZ only 40%)
+5. Liquid ban: Nuke (MZ 62%, 5-map streak!) | 6. MZ ban: Ancient (both weak)
+7. Decider: Dust2 (both 43%)
+
+**Per-map probabilities:**
+```
+Mirage (MZ pick): MZ 55%, Liquid 45% (bLitz drag reduces edge)
+Inferno (Liquid pick): Liquid 58%, MZ 42%
+Dust2 (decider): MZ 48%, Liquid 52%
+
+P(MZ 2-0) = 0.55 × 0.42 = 23.1%
+P(MZ 2-1) = 24.4%
+P(Liquid 2-0) = 0.45 × 0.58 = 26.1%
+P(Liquid 2-1) = 26.4%
+MZ: 47.5% | Liquid: 52.5%
+```
+
+**Value bets:**
+| Bet | Odds | Implied | Our prob | Edge | Kelly 1/4 |
+|-----|------|---------|----------|------|-----------|
+| Liquid ML | 2.95 | 33.9% | 52.5% | +18.6% ✅ | 2% bankroll |
+| Liquid +1.5 | 1.54 | 64.9% | ~73% | +8% ✅ | 1.5% bankroll |
+| MZ ML | 1.45 | 68.9% | 47.5% | -21.4% ❌ | SKIP |
+
+**Final recommendation:** Liquid ML @2.95 (primary), Liquid +1.5 @1.54 (safer)
+> Market prices MZ 69% based on old H2H vs a roster that no longer exists. Current Liquid is balanced + in form after NiP win. MZ has bLitz 0.61 drag and just played 0-2 vs Vitality.
+
+**Result:** TBD | **Correct:** TBD
+
+---
+
+### Match 8: 9z vs Spirit ← STRONGEST BET OF THE DAY
+**Time:** 19:30 | **Format:** BO3 | **Bracket:** Group B lower bracket SF
+
+**Lineups:** Spirit: donk, sh1ro, tN1R, magixx, zont1x | 9z: meyern, max, luchov, dgt, HUASOPEEK
+**H2H:** Last series 2 years ago (different rosters) → NOT APPLIED
+
+**CRITICAL CONTEXT:**
+- 9z yesterday: beat MOUZ 2-1 @7.70 (huge upset, massive confidence boost)
+- Spirit yesterday: lost 0-2 to PARI (13-3, 13-8 — demolished)
+
+**Event ratings:**
+| Spirit | 3m | Event | | 9z | 3m | Event |
+|---|---|---|---|---|---|---|
+| donk | 1.40 | 1.67 (+0.27) ★ | | HUASOPEEK | 1.16 | 1.01 (-0.15) |
+| sh1ro | 1.18 | 0.92 (-0.26) ⚠️⚠️ | | dgt | 1.20 | 0.99 (-0.21) ⚠️ |
+| tN1R | 1.00 | 0.89 (-0.11) | | meyern | 1.05 | 0.99 (-0.06) |
+| magixx | 0.95 | 0.85 (-0.10) | | luchov | 1.19 | 0.94 (-0.25) ⚠️ |
+| zont1x | 0.98 | 0.79 (-0.19) ⚠️⚠️ | | max | 1.00 | 0.73 (-0.27) ⚠️⚠️ |
+
+**DONK PARADOX (2nd time):** donk 1.67 carrying sh1ro 0.92, zont1x 0.79. Exact same pattern as PARI match which Spirit lost 0-2.
+9z: max 0.73 weak, but no solo-carry — losses distributed evenly.
+
+**Key map stats:**
+| Map | 9z WR | N | Spirit WR | N | Key note |
+|-----|-------|---|---------|---|---------|
+| Inferno | 75% | 12 (6-WIN STREAK) | BAN | 0 | Spirit ALWAYS bans (100%) |
+| Dust2 | 69% | 13 | 86% | 7 | Spirit first pick 52% ★★ |
+| Overpass | 74% | 23 | 75% | 4 | 9z first pick 41%, 23 maps = reliable |
+| Ancient | 83% | 12 | 50% | 6 | 9z dominant |
+| Nuke | 58% | 19 | 75% | 4 | 9z large sample reliable |
+| Mirage | 100% | 5 | 57% | 7 | 9z 46% ban |
+| Anubis | — | 0 | 75% | 4 | 9z 48% ban |
+
+**Predicted veto:**
+1. Spirit ban: Inferno (100% guaranteed) — kills 9z's 6-map streak
+2. 9z ban: Anubis (48%) | 3. Spirit pick: Dust2 (52% first pick, 86% WR)
+4. 9z pick: Overpass (41% first pick, 74% WR, 23 maps!) | 5. Spirit ban: Ancient (9z 83%!)
+6. 9z ban: Mirage (46%) | 7. Decider: Nuke
+
+**Per-map probabilities:**
+```
+Dust2 (Spirit pick): Spirit 75%, 9z 25% (Spirit's dominant map, 86% WR)
+Overpass (9z pick): 9z 68%, Spirit 32% (9z 74% WR on 23 maps — most reliable stat)
+Nuke (decider): 9z 55%, Spirit 45% (9z 58% on 19 maps vs Spirit 75% on 4 maps)
+
+P(Spirit 2-0) = 0.75 × 0.32 = 24.0%
+P(Spirit 2-1) = 0.75×0.68×0.45 + 0.25×0.32×0.45 = 22.9% + 3.6% = 26.5%
+P(9z 2-0) = 0.25 × 0.68 = 17.0%
+P(9z 2-1) = 0.25×0.32×0.55 + 0.75×0.68×0.55 = 4.4% + 28.1% = 32.5%
+
+Spirit: 50.5% | 9z: 49.5%
++ Spirit solo-carry correction -3%, 9z morale boost +3% → Spirit 48%, 9z 52%
+```
+
+**Value bets:**
+| Bet | Odds | Implied | Our prob | Edge | Kelly 1/4 |
+|-----|------|---------|----------|------|-----------|
+| **9z ML** | **5.60** | **17.9%** | **52%** | **+34.1%** ✅✅ | **4-5% bankroll** |
+| 9z +1.5 | ~2.00 | 50% | ~76% | +26% ✅ | 3% bankroll |
+| Spirit ML | 1.17 | 85.5% | 48% | -37.5% ❌ | SKIP |
+
+**Final recommendation:** 9z ML @5.60 (primary, 4-5% bankroll) — STRONGEST BET TODAY
+> Spirit has DONK PARADOX for 2nd day running: donk 1.67 carrying sh1ro 0.92 + zont1x 0.79. They lost to PARI yesterday with exact same pattern. 9z gets Overpass (74% WR, 23 maps = most reliable single stat in this session). Spirit @1.17 (85% implied) for a team with structural problems = market error.
+
+**Result:** TBD | **Correct:** TBD
+
+---
+
 ## Accuracy Tracking
 
 | Date | Matches | Correct direction | Wrong | Accuracy |
@@ -490,6 +662,11 @@ Falcons: 28.1% (conservative: 38%)
 | 2026-03-21 | MongolZ +1.5 | 2.33 | +12.1% | ❌ LOSS | -2.7u |
 | 2026-03-22 | TYLOO ML | 6.00 | +45.3% | TBD | TBD |
 | 2026-03-22 | TYLOO +1.5 | ~2.00-2.33 | +40-47% | TBD | TBD |
+| 2026-03-22 | NRG ML | 4.00 | +11% | TBD | TBD |
+| 2026-03-22 | NRG +1.5 | 1.88 | +27% | TBD | TBD |
+| 2026-03-22 | Liquid ML | 2.95 | +18.6% | TBD | TBD |
+| 2026-03-22 | 9z ML | 5.60 | +34.1% ⭐ | TBD | TBD |
+| 2026-03-22 | 9z +1.5 | ~2.00 | +26% | TBD | TBD |
 | **TOTAL** | | | | **4W / 4L** | **~+18u NET POSITIVE** |
 
 ---
