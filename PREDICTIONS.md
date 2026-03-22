@@ -366,12 +366,114 @@ MongolZ: Techno 1.15, cobrazera 0.91, 910 0.84, mzinho 0.65, bLitz 0.50
 
 ---
 
+---
+
+## 2026-03-22 — BLAST Open Rotterdam 2026 (LAN, Tier 1)
+
+### Match 5: TYLOO vs Falcons
+**Time:** 12:00 | **Format:** BO3 | **Bracket:** Group A lower bracket
+
+**Data used:**
+- HLTV lineups, map stats (pick%, ban%, WR), event ratings, handicap data
+- bo3.gg H2H map WR, team form, player comparison
+- Model Framework v2.0 (all 7 steps)
+
+**Lineups:**
+TYLOO: JamYoung, Moseyuh, Mercury, Zero, Jee
+Falcons: NiKo, TeSeS, m0NESY, kyxsan, kyousuke
+
+**H2H series record:** TYLOO 2-0 vs Falcons (last 2 series) → -10% to Falcons
+
+**H2H Map WR (bo3.gg, 6 months):**
+| Map | Falcons WR vs TYLOO | TYLOO WR vs Falcons |
+|-----|--------------------|--------------------|
+| Mirage | 4% | 96% |
+| Nuke | 10% | 90% |
+| Ancient | 9% | 91% |
+| Inferno | 17% | 83% |
+| Overpass | 50% | 50% |
+| Dust2 | 53% | — (TYLOO always bans) |
+| Anubis | 60% | — (no data TYLOO) |
+
+**Veto prediction:**
+1. TYLOO bans: Dust2 (100% ban rate) ★★★
+2. Falcons bans: Overpass (97% ban rate) ★★★
+3. Falcons picks: Mirage (31% first pick) ★★
+4. TYLOO picks: Inferno (30% rate, 100% WR, 3 maps) ★★
+5. Falcons bans: Nuke (TYLOO 100% WR, 4-map streak) ★★
+6. TYLOO bans: Anubis (0 maps, too risky) ★
+7. Decider: Ancient ★
+
+**Player ratings:**
+| Player (TYLOO) | 3m | Event | | Player (Falcons) | 3m | Event |
+|---|---|---|---|---|---|---|
+| JamYoung | 1.25 | 1.13 (-0.12) | | TeSeS | 1.02 | 1.25 (+0.23) |
+| Moseyuh | 1.18 | 1.12 (-0.06) | | m0NESY | 1.27 | 1.20 (-0.07) |
+| Jee | 1.11 | 0.82 (-0.29) ⚠️ | | NiKo | 1.13 | 0.99 (-0.14) |
+| Mercury | 1.08 | 0.93 (-0.15) | | kyousuke | 1.20 | 0.93 (-0.27) ⚠️ |
+| Zero | 1.03 | 0.93 (-0.10) | | kyxsan | 0.92 | 0.84 (-0.08) |
+
+Player balance flags: TYLOO — Jee -0.29 at event ⚠️. Falcons — kyousuke -0.27 ⚠️, NiKo declining.
+Falcons: TeSeS massively up (+0.23), rest declining. Balanced TYLOO vs declining Falcons.
+
+**Overall map WR (3 months):**
+| Map | TYLOO WR | N | Falcons WR | N |
+|-----|---------|---|-----------|---|
+| Inferno | 100% | 3 | 50% | 8 |
+| Nuke | 100% | 4 | 100% | 3 |
+| Mirage | 80% | 5 | 75% | 8 |
+| Overpass | 75% | 4 | — | 0 (always bans) |
+| Anubis | — | 0 | 60% | 5 |
+| Ancient | 50% | 2 | 69% | 4 |
+| Dust2 | — | 0 (always bans) | 53% | 15 |
+
+**Handicap data:**
+- TYLOO: 75% 2-0 wins (8 matches) — dominant when winning
+- Falcons: 42.9% 2-0 wins, 21.4% 1-2 losses — inconsistent close matches
+
+**Per-map probabilities (H2H adjusted):**
+| Map | P(TYLOO wins) | Reasoning |
+|-----|-------------|-----------|
+| Mirage (Falcons pick) | **65%** | H2H 96% TYLOO, adjusted down for NiKo/m0NESY |
+| Inferno (TYLOO pick) | **70%** | 100% WR, Falcons only 17% H2H |
+| Ancient (decider) | **60%** | H2H 91%, but 50% overall for TYLOO |
+
+**BO3 math:**
+```
+P(TYLOO 2-0) = 0.65 × 0.70 = 45.5%
+P(TYLOO 2-1) = 26.4%
+P(Falcons 2-0) = 10.5%
+P(Falcons 2-1) = 17.6%
+TYLOO: 71.9% (conservative estimate: 62%)
+Falcons: 28.1% (conservative: 38%)
+```
+
+**Model output:** TYLOO **62%** | Falcons **38%**
+- Confidence: Medium (only 2 H2H series sample, but TYLOO beat FaZe yesterday at LAN)
+- Pattern match: TYLOO @6.00 = identical to 9z @7.60 situation (both won)
+
+**Value bets:**
+| Bet | Odds | Implied | Our prob | Edge | Kelly 1/4 |
+|-----|------|---------|----------|------|-----------|
+| TYLOO ML | 6.00 | 16.7% | 62% | **+45.3%** ✅ | 3% bankroll |
+| TYLOO +1.5 | ~2.00-2.33 | 43-50% | ~90% | **+40-47%** ✅ | 4% bankroll |
+| Falcons ML | 1.15 | 87% | 38% | -49% ❌ | SKIP |
+
+**Final recommendation:** TYLOO ML @6.00 (primary, 2-3% bankroll). TYLOO +1.5 if available at 2.00+
+> Same pattern as 9z/PARI upsets: market massively overprices favorite based on ranking, ignoring H2H and veto reality.
+
+**Result:** TBD
+**Correct:** TBD
+
+---
+
 ## Accuracy Tracking
 
 | Date | Matches | Correct direction | Wrong | Accuracy |
 |------|---------|---------|-------|----------|
 | 2026-03-21 | 4 | 1 (Vitality) | 3 (NiP,MOUZ,Spirit) | 25% |
-| **Total** | **4** | **1** | **3** | **25%** |
+| 2026-03-22 | TBD | TBD | TBD | TBD |
+| **Total** | **4+** | **1+** | **3** | **TBD** |
 
 **Note:** Direction accuracy 25%, BUT value bet model caught 2 upsets correctly (9z, PARI). Model underprices heavy favorites and overprices underdogs → good for finding value on underdog side.
 
@@ -386,6 +488,8 @@ MongolZ: Techno 1.15, cobrazera 0.91, 910 0.84, mzinho 0.65, bLitz 0.50
 | 2026-03-21 | PARI +1.5 | 1.60 | +9.5% | ✅ WIN | +2.0u (3.3u stake × 0.6 profit) |
 | 2026-03-21 | PARI ML | 3.38 | +4.4% | ✅ WIN | +2.6u (1.1u stake × 2.38 profit) |
 | 2026-03-21 | MongolZ +1.5 | 2.33 | +12.1% | ❌ LOSS | -2.7u |
+| 2026-03-22 | TYLOO ML | 6.00 | +45.3% | TBD | TBD |
+| 2026-03-22 | TYLOO +1.5 | ~2.00-2.33 | +40-47% | TBD | TBD |
 | **TOTAL** | | | | **4W / 4L** | **~+18u NET POSITIVE** |
 
 ---
