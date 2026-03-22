@@ -121,6 +121,20 @@ Liquid: EliGE 1.10, siuhy 1.00, NAF 0.99, ultimate 0.98, malbsMd 0.94
 **Correct (series):** NO ❌
 **Correct (maps):** 1/3 (only Nuke correct)
 
+**ROOT CAUSE (bo3.gg H2H map WR):**
+| Map | My prediction | H2H actual WR (NiP vs Liquid, 6mo) | Error |
+|-----|--------------|--------------------------------------|-------|
+| Nuke | NiP 78% | NiP 23% vs Liquid | -55%!! |
+| Mirage | NiP 62% | NiP 16% vs Liquid | -46%!! |
+| Ancient | NiP 72% | NiP 9% vs Liquid | -63%!! |
+
+**Conclusion:** Overall WR (71%, 56%, 63%) was useless here. Liquid specifically owns NiP on every map.
+
+**bo3.gg detailed ratings (all 3 maps):**
+NiP: xKacpersky 6.9, r1nkle 6.3, cairne 6.2, Snappi 6.1, sjuush 6.0
+Liquid: EliGE 6.0, siuhy 5.5, ultimate 5.5, NAF 5.8, malbsMd 5.2
+Note: Teams were very close in individual ratings — Liquid won through map knowledge, not individual skill.
+
 ---
 
 ### Match 2: MOUZ vs 9z
@@ -181,6 +195,12 @@ MOUZ: xertioN 1.05, Spinx 0.98, Jimpphat 0.95, torzsi 0.91, Brollan 0.75
 **Result:** 9Z 2-1 ✅ (caught the upset!)
 **Correct (series direction):** NO (predicted MOUZ 68%) but value bet on 9z was CORRECT ✅
 **Value bets:** 9z ML @7.60 ✅ WIN | 9z 2-1 @10.40 ✅ WIN
+
+**bo3.gg detailed ratings (all 3 maps):**
+9z: luchov MVP 6.5, dgt 6.4, HUASOPEEK 6.2, meyern 6.1, max 5.0
+MOUZ: xertioN EVP 6.0, Spinx 5.9, torzsi 5.9, Jimpphat 5.7, Brollan 5.0
+Note: Brollan was MOUZ weakest link (5.0 rating). 9z won on Inferno (MOUZ pick!) and Nuke decider.
+Key signal missed: 9z was SA champion, MOUZ had 3 losses to MongolZ recently and looked inconsistent.
 
 ---
 
@@ -249,6 +269,12 @@ Spirit: donk 1.55 (best player in losing team), sh1ro 0.95, zont1x 0.79, tN1R 0.
 **Correct (direction):** NO (predicted Spirit 66%) but underdog value bets CORRECT ✅
 **Value bets:** PARI +1.5 @1.60 ✅ WIN | PARI ML @3.38 ✅ WIN (if bet)
 **Note:** Spirit looked completely lost. donk top-fragged in a loss (1.55). Team chemistry issues visible.
+
+**bo3.gg detailed ratings (both maps):**
+PARI: xiELO MVP 7.5, zweih 7.4, BELCHONOKK 6.6, nota 6.3, Jame 6.3
+Spirit: donk EVP 7.4, sh1ro 5.7, zont1x 5.2, magixx 4.5, tN1R 4.4
+Note: donk (7.4) was best on Spirit but couldn't carry 4 teammates with ratings 4.4-5.7. Classic solo-carry loss.
+PARI all 5 players above 6.0 — balanced team performance. Spirit 3 players below 5.5 — structural problem.
 
 ---
 
@@ -383,15 +409,25 @@ MongolZ: Techno 1.15, cobrazera 0.91, 910 0.84, mzinho 0.65, bLitz 0.50
 
 ### Calibration findings (2026-03-21 session)
 
-**1. Win rates inflated by opponent quality**
+**1. ⭐ CRITICAL: H2H MAP WINRATE beats overall map WR** ← biggest finding of this session
+- bo3.gg shows NiP vs Liquid 6-month H2H map WR:
+  - Nuke: NiP wins only **23%** vs Liquid (I predicted 78%!)
+  - Mirage: NiP wins only **16%** vs Liquid (I predicted 62%!)
+  - Ancient: NiP wins only **9%** vs Liquid (I predicted 72%!)
+- I used overall map WR (NiP 71% Nuke, 63% Ancient) which was inflated by weaker opponents.
+- Liquid specifically has Nuke/Ancient/Mirage figured out against NiP across multiple series.
+- **Rule: ALWAYS check H2H map WR from bo3.gg first. If sample N≥3 maps, use H2H WR over overall WR.**
+
+**2. Win rates inflated by opponent quality**
 - NiP had 63% WR on Ancient (8 maps) → lost 9-13 to Liquid. Small sample vs weak opponents.
 - MongolZ had 64% WR on Mirage → lost 4-13 to Vitality. Sample likely vs CIS/lower tier teams.
 - **Rule:** Weight WR by opponent quality. WR vs top-10 teams only = much more reliable.
 
-**2. H2H is a stronger signal than map WR**
-- NiP had great map stats but Liquid had 4-1 H2H record vs NiP recently. Liquid beat NiP on same maps (Nuke, Mirage, Ancient) in Jan 2026.
+**3. H2H series record predicts map-level results**
+- NiP vs Liquid H2H series: Liquid 4 wins, NiP 1 win (last 5 series)
+- Liquid beat NiP on Nuke, Mirage, Ancient in Jan 2026 series — exact same maps as March 21.
 - PARI had 2-1 H2H vs Spirit (including a win Jan 2026). Spirit looked lost.
-- **Rule:** If H2H < 6 months shows strong pattern → weight it above map WR.
+- **Rule:** If H2H series record < 6 months shows 4-1 or worse → massive flag, recalculate from scratch.
 
 **3. Mirage OT is unpredictable**
 - NiP should have won Mirage (62% model). Lost 17-19 in OT. One round difference.
