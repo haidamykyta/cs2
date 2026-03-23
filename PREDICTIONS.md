@@ -956,9 +956,282 @@ MZ +1.5 was based on a faulty assumption that MZ's Mirage pick would guarantee t
 
 ---
 
-## REVISED MODEL FRAMEWORK (v2.0)
+---
 
-### Step-by-step probability calculation (NEW ORDER):
+## POST-MORTEM: 2026-03-22 BLAST Rotterdam — Full Error Analysis
+
+### ERROR 5: TYLOO vs Falcons (predicted TYLOO 62%, Falcons won 2-1)
+
+| Signal | Data available | What I did | Should have done |
+|--------|---------------|-----------|-----------------|
+| H2H sample quality | Only 2 series, 3 years old, different rosters | Applied H2H 90-96% TYLOO on every map | H2H > 1 year old with different roster = IGNORE ENTIRELY |
+| NiKo event decline | -0.14 at event entering match | Flagged as "declining" → reduced Falcons prob | 1-match decline for 1.13 baseline player = noise |
+| kyousuke event decline | -0.27 at event entering match | Flagged as "2 declining stars" → -6% Falcons | Same: 1.20 baseline player bounces next match |
+| Match result pattern | Inferno ended 16-14 OT (TYLOO won) | N/A (post-match) | OT on TYLOO's own pick = Falcons were more competitive than H2H suggested |
+| Ancient/Mirage result | 13-1 and 13-2 (Falcons dominant) | N/A | Map-by-map performance was split: TYLOO won their pick, Falcons dominated the rest |
+
+**Root cause:** Ancient 13-1 demolition shows Falcons had specific preparation for Ancient. TYLOO literally could not play that map. Ancient was Falcons' surprise pick — we predicted Mirage. This pick showed Falcons had targeted TYLOO's Ancient weakness specifically.
+
+**Key insight:** When a team makes an unexpected pick (Falcons choosing Ancient over Mirage), it almost always means they have specific preparation/intel on that matchup. Surprise picks = red flag for opponent.
+
+---
+
+### ERROR 6: FURIA vs NRG (predicted FURIA 64%, FURIA won 2-1) ← CORRECT DIRECTION
+
+This was a correct prediction. Key validations:
+- nitr0 IGL drag (0.80 event → 0.65 in match) confirmed: team lost structure
+- NRG won Mirage (their pick) as predicted: NRG 60% on own pick = correct
+- FURIA won Nuke 13-2 (dominant on their pick) as predicted
+- NRG +1.5 WON: NRG took 1 map as expected for a balanced team against FURIA
+
+**What would have improved this:** Predicted Anubis as decider, got Dust2. FURIA won Dust2 13-7 easily. Dust2 was the correct ban for NRG but they chose Anubis instead. NRG kept their worst map (Dust2, 6-map losing streak!) in the pool. That was a veto error by NRG that I had flagged correctly.
+
+---
+
+### ERROR 7: MongolZ vs Liquid (predicted Liquid 52.5%, MZ won 2-0)
+
+| Signal | Data available | What I did | Should have done |
+|--------|---------------|-----------|-----------------|
+| MZ fatigue | MZ lost 0-2 to Vitality 12h earlier | Noted as -3% flag | Should have been -5% or more. Back-to-back LAN matches = real physical toll |
+| mzinho event rating | 0.80 at event (from Vitality match) | Flagged correctly as drag | Should NOT have been flagged as structural — 0.80 from single match, 1.02 baseline |
+| bLitz drag | 0.61 event rating | Flagged as structural drag | Valid flag — 0.86 baseline + consistent drag = more reliable signal |
+| Liquid veto deviation | Liquid picked Ancient first (surprise) | N/A (post-match) | Surprise pick by Liquid = they had preparation. They still lost (16-14 OT) |
+| MZ recover signal | MZ won 16-14 OT on Liquid's own pick | N/A | When underdog wins opponent's map in OT = momentum shift, series likely goes their way |
+
+**Root cause #1 — mzinho single-match false flag:** 0.80 in one match against Vitality (world #1 at the time). Next match: 1.27. We applied a penalty for a player who simply had a bad day against a top team.
+
+**Root cause #2 — Liquid +1.5 overconfidence:** We gave Liquid +1.5 @1.54 as "safe bet" but MZ swept 2-0. The issue: Liquid's new roster (malbsMd <5 matches with core) was still finding synergy. We noted this but still gave Liquid 52.5% — should have been closer to 45%.
+
+**The real number:** Liquid new roster + MZ fatigue flags canceled out → should have been 50/50 → no bet.
+
+---
+
+### ERROR 8: Spirit vs 9z (predicted 9z 52%, Spirit won 2-0) ← STRONGEST BET OF DAY
+
+| Signal | Data available | What I did | Should have done |
+|--------|---------------|-----------|-----------------|
+| sh1ro event rating | 0.92 (1 match vs PARI) | Applied Donk Paradox, gave 9z +4% | sh1ro baseline 1.18 → 1-match decline is pure noise |
+| Spirit 0-2 loss to PARI | "Spirit looking structurally broken" | Made 9z favorite (52%) | 1 loss at LAN ≠ structural collapse for top-10 team |
+| donk baseline | 1.40 (3 months) | Noted as "star carrying" | When donk + sh1ro BOTH fire = Spirit 2.0 is different team |
+| 9z Overpass 74% WR | 23 maps, massive sample | Made this primary pick for 9z | Even large WR samples can be overridden by in-form teams |
+| Veto prediction 7/7 | Perfect | Used veto correctly for map probs | Per-map probs were wrong because sh1ro recovery wasn't modeled |
+
+**Root cause: The Donk Paradox was fundamentally wrong here.**
+- PARI match: donk 1.55, magixx 0.59, tN1R 0.67, zont1x 0.79 → FOUR players below 0.80 → structural
+- 9z match: donk 1.78, sh1ro 1.66, magixx 1.32 → NONE below 0.80 → full team firing
+- These were two completely different Spirit teams. The 0.92 sh1ro rating from PARI match was a 1-match anomaly.
+
+**Spirit won 9z's "dominant" Overpass 13-6.** This tells us: when Spirit is in form and sh1ro fires, their raw individual skill dominates map history. 9z's 74% WR on 23 Overpass maps meant nothing against peak-form Spirit.
+
+**Critical realization:** Our model had 9z as a "strongest bet of the day" at 52%, but Spirit were actually ~70-75% favorites. We inverted the probability direction entirely. The PARI match created a false signal that we amplified.
+
+---
+
+## FULL SIGNAL RELIABILITY ANALYSIS — Rotterdam 2026 (8 matches)
+
+### Which signals were reliable vs noise
+
+| Signal | Times used | Times correct | Reliability | Rule |
+|--------|-----------|---------------|-------------|------|
+| H2H Map WR (N≥3, bo3.gg) | 2 | 2 | ⭐⭐⭐⭐⭐ | Primary map probability source |
+| H2H Series record (6 months, same roster) | 4 | 3 | ⭐⭐⭐⭐ | -15% to underdog if 4-1 or worse |
+| IGL event rating < 0.75 | 1 (nitr0) | 1 | ⭐⭐⭐⭐ | -10% to that team |
+| Bookmaker extreme pricing (>85%) | 5 | 4 underdog-side wins | ⭐⭐⭐⭐ | >85% = underdog has real value |
+| Handicap 2-0 rate (>70%) | 1 (Vitality 78.6%) | 1 | ⭐⭐⭐⭐ | Directly predicts clean sweep probability |
+| Solo-carry flag (2+ players <0.75 rating, 2+ consecutive matches) | 1 (PARI vs Spirit) | 1 | ⭐⭐⭐ | Valid but requires 2+ match pattern, not 1 |
+| Overall map WR (N≥8) | 6 | 2 | ⭐⭐ | Unreliable without opponent quality filter |
+| Star player event decline (1 match) | 4 (NiKo, kyousuke, sh1ro, mzinho) | 0 | ❌ | Single-match decline for 1.15+ baseline = noise. SKIP. |
+| Back-to-back fatigue flag | 1 (MZ vs Liquid) | 0 | ❌ | Not enough data. Treat as minor -2% only |
+| Momentum bounce (lost last match, favorite next) | 2 (Spirit bounced, TYLOO bounced) | 2 | ⭐⭐⭐ | Top-level teams reset after losses. Add +5% bounce correction |
+| Surprise veto pick by opponent | 2 (Falcons pick Ancient, Liquid pick Ancient) | 2 | ⭐⭐⭐⭐ | Surprise pick = opponent prepared specifically for this. Treat as +5% to picker |
+
+---
+
+## MODEL FRAMEWORK v3.0 — Full Rebuild
+
+### Core philosophy
+The model was giving too much weight to overall stats and not enough to matchup-specific data. Every probability should be built from H2H-specific data first, then filled with overall data only where H2H is missing.
+
+### Step-by-step probability calculation (v3.0):
+
+```
+STEP 1 — BASELINE (start here)
+──────────────────────────────
+• Start: 50/50
+• Ranking adjustment: +1% per 5 ranking positions gap (max ±15%)
+• Hard cap from ranking alone: 65/35
+• Example: Team A #5 vs Team B #25 = +4% → 54/46 baseline
+
+STEP 2 — H2H SERIES ADJUSTMENT (mandatory, most impactful)
+──────────────────────────────────────────────────────────
+Requirements: same/similar roster, within 6 months
+• 5-0: +25% to dominant team
+• 4-1: +15%
+• 3-2: +5%
+• 2-3: -5%
+• 1-4: -15%
+• 0-5: -25%
+• Roster change (1+ key player): reduce weight by 70%
+• Data >12 months old: SKIP ENTIRELY
+• Small sample (1-2 series): max ±5% (not full weight)
+
+STEP 3 — FORM & MOMENTUM (at current event)
+────────────────────────────────────────────
+• Won 2+ matches at this event 2-0: +5%
+• Won last match 2-0 dominant (avg margin >8 rounds): +3%
+• Lost last match 0-2 convincingly: -3%
+• BOUNCE CORRECTION: lost 0-2 convincingly last match BUT then favorite next? Add +3%
+  (top teams reset between matches, 1 bad match ≠ structural issue)
+• Back-to-back within 12h: -2% (minor fatigue, not decisive)
+• 10+ match win streak (tournament wide): +5%
+
+STEP 4 — PLAYER BALANCE CHECK
+──────────────────────────────
+• IGL event rating < 0.75 (across 2+ matches): -10% to that team [HIGH RELIABILITY]
+• 3+ players event rating < 0.75 for 2+ consecutive matches: -10% [HIGH RELIABILITY]
+• Solo-carry flag (1 player >1.50, 3+ teammates <0.75): -8% [MEDIUM — needs 2+ match pattern]
+• SINGLE MATCH DECLINE: star player (1.15+ baseline) bad in 1 match → NO PENALTY (bounce expected)
+• All 5 players event > 1.05 (2+ matches): +5% balanced unit bonus
+
+STEP 5 — MAP POOL & PER-MAP PROBABILITY
+────────────────────────────────────────
+Per-map calculation (in priority order):
+
+A) SOURCE SELECTION (choose highest available):
+   1. H2H map WR from bo3.gg (N≥3 maps in 6 months, same roster) → USE AS IS
+   2. H2H map WR (N=1-2) → blend: H2H×0.5 + overall×0.5
+   3. Overall WR with quality filter → use only
+
+B) QUALITY FILTER (apply when using overall WR):
+   • If team played >50% of maps vs teams ranked >30: multiply WR toward 50% by 0.8
+     Formula: adj_WR = overall_WR × 0.8 + 0.5 × 0.2
+   • If sample N < 5 maps total: treat as "no data", use 50% as base
+
+C) SURPRISE PICK BONUS:
+   • If a team picks a map unexpectedly (not their historical first pick): +5% to picker
+     (surprise pick = specific preparation for this matchup)
+
+D) IN-FORM MAP BONUS:
+   • If team won 3+ consecutive maps on this specific map at top-level: +3%
+
+E) BO3 MATH (unchanged):
+   P(T1 2-0) = p1 × p2
+   P(T1 2-1) = p1(1-p2)p3 + (1-p1)p2p3
+   P(T2 2-0) = (1-p1)(1-p2)
+   P(T2 2-1) = p1(1-p2)(1-p3) + (1-p1)p2(1-p3)
+
+STEP 6 — HANDICAP DATA INTEGRATION
+────────────────────────────────────
+• Collect from HLTV: team's 2-0 rate, 1-2 rate, avg round differential in wins/losses
+• If team has >70% 2-0 rate: adjust P(2-0) directly from handicap data (not just BO3 math)
+  New P(2-0) = BO3_math_P × 0.5 + handicap_rate × 0.5
+• If team has >40% 1-2 losses: they are fragile under pressure, reduce clean sweep probability
+
+STEP 7 — BOOKMAKER SANITY CHECK (final gate)
+─────────────────────────────────────────────
+• HARD CAP: Maximum 78% for any team at LAN BO3 (no exceptions)
+• If model output > 78%: something is wrong. Re-examine H2H and player data.
+• FAVORITE OVERPRICING TABLE (use to detect value):
+  Bookmaker odds | Implied prob | Realistic max | Edge for underdog
+  @1.05          | 95.2%        | 78%           | Massive (always bet underdog)
+  @1.10          | 90.9%        | 78%           | Large
+  @1.15          | 87.0%        | 78%           | Large
+  @1.20          | 83.3%        | 75%           | Significant
+  @1.25          | 80.0%        | 72%           | Moderate
+  @1.35          | 74.1%        | 68%           | Small
+  @1.50          | 66.7%        | 62%           | Marginal
+  @1.75          | 57.1%        | 55%           | Skip
+• When bookmaker is at >85%, ALWAYS calculate edge for underdog side regardless of model direction
+
+STEP 8 — BET TYPE SELECTION
+────────────────────────────
+Bet types by reliability (from most to least reliable):
+
+✅ BEST: +1.5 on underdog (@1.60-2.33) when edge > 15%
+   → Works when underdog wins their own map pick even if they lose series
+   → Confirmed working: NRG +1.5, PARI +1.5, TYLOO +1.5 (missed), 9z +1.5 (lost - Spirit swept)
+
+✅ GOOD: ML on underdog (@5.00+) when edge > 20%
+   → High variance but positive EV when edge is large
+   → Confirmed: 9z @7.60 WIN, PARI @3.38 WIN
+
+⚠️ RISKY: -1.5 on favorite
+   → Only valid when team has: >70% 2-0 handicap rate + dominant H2H + in form
+   → Vitality would have qualified. Most other teams do NOT.
+
+❌ AVOID: ML on heavy favorite (@<1.35)
+   → 0/5 times these were good value. Never bet.
+
+❌ AVOID: Per-map bets on close maps
+   → OT variance kills edge. Map differential <4 rounds predicted → skip.
+
+VALUE BET TRIGGER RULES:
+• Edge > 25% + underdog ML → bet 3-4% bankroll
+• Edge > 15% + +1.5 maps → bet 2-3% bankroll
+• Edge > 10% + ML → bet 1-2% bankroll
+• Edge < 10% → skip regardless of direction
+```
+
+### Pre-Match Checklist v3.0 (mandatory before every analysis):
+
+```
+DATA COLLECTION:
+[ ] Rosters: use HLTV paste from user, never DB
+[ ] H2H: last 5 series (flag if rosters changed, skip if >12 months)
+[ ] H2H Map WR: bo3.gg, record for each map in pool
+[ ] Overall Map WR: HLTV, note sample size and opponent quality
+[ ] Event ratings: both teams, all players (current vs 3-month)
+[ ] Handicap data: 2-0 rate, 1-2 rate, avg round differential
+[ ] Last 2 matches at this event: who won, by how much
+
+PROBABILITY CALCULATION:
+[ ] Start 50/50 → ranking adjust → H2H series adjust
+[ ] For each likely map: H2H WR > overall WR (if N≥3)
+[ ] Apply quality filter if using overall WR
+[ ] Check surprise pick possibility (team deviating from historical pattern?)
+[ ] Apply player balance check (IGL drag? Solo-carry? Balanced unit?)
+[ ] Apply form/momentum modifier
+[ ] Run BO3 math
+[ ] Apply handicap data to clean sweep probability
+[ ] Sanity check: is result > 78%? If so, recalculate.
+
+VALUE BET ASSESSMENT:
+[ ] Compare final prob to bookmaker implied odds
+[ ] If bookie >85% implied → ALWAYS check underdog edge
+[ ] Calculate Kelly 1/4 sizing for each bet type
+[ ] Select: ML underdog, +1.5 underdog, or skip
+
+RED FLAGS (any of these = reassess prediction):
+[ ] Model gives >78% to one team → overcapped, check H2H
+[ ] H2H shows 4-1 or worse record → underdog is overrated
+[ ] Star player had BAD match yesterday (1.15+ baseline) → bounce coming, don't flag
+[ ] IGL event rating < 0.75 for 2+ matches → -10% to that team
+[ ] Team made surprise veto pick → they have specific prep, give +5% to their maps
+[ ] Team's best map is what they're playing against a team that's 4-1 vs them in H2H → WR is meaningless
+```
+
+### Bet type results tracker (running)
+
+| Bet type | W | L | Win rate | Net P&L |
+|----------|---|---|----------|---------|
+| ML favorite (<1.50) | 0 | 4 | 0% | -12u |
+| ML underdog (>3.00) | 3 | 3 | 50% | +28u |
+| +1.5 underdog | 3 | 2 | 60% | +5u |
+| -1.5 favorite | 0 | 1 | 0% | -2.7u |
+| Per-map | 1 | 2 | 33% | -5u |
+| **TOTAL** | **7** | **12** | **37%** | **~+13u** |
+
+**Conclusion from bet type analysis:**
+- NEVER bet ML on favorite below 1.50 odds
+- Underdog ML at 5.00+ = best EV even at 50% win rate (one win covers 4 losses)
+- +1.5 maps on underdog = most consistent positive EV
+- Focus 80% of bankroll on underdog ML and +1.5 formats
+
+---
+
+## REVISED MODEL FRAMEWORK (v2.0) [DEPRECATED — see v3.0 above]
+
+### Step-by-step probability calculation (OLD - kept for reference):
 
 ```
 1. BASELINE: Glicko-2 rating difference → starting prob (e.g. 60/40)
@@ -1018,11 +1291,16 @@ ODDS SANITY:
 [ ] If edge >10% on underdog → bet even if model direction is wrong
 ```
 
-### Planned improvements
-- [ ] Add opponent-quality-adjusted WR (top-10 only vs all opponents)
-- [ ] Weight H2H last 6 months more heavily (new formula: H2H WR × 0.6 + overall WR × 0.4)
-- [ ] OT flag: don't recommend map handicaps on maps where expected score diff < 3 rounds
-- [ ] Team cohesion metric: if top player swing > +3% and team negative swing → carry flag
-- [ ] Collect 90-day LAN-only stats separately
-- [ ] Vitality 2-0 rate (78.6%) must be input to model — handicap data is underused
-- [ ] Track per-map round handicap stats from HLTV match history
+### Planned improvements (v3.0 — next iteration)
+- [x] H2H map WR > overall WR — IMPLEMENTED in v3.0
+- [x] Bookmaker sanity cap at 78% — IMPLEMENTED in v3.0
+- [x] IGL drag -10% (upgraded from -8%) — IMPLEMENTED in v3.0
+- [x] Star player 1-match decline = noise rule — IMPLEMENTED in v3.0
+- [x] Handicap 2-0 rate integration — IMPLEMENTED in v3.0
+- [x] Surprise veto pick bonus (+5%) — IMPLEMENTED in v3.0
+- [x] Bounce correction for 1 bad match — IMPLEMENTED in v3.0
+- [ ] Opponent-quality WR filter: need way to tag matches by opponent tier in HLTV data
+- [ ] OT prediction: per-map models that flag expected close maps (diff <4 rounds) → avoid per-map bets
+- [ ] LAN vs online split: add `lan_only` filter to all WR calculations
+- [ ] Per-map round differential from handicap HLTV data → improve clean sweep prediction
+- [ ] Add "style clash" factor: aggressive teams vs passive teams on specific maps (e.g. Jame Anubis CT)
