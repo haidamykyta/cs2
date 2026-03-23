@@ -727,9 +727,10 @@ Spirit: donk **1.78** ★, sh1ro **1.66** 🔺🔺🔺 (bounced from 0.92 → 1.
 |------|---------|---------|-------|----------|
 | 2026-03-21 | 4 | 1 (Vitality) | 3 (NiP, MOUZ, Spirit) | 25% |
 | 2026-03-22 | 4 | 1 (FURIA) | 3 (TYLOO, Liquid, 9z) | 25% |
-| **Total** | **8** | **2** | **6** | **25%** |
+| 2026-03-23 | 3 completed | 3 (Falcons, Vitality, NaVi) | 0 | **100%** |
+| **Total** | **11** | **5** | **6** | **45%** |
 
-**Note:** Direction accuracy 25% overall, BUT value bet model is net positive. Model consistently overestimates underdogs and finds value in underdog bets. "Donk Paradox" partially valid but cannot be applied to single-match data for top-level stars (sh1ro, NiKo, kyousuke).
+**Note:** March 23 was the first perfect day. Model v3.0 H2H map WR framework working — correctly identified Falcons map dominance vs FURIA (H2H edge), Vitality structural dominance vs PARI, NaVi series superiority vs Aurora. Value bet model now 7W/7L, net positive.
 
 ### Value Bets Tracking
 | Date | Bet | Odds | Edge | Result | P&L (1u base) |
@@ -750,9 +751,137 @@ Spirit: donk **1.78** ★, sh1ro **1.66** 🔺🔺🔺 (bounced from 0.92 → 1.
 | 2026-03-22 | Liquid +1.5 | 1.54 | +8% | ❌ LOSS (MZ 2-0) | -1.5u |
 | 2026-03-22 | 9z ML | 5.60 | +34.1% ⭐ | ❌ LOSS | -4.5u |
 | 2026-03-22 | 9z +1.5 | ~2.00 | +26% | ❌ LOSS (Spirit 2-0) | -3u |
-| **TOTAL** | | | | **5W / 7L** | **~+15u NET POSITIVE** |
+| 2026-03-23 | Falcons ML | 1.49 | +10.9% ⭐ | ✅ WIN (Falcons 2-1 FURIA) | +1.2u (2.5u stake × 0.49 profit) |
+| 2026-03-23 | Vitality 2-0 | 1.69 | +5.8% | ✅ WIN (Vitality 2-0 PARI) | +1.0u (1.5u stake × 0.69 profit) |
+| **TOTAL** | | | | **7W / 7L** | **~+17u NET POSITIVE** |
 
 Note: TYLOO +1.5 was recommended but listed as "if available at 2.00+" — TYLOO won Inferno 16-14 OT = 1 map taken = +1.5 cashes. This was a missed win from the correct recommendation.
+
+---
+
+## 2026-03-23 — BLAST Open Rotterdam 2026 (LAN, Tier 1)
+
+### Match 9: FURIA vs Falcons
+**Time:** 14:30 | **Format:** BO3 | **Bracket:** Group A lower bracket final (elim)
+
+**Key signals used:**
+- Falcons H2H ban: Overpass (97%) → removes FURIA's only good H2H map (71% FURIA)
+- H2H map WR on remaining: Falcons 79% Mirage, 85%+ Anubis, 90%+ Inferno vs FURIA
+- Falcons model prob: **78%** | Bookmaker: 67.1% implied → **edge +10.9%** ★
+- Bet: Falcons ML @1.49, 2.5% bankroll
+
+**Actual veto:**
+1. Falcons ban: Overpass ✅
+2. FURIA ban: Ancient ✅
+3. Falcons pick: Mirage ✅
+4. FURIA pick: Dust2 ← predicted Nuke, FURIA went Dust2 instead
+5. Falcons ban: Inferno ✅
+6. FURIA ban: Anubis ← predicted Dust2 ban, FURIA chose Anubis
+7. Decider: Nuke ← predicted Anubis, ended up Nuke
+
+**Result: Falcons 2-1 FURIA ✅ BET WON**
+- Mirage: Falcons 13-11 ✅ (Falcons won their pick)
+- Dust2: FURIA 16-13 OT (FURIA won their pick in overtime — very close)
+- Nuke: Falcons 13-10 ✅ (decider won by Falcons)
+
+**Player ratings (3 maps total):**
+| Player (Falcons) | Rating | Player (FURIA) | Rating |
+|---|---|---|---|
+| m0NESY ★ | **1.36** | KSCERATO | **1.19** |
+| kyousuke | 1.03 | yuurih | 1.03 |
+| TeSeS | 0.95 | molodoy | 1.01 |
+| kyxsan | 0.95 | YEKINDAR | 0.98 |
+| NiKo | **0.88** ⚠️ | FalleN | 0.89 |
+
+**Note:** NiKo underperformed (0.88) vs yesterday's 1.43. m0NESY stepped up as the carrier (1.36). Star player rotation between NiKo/m0NESY validated.
+
+**Veto correction:**
+- FURIA chose Dust2 (67% WR) not Nuke (62% WR) — prioritized overall WR over pick rate
+- Our H2H Falcons 92% on Dust2 was overstated — FURIA won Dust2 16-13 OT
+- H2H Dust2 sample was small, inflating Falcons dominance. Nuke and Mirage H2H held.
+
+---
+
+### Match 10: PARIVISION vs Vitality
+**Time:** 17:00 | **Format:** BO3 | **Bracket:** Group B upper bracket final
+
+**Key signals used:**
+- Vitality 13-match win streak, ZywOo+flameZ god mode event ratings (1.79, 1.71)
+- H2H: Vitality 3-0 vs PARI (bo5, 1 month ago)
+- H2H map: PARI ≤30% on every map vs Vitality
+- Vitality 80% 2-0 handicap rate → model: **83%** series, **~65% 2-0**
+- Bet: Vitality 2-0 @1.69, 1.5% bankroll
+
+**Actual veto:**
+1. PARI ban: Nuke ✅
+2. Vitality ban: Ancient ✅
+3. PARI pick: Mirage ← we predicted Vitality picks Dust2 first; PARI went first
+4. Vitality pick: Inferno ← we predicted Vitality picks Dust2, they took Inferno instead
+5. PARI ban: Overpass ✅
+6. Vitality ban: Anubis ✅
+7. Decider: Dust2 (not needed — series ended 2-0)
+
+**Result: Vitality 2-0 PARI ✅ BET WON**
+- Mirage: Vitality 13-9 (Vitality won PARI's own pick!)
+- Inferno: Vitality 16-12 (ZywOo divine ACE 1v5 in R25 to close out)
+- Dust2: Not played
+
+**Player ratings (2 maps):**
+| Player (Vitality) | Rating | Player (PARI) | Rating |
+|---|---|---|---|
+| ZywOo ★ | **1.41** | Jame | 1.10 |
+| flameZ | **1.35** | nota | 0.99 |
+| ropz | 1.17 | BELCHONOKK | 0.95 |
+| mezii | 1.16 | zweih | 0.92 |
+| apEX | 0.89 ⚠️ | xiELO | **0.60** ⚠️⚠️ |
+
+**Note:** xiELO completely bombed (0.60) — we expected him improving (+0.13 event rating) but he was the drag. Jame performed well (1.10) despite pre-match flag. Individual player event ratings can flip rapidly.
+
+**Veto insight:** Vitality didn't take their "safest" map (Dust2 100% WR). They comfortably took Inferno (75% WR) and still won convincingly. Sign of true dominance: winning on non-priority maps without needing your best.
+
+---
+
+### NaVi 2-0 Aurora (match 12, no bet placed)
+**Time:** 12:00 | **Format:** BO3 | **Bracket:** Group A upper bracket final
+
+**Actual veto:**
+1. Aurora ban: Ancient ✅ (predicted)
+2. NaVi ban: Overpass ✅ (predicted)
+3. Aurora pick: Anubis ✅ (predicted)
+4. NaVi pick: Nuke ✅ (predicted)
+5. Aurora ban: Mirage ✅ (predicted)
+6. NaVi ban: Inferno ✅ (predicted)
+7. Dust2 decider (not needed)
+
+**Result: NaVi 2-0 Aurora**
+- Anubis: NaVi 13-8 (NaVi won — H2H dominant)
+- Nuke: NaVi 13-10 ← **COMEBACK from 5-10 in round 16**
+
+**CRITICAL LIVE CALIBRATION:** When MZ watched live, NaVi was 5-10 at round 16 with force buys. HLTV said 79.1% Aurora wins Nuke. NaVi came back 8-3 in second half to win 13-10. Side switch momentum is not captured by mid-round HLTV probability.
+
+**Player ratings (2 maps):**
+| Player (NaVi) | Rating | Player (Aurora) | Rating |
+|---|---|---|---|
+| makazze ★ | **1.42** | woxic | 1.02 |
+| iM | **1.29** | soulfly | 1.00 |
+| Aleksib | 1.06 | Wicadia | 0.90 |
+| w0nderful | 1.03 | MAJ3R | 0.85 |
+| b1t | 0.94 | XANTARES | **0.81** ⚠️ |
+
+Aurora: NO player above 1.02 → team failed to carry. XANTARES underperformed all match as flagged.
+NaVi: balanced unit with 2 stars above 1.25, nobody below 0.90.
+
+---
+
+### Match 11: MongolZ vs Spirit
+**Time:** 19:30 | **Format:** BO3 | **Bracket:** Group B lower bracket final (elim)
+**(Result pending at time of writing — see next update)**
+
+**Pre-match prediction:** Spirit **73%** | MZ 27%
+**Value bet identified:** Spirit 2-0 @2.23, edge +10.2%
+**Live correction (Map 1 completed):** MZ won Nuke 13-11, series 1-0 MZ.
+**Live series revaluation:** MZ 56% series win (Mirage decider = 50/50 H2H, MZ 62% overall WR).
+**Live bet opportunity noted:** MZ series @38¢ Polymarket = +18% edge.
 
 ---
 
@@ -842,6 +971,54 @@ Note: TYLOO +1.5 was recommended but listed as "if available at 2.00+" — TYLOO
 - MZ vs Liquid: predicted MZ picks Mirage first (51% first pick rate), but Liquid went first and took Ancient
 - Reality: Liquid picked Ancient as a surprise choice (MZ was expected to take Ancient as ban)
 - **Rule:** When both teams have high pick-probability on the same 2 maps (MZ: Mirage 51%, Liquid: no clear first pick), predict the team MORE likely to be aggressive picker goes first. Don't assume standard pick order.
+
+### Calibration findings (2026-03-23 session) ← FIRST PERFECT DAY 3/3
+
+**11. ⭐ H2H MAP DOMINANCE = BOOKMAKER BLIND SPOT — Falcons vs FURIA proof**
+- Falcons H2H Mirage vs FURIA: 79%. Falcons H2H Anubis/Inferno/Dust2/Nuke: 85-94%.
+- Bookmaker priced Falcons @1.49 (67% implied). Our model: 78% → edge +10.9%.
+- Root cause: Bookmakers use overall WR. They don't weight H2H map WR specifically.
+- **Rule:** When H2H map WR shows 75%+ for a team on multiple maps (N≥5 combined), the bookmaker is almost certainly underpricing that team. This is the most consistent value bet pattern found so far.
+- Confirmed: 9z vs MOUZ (March 21), Falcons vs FURIA (March 23) — same pattern, same edge.
+
+**12. ⭐ Structural map removal > overall WR — "Forced out of comfort zone" pattern**
+- Falcons bans Overpass vs FURIA 97% of the time. Overpass = FURIA's only map with H2H edge (71%).
+- After Overpass banned: FURIA has NO map where they have H2H advantage vs Falcons.
+- Similar: Vitality bans Ancient vs PARI (PARI's best map 80% WR), Spirit bans Inferno vs MZ.
+- **Rule:** If team A always removes team B's #1 map AND H2H on all remaining maps favors team A → team A is heavily underpriced relative to implied probability. Multiply edge by 1.3x.
+
+**13. Star player carry rotation (NiKo → m0NESY, Falcons)**
+- March 22: NiKo 1.43 (carried vs TYLOO), m0NESY neutral
+- March 23: NiKo 0.88 (below threshold!), m0NESY 1.36 (carried vs FURIA)
+- **Pattern:** Falcons has 2 interchangeable stars (NiKo/m0NESY). When one underperforms, the other steps up. Team resilience — no "solo carry" risk even when NiKo dips.
+- **Rule:** For teams with 2+ 1.15+ rated stars (Falcons: NiKo + m0NESY; Spirit: donk + sh1ro; Vitality: ZywOo + flameZ), never apply solo-carry flag. Both can carry independently.
+
+**14. Individual event ratings lag behind player peak form**
+- xiELO entered match with +0.13 event improvement (1.14). Reality: 0.60 (worst player in match).
+- Pre-match rising event rating does NOT guarantee player will perform. Recent 1-2 match spike ≠ trend.
+- **Rule:** Require 3+ consecutive matches above threshold to call a player "in form." Single or double match improvement = noise.
+
+**15. ⭐ Mid-match probability (HLTV live prob) unreliable at half-time switch**
+- NaVi was 5-10 down on Nuke at round 16. HLTV: 79.1% Aurora wins map. NaVi won 13-10.
+- NaVi made force buys → won a gun round → snowballed second half 8-3.
+- **Rule:** HLTV live probability based on round win probability, NOT economy or side switch. At the half (or just after), ignore live prob and instead assess: which side is each team on? T-side eco snowball is not captured in HLTV win prob.
+- Live bets at round 13-18 based on HLTV prob are the LEAST reliable. Best live bets: start of match or after clear 3-4 round eco break established.
+
+**16. FURIA picks Dust2 not Nuke as second map**
+- We predicted FURIA picks Nuke (62% WR) after Overpass ban. They picked Dust2 (67% WR).
+- FURIA's actual preference hierarchy (after Overpass removal): Dust2 > Nuke by WR
+- Our prediction used first pick% (Inferno 29%) but should have used WR ranking on remaining maps
+- **Rule:** After team's best map is banned, they pick highest WR remaining map, NOT highest historical first pick rate. First pick% is polluted by the fact that the best map isn't available.
+
+**17. H2H Dust2 (Falcons vs FURIA) was overstated**
+- We predicted Falcons 92% on Dust2 in H2H (using 8% FURIA figure from bo3.gg).
+- Reality: FURIA won Dust2 16-13 OT — the "92%" H2H figure was from too small a sample.
+- **Rule:** H2H map WR below N=5 maps played → reduce H2H weight to 0.4 (not 0.7). Small H2H sample = noise.
+
+**18. Vitality wins on non-priority maps = true dominance signal**
+- Vitality took Inferno (75% WR) not Dust2 (100% WR) as their pick. Won anyway.
+- A top-form team winning on their non-signature map signals they're operating at exceptional level.
+- **Rule:** When team wins a match using their 2nd-choice map (not their 100% WR map), add +5% confidence to next match prediction for same event run.
 
 ---
 
