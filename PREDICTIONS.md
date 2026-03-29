@@ -1177,6 +1177,118 @@ PARI: 80.6% → psychological adjustment (-3% Falcons already applied) → PARI 
 
 ---
 
+## 2026-03-29 — BLAST Open Rotterdam 2026 Grand Final (LAN, Tier 1)
+
+### Match 16: Vitality vs Natus Vincere
+**Time:** 12:30 | **Format:** BO5 | **Bracket:** Grand Final
+
+**Составы:**
+Vitality: apEX, ropz, ZywOo, flameZ, mezii
+NaVi: Aleksib, b1t, iM, w0nderful, makazze
+
+**Step 1 — Baseline:** Vitality #1 vs NaVi #5 → +4% → **54/46**
+
+**Step 2 — H2H series (valid <12 months):**
+- 3m ago: Vitality 2-0 NaVi ✅
+- 9m ago: Vitality 2-0 NaVi ✅
+- 1y ago: Vitality 2-1 NaVi ✅ (borderline)
+- 1y ago: Vitality 3-1 NaVi (BO5) ✅ (borderline)
+- 2y ago: Vitality 2-0 NaVi ❌ SKIP (>12 months)
+**Valid: Vitality 4-0** → +20% → **74/26**
+
+**Step 3 — Form:**
+Vitality: 15-match win streak, 100% WR last month → +5%
+NaVi: 83% WR last month, strong SF run → +1%
+Net: +4% → **78%** (hits cap)
+
+**Step 4 — Player balance:**
+| Vitality | 3m | Event | | NaVi | 3m | Event |
+|---|---|---|---|---|---|---|
+| flameZ | 1.31 | **1.62** (+0.31) ★★ | | makazze | 1.17 | **1.26** (+0.09) ↑ |
+| ZywOo | 1.45 | **1.58** (+0.13) ★★ | | iM | 1.07 | **1.20** (+0.13) ↑ |
+| ropz | 1.11 | **1.23** (+0.12) ↑ | | b1t | 1.10 | **1.04** (-0.06) ⚠️ |
+| mezii | 1.06 | **1.11** (+0.05) ↑ | | w0nderful | 1.05 | **1.03** (-0.02) ⚠️ |
+| apEX | 1.00 | **1.04** (+0.04) ↑ | | Aleksib | 0.89 | **0.91** IGL ок |
+
+Vitality: все 5 игроков выше 1.00, оба звезды ≥1.58 → +5% balanced unit (at cap, no adjustment)
+NaVi: ⚠️ **Calibration #34 flag:** w0nderful (7.1 MVP) + b1t (7.1) vs PARI — ожидается post-peak регресс -15-20% каждого → -3% NaVi
+**После Step 4: Vitality ~78% | NaVi ~22%**
+
+**Step 5 — Map Pool (BO5 special):**
+
+BO5 veto: 1 бан каждый → 2 пика каждый → decider → ВСЕ 5 карт играются.
+
+Guaranteed bans:
+- NaVi бан: **Overpass** (93%) → убирает Vitality 100% WR, 9-win streak
+- Vitality бан: **Ancient** (88%) → убирает NaVi 62% WR, лучшую карту
+
+Остаток (все 5 в BO5): Dust2, Nuke, Inferno, Mirage, Anubis
+
+H2H (NaVi win rate vs Vitality) + Calibration #32 (extreme values = small sample → reduced weight):
+| Map | Vit WR | N | Streak | NaVi WR | N | NaVi H2H | H2H weight | P(NaVi) |
+|-----|--------|---|--------|---------|---|----------|-----------|---------|
+| Dust2 | 100% | 9 | ★9-WIN | 64% | 14 | 27% | 0.5 | **30%** |
+| Nuke | 100% | 5 | ★5-WIN | 80% | 5 | 14% | 0.4 (extreme) | **32%** |
+| Inferno | 80% | 10 | ★5-WIN | 60% | 10 | 36% | 0.6 | **36%** |
+| Mirage | 57% | 7 | — | 44% | 18 | 15% | 0.4 (extreme) | **32%** |
+| Anubis | 100% | 3 | — | 50% | 4 | **50%** | 0.6 | **43%** |
+
+Vitality доминирует на ВСЕХ картах. Единственная близкая — Anubis (57/43).
+
+**Predicted BO5 Veto:**
+1. NaVi бан: Overpass ← гарантировано
+2. Vitality бан: Ancient ← гарантировано
+3. **Vitality пик: Dust2** (100% WR, 9-map streak → Calibration #23)
+4. **NaVi пик: Nuke** (80% WR, 5-win streak → Calibration #23 overrides 30% Mirage pick rate)
+5. **Vitality пик: Inferno** (80% WR, 5-win streak)
+6. **NaVi пик: Mirage** (лучшее что осталось, traditional 30% pick)
+7. **Decider: Anubis** (Vitality 100% on 3m, NaVi 50%)
+
+**BO5 Math** (p = P(Vitality wins map)):
+p1(D2)=0.70, p2(NK)=0.68, p3(INF)=0.64, p4(MIR)=0.68, p5(ANB)=0.57
+
+| Score | P |
+|-------|---|
+| Vitality **3-0** | **30.5%** ← самый вероятный исход |
+| Vitality **3-1** | **30.3%** ← 2й вероятный |
+| Vitality 3-2 | 16.4% |
+| NaVi 3-2 | 12.4% |
+| NaVi 3-1 | 6.9% |
+| NaVi 3-0 | 3.5% |
+
+**P(Vitality wins) = 77.2% | P(NaVi wins) = 22.8%**
+
+Vitality 3-0 или 3-1 = **60.8%** — наиболее вероятный путь. Серия до 5 карт только в ~28.8% случаев.
+
+**Step 6 — Handicap:**
+Vitality: 82.4% 2-0 rate (BO3), 0.0% 0-2 losses → полностью совместимо с BO5 math.
+NaVi: 23.8% 1-2 losses + 14.3% 0-2 losses → нестабильность. Путь к победе только через 5 карт.
+
+**Step 7 — Bookmaker + Value:**
+| Ставка | Коэф | Implied | Our P | Edge |
+|--------|------|---------|-------|------|
+| Vitality ML | 1.17 | 85.5% | 77.2% | **-8.3%** ❌ SKIP |
+| **NaVi ML** | **5.10** | **19.6%** | **22.8%** | **+3.2%** ⚠️ близко, НО ниже 5% порога |
+| Vitality 3-0 | 2.53 | 39.5% | 30.5% | -9.0% ❌ |
+| Vitality 3-1 | 3.13 | 31.9% | 30.3% | -1.6% ❌ |
+| Vitality 3-2 | 5.06 | 19.8% | 16.4% | -3.4% ❌ |
+| NaVi 3-2 | 10.00 | 10.0% | 12.4% | +2.4% ⚠️ |
+| NaVi +1.5 карты | 2.72 | 36.8% | 39.2% | +2.4% ⚠️ |
+| Total нечётн (3 или 5) | 1.46 | 68.5% | 62.8% | -5.7% ❌ |
+
+**Рекомендация: СТАВКИ НЕТ — рынок справедливо оценён со стороны андердога**
+> Букмекер завышает Vitality (85.5% vs наши 77.2%), но конвертация в edge NaVi = только +3.2-3.9%. Ниже 5% порога по всем форматам ставок. Рынок корректен — впервые за турнир. Смотреть как чистый анализ без ставки.
+
+**WATCH LIST:**
+- Если NaVi берут Nuke (их пик, 32% vs Vitality) → следить за счётом. Win Nuke = серия становится интереснее
+- Anubis decider = 43% NaVi, наиболее конкурентоспособная карта если дойдёт
+- w0nderful/b1t post-peak регресс → если оба упадут ниже 5.5 → NaVi структурно сломаны
+- flameZ 1.62 event — post-peak риск тоже есть, но ZywOo 1.58 покроет
+
+**Result:** PENDING
+
+---
+
 ## 2026-03-28 — BLAST Open Rotterdam 2026 SF (LAN, Tier 1)
 
 > **No pre-match prediction was made for these matches.** Post-match analysis only — extracting calibration signals and what the model WOULD have predicted.
