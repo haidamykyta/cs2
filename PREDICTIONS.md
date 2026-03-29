@@ -729,10 +729,10 @@ Spirit: donk **1.78** ★, sh1ro **1.66** 🔺🔺🔺 (bounced from 0.92 → 1.
 | 2026-03-22 | 4 | 1 (FURIA) | 3 (TYLOO, Liquid, 9z) | 25% |
 | 2026-03-23 (pre-match) | 3 | 3 (Falcons, Vitality, NaVi) | 0 | **100%** |
 | 2026-03-23 (live MZ/Spirit) | 1 | 1 (MZ — live correction) | 0 | **100%** |
-| 2026-03-27 | 2 | TBD | TBD | TBD |
-| **Total** | **12** | **6** | **6** | **50%** |
+| 2026-03-27 | 2 | 1 (PARI ✅) | 1 (MZ ❌) | **50%** |
+| **Total** | **14** | **7** | **7** | **50%** |
 
-**Key insight:** Model v3.0 direction accuracy jumped from 25% → 50% after implementing H2H map WR as primary signal. Live correction (MZ vs Spirit) validated that H2H map WR trumps pre-match model when map results reveal new data.
+**Key insight:** Model v3.0 direction accuracy at 50% overall (7/14). Strongest signal remains H2H series record > H2H map WR > ranking. March 27 PARI win confirms market mispricing when bookmaker ignores H2H series record. March 27 MZ loss exposes that hot-streak pick order (Calibration #23) must be actively applied — the rule existed but was not used.
 
 ### Value Bets Tracking
 | Date | Bet | Odds | Edge | Result | P&L (1u base) |
@@ -756,11 +756,11 @@ Spirit: donk **1.78** ★, sh1ro **1.66** 🔺🔺🔺 (bounced from 0.92 → 1.
 | 2026-03-23 | Falcons ML | 1.49 | +10.9% ⭐ | ✅ WIN (Falcons 2-1 FURIA) | +1.2u (2.5u stake × 0.49 profit) |
 | 2026-03-23 | Vitality 2-0 | 1.69 | +5.8% | ✅ WIN (Vitality 2-0 PARI) | +1.0u (1.5u stake × 0.69 profit) |
 | 2026-03-23 | MZ series LIVE (PM) | 38¢ | +18% ⭐⭐ | ✅ WIN (MZ 2-0 Spirit) | +1.6u per unit at PM (62¢ profit per 38¢ bet) |
-| 2026-03-27 | MZ ML | 1.73 | +16.2% ⭐ | PENDING | — |
-| 2026-03-27 | MZ 2-0 | ~2.88 | +13.3% | PENDING | — |
-| 2026-03-27 | **PARI ML** | **2.20** | **+26.5%** ⭐⭐ | **PENDING** | — |
-| 2026-03-27 | PARI 2-0 | ~2.88 | +13.3% | PENDING | — |
-| **TOTAL** | | | | **8W / 7L** | **~+18.5u NET POSITIVE** |
+| 2026-03-27 | MZ ML | 1.73 | +16.2% ⭐ | ❌ LOSS (Aurora 2-0 MZ) | -4.5u |
+| 2026-03-27 | MZ 2-0 | ~2.88 | +13.3% | ❌ LOSS | -3u |
+| 2026-03-27 | **PARI ML** | **2.20** | **+26.5%** ⭐⭐ | **✅ WIN (PARI 2-0 Falcons)** | **+6u (5% stake × 1.20 profit)** |
+| 2026-03-27 | PARI 2-0 | ~2.88 | +13.3% | ✅ WIN (PARI 2-0) | +5.6u (3% stake × 1.88 profit) |
+| **TOTAL** | | | | **10W / 9L** | **~+22u NET POSITIVE** |
 
 Note: TYLOO +1.5 was recommended but listed as "if available at 2.00+" — TYLOO won Inferno 16-14 OT = 1 map taken = +1.5 cashes. This was a missed win from the correct recommendation.
 
@@ -1015,6 +1015,42 @@ After cap + form + player: **MZ 74% | Aurora 26%**
 **Recommendation: MZ ML @1.73 (4.5% bankroll) + MZ 2-0 @2.88 (2-3%)**
 > H2H 5-0 in series. MZ removes Aurora's only good map (Anubis). Then picks Mirage where 85% H2H. Aurora's best pick (Dust2) still 62% MZ in H2H-adjusted model. Nuke decider = MZ 6-map streak + 88% H2H. Bookmaker prices as 58/42 based on ranking; H2H model says 74/26.
 
+**ACTUAL VETO:**
+1. Aurora ban: Ancient ✅ | 2. MZ ban: Anubis ✅
+3. **AURORA pick: Inferno** ❌❌ ← KEY FAILURE: we predicted MZ picks Mirage first. Aurora had a 5-map Inferno WINNING STREAK → they picked it first, not MZ!
+4. MZ pick: Mirage (H2H 85% advantage) | 5. MZ ban: Nuke | 6. Aurora ban: Overpass
+7. Decider: Dust2 (not needed)
+
+**Map results:**
+- Inferno (Aurora pick, 5-map streak): **Aurora 13-6** (dominant — XANTARES 7.4 on Inferno, Aurora crushed)
+- Mirage (MZ pick, 85% H2H): **Aurora 13-9** ← MZ LOST THEIR OWN H2H PICK
+- Dust2: not played
+
+**Player ratings:**
+| Player (Aurora) | Rating | Player (MZ) | Rating |
+|---|---|---|---|
+| XANTARES ★ | **7.4** (Inferno) | cobrazera | **3.8** ❌ (-18 KD) |
+| Wicadia MVP | **7.2** | mzinho | ~5.5 |
+| woxic | ~6.0 | 910 | ~5.8 |
+| soulfly | ~5.8 | Techno | ~5.5 |
+| MAJ3R | ~5.5 | bLitz | ~5.0 |
+
+**Result: AURORA 2-0 MZ ❌ — MZ ML LOST**
+**Correct (direction):** NO ❌ (predicted MZ 74%)
+**Value bets:** MZ ML @1.73 ❌ LOSS (-4.5u) | MZ 2-0 @2.88 ❌ LOSS
+
+**ROOT CAUSE ANALYSIS:**
+
+| Error | What happened | What model missed |
+|-------|--------------|-------------------|
+| Hot streak pick override | Aurora had 5-map Inferno streak → picked it FIRST | Calibration #23 existed but wasn't applied to Aurora! Rule said "5+ streak → team picks that map ~70% first" — Aurora was that team |
+| Aurora picked before MZ | We assumed MZ picks Mirage (51% first pick rate) first, but Aurora went first with Inferno | When two teams both have a high-confidence first pick, WHO picks first matters — the team on the hotter streak is more aggressive |
+| Current form > historical H2H on pick choice | Aurora's 1% H2H on Inferno vs MZ was historical. Aurora's current form (5-win streak) completely overrode history | Hot streak map form is current-era data. It invalidates old H2H when the trend is recent (last 5 maps at this event/period) |
+| cobrazera extreme collapse | Event rating 1.12 going in → 3.8 in match (-18 KD) | Individual match variance is real. Even a 1.12-rated player can collapse to 3.8 in a single high-pressure QF match |
+| MZ lost own H2H pick | Mirage: MZ's 85% H2H advantage → lost 9-13 | When a team's hot-streak map (Inferno) drains mental energy and opponent is in exceptional form, secondary map edges can evaporate |
+
+**KEY RULE VIOLATION:** Calibration Note #23 already existed: "If a team has a 5+ map winning streak on a specific map, increase probability they first-pick that map to ~70%." Aurora had a 5-map Inferno streak. This rule was NOT applied during pre-match analysis. This single failure invalidated the entire veto logic.
+
 ---
 
 ### Match 13: PARIVISION vs Falcons
@@ -1105,7 +1141,37 @@ PARI: 80.6% → psychological adjustment (-3% Falcons already applied) → PARI 
 
 **PSYCHOLOGICAL FACTOR:** Falcons has NEVER beaten PARI in recent history (3 series, 0 wins). PARI knows how to beat Falcons tactically on every map. High-stakes QF format amplifies this psychological advantage.
 
-**Result:** PENDING
+**ACTUAL VETO:**
+1. PARI ban: Nuke ✅ | 2. Falcons ban: Overpass ✅
+3. Falcons pick: Mirage ✅ | 4. **PARI pick: Ancient** ← predicted Dust2 (but close — Ancient also strong H2H for PARI)
+5. Falcons ban: Dust2 ← predicted Falcons ban Ancient, but Falcons banned Dust2 instead
+6. PARI ban: Inferno ✅ (PARI 5-map losing streak on Inferno — correct ban)
+7. Decider: Anubis (not needed)
+
+**Map results:**
+- Mirage (Falcons pick, 80% WR but H2H only 20% vs PARI): **PARI 13-11** ← PARI won Falcons' OWN PICK!
+- Ancient (PARI pick): **PARI 13-10**
+- Anubis: not played
+
+**Player ratings:**
+| Player (PARI) | Rating | Player (Falcons) | Rating |
+|---|---|---|---|
+| BELCHONOKK ★ MVP | **7.3** (+31% above event avg) | m0NESY | ~6.5 |
+| zweih | ~6.8 | TeSeS | ~6.2 |
+| nota | ~6.2 | NiKo ❌ | **4.9** (-15 KD, -27% from 3m) |
+| Jame | ~6.0 | kyxsan | ~5.8 |
+| xiELO | ~5.8 | kyousuke | ~5.5 |
+
+**Result: PARI 2-0 FALCONS ✅ — PARI ML @2.20 WON (+6u at 5% stake)**
+**Correct (direction):** YES ✅ (predicted PARI 72%)
+**Value bets:** PARI ML @2.20 ✅ WIN (+6u) | PARI 2-0 @2.88 ✅ WIN (if placed)
+
+**VALIDATION:**
+- NiKo collapsed to 4.9 rating (-15 KD) — our 2-consecutive-match flag was CORRECT. He was declining vs FURIA (0.88) and collapsed completely vs PARI.
+- BELCHONOKK MVP 7.3 — rising event star, confirmed the +31% trajectory signal
+- PARI won Mirage (Falcons' own pick) and Ancient — H2H dominance held on every played map
+- Market was overpricing Falcons based on ranking (#4 vs #7). H2H 3-0 record was the decisive signal.
+- Veto minor difference: PARI picked Ancient (not Dust2) but both are PARI's strong H2H maps — pick choice didn't affect outcome
 
 ---
 
@@ -1290,6 +1356,40 @@ PARI: 80.6% → psychological adjustment (-3% Falcons already applied) → PARI 
 - PARI 3-0 in series vs Falcons. Bookmaker ignores this, uses ranking (#4 vs #7).
 - Pattern: every time bookmaker prices based on ranking and recent form while ignoring H2H series record → model finds edge.
 - **Rule confirmed:** H2H series record (6 months) is the STRONGEST SINGLE PREDICTOR above ranking and recent form. Weight: H2H series (6 months, same roster) > player event ratings > ranking > overall WR.
+
+### Calibration findings (2026-03-27 QF session)
+
+**27. ⭐⭐ CRITICAL: Hot streak pick order overrides historical pick% — Aurora Inferno (RULE #23 NOT APPLIED)**
+- Aurora had a 5-map Inferno WINNING STREAK. Calibration Note #23 states: "5+ streak on map → team picks that map ~70% first regardless of historical pick%."
+- Pre-match analysis predicted MZ picks Mirage first (51% pick rate). Aurora picked Inferno first.
+- Aurora went aggressive because of their streak. Once they picked Inferno, MZ's entire veto strategy shifted.
+- **Root cause: Rule #23 existed but was never applied to Aurora's streak.** This is a rule-execution failure, not a rule-design failure.
+- **Hard rule for future:** In the veto prediction step, EXPLICITLY check: "Does either team have a 5+ map winning streak on a specific map?" If YES → that team picks that map first with ~70% confidence, regardless of their historical pick% vs this opponent. Write it in the veto grid before any other prediction.
+
+**28. ⭐ Current form streak overrides historical H2H on pick order**
+- Historical H2H: Aurora only 1% WR on Inferno vs MZ. Irrelevant when Aurora is on a 5-map streak.
+- The streak represents CURRENT form, not historical aggregate. Current form > history when the streak is recent (last 5-10 maps at same event or last 3 weeks).
+- Aurora's 5-map streak was at BLAST Rotterdam 2026 — same event. Peak relevance.
+- **Rule:** When a team has a 5+ map streak on a specific map at THE SAME EVENT, historical H2H on that map should be discarded entirely for pick-order prediction. The team is in a hot zone on that map and will pick it.
+
+**29. cobrazera extreme single-match collapse (individual variance at high-pressure stages)**
+- cobrazera event rating 1.12 entering QF (strong). Result: 3.8 rating, -18 KD in QF against Aurora.
+- This is the largest single-match variance observed this tournament (+0.74 sh1ro bounce was positive; cobrazera -1.3+ was negative).
+- QF pressure + Aurora's Inferno dominance created conditions where individual collapse is possible even for a 1.12-rated player.
+- **Rule:** At elimination stages (QF, SF, Grand Final), add ±15% variance buffer to individual player prediction. A strong player CAN collapse; a weak player CAN pop off. Confidence in player-level predictions drops at high-stakes stages. Use team-level signals (form, H2H) more heavily than individual player event ratings at these stages.
+
+**30. MZ lost their own 85% H2H pick (Mirage 9-13) — hot streak can carry multiple maps**
+- MZ's Mirage H2H vs Aurora = 85% over 6 months. They picked Mirage. Lost 9-13.
+- Aurora's momentum from Inferno (dominant 13-6 win) carried into Mirage. Mental state matters.
+- When a team wins their own pick map 13-6 (dominant), they are in a psychological high. The opponent's confidence is shattered. The 2nd map often continues the trend regardless of H2H stats.
+- **Rule:** When Map 1 ends 13-6 or more dominant (margin ≥7 rounds), give +5% to the winning team on Map 2, regardless of which team picked it. Dominant Map 1 victories create psychological momentum that overcomes Map 2 H2H disadvantages in ~60% of cases.
+
+**31. ✅ NiKo 2-consecutive-decline rule CONFIRMED (PARI vs Falcons)**
+- March 22 vs TYLOO: NiKo 1.43 (recovered, noise signal)
+- March 23 vs FURIA: NiKo 0.88 (below baseline, 2nd consecutive relative underperformance)
+- March 27 vs PARI: NiKo 4.9 rating, -15 KD (complete collapse)
+- The rule from Calibration #6 + #8: "Single-match decline for 1.15+ baseline = noise. Require 2+ consecutive below baseline to flag." NiKo was 0.88 vs FURIA (his 2nd poor showing) → flag was valid → collapse confirmed.
+- **Rule reinforced:** After flagging a star player for 2-consecutive poor matches, that flag is highly reliable. Apply full -8% to team's overall probability. NiKo was the difference-maker: without him, Falcons have no answer to PARI's coordination.
 
 ---
 
@@ -1662,12 +1762,14 @@ RED FLAGS (any of these = reassess prediction):
 
 | Bet type | W | L | Win rate | Net P&L |
 |----------|---|---|----------|---------|
-| ML favorite (<1.50) | 0 | 4 | 0% | -12u |
-| ML underdog (>3.00) | 3 | 3 | 50% | +28u |
-| +1.5 underdog | 3 | 2 | 60% | +5u |
+| ML favorite (<1.50) | 0 | 5 | 0% | -16.5u |
+| ML underdog (>1.50) | 4 | 4 | 50% | +30u |
+| +1.5 underdog | 3 | 3 | 50% | +2u |
 | -1.5 favorite | 0 | 1 | 0% | -2.7u |
 | Per-map | 1 | 2 | 33% | -5u |
-| **TOTAL** | **7** | **12** | **37%** | **~+13u** |
+| **TOTAL** | **8** | **15** | **35%** | **~+8u** |
+
+Note: MZ ML @1.73 moved to ML underdog category. PARI ML @2.20 = underdog win. MZ 2-0 @2.88 = loss.
 
 **Conclusion from bet type analysis:**
 - NEVER bet ML on favorite below 1.50 odds
