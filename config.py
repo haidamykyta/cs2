@@ -9,11 +9,17 @@ HLTV_DELAY_MS = int(os.getenv("HLTV_DELAY_MS", "2500"))
 DB_PATH = os.getenv("DB_PATH", "data/cs2_matches.db")
 MODELS_DIR = os.getenv("MODELS_DIR", "data/models")
 VALUE_EDGE_THRESHOLD = float(os.getenv("VALUE_EDGE_THRESHOLD", "0.05"))
-KELLY_FRACTION = float(os.getenv("KELLY_FRACTION", "1.0"))          # full Kelly (was 0.25)
+KELLY_FRACTION = float(os.getenv("KELLY_FRACTION", "1.0"))          # full Kelly base
 MIN_BET_PROB = float(os.getenv("MIN_BET_PROB", "0.20"))          # min model prob to bet
 MIN_ODDS_THRESHOLD = float(os.getenv("MIN_ODDS_THRESHOLD", "1.40"))  # min decimal odds
 MAX_ODDS_THRESHOLD = float(os.getenv("MAX_ODDS_THRESHOLD", "2.50"))   # max decimal odds — lowered from 3.00 (backtest: 2.50-3.00 = -13.7% ROI)
-MAX_BET_BANKROLL_PCT = float(os.getenv("MAX_BET_BANKROLL_PCT", "0.25"))  # 25% max per bet (was 3%)
+MAX_BET_BANKROLL_PCT = float(os.getenv("MAX_BET_BANKROLL_PCT", "0.25"))  # 25% max per bet
+
+# Confidence-based Kelly scaling:
+# kelly_safe = full_kelly * conf_mult, where conf_mult ramps from
+# KELLY_CONF_MULT_MIN at MIN_BET_PROB up to 1.0 at KELLY_CONF_HIGH_PROB+
+KELLY_CONF_HIGH_PROB = float(os.getenv("KELLY_CONF_HIGH_PROB", "0.75"))  # prob >= this → full Kelly
+KELLY_CONF_MULT_MIN  = float(os.getenv("KELLY_CONF_MULT_MIN",  "0.25"))  # multiplier at MIN_BET_PROB
 MAX_MARGIN_THRESHOLD = float(os.getenv("MAX_MARGIN_THRESHOLD", "0.07"))  # skip bets where bookmaker margin > 7%
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 

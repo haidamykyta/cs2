@@ -13,7 +13,7 @@ import database as db
 from model import predict_match, predict_map, get_model_meta
 from config import (VALUE_EDGE_THRESHOLD, KELLY_FRACTION,
                     MIN_BET_PROB, MIN_ODDS_THRESHOLD, MAX_ODDS_THRESHOLD, MAX_BET_BANKROLL_PCT,
-                    MAX_MARGIN_THRESHOLD)
+                    MAX_MARGIN_THRESHOLD, KELLY_CONF_HIGH_PROB, KELLY_CONF_MULT_MIN)
 
 logger = logging.getLogger(__name__)
 
@@ -163,7 +163,13 @@ def calculate_value_bet(t1_name: str, t2_name: str,
             and MIN_ODDS_THRESHOLD <= odds <= MAX_ODDS_THRESHOLD
             and (raw_margin is None or raw_margin <= MAX_MARGIN_THRESHOLD)
         )
-        kelly_safe = min(max(kelly * KELLY_FRACTION, 0.0), MAX_BET_BANKROLL_PCT)
+        # Confidence multiplier: ramps from KELLY_CONF_MULT_MIN (at MIN_BET_PROB)
+        # to 1.0 (at KELLY_CONF_HIGH_PROB+). Higher model_prob = bigger bet.
+        prob_range = KELLY_CONF_HIGH_PROB - MIN_BET_PROB
+        conf_mult = KELLY_CONF_MULT_MIN + (1.0 - KELLY_CONF_MULT_MIN) * min(
+            1.0, max(0.0, (model_prob - MIN_BET_PROB) / prob_range)
+        )
+        kelly_safe = min(max(kelly * KELLY_FRACTION * conf_mult, 0.0), MAX_BET_BANKROLL_PCT)
         return ValueBet(
             team1_name=t1["name"],
             team2_name=t2["name"],
