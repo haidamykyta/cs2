@@ -172,7 +172,9 @@ class Bo3Client:
         self._req_count = 0
 
     async def start(self):
-        self.session = aiohttp.ClientSession(headers=HEADERS)
+        # ThreadedResolver uses socket.getaddrinfo — fixes aiohttp DNS failure on Windows
+        connector = aiohttp.TCPConnector(resolver=aiohttp.ThreadedResolver())
+        self.session = aiohttp.ClientSession(headers=HEADERS, connector=connector)
 
     async def close(self):
         if self.session:
