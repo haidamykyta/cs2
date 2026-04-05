@@ -23,13 +23,13 @@ import os
 import argparse
 from datetime import datetime, timedelta, timezone
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from config import DB_PATH
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s %(message)s",
-    handlers=[
-        logging.StreamHandler(),
-        logging.FileHandler(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "bo3gg_import.log")),
-    ]
+    handlers=[logging.StreamHandler()],
 )
 logger = logging.getLogger(__name__)
 
@@ -40,10 +40,6 @@ HEADERS  = {
     "Referer": "https://bo3.gg/ru/",
     "Origin": "https://bo3.gg",
 }
-# DB_PATH comes from config.py → reads DB_PATH env var, defaults to "data/cs2_matches.db"
-# Set on Windows via .env: DB_PATH=C:\path\to\your\data\cs2_matches.db
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from config import DB_PATH
 
 # Map tier names
 TIER_MAP = {"s": "S", "a": "A", "b": "B", "c": "C"}
@@ -144,7 +140,7 @@ def insert_match_odds(conn, match_id: int, odds: dict):
             INSERT OR REPLACE INTO match_odds
               (match_id, bookmaker, team1_odds, team2_odds,
                team1_prob_fair, team2_prob_fair, recorded_at)
-            VALUES (?,?,?,?,datetime('now'),0)
+            VALUES (?,?,?,?,NULL,NULL,datetime('now'))
         """, (match_id, 'bo3gg', odds.get('team1_odds'), odds.get('team2_odds')))
         conn.commit()
     except Exception as e:
