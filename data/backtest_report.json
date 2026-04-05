@@ -1,0 +1,570 @@
+{
+  "period_months": 6,
+  "total_matches": 513,
+  "correct": 476,
+  "accuracy": 92.79,
+  "brier_score": 0.0535,
+  "calibration": [
+    {
+      "pred_center": 0.15,
+      "mean_pred": 0.112,
+      "mean_actual": 0.0,
+      "count": 186
+    },
+    {
+      "pred_center": 0.25,
+      "mean_pred": 0.248,
+      "mean_actual": 0.0,
+      "count": 5
+    },
+    {
+      "pred_center": 0.35,
+      "mean_pred": 0.357,
+      "mean_actual": 0.294,
+      "count": 17
+    },
+    {
+      "pred_center": 0.45,
+      "mean_pred": 0.457,
+      "mean_actual": 0.447,
+      "count": 38
+    },
+    {
+      "pred_center": 0.55,
+      "mean_pred": 0.526,
+      "mean_actual": 0.545,
+      "count": 11
+    },
+    {
+      "pred_center": 0.65,
+      "mean_pred": 0.648,
+      "mean_actual": 0.667,
+      "count": 15
+    },
+    {
+      "pred_center": 0.75,
+      "mean_pred": 0.75,
+      "mean_actual": 0.8,
+      "count": 25
+    },
+    {
+      "pred_center": 0.85,
+      "mean_pred": 0.869,
+      "mean_actual": 1.0,
+      "count": 13
+    },
+    {
+      "pred_center": 0.95,
+      "mean_pred": 0.911,
+      "mean_actual": 1.0,
+      "count": 203
+    }
+  ],
+  "final_bankroll": 1.0,
+  "roi_pct": 0.0,
+  "value_bets_total": 0,
+  "value_bets_correct": 0,
+  "value_accuracy": 0.0,
+  "details": [
+    {
+      "date": "2025-10-07",
+      "team1": "Vitality",
+      "team2": "G2",
+      "team1_prob": 0.912,
+      "predicted": "Vitality",
+      "actual": "Vitality",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-07",
+      "team1": "FaZe",
+      "team2": "Inner Circle",
+      "team1_prob": 0.91,
+      "predicted": "FaZe",
+      "actual": "FaZe",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-08",
+      "team1": "The MongolZ",
+      "team2": "Natus Vincere",
+      "team1_prob": 0.113,
+      "predicted": "Natus Vincere",
+      "actual": "Natus Vincere",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-08",
+      "team1": "G2",
+      "team2": "3DMAX",
+      "team1_prob": 0.487,
+      "predicted": "3DMAX",
+      "actual": "3DMAX",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-08",
+      "team1": "Aurora",
+      "team2": "FaZe",
+      "team1_prob": 0.157,
+      "predicted": "FaZe",
+      "actual": "FaZe",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-10",
+      "team1": "3DMAX",
+      "team2": "Falcons",
+      "team1_prob": 0.106,
+      "predicted": "Falcons",
+      "actual": "Falcons",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-10",
+      "team1": "MOUZ",
+      "team2": "Natus Vincere",
+      "team1_prob": 0.911,
+      "predicted": "MOUZ",
+      "actual": "MOUZ",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-10",
+      "team1": "Spirit",
+      "team2": "FaZe",
+      "team1_prob": 0.179,
+      "predicted": "FaZe",
+      "actual": "FaZe",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-10",
+      "team1": "FURIA",
+      "team2": "Vitality",
+      "team1_prob": 0.436,
+      "predicted": "Vitality",
+      "actual": "Vitality",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-11",
+      "team1": "MOUZ",
+      "team2": "Falcons",
+      "team1_prob": 0.417,
+      "predicted": "Falcons",
+      "actual": "Falcons",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-11",
+      "team1": "FaZe",
+      "team2": "Vitality",
+      "team1_prob": 0.163,
+      "predicted": "Vitality",
+      "actual": "Vitality",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-12",
+      "team1": "FaZe",
+      "team2": "MOUZ",
+      "team1_prob": 0.108,
+      "predicted": "MOUZ",
+      "actual": "MOUZ",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-12",
+      "team1": "Vitality",
+      "team2": "Falcons",
+      "team1_prob": 0.652,
+      "predicted": "Vitality",
+      "actual": "Vitality",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "team1": "3DMAX",
+      "team2": "The Huns",
+      "team1_prob": 0.913,
+      "predicted": "3DMAX",
+      "actual": "3DMAX",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "team1": "GamerLegion",
+      "team2": "Liquid",
+      "team1_prob": 0.11,
+      "predicted": "Liquid",
+      "actual": "Liquid",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "team1": "Virtus.pro",
+      "team2": "Legacy",
+      "team1_prob": 0.104,
+      "predicted": "Legacy",
+      "actual": "Legacy",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "team1": "Lynn Vision",
+      "team2": "MIBR",
+      "team1_prob": 0.11,
+      "predicted": "MIBR",
+      "actual": "MIBR",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "team1": "TYLOO",
+      "team2": "Fluxo",
+      "team1_prob": 0.911,
+      "predicted": "TYLOO",
+      "actual": "TYLOO",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "team1": "paiN",
+      "team2": "fnatic",
+      "team1_prob": 0.113,
+      "predicted": "fnatic",
+      "actual": "fnatic",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "team1": "FaZe",
+      "team2": "FUT",
+      "team1_prob": 0.104,
+      "predicted": "FUT",
+      "actual": "FUT",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "team1": "HEROIC",
+      "team2": "B8",
+      "team1_prob": 0.738,
+      "predicted": "HEROIC",
+      "actual": "HEROIC",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "team1": "GamerLegion",
+      "team2": "Lynn Vision",
+      "team1_prob": 0.117,
+      "predicted": "Lynn Vision",
+      "actual": "Lynn Vision",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "team1": "The Huns",
+      "team2": "Virtus.pro",
+      "team1_prob": 0.107,
+      "predicted": "Virtus.pro",
+      "actual": "Virtus.pro",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "team1": "3DMAX",
+      "team2": "Legacy",
+      "team1_prob": 0.105,
+      "predicted": "Legacy",
+      "actual": "Legacy",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "team1": "Liquid",
+      "team2": "MIBR",
+      "team1_prob": 0.913,
+      "predicted": "Liquid",
+      "actual": "Liquid",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-15",
+      "team1": "Fluxo",
+      "team2": "paiN",
+      "team1_prob": 0.106,
+      "predicted": "paiN",
+      "actual": "paiN",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-15",
+      "team1": "B8",
+      "team2": "FaZe",
+      "team1_prob": 0.106,
+      "predicted": "FaZe",
+      "actual": "FaZe",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-15",
+      "team1": "HEROIC",
+      "team2": "FUT",
+      "team1_prob": 0.65,
+      "predicted": "HEROIC",
+      "actual": "HEROIC",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-15",
+      "team1": "TYLOO",
+      "team2": "fnatic",
+      "team1_prob": 0.107,
+      "predicted": "fnatic",
+      "actual": "fnatic",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-15",
+      "team1": "FURIA",
+      "team2": "OG",
+      "team1_prob": 0.912,
+      "predicted": "FURIA",
+      "actual": "FURIA",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-15",
+      "team1": "MIBR",
+      "team2": "Virtus.pro",
+      "team1_prob": 0.106,
+      "predicted": "Virtus.pro",
+      "actual": "Virtus.pro",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-15",
+      "team1": "3DMAX",
+      "team2": "Lynn Vision",
+      "team1_prob": 0.618,
+      "predicted": "3DMAX",
+      "actual": "3DMAX",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-15",
+      "team1": "The MongolZ",
+      "team2": "9z",
+      "team1_prob": 0.912,
+      "predicted": "The MongolZ",
+      "actual": "The MongolZ",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-15",
+      "team1": "Natus Vincere",
+      "team2": "Imperial",
+      "team1_prob": 0.912,
+      "predicted": "Natus Vincere",
+      "actual": "Natus Vincere",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-16",
+      "team1": "FUT",
+      "team2": "paiN",
+      "team1_prob": 0.913,
+      "predicted": "FUT",
+      "actual": "FUT",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-16",
+      "team1": "TYLOO",
+      "team2": "FaZe",
+      "team1_prob": 0.139,
+      "predicted": "FaZe",
+      "actual": "FaZe",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-16",
+      "team1": "fnatic",
+      "team2": "HEROIC",
+      "team1_prob": 0.106,
+      "predicted": "HEROIC",
+      "actual": "HEROIC",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-16",
+      "team1": "Legacy",
+      "team2": "Liquid",
+      "team1_prob": 0.113,
+      "predicted": "Liquid",
+      "actual": "Liquid",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-16",
+      "team1": "FURIA",
+      "team2": "The MongolZ",
+      "team1_prob": 0.744,
+      "predicted": "FURIA",
+      "actual": "FURIA",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-16",
+      "team1": "FaZe",
+      "team2": "FUT",
+      "team1_prob": 0.104,
+      "predicted": "FUT",
+      "actual": "FUT",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-16",
+      "team1": "3DMAX",
+      "team2": "Virtus.pro",
+      "team1_prob": 0.91,
+      "predicted": "3DMAX",
+      "actual": "3DMAX",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-16",
+      "team1": "OG",
+      "team2": "9z",
+      "team1_prob": 0.108,
+      "predicted": "9z",
+      "actual": "9z",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-16",
+      "team1": "Natus Vincere",
+      "team2": "Aurora",
+      "team1_prob": 0.906,
+      "predicted": "Natus Vincere",
+      "actual": "Natus Vincere",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-17",
+      "team1": "fnatic",
+      "team2": "3DMAX",
+      "team1_prob": 0.256,
+      "predicted": "3DMAX",
+      "actual": "3DMAX",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-17",
+      "team1": "Legacy",
+      "team2": "FUT",
+      "team1_prob": 0.462,
+      "predicted": "FUT",
+      "actual": "Legacy",
+      "correct": false,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-17",
+      "team1": "The MongolZ",
+      "team2": "9z",
+      "team1_prob": 0.912,
+      "predicted": "The MongolZ",
+      "actual": "The MongolZ",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-18",
+      "team1": "Liquid",
+      "team2": "3DMAX",
+      "team1_prob": 0.116,
+      "predicted": "3DMAX",
+      "actual": "3DMAX",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-18",
+      "team1": "HEROIC",
+      "team2": "Legacy",
+      "team1_prob": 0.106,
+      "predicted": "Legacy",
+      "actual": "Legacy",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-18",
+      "team1": "FURIA",
+      "team2": "Aurora",
+      "team1_prob": 0.808,
+      "predicted": "FURIA",
+      "actual": "FURIA",
+      "correct": true,
+      "bankroll": 1.0
+    },
+    {
+      "date": "2025-10-18",
+      "team1": "The MongolZ",
+      "team2": "Natus Vincere",
+      "team1_prob": 0.113,
+      "predicted": "Natus Vincere",
+      "actual": "Natus Vincere",
+      "correct": true,
+      "bankroll": 1.0
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "trained_at": "2026-04-05T15:51:51.642104",
+  "samples": 513,
+  "accuracy_train": 0.9279,
+  "cv_accuracy_mean": 0.8565,
+  "cv_accuracy_std": 0.0375,
+  "brier_score": 0.0535,
+  "features": [
+    "glicko_diff",
+    "glicko_prob",
+    "rd1",
+    "rd2",
+    "form1",
+    "form2",
+    "form1_vs_top20",
+    "form2_vs_top20",
+    "lan_form1",
+    "lan_form2",
+    "avg_rating1",
+    "avg_rating2",
+    "avg_kast1",
+    "avg_kast2",
+    "avg_kd1",
+    "avg_kd2",
+    "h2h_t1_winrate",
+    "ranking_diff",
+    "is_lan",
+    "event_tier",
+    "form_delta",
+    "rating_delta"
+  ]
+}
