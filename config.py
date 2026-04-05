@@ -9,11 +9,11 @@ HLTV_DELAY_MS = int(os.getenv("HLTV_DELAY_MS", "2500"))
 DB_PATH = os.getenv("DB_PATH", "data/cs2_matches.db")
 MODELS_DIR = os.getenv("MODELS_DIR", "data/models")
 VALUE_EDGE_THRESHOLD = float(os.getenv("VALUE_EDGE_THRESHOLD", "0.05"))
-KELLY_FRACTION = float(os.getenv("KELLY_FRACTION", "0.25"))
+KELLY_FRACTION = float(os.getenv("KELLY_FRACTION", "1.0"))          # full Kelly (was 0.25)
 MIN_BET_PROB = float(os.getenv("MIN_BET_PROB", "0.20"))          # min model prob to bet
 MIN_ODDS_THRESHOLD = float(os.getenv("MIN_ODDS_THRESHOLD", "1.40"))  # min decimal odds
 MAX_ODDS_THRESHOLD = float(os.getenv("MAX_ODDS_THRESHOLD", "2.50"))   # max decimal odds — lowered from 3.00 (backtest: 2.50-3.00 = -13.7% ROI)
-MAX_BET_BANKROLL_PCT = float(os.getenv("MAX_BET_BANKROLL_PCT", "0.03"))  # 3% max per bet
+MAX_BET_BANKROLL_PCT = float(os.getenv("MAX_BET_BANKROLL_PCT", "0.25"))  # 25% max per bet (was 3%)
 MAX_MARGIN_THRESHOLD = float(os.getenv("MAX_MARGIN_THRESHOLD", "0.07"))  # skip bets where bookmaker margin > 7%
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 
