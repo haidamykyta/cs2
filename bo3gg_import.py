@@ -4,7 +4,7 @@ Collects CS2 matches from bo3.gg API and saves them into the existing DB schema.
 
 DB_PATH is taken from config.py, which reads the DB_PATH environment variable.
 On Windows, set it in your .env file:
-    DB_PATH=C:\Users\you\projects\cs2\data\cs2_matches.db
+    DB_PATH=C:/Users/you/projects/cs2/data/cs2_matches.db
 
 Usage:
     python bo3gg_import.py --months 6 --tiers s,a --delay 0.4
