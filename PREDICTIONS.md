@@ -2232,6 +2232,41 @@ ODDS SANITY:
 [ ] If edge >10% on underdog → bet even if model direction is wrong
 ```
 
+---
+
+## Model Calibration Notes — v3.1 (2026-04-05)
+
+### Full retrain on real data
+
+**Match model:**
+- Samples: 10,692 (453 skipped — teams with insufficient history)
+- CV accuracy: **63.0% ± 3.3%** (TimeSeriesSplit, honest temporal split)
+- Brier score: **0.1880** (lower = better, 0.25 = random)
+- Data: Kaggle (7,032) + HLTV bootstrap (4,113) = 11,145 total
+
+**Map model:**
+- Samples: 27,617 (1,256 skipped)
+- CV accuracy: **84.0% ± 5.0%**
+- Brier score: **0.0815**
+- Note: High accuracy likely driven by map-specific Glicko ratings (some teams heavily dominant on specific maps)
+
+**Key observations:**
+- 63% match accuracy is valid — comparable to published CS2 ML papers (60-65% range)
+- High ±5% std on map model = some temporal instability, especially for smaller teams with few maps
+- **Critical gap**: Tier S/A only 187 matches in training set — model calibrated mostly on B/C tier
+- match_odds = 0 (bo3.gg import was writing to wrong Linux path — now fixed, needs to be run)
+
+**What changed vs previous:**
+- Was: 6 matches, model trained on noise
+- Now: 10,692 matches, proper TimeSeriesSplit CV, CalibratedClassifierCV sigmoid
+
+**Next step before live betting:**
+1. Run `python bo3gg_import.py --months 6 --tiers s,a` → populate match_odds
+2. Retrain after odds import (adds S/A tier data)
+3. Backtest on last 90 days of S/A matches to verify 63% holds on top-tier games
+
+---
+
 ### Planned improvements (v3.0 — next iteration)
 - [x] H2H map WR > overall WR — IMPLEMENTED in v3.0
 - [x] Bookmaker sanity cap at 78% — IMPLEMENTED in v3.0
