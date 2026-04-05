@@ -11,7 +11,8 @@ from dataclasses import dataclass, field
 
 import database as db
 from model import predict_match, predict_map, get_model_meta
-from config import VALUE_EDGE_THRESHOLD, KELLY_FRACTION
+from config import (VALUE_EDGE_THRESHOLD, KELLY_FRACTION,
+                    MIN_BET_PROB, MIN_ODDS_THRESHOLD, MAX_ODDS_THRESHOLD, MAX_BET_BANKROLL_PCT)
 
 logger = logging.getLogger(__name__)
 
@@ -50,7 +51,8 @@ class ValueBet:
     edge: float
     odds: float
     kelly_full: float
-    kelly_safe: float  # 1/4 Kelly
+    kelly_safe: float  # 1/4 Kelly, capped at MAX_BET_BANKROLL_PCT
+    ev_pct: float      # expected value % = (model_prob * odds - 1) * 100
     is_value: bool
 
 
@@ -150,6 +152,13 @@ def calculate_value_bet(t1_name: str, t2_name: str,
         bm_prob = 1.0 / odds if odds > 1 else 0.5
         edge = model_prob - bm_prob
         kelly = edge / (odds - 1) if odds > 1 else 0.0
+        ev_pct = (model_prob * odds - 1.0) * 100.0
+        is_value = (
+            edge >= VALUE_EDGE_THRESHOLD
+            and model_prob >= MIN_BET_PROB
+            and MIN_ODDS_THRESHOLD <= odds <= MAX_ODDS_THRESHOLD
+        )
+        kelly_safe = min(max(kelly * KELLY_FRACTION, 0.0), MAX_BET_BANKROLL_PCT)
         return ValueBet(
             team1_name=t1["name"],
             team2_name=t2["name"],
@@ -159,8 +168,9 @@ def calculate_value_bet(t1_name: str, t2_name: str,
             edge=round(edge, 4),
             odds=odds,
             kelly_full=round(max(kelly, 0.0), 4),
-            kelly_safe=round(max(kelly * KELLY_FRACTION, 0.0), 4),
-            is_value=edge >= VALUE_EDGE_THRESHOLD,
+            kelly_safe=round(kelly_safe, 4),
+            ev_pct=round(ev_pct, 2),
+            is_value=is_value,
         )
 
     vb1 = _vb(t1["name"], p1, odds1)
@@ -208,9 +218,9 @@ def format_value_bet(vb1: ValueBet, vb2: ValueBet) -> str:
     for vb in (vb1, vb2):
         tag = "✅ VALUE" if vb.is_value else "❌ no edge"
         lines.append(f"{vb.bet_on} @ {vb.odds:.2f} — {tag}")
-        lines.append(f"  Модель: {vb.model_prob:.0%} | Бук: {vb.bookmaker_prob:.0%} | Edge: {vb.edge:+.1%}")
+        lines.append(f"  Модель: {vb.model_prob:.0%} | Бук: {vb.bookmaker_prob:.0%} | Edge: {vb.edge:+.1%} | EV: {vb.ev_pct:+.1f}%")
         if vb.is_value:
-            lines.append(f"  Kelly: {vb.kelly_full:.1%} полный | {vb.kelly_safe:.1%} безопасный (1/4 Kelly)")
+            lines.append(f"  Kelly: {vb.kelly_full:.1%} полный | {vb.kelly_safe:.1%} безопасный (1/4 Kelly, cap 3%)")
         lines.append("")
 
     best = vb1 if (vb1.is_value and vb1.edge >= vb2.edge) else (vb2 if vb2.is_value else None)

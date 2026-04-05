@@ -10,6 +10,10 @@ DB_PATH = os.getenv("DB_PATH", "data/cs2_matches.db")
 MODELS_DIR = os.getenv("MODELS_DIR", "data/models")
 VALUE_EDGE_THRESHOLD = float(os.getenv("VALUE_EDGE_THRESHOLD", "0.05"))
 KELLY_FRACTION = float(os.getenv("KELLY_FRACTION", "0.25"))
+MIN_BET_PROB = float(os.getenv("MIN_BET_PROB", "0.20"))          # min model prob to bet
+MIN_ODDS_THRESHOLD = float(os.getenv("MIN_ODDS_THRESHOLD", "1.40"))  # min decimal odds
+MAX_ODDS_THRESHOLD = float(os.getenv("MAX_ODDS_THRESHOLD", "7.00"))  # max decimal odds
+MAX_BET_BANKROLL_PCT = float(os.getenv("MAX_BET_BANKROLL_PCT", "0.03"))  # 3% max per bet
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 
 # Glicko-2 defaults

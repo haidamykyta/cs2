@@ -121,9 +121,33 @@ def init_db():
             resolved_at     TEXT
         );
 
+        CREATE TABLE IF NOT EXISTS match_odds (
+            id              INTEGER PRIMARY KEY AUTOINCREMENT,
+            match_id        INTEGER REFERENCES matches(id),
+            bookmaker       TEXT NOT NULL,
+            team1_odds      REAL,
+            team2_odds      REAL,
+            team1_prob_fair REAL,   -- Pinnacle fair prob (no margin)
+            team2_prob_fair REAL,
+            recorded_at     TEXT DEFAULT (datetime('now')),
+            UNIQUE(match_id, bookmaker)
+        );
+
+        CREATE TABLE IF NOT EXISTS roster_changes (
+            id              INTEGER PRIMARY KEY AUTOINCREMENT,
+            team_id         INTEGER REFERENCES teams(id),
+            player_name     TEXT,
+            change_type     TEXT,   -- 'join' or 'leave'
+            change_date     TEXT,
+            source          TEXT DEFAULT 'liquipedia',
+            created_at      TEXT DEFAULT (datetime('now'))
+        );
+
         CREATE INDEX IF NOT EXISTS idx_matches_date ON matches(date);
         CREATE INDEX IF NOT EXISTS idx_map_results_match ON map_results(match_id);
         CREATE INDEX IF NOT EXISTS idx_glicko_team_ctx ON glicko_ratings(team_id, context);
+        CREATE INDEX IF NOT EXISTS idx_match_odds_match ON match_odds(match_id);
+        CREATE INDEX IF NOT EXISTS idx_roster_team ON roster_changes(team_id, change_date);
         """)
 
 
@@ -378,3 +402,58 @@ def get_prediction_stats():
             WHERE correct IS NOT NULL
         """).fetchone()
         return dict(row) if row else {"total": 0, "wins": 0, "accuracy": 0.0}
+
+
+# ── Match Odds ────────────────────────────────────────────────────────────────
+
+def upsert_match_odds(match_id: int, bookmaker: str, team1_odds: float, team2_odds: float,
+                      team1_prob_fair: float = None, team2_prob_fair: float = None):
+    """Insert or update bookmaker odds for a match."""
+    with get_conn() as conn:
+        conn.execute("""
+            INSERT INTO match_odds (match_id, bookmaker, team1_odds, team2_odds,
+                                    team1_prob_fair, team2_prob_fair, recorded_at)
+            VALUES (?, ?, ?, ?, ?, ?, datetime('now'))
+            ON CONFLICT(match_id, bookmaker) DO UPDATE SET
+                team1_odds=excluded.team1_odds,
+                team2_odds=excluded.team2_odds,
+                team1_prob_fair=excluded.team1_prob_fair,
+                team2_prob_fair=excluded.team2_prob_fair,
+                recorded_at=excluded.recorded_at
+        """, (match_id, bookmaker, team1_odds, team2_odds, team1_prob_fair, team2_prob_fair))
+
+
+def get_match_odds(match_id: int, bookmaker: str = "pinnacle"):
+    """Get odds for a match from specific bookmaker."""
+    with get_conn() as conn:
+        row = conn.execute(
+            "SELECT * FROM match_odds WHERE match_id=? AND bookmaker=?",
+            (match_id, bookmaker)
+        ).fetchone()
+        return dict(row) if row else None
+
+
+# ── Roster Changes ────────────────────────────────────────────────────────────
+
+def insert_roster_change(team_id: int, player_name: str, change_type: str,
+                         change_date: str, source: str = "liquipedia"):
+    with get_conn() as conn:
+        conn.execute("""
+            INSERT OR IGNORE INTO roster_changes
+              (team_id, player_name, change_type, change_date, source)
+            VALUES (?, ?, ?, ?, ?)
+        """, (team_id, player_name, change_type, change_date, source))
+
+
+def get_roster_age_days(team_id: int) -> int:
+    """Days since the last roster change for this team. Returns 999 if no data."""
+    with get_conn() as conn:
+        row = conn.execute("""
+            SELECT change_date FROM roster_changes
+            WHERE team_id=?
+            ORDER BY change_date DESC LIMIT 1
+        """, (team_id,)).fetchone()
+        if not row:
+            return 999
+        last = datetime.fromisoformat(row["change_date"])
+        return (datetime.utcnow() - last).days

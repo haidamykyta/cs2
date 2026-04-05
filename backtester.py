@@ -20,7 +20,8 @@ import numpy as np
 
 import database as db
 from model import predict_match, _refresh_glicko_ratings
-from config import DB_PATH, VALUE_EDGE_THRESHOLD, KELLY_FRACTION
+from config import (DB_PATH, VALUE_EDGE_THRESHOLD, KELLY_FRACTION,
+                    MIN_BET_PROB, MIN_ODDS_THRESHOLD, MAX_ODDS_THRESHOLD, MAX_BET_BANKROLL_PCT)
 
 logger = logging.getLogger(__name__)
 
@@ -76,6 +77,26 @@ def run_backtest(months: int = 3) -> dict:
         total += 1
         correct += int(is_correct)
 
+        # Simulate value bet with fair odds (conservative — will improve once match_odds table is filled)
+        sim_prob = p1 if predicted_team1 else (1.0 - p1)
+        sim_odds = round(1.0 / sim_prob, 2) if sim_prob > 0 else 2.0
+        bm_prob_sim = 1.0 / sim_odds if sim_odds > 1 else 0.5
+        edge_sim = sim_prob - bm_prob_sim
+        is_value_sim = (
+            edge_sim >= VALUE_EDGE_THRESHOLD
+            and sim_prob >= MIN_BET_PROB
+            and MIN_ODDS_THRESHOLD <= sim_odds <= MAX_ODDS_THRESHOLD
+        )
+        if is_value_sim:
+            kelly = edge_sim / (sim_odds - 1) if sim_odds > 1 else 0.0
+            bet_size = min(max(kelly * KELLY_FRACTION, 0.0), MAX_BET_BANKROLL_PCT) * bankroll
+            if is_correct:
+                bankroll += bet_size * (sim_odds - 1)
+            else:
+                bankroll -= bet_size
+            value_bets += 1
+            value_correct += int(is_correct)
+
         results.append({
             "date": row["date"][:10],
             "team1": row["t1_name"],
@@ -84,8 +105,9 @@ def run_backtest(months: int = 3) -> dict:
             "predicted": row["t1_name"] if predicted_team1 else row["t2_name"],
             "actual": row["t1_name"] if team1_won else row["t2_name"],
             "correct": is_correct,
+            "bankroll": round(bankroll, 4),
         })
-        bankroll_history.append(bankroll)
+        bankroll_history.append(round(bankroll, 4))
 
     # Brier score
     if results:
