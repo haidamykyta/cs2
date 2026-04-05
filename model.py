@@ -78,6 +78,7 @@ def _prepare_match_dataset():
         JOIN teams t1 ON m.team1_id = t1.id
         JOIN teams t2 ON m.team2_id = t2.id
         WHERE m.winner_id IS NOT NULL
+          AND m.event_tier IN ('S', 'A')
         ORDER BY m.date ASC
     """).fetchall()
     conn.close()
@@ -117,6 +118,7 @@ def _prepare_map_dataset():
         FROM map_results mr
         JOIN matches m ON mr.match_id = m.id
         WHERE mr.winner_id IS NOT NULL
+          AND m.event_tier IN ('S', 'A')
         ORDER BY m.date ASC
     """).fetchall()
     conn.close()

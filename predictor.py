@@ -12,7 +12,8 @@ from dataclasses import dataclass, field
 import database as db
 from model import predict_match, predict_map, get_model_meta
 from config import (VALUE_EDGE_THRESHOLD, KELLY_FRACTION,
-                    MIN_BET_PROB, MIN_ODDS_THRESHOLD, MAX_ODDS_THRESHOLD, MAX_BET_BANKROLL_PCT)
+                    MIN_BET_PROB, MIN_ODDS_THRESHOLD, MAX_ODDS_THRESHOLD, MAX_BET_BANKROLL_PCT,
+                    MAX_MARGIN_THRESHOLD)
 
 logger = logging.getLogger(__name__)
 
@@ -148,6 +149,9 @@ def calculate_value_bet(t1_name: str, t2_name: str,
 
     p1, p2 = result["team1_prob"], result["team2_prob"]
 
+    # Bookmaker margin: (1/o1 + 1/o2) - 1 — e.g. 0.058 = 5.8% vig
+    raw_margin = round(1/odds1 + 1/odds2 - 1, 4) if odds1 > 1 and odds2 > 1 else None
+
     def _vb(team_name, model_prob, odds) -> ValueBet:
         bm_prob = 1.0 / odds if odds > 1 else 0.5
         edge = model_prob - bm_prob
@@ -157,6 +161,7 @@ def calculate_value_bet(t1_name: str, t2_name: str,
             edge >= VALUE_EDGE_THRESHOLD
             and model_prob >= MIN_BET_PROB
             and MIN_ODDS_THRESHOLD <= odds <= MAX_ODDS_THRESHOLD
+            and (raw_margin is None or raw_margin <= MAX_MARGIN_THRESHOLD)
         )
         kelly_safe = min(max(kelly * KELLY_FRACTION, 0.0), MAX_BET_BANKROLL_PCT)
         return ValueBet(
