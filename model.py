@@ -12,7 +12,7 @@ Models are saved as .joblib files with versioned metadata JSON.
 import os
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional
 
 import numpy as np
@@ -50,7 +50,6 @@ def _make_xgb() -> XGBClassifier:
         min_child_weight=3,
         reg_alpha=0.1,
         reg_lambda=1.0,
-        use_label_encoder=False,
         eval_metric="logloss",
         random_state=42,
         n_jobs=-1,
@@ -236,7 +235,7 @@ def train_match_model() -> dict:
 
     meta = {
         "version": MATCH_MODEL_VERSION,
-        "trained_at": datetime.utcnow().isoformat(),
+        "trained_at": datetime.now(timezone.utc).isoformat(),
         "samples": len(X),
         "accuracy_train": round(acc, 4),
         "cv_accuracy_mean": round(float(cv_scores.mean()), 4),
@@ -273,7 +272,7 @@ def train_map_model() -> dict:
 
     meta = {
         "version": MAP_MODEL_VERSION,
-        "trained_at": datetime.utcnow().isoformat(),
+        "trained_at": datetime.now(timezone.utc).isoformat(),
         "samples": len(X),
         "accuracy_train": round(acc, 4),
         "cv_accuracy_mean": round(float(cv_scores.mean()), 4),
