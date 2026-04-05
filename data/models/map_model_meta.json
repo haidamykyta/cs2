@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "trained_at": "2026-04-05T16:32:07.803706",
-  "samples": 27617,
-  "accuracy_train": 0.8827,
-  "cv_accuracy_mean": 0.8398,
-  "cv_accuracy_std": 0.0503,
-  "brier_score": 0.0815,
+  "trained_at": "2026-04-05T16:43:27.482312+00:00",
+  "samples": 2429,
+  "accuracy_train": 0.949,
+  "cv_accuracy_mean": 0.9099,
+  "cv_accuracy_std": 0.0252,
+  "brier_score": 0.035,
   "features": [
     "glicko_diff",
     "glicko_prob",
