@@ -139,18 +139,26 @@ def insert_match_odds(conn, match_id: int, odds: dict):
         t1 = odds.get('team1_odds')
         t2 = odds.get('team2_odds')
         # Remove vig: fair prob = (1/odds) / (1/odds1 + 1/odds2)
-        if t1 and t2 and t1 > 1 and t2 > 1:
-            total = 1/t1 + 1/t2
-            t1_fair = round((1/t1) / total, 4)
-            t2_fair = round((1/t2) / total, 4)
+        # raw_margin = 1/o1 + 1/o2 - 1  (e.g. 0.05 = 5% margin)
+        # Sanity check: odds of 1.001 are placeholders (bo3.gg not yet received real line)
+        # Also skip if margin > 30% — clearly bad data
+        if t1 and t2 and t1 > 1.01 and t2 > 1.01:
+            overround = 1/t1 + 1/t2
+            margin = round(overround - 1, 4)
+            if margin > 0.30:  # > 30% margin = garbage data
+                t1_fair = t2_fair = raw_margin = None
+            else:
+                t1_fair = round((1/t1) / overround, 4)
+                t2_fair = round((1/t2) / overround, 4)
+                raw_margin = margin
         else:
-            t1_fair = t2_fair = None
+            t1_fair = t2_fair = raw_margin = None
         conn.execute("""
             INSERT OR REPLACE INTO match_odds
               (match_id, bookmaker, team1_odds, team2_odds,
-               team1_prob_fair, team2_prob_fair, recorded_at)
-            VALUES (?,?,?,?,?,?,datetime('now'))
-        """, (match_id, 'bo3gg', t1, t2, t1_fair, t2_fair))
+               team1_prob_fair, team2_prob_fair, raw_margin, recorded_at)
+            VALUES (?,?,?,?,?,?,?,datetime('now'))
+        """, (match_id, 'bo3gg', t1, t2, t1_fair, t2_fair, raw_margin))
         conn.commit()
     except Exception as e:
         logger.warning("odds insert error: %s", e)

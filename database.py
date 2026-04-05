@@ -127,8 +127,9 @@ def init_db():
             bookmaker       TEXT NOT NULL,
             team1_odds      REAL,
             team2_odds      REAL,
-            team1_prob_fair REAL,   -- Pinnacle fair prob (no margin)
+            team1_prob_fair REAL,   -- vig-removed fair prob
             team2_prob_fair REAL,
+            raw_margin      REAL,   -- bookmaker margin: (1/o1 + 1/o2 - 1), e.g. 0.05 = 5%
             recorded_at     TEXT DEFAULT (datetime('now')),
             UNIQUE(match_id, bookmaker)
         );
@@ -173,6 +174,23 @@ def init_db():
         CREATE INDEX IF NOT EXISTS idx_roster_team ON roster_changes(team_id, change_date);
         CREATE INDEX IF NOT EXISTS idx_rolling_date ON match_rolling_features(date, t1_name, t2_name);
         """)
+
+    # ── Migrations: add columns to existing DBs safely ──────────────────────
+    _run_migrations()
+
+
+def _run_migrations():
+    """Apply schema migrations on existing databases (safe to re-run)."""
+    migrations = [
+        # 2026-04-05: add raw_margin to match_odds
+        "ALTER TABLE match_odds ADD COLUMN raw_margin REAL",
+    ]
+    with get_conn() as conn:
+        for sql in migrations:
+            try:
+                conn.execute(sql)
+            except Exception:
+                pass  # column already exists — skip silently
 
 
 # ── Teams ────────────────────────────────────────────────────────────────────
@@ -431,20 +449,36 @@ def get_prediction_stats():
 # ── Match Odds ────────────────────────────────────────────────────────────────
 
 def upsert_match_odds(match_id: int, bookmaker: str, team1_odds: float, team2_odds: float,
-                      team1_prob_fair: float = None, team2_prob_fair: float = None):
-    """Insert or update bookmaker odds for a match."""
+                      team1_prob_fair: float = None, team2_prob_fair: float = None,
+                      raw_margin: float = None):
+    """
+    Insert or update bookmaker odds for a match.
+    raw_margin = overround - 1 = (1/o1 + 1/o2) - 1
+    E.g. odds 1.91/1.91 → margin = 0.0471 (4.71%)
+    Filter out high-margin lines: WHERE raw_margin <= 0.05
+    """
+    # Auto-compute margin if not provided
+    if raw_margin is None and team1_odds and team2_odds and team1_odds > 1 and team2_odds > 1:
+        raw_margin = round(1/team1_odds + 1/team2_odds - 1, 4)
+    # Auto-compute fair probs if not provided
+    if team1_prob_fair is None and team1_odds and team2_odds and team1_odds > 1 and team2_odds > 1:
+        overround = 1/team1_odds + 1/team2_odds
+        team1_prob_fair = round((1/team1_odds) / overround, 4)
+        team2_prob_fair = round((1/team2_odds) / overround, 4)
     with get_conn() as conn:
         conn.execute("""
             INSERT INTO match_odds (match_id, bookmaker, team1_odds, team2_odds,
-                                    team1_prob_fair, team2_prob_fair, recorded_at)
-            VALUES (?, ?, ?, ?, ?, ?, datetime('now'))
+                                    team1_prob_fair, team2_prob_fair, raw_margin, recorded_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, datetime('now'))
             ON CONFLICT(match_id, bookmaker) DO UPDATE SET
                 team1_odds=excluded.team1_odds,
                 team2_odds=excluded.team2_odds,
                 team1_prob_fair=excluded.team1_prob_fair,
                 team2_prob_fair=excluded.team2_prob_fair,
+                raw_margin=excluded.raw_margin,
                 recorded_at=excluded.recorded_at
-        """, (match_id, bookmaker, team1_odds, team2_odds, team1_prob_fair, team2_prob_fair))
+        """, (match_id, bookmaker, team1_odds, team2_odds,
+               team1_prob_fair, team2_prob_fair, raw_margin))
 
 
 def get_match_odds(match_id: int, bookmaker: str = "pinnacle"):
