@@ -2,9 +2,15 @@
 bo3.gg → SQLite importer
 Collects CS2 matches from bo3.gg API and saves them into the existing DB schema.
 
+DB_PATH is taken from config.py, which reads the DB_PATH environment variable.
+On Windows, set it in your .env file:
+    DB_PATH=C:\Users\you\projects\cs2\data\cs2_matches.db
+
 Usage:
     python bo3gg_import.py --months 6 --tiers s,a --delay 0.4
-    python bo3gg_import.py --months 3 --tiers s     (quick test, ~1000 matches)
+    python bo3gg_import.py --months 3 --tiers s     (quick test, ~600 matches)
+    python bo3gg_import.py --months 6 --tiers b     (Tier B, ~1500 matches)
+    python bo3gg_import.py --months 12 --tiers s,a  (full year Tier S+A)
 """
 
 import asyncio
@@ -22,7 +28,7 @@ logging.basicConfig(
     format="%(asctime)s %(levelname)s %(message)s",
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler("/home/user/workspace/cs2-bot/data/bo3gg_import.log"),
+        logging.FileHandler(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "bo3gg_import.log")),
     ]
 )
 logger = logging.getLogger(__name__)
@@ -34,7 +40,10 @@ HEADERS  = {
     "Referer": "https://bo3.gg/ru/",
     "Origin": "https://bo3.gg",
 }
-DB_PATH  = "/home/user/workspace/cs2-bot/data/cs2_matches.db"
+# DB_PATH comes from config.py → reads DB_PATH env var, defaults to "data/cs2_matches.db"
+# Set on Windows via .env: DB_PATH=C:\path\to\your\data\cs2_matches.db
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from config import DB_PATH
 
 # Map tier names
 TIER_MAP = {"s": "S", "a": "A", "b": "B", "c": "C"}
