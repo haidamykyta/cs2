@@ -349,13 +349,27 @@ if __name__ == "__main__":
     import logging
     logging.basicConfig(level=logging.WARNING)  # suppress INFO spam
 
-    raw_path = os.path.join(os.path.dirname(__file__), "match_list_raw.txt")
-    if not os.path.exists(raw_path):
-        print(f"ERROR: {raw_path} not found")
-        sys.exit(1)
+    base = os.path.dirname(__file__)
+    raw_files = [
+        os.path.join(base, "match_list_raw.txt"),
+        os.path.join(base, "match_list_raw2.txt"),
+    ]
 
-    matches = parse_matches(raw_path)
-    print(f"Parsed {len(matches)} matches with odds from match_list_raw.txt")
+    all_matches_raw = []
+    for f in raw_files:
+        if os.path.exists(f):
+            all_matches_raw.extend(parse_matches(f))
+
+    # Deduplicate by (t1, t2, t1_score, t2_score, tournament[:20])
+    seen = set()
+    matches = []
+    for m in all_matches_raw:
+        key = (m["t1"], m["t2"], m["t1_score"], m["t2_score"], m["tournament"][:25])
+        if key not in seen:
+            seen.add(key)
+            matches.append(m)
+
+    print(f"Parsed {len(matches)} unique matches (from {len(all_matches_raw)} total across {len(raw_files)} files)")
 
     # Quick sanity check — show first 5
     print("\nFirst 5 matches:")

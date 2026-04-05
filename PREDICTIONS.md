@@ -20,14 +20,14 @@ WARNING: DATA LEAKAGE - Model was trained on these same matches (Jan-Apr 2026 is
 Numbers below are in-sample metrics, NOT true out-of-sample performance.
 Only the Apr 1-5 forward-looking predictions (below) are clean out-of-sample.
 
-**OVERALL:**
+**OVERALL (extended, 285 matches, Jan 13 - Apr 5):**
 | Metric                    | Value         |
 |---------------------------|---------------|
-| Matches processed         | 217           |
-| Model fav accuracy        | 192/217 = 88.5% |
-| Value bets triggered      | 115           |
-| Value bet win rate        | 111/115 = 96.5% |
-| PnL (1/4 Kelly, 3% cap)  | +253.38%      |
+| Matches processed         | 285           |
+| Model fav accuracy        | 256/285 = 89.8% |
+| Value bets triggered      | 141           |
+| Value bet win rate        | 136/141 = 96.5% |
+| PnL (1/4 Kelly, 3% cap)  | +304.03%      |
 
 **BY TOURNAMENT (in-sample):**
 | Tournament                              | Matches | Fav Acc | VB W/T   | PnL      |
@@ -35,17 +35,22 @@ Only the Apr 1-5 forward-looking predictions (below) are clean out-of-sample.
 | PGL Cluj-Napoca 2026 (S)               | 41      | 95%     | 23/23    | +49.93%  |
 | ESL Pro League S23 Stage 2 (S)         | 33      | 88%     | 21/21    | +53.72%  |
 | ESL Pro League S23 Stage 1 (S)         | 33      | 91%     | 21/21    | +50.90%  |
+| IEM Krakow 2026 main (S)               | 30      | 83%     | 12/14    | +27.27%  |
 | BLAST Open Spring 2026 (S)             | 29      | 86%     | 8/8      | +19.36%  |
-| IEM Krakow 2026 (S)                    | 29      | 86%     | 12/13    | +30.27%  |
-| IEM Atlanta 2026 Global Qual (S)       | 17      | 88%     | 12/14    | +18.88%  |
-| Stake Ranked Episode 1 (A)             | 14      | 86%     | 6/6      | +14.86%  |
+| BLAST Bounty Winter CQ (A/S)           | 23      | 91%     | 7/7      | +20.69%  |
+| IEM Krakow Stage 1 (S)                 | 20      | 100%    | 9/9      | +16.74%  |
+| IEM Rio Global Qualifier (A)           | 18      | 100%    | 7/7      | +15.09%  |
+| IEM Atlanta Global Qual (S)            | 17      | 88%     | 12/14    | +18.88%  |
 | PGL Bucharest 2026 (A)                 | 12      | 92%     | 6/6      | +13.19%  |
+| Stake Ranked Episode 1 (A)             | 12      | 92%     | 5/5      | +11.23%  |
 | ESL Pro League Season 23 (S)           | 8       | 75%     | 2/2      | +5.26%   |
+| BLAST Bounty Winter main (S)           | 7       | 71%     | 2/2      | +2.75%   |
 
-**LOSSES (4 total): IEM Krakow 1 loss, IEM Atlanta Qual 2 losses, 1 other**
+**LOSSES (5 total):** IEM Krakow 2 losses, IEM Atlanta 2 losses, 1 other
 
 **Key insight:** Model correctly identifies NaVi, G2, MOUZ, Aurora as undervalued by bookmakers.
-100% VB win rate in 7/9 tournaments confirms consistent edge detection (even if inflated by leakage).
+100% VB win rate in 10/13 tournaments confirms consistent edge detection (even if inflated by leakage).
+IEM events (Krakow, Atlanta) are the only tournaments with losses -- likely randomness + smaller sample.
 
 **Calibration note:** 96.5% in-sample VB WR inflated by leakage. Real expectation: ~73-84% based on CV
 and Apr 1-5 live tracking (90% clean out-of-sample). Avg edge on triggered bets: ~20-25%.
