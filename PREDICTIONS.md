@@ -731,10 +731,11 @@ Spirit: donk **1.78** ★, sh1ro **1.66** 🔺🔺🔺 (bounced from 0.92 → 1.
 | 2026-03-23 (live MZ/Spirit) | 1 | 1 (MZ — live correction) | 0 | **100%** |
 | 2026-03-27 | 2 | 1 (PARI ✅) | 1 (MZ ❌) | **50%** |
 | 2026-03-28 | 2 | — (no prediction made) | — | **N/A** |
-| **Total (predictions only)** | **14** | **7** | **7** | **50%** |
+| 2026-03-29 | 1 | 1 (Vitality ✅, 3-0 score also correct) | 0 | **100%** |
+| **Total (predictions only)** | **15** | **8** | **7** | **53.3%** |
 | **Retro model check (March 28)** | 2 | 2 (Vitality ✅, NaVi ✅) | 0 | **100%** |
 
-**Key insight:** Model v3.0 direction accuracy at 50% overall (7/14 predicted matches). Retroactive check on March 28 shows model would have called both correctly (Vitality 78%, NaVi 56%). Critical lesson from March 28: extreme H2H map WR (<10%) = small sample trap. NaVi won Dust II (0% H2H) and Mirage (2% H2H) — both were N=1 sample maps. H2H series record (NaVi 2-0) was the correct signal, not map-level percentages.
+**Key insight:** Model v3.0 direction accuracy at 53.3% overall (8/15 predicted). March 29 GF: Vitality 3-0 confirmed both direction (77% model) and score (30.5% probability). "No bet" call was also correct — NaVi ML edge was only +3.2% which would have been a losing side-bet in a 3-0. Bookmaker 3-0 @2.53 was overpriced by -9% vs model — correctly skipped. Tournament ends: 8 correct directions out of 15 predicted matches.
 
 ### Value Bets Tracking
 | Date | Bet | Odds | Edge | Result | P&L (1u base) |
@@ -1285,7 +1286,41 @@ NaVi: 23.8% 1-2 losses + 14.3% 0-2 losses → нестабильность. Пу
 - w0nderful/b1t post-peak регресс → если оба упадут ниже 5.5 → NaVi структурно сломаны
 - flameZ 1.62 event — post-peak риск тоже есть, но ZywOo 1.58 покроет
 
-**Result:** PENDING
+**ACTUAL MAPS PLAYED:**
+- Map 1: Inferno → Vitality 13-7
+- Map 2: Anubis → Vitality 13-10
+- Map 3: Dust II → Vitality 13-10
+
+⚠️ **Veto deviation from prediction:**
+- Predicted NaVi picks Nuke (1st pick, 80% WR, 5-win streak — Calibration #23)
+- Reality: NaVi picked **Anubis** (50% H2H). Nuke never played.
+- Reason: NaVi avoided Nuke knowing Vitality has 100% WR there — chose tactical comfort over WR numbers
+
+**Player ratings (all 3 maps):**
+| Vitality | Rating | Form | | NaVi | Rating | Form |
+|---|---|---|---|---|---|---|
+| **ropz MVP** | **7.8** | +21% ← unsung star | | w0nderful EVP | **6.3** | -4% |
+| ZywOo | **6.7** | -5% (slight dip) | | b1t | **6.3** | -4% |
+| apEX | **6.1** | +6% | | makazze | **6.1** | -7% |
+| flameZ | **5.8** | -10% ⚠️ post-peak ✅ | | Aleksib | **5.9** | +4% |
+| mezii | **5.9** | -3% | | iM | **5.1** ❌ | -25% collapse |
+
+**Result: VITALITY 3-0 NaVi ✅ DIRECTION CORRECT**
+**Score: 3-0 ✅ (predicted 30.5% probability — happened!)**
+**Correct (direction):** YES ✅ (predicted Vitality 77.2%)
+**Bet:** No bet placed (edge +3.2% < 5% threshold) — correct call.
+
+**POST-MATCH ANALYSIS:**
+
+| Signal | Predicted | Actual | Lesson |
+|--------|----------|--------|--------|
+| Vitality wins | 77.2% ✅ | Won 3-0 | Direction correct |
+| flameZ post-peak | expected regression | 5.8 (-10%) ✅ | Calibration #34 confirmed AGAIN |
+| iM rising trend (+0.13) | stable/improving | 5.1 (-25%) ❌ | Trend broke under GF pressure |
+| NaVi picks Nuke | Cal #23 → Nuke | Picked Anubis | Cal #23 failed — GF pressure changes pick logic |
+| ZywOo carries | 1.58 event god mode | 6.7 (-5%) | ZywOo slightly off, ropz stepped in |
+| ropz unsung star | flagged as "+0.12 rising" | MVP 7.8 (+21%) | 3rd star emerged as difference maker |
+| Bookmaker 3-0 @2.53 | -9% edge, skip | 3-0 happened | Correct to skip (expected value wrong direction) |
 
 ---
 
@@ -1715,6 +1750,37 @@ Guaranteed bans: NaVi bans Overpass (always, 41 bans), PARI bans Anubis (always,
   - 2 consecutive match improvement: 65% signal (flag it)
   - 3+ consecutive improvement at event: 75% signal (apply +5% to team)
   - Decline direction: same thresholds apply
+
+### Calibration findings (2026-03-29 Grand Final)
+
+**36. ⭐ GRAND FINAL PICK LOGIC: Tactical comfort > WR — NaVi picked Anubis not Nuke**
+- Predicted NaVi picks Nuke (80% WR, 5-win streak → Calibration #23)
+- Reality: NaVi picked **Anubis** (50% H2H vs Vitality)
+- Root cause: Vitality has 100% WR on Nuke (5 maps). NaVi avoided giving them their dominant map. Chose Anubis (50% H2H parity) for tactical comfort despite lower WR.
+- **Rule:** Calibration #23 exception at GF/Elim stages: if opponent ALSO has 80%+ WR on the team's hot streak map → team picks "safest H2H parity map" instead. Only apply Cal #23 when opponent WR on that map is below 70%.
+
+**37. ⭐⭐ POST-PEAK REGRESSION — flameZ in Grand Final (4th confirmation)**
+- flameZ entered GF: 1.62 event (7.7 MVP vs Aurora). GF result: **5.8 (-10%)** ✅ Cal #34 confirmed
+- 4th consecutive post-peak regression confirmed: NiKo, BELCHONOKK, cobrazera, flameZ
+- But: Vitality still won 3-0 with flameZ at 5.8 → ropz stepped up to MVP 7.8
+- **Rule reinforced:** Post-peak regression is a TEAM risk ONLY for solo-carry teams. Teams with 3 stars (Vitality, Spirit) absorb single-star regressions automatically. No -8% penalty for Vitality when one star regresses.
+
+**38. ⭐ "THIRD STAR" PATTERN — ropz MVP despite being flagged as support**
+- ZywOo 1.58 event + flameZ 1.62 (primary stars) — both slightly dipped in GF
+- ropz 1.23 event ("third wheel") → **MVP 7.8 (+21%)**
+- Same logic as NiKo ↔ m0NESY at Falcons (Calibration #13), now extended: Vitality has a rotating 3-star system (ZywOo/flameZ/ropz). Any of the three can carry.
+- **Rule:** For teams with 3+ players at 1.10+ baseline, do NOT flag any single player as "the carry." Flag team as "multiple carry options" → +3% resilience bonus vs solo-carry opponents → individual player predictions are unreliable, focus on team-level signals.
+
+**39. iM COLLAPSED UNDER GF PRESSURE despite +0.13 rising trend**
+- iM: 1.20 event rating, +0.13 trend (Cal #35: "65% reliable signal") → GF: **4.0 rating (-25%)**
+- Rising trend at event does NOT protect against GF-level psychological pressure
+- **Rule update:** At Grand Final stage, reduce player-trend signal reliability from 65% → 55% (2-match improvement) and 75% → 65% (3+ match improvement). GF preparation by opponents is maximal; individual psychological variance peaks.
+
+**40. ⭐⭐ TOURNAMENT SUMMARY: Vitality benchmark established**
+- BLAST Rotterdam 2026: Vitality 5-0, 14+ match win streak, won 3-0 in final
+- Rotating MVP system: flameZ (Aurora SF), ropz (NaVi GF), ZywOo (all tournament avg 1.58)
+- Zero structural weakness found across 5 matches — no IGL drag, no map pool hole (after Ancient ban)
+- **Rule for future Vitality predictions:** Start at 78% cap vs opponents ranked #3-10. Drop to 72% only if H2H series goes against them. Current Vitality = hardest team to find value against — bookmakers AND model agree.
 
 ---
 
