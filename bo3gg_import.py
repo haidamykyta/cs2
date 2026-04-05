@@ -136,15 +136,24 @@ def insert_match_odds(conn, match_id: int, odds: dict):
     if not odds:
         return
     try:
+        t1 = odds.get('team1_odds')
+        t2 = odds.get('team2_odds')
+        # Remove vig: fair prob = (1/odds) / (1/odds1 + 1/odds2)
+        if t1 and t2 and t1 > 1 and t2 > 1:
+            total = 1/t1 + 1/t2
+            t1_fair = round((1/t1) / total, 4)
+            t2_fair = round((1/t2) / total, 4)
+        else:
+            t1_fair = t2_fair = None
         conn.execute("""
             INSERT OR REPLACE INTO match_odds
               (match_id, bookmaker, team1_odds, team2_odds,
                team1_prob_fair, team2_prob_fair, recorded_at)
-            VALUES (?,?,?,?,NULL,NULL,datetime('now'))
-        """, (match_id, 'bo3gg', odds.get('team1_odds'), odds.get('team2_odds')))
+            VALUES (?,?,?,?,?,?,datetime('now'))
+        """, (match_id, 'bo3gg', t1, t2, t1_fair, t2_fair))
         conn.commit()
     except Exception as e:
-        logger.debug("odds insert error: %s", e)
+        logger.warning("odds insert error: %s", e)
 
 # ─── API client ───────────────────────────────────────────────────────────────
 
