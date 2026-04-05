@@ -9,6 +9,45 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 ---
 
+## 2026-04-01 to 2026-04-05 — PGL Bucharest 2026 + Stake Ranked Episode 1 (Tier A, Online)
+
+### Retroactive model check (26 matches, Apr 1-5)
+
+Model trained: S+A only, 1,418 samples, CV 73.1%, Brier 0.104
+
+**VALUE BETS (10 total, 9 won — 90% win rate):**
+
+| Date  | Bet on         | Odds | Edge   | Kelly | Result | Correct |
+|-------|----------------|------|--------|-------|--------|---------|
+| Apr 5 | Legacy         | 1.55 | +17.7% | 3.0%  | WIN    | YES     |
+| Apr 5 | B8             | 2.30 | +10.1% | 1.9%  | LOSS   | NO      |
+| Apr 5 | FUT            | 1.62 | +22.8% | 3.0%  | WIN    | YES     |
+| Apr 4 | BetBoom        | 1.88 | +27.7% | 3.0%  | WIN    | YES     |
+| Apr 4 | B8             | 1.42 | +14.6% | 3.0%  | WIN    | YES     |
+| Apr 4 | FUT            | 1.45 | +13.5% | 3.0%  | WIN    | YES     |
+| Apr 3 | BetBoom        | 1.44 | +15.2% | 3.0%  | WIN    | YES     |
+| Apr 2 | GamerLegion    | 1.92 | +31.1% | 3.0%  | WIN    | YES     |
+| Apr 2 | G2             | 2.21 | +39.0% | 3.0%  | WIN    | YES     |
+| Apr 1 | GamerLegion    | 1.58 | +21.2% | 3.0%  | WIN    | YES     |
+
+**Summary:**
+- Model favourite accuracy: 22/26 = **84.6%**
+- Value bets: 9/10 = **90.0%** win rate
+- Avg odds on value bets: ~1.74
+- Estimated ROI (3% Kelly flat): ~+35% (retroactive — in-sample, not walk-forward)
+
+**Notable misses:**
+- B8 vs Astralis: model liked B8 +10.1% edge @2.30 — Astralis won 2-1. B8 had 53.6% model prob, looks like Astralis overperformed.
+- HEROIC vs BetBoom @4.05: model saw +10.7% edge but odds > MAX_ODDS 2.50 — filtered. BetBoom won 2-1. Correct filter (high variance bets).
+- FOKUS: only 2 S/A matches in DB — model skipped (insufficient data). FOKUS beat 3DMAX 2-1. Roster gap in data.
+
+**Calibration note:**
+- 90% win rate on 10 bets is too high — likely some in-sample bias since these teams are in training data.
+- Need more out-of-sample data (next week's matches) to confirm edge is real.
+- Avg edge +21.3% — if real, this is exceptional. Keep tracking.
+
+---
+
 ## 2026-03-21 — BLAST Open Spring 2026 (Rotterdam, LAN, Tier 1)
 
 ### Match 1: NiP vs Liquid
