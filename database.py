@@ -143,11 +143,35 @@ def init_db():
             created_at      TEXT DEFAULT (datetime('now'))
         );
 
+        CREATE TABLE IF NOT EXISTS match_rolling_features (
+            id              INTEGER PRIMARY KEY AUTOINCREMENT,
+            match_id        INTEGER REFERENCES matches(id),
+            date            TEXT,
+            t1_name         TEXT,
+            t2_name         TEXT,
+            t1_opening_kills  REAL, t1_opening_deaths REAL,
+            t1_multi_kill_rounds REAL, t1_kast_pct REAL,
+            t1_clutches_won REAL, t1_kills REAL, t1_deaths REAL,
+            t1_adr REAL, t1_swing_pct REAL, t1_rating3 REAL,
+            t2_opening_kills  REAL, t2_opening_deaths REAL,
+            t2_multi_kill_rounds REAL, t2_kast_pct REAL,
+            t2_clutches_won REAL, t2_kills REAL, t2_deaths REAL,
+            t2_adr REAL, t2_swing_pct REAL, t2_rating3 REAL,
+            t1_roll5_adr REAL, t1_roll5_kills REAL, t1_roll5_kast REAL,
+            t1_roll5_rating3 REAL, t1_roll5_opening_kills REAL,
+            t1_roll5_swing_pct REAL, t1_roll5_multi_kills REAL,
+            t2_roll5_adr REAL, t2_roll5_kills REAL, t2_roll5_kast REAL,
+            t2_roll5_rating3 REAL, t2_roll5_opening_kills REAL,
+            t2_roll5_swing_pct REAL, t2_roll5_multi_kills REAL,
+            UNIQUE(date, t1_name, t2_name)
+        );
+
         CREATE INDEX IF NOT EXISTS idx_matches_date ON matches(date);
         CREATE INDEX IF NOT EXISTS idx_map_results_match ON map_results(match_id);
         CREATE INDEX IF NOT EXISTS idx_glicko_team_ctx ON glicko_ratings(team_id, context);
         CREATE INDEX IF NOT EXISTS idx_match_odds_match ON match_odds(match_id);
         CREATE INDEX IF NOT EXISTS idx_roster_team ON roster_changes(team_id, change_date);
+        CREATE INDEX IF NOT EXISTS idx_rolling_date ON match_rolling_features(date, t1_name, t2_name);
         """)
 
 
