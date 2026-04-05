@@ -1,0 +1,85 @@
+Parsed 217 matches with odds from match_list_raw.txt
+
+First 5 matches:
+  The MongolZ          2-0 EYEBALLERS           pred=1 odds=1.22 [T1 won]
+  Legacy               2-1 Inner Circle         pred=1 odds=2.36 [T1 won]
+  PARIVISION           2-0 FOKUS                pred=1 odds=1.2 [T1 won]
+  BC.Game              1-2 MIBR                 pred=2 odds=8.06 [T2 won]
+  Astralis             2-1 B8                   pred=1 odds=1.43 [T1 won]
+
+======================================================================
+RETROACTIVE BACKTEST — Jan 31 – Apr 5, 2026
+======================================================================
+
+  WIN  | Legacy                    @2.36 edge=+35.9% kelly=3.0% pnl=+4.08% | Legacy vs Inner Circle | PGL Bucharest 2026
+  WIN  | FUT                       @1.43 edge=+14.2% kelly=3.0% pnl=+1.29% | FUT vs NRG | PGL Bucharest 2026
+  WIN  | PARIVISION                @1.52 edge=+5.2% kelly=2.5% pnl=+1.31% | PARIVISION vs Legacy | PGL Bucharest 2026
+  WIN  | BetBoom                   @1.79 edge=+23.0% kelly=3.0% pnl=+2.38% | GamerLegion vs BetBoom | Stake Ranked Episode 1
+  WIN  | B8                        @1.42 edge=+14.4% kelly=3.0% pnl=+1.26% | B8 vs Wildcard | PGL Bucharest 2026
+  WIN  | FOKUS                     @1.42 edge=+5.8% kelly=3.0% pnl=+1.26% | 3DMAX vs FOKUS | PGL Bucharest 2026
+  WIN  | FUT                       @2.33 edge=+38.0% kelly=3.0% pnl=+3.99% | FUT vs Inner Circle | PGL Bucharest 2026
+  WIN  | G2                        @2.01 edge=+21.1% kelly=3.0% pnl=+3.03% | G2 vs GamerLegion | Stake Ranked Episode 1
+  WIN  | BetBoom                   @1.44 edge=+14.9% kelly=3.0% pnl=+1.32% | BetBoom vs 9INE | Stake Ranked Episode 1
+  WIN  | GamerLegion               @1.92 edge=+29.3% kelly=3.0% pnl=+2.76% | GamerLegion vs Ninjas in Pyjamas | Stake Ranked Episode 1
+  WIN  | G2                        @2.21 edge=+38.4% kelly=3.0% pnl=+3.63% | G2 vs BetBoom | Stake Ranked Episode 1
+  WIN  | GamerLegion               @1.58 edge=+21.0% kelly=3.0% pnl=+1.74% | GamerLegion vs 9INE | Stake Ranked Episode 1
+  WIN  | Natus Vincere             @1.80 edge=+27.3% kelly=3.0% pnl=+2.40% | Natus Vincere vs PARIVISION | BLAST Open Spring 2026
+  WIN  | Natus Vincere             @2.25 edge=+35.0% kelly=3.0% pnl=+3.74% | Aurora vs Natus Vincere | BLAST Open Spring 2026
+  WIN  | The MongolZ               @1.48 edge=+16.1% kelly=3.0% pnl=+1.44% | The MongolZ vs Liquid | BLAST Open Spring 2026
+  WIN  | Falcons                   @1.61 edge=+22.6% kelly=3.0% pnl=+1.83% | Falcons vs TYLOO | BLAST Open Spring 2026
+  WIN  | Natus Vincere             @2.39 edge=+10.9% kelly=2.0% pnl=+2.72% | Falcons vs Natus Vincere | BLAST Open Spring 2026
+  WIN  | NRG                       @1.47 edge=+14.3% kelly=3.0% pnl=+1.41% | NRG vs B8 | BLAST Open Spring 2026
+  WIN  | PARIVISION                @2.19 edge=+27.6% kelly=3.0% pnl=+3.57% | PARIVISION vs Ninjas in Pyjamas | BLAST Open Spring 2026
+  WIN  | Natus Vincere             @1.75 edge=+26.0% kelly=3.0% pnl=+2.25% | Natus Vincere vs B8 | BLAST Open Spring 2026
+  WIN  | Natus Vincere             @1.89 edge=+26.6% kelly=3.0% pnl=+2.67% | Aurora vs Natus Vincere | ESL Pro League Season 23
+  WIN  | Natus Vincere             @1.86 edge=+20.1% kelly=3.0% pnl=+2.59% | The MongolZ vs Natus Vincere | ESL Pro League Season 23
+  WIN  | Natus Vincere             @1.85 edge=+20.0% kelly=3.0% pnl=+2.55% | 3DMAX vs Natus Vincere | ESL Pro League Season 23 Stage 2
+  WIN  | Aurora                    @2.21 edge=+37.0% kelly=3.0% pnl=+3.63% | G2 vs Aurora | ESL Pro League Season 23 Stage 2
+  WIN  | FURIA                     @1.43 edge=+11.3% kelly=3.0% pnl=+1.29% | FURIA vs paiN | ESL Pro League Season 23 Stage 2
+  WIN  | The MongolZ               @2.10 edge=+20.0% kelly=3.0% pnl=+3.30% | The MongolZ vs 3DMAX | ESL Pro League Season 23 Stage 2
+  WIN  | FUT                       @1.57 edge=+14.0% kelly=3.0% pnl=+1.71% | FUT vs B8 | ESL Pro League Season 23 Stage 2
+  WIN  | FURIA                     @1.74 edge=+24.0% kelly=3.0% pnl=+2.22% | FURIA vs HEROIC | ESL Pro League Season 23 Stage 2
+  WIN  | MOUZ                      @1.54 edge=+10.0% kelly=3.0% pnl=+1.62% | MOUZ vs The MongolZ | ESL Pro League Season 23 Stage 2
+  WIN  | Legacy                    @2.19 edge=+29.5% kelly=3.0% pnl=+3.57% | Legacy vs Astralis | ESL Pro League Season 23 Stage 2
+  WIN  | Natus Vincere             @1.45 edge=+14.2% kelly=3.0% pnl=+1.35% | Natus Vincere vs B8 | ESL Pro League Season 23 Stage 2
+  WIN  | 3DMAX                     @1.44 edge=+12.0% kelly=3.0% pnl=+1.32% | FUT vs 3DMAX | ESL Pro League Season 23 Stage 2
+  WIN  | FaZe                      @1.77 edge=+26.2% kelly=3.0% pnl=+2.31% | FaZe vs Monte | ESL Pro League Season 23 Stage 2
+  WIN  | Aurora                    @1.58 edge=+19.0% kelly=3.0% pnl=+1.74% | paiN vs Aurora | ESL Pro League Season 23 Stage 2
+  WIN  | Spirit                    @2.19 edge=+37.1% kelly=3.0% pnl=+3.57% | Spirit vs B8 | ESL Pro League Season 23 Stage 2
+  WIN  | FUT                       @2.16 edge=+24.3% kelly=3.0% pnl=+3.48% | FUT vs HEROIC | ESL Pro League Season 23 Stage 2
+  WIN  | MOUZ                      @1.45 edge=+15.7% kelly=3.0% pnl=+1.35% | MOUZ vs Astralis | ESL Pro League Season 23 Stage 2
+  WIN  | Legacy                    @1.80 edge=+20.8% kelly=3.0% pnl=+2.40% | Monte vs Legacy | ESL Pro League Season 23 Stage 2
+  WIN  | paiN                      @2.16 edge=+30.7% kelly=3.0% pnl=+3.48% | paiN vs FaZe | ESL Pro League Season 23 Stage 2
+  WIN  | The MongolZ               @1.93 edge=+24.6% kelly=3.0% pnl=+2.80% | The MongolZ vs Aurora | ESL Pro League Season 23 Stage 2
+  WIN  | The MongolZ               @2.49 edge=+44.0% kelly=3.0% pnl=+4.47% | The MongolZ vs paiN | ESL Pro League Season 23 Stage 2
+  WIN  | G2                        @1.94 edge=+21.5% kelly=3.0% pnl=+2.83% | G2 vs FaZe | ESL Pro League Season 23 Stage 2
+  WIN  | Aurora                    @1.91 edge=+28.1% kelly=3.0% pnl=+2.73% | Aurora vs Legacy | ESL Pro League Season 23 Stage 2
+  WIN  | 3DMAX                     @1.65 edge=+6.6% kelly=2.5% pnl=+1.65% | 3DMAX vs Liquid | ESL Pro League Season 23 Stage 1
+  WIN  | G2                        @1.46 edge=+7.9% kelly=3.0% pnl=+1.38% | G2 vs Ninjas in Pyjamas | ESL Pro League Season 23 Stage 1
+  WIN  | Liquid                    @2.05 edge=+33.6% kelly=3.0% pnl=+3.15% | M80 vs Liquid | ESL Pro League Season 23 Stage 1
+  WIN  | HEROIC                    @2.18 edge=+37.5% kelly=3.0% pnl=+3.54% | HEROIC vs Passion UA | ESL Pro League Season 23 Stage 1
+  WIN  | Ninjas in Pyjamas         @2.11 edge=+18.6% kelly=3.0% pnl=+3.33% | Ninjas in Pyjamas vs NRG | ESL Pro League Season 23 Stage 1
+  WIN  | G2                        @2.23 edge=+37.0% kelly=3.0% pnl=+3.69% | G2 vs M80 | ESL Pro League Season 23 Stage 1
+  WIN  | paiN                      @2.26 edge=+39.9% kelly=3.0% pnl=+3.78% | paiN vs Passion UA | ESL Pro League Season 23 Stage 1
+
+======================================================================
+OVERALL RESULTS  [NOTE: may overlap with training data - see warning]
+======================================================================
+Matches processed:  217  (skipped: 0)
+Model fav accuracy: 192/217 = 88.5%
+Value bets:         111/115 = 96.5%
+PnL (Kelly%):       +253.38%
+
+----------------------------------------------------------------------
+BY TOURNAMENT
+----------------------------------------------------------------------
+  PGL Cluj-Napoca 2026                          | fav 39/41=95% | VB 23/23=100% PnL=+49.93%
+  ESL Pro League Season 23 Stage 2              | fav 29/33=88% | VB 21/21=100% PnL=+53.72%
+  ESL Pro League Season 23 Stage 1              | fav 30/33=91% | VB 21/21=100% PnL=+50.90%
+  BLAST Open Spring 2026                        | fav 25/29=86% | VB 8/8=100% PnL=+19.36%
+  Intel Extreme Masters Krak?w 2026             | fav 25/29=86% | VB 12/13=92% PnL=+30.27%
+  Intel Extreme Masters Atlanta 2026: Global Qualifier | fav 15/17=88% | VB 12/14=86% PnL=+18.88%
+  Stake Ranked Episode 1                        | fav 12/14=86% | VB 6/6=100% PnL=+14.86%
+  PGL Bucharest 2026                            | fav 11/12=92% | VB 6/6=100% PnL=+13.19%
+  ESL Pro League Season 23                      | fav 6/8=75% | VB 2/2=100% PnL=+5.26%
+  Intel Extreme Masters ??? ???? ??? ????????? ????? ?? ????????? ????? ???? ?? ? ????? ???? ??? ??? ?????? ?? ???? ???? ?????? ??? ????????? ?????????? ? ? ??????? ? ??? ?? ???????-??????? ?? ???? ?????? ?????? ??? | fav 0/1=0% | VB 0/1=0% PnL=-3.00%
