@@ -9,6 +9,44 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 ---
 
+## 2026-04-07 -- PGL Bucharest 2026, Round 4 (Tier A, LAN)
+
+### Swiss bracket status going into R4
+- 2-1 teams (win = 3-1, advancing): MIBR, EYEBALLERS, The MongolZ, Wildcard, PARIVISION, 3DMAX
+- 1-2 teams (loss = 1-3, ELIMINATED): NRG, Legacy, B8, Inner Circle, FOKUS, BC.Game
+
+### Value Bets (0 confirmed, 2 flagged pending model)
+
+| # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
+|---|-------|--------|------|--------|---------|------|-------|--------|---------|
+| - | B8 vs Inner Circle | **IC** @2.35 | 2.35 | TBD | 40% | TBD | TBD | - | - |
+| - | FOKUS vs BC.Game | **FOKUS** @1.75 | 1.75 | TBD | 54% | TBD | TBD | - | - |
+
+Note: model probability needed to confirm edge > 5%. Manual analysis flags these as candidates.
+
+### Model picks -- все матчи (winner prediction)
+
+| Match | Our pick | Confidence | Key argument | Result | Correct |
+|-------|----------|-----------|--------------|--------|---------|
+| MIBR vs EYEBALLERS | **MIBR** | Low | Inferno 73% first pick. EYE event form higher but MIBR can avoid Nuke (ban it) → decider Anubis 88% | - | - |
+| NRG vs Legacy | **Legacy** | High | Rank #14 vs #32. NRG Dust2 7-loss streak + Nuke 5-loss streak -- both will appear in veto | - | - |
+| The MongolZ vs Wildcard | **MongolZ** | Very High | Rank #8 vs #74. No contest. No bet (odds 1.06-1.10) | - | - |
+| B8 vs Inner Circle | **Inner Circle** | Low | IC handicap data better (32% 2-0 vs B8 14%), beat FaZe yesterday. Decider veto favors IC if they ban Ancient (B8 73%) | - | - |
+| PARIVISION vs 3DMAX | **PARIVISION** | High | Rank #5, Ancient 82% + Anubis 75% + Dust2 65%. 3DMAX Mirage perma-banned. Map pool locks out 3DMAX | - | - |
+| FOKUS vs BC.Game | **FOKUS** | Medium-High | Ancient 91% (5 streak!) vs BC.Game 14%. Inferno 70% vs BC.Game 20%. BC.Game Mirage perma-banned. Veto strongly favors FOKUS | - | - |
+
+**Tracking:** picks = 6 | value bets = 0 (2 flagged) | correctness to be filled after results
+
+### Notes
+- EYEBALLERS event ratings massively overperforming (JW +0.30, dex +0.15 vs 3mo avg). MIBR underperforming. Flip MIBR pick if EYE gets Nuke decider.
+- IC vs B8: key is whether IC bans Ancient (B8 73%) -- if yes, decider Overpass favors IC. If no, decider Ancient kills IC.
+- FOKUS vs BC.Game: electronic 1.26 event rating is real individual risk but map pool is too favorable for FOKUS.
+- MongolZ vs Wildcard: Wildcard HexT 1.31 event rating (overperforming) but gap too large for value at 6-7.5 odds.
+- Elimination context: 1-2 teams fighting for survival often show elevated performance. Accounts for IC/FOKUS higher motivation vs opponents in same bracket.
+- Swiss fatigue lesson from Apr 6: today all matches are on Apr 7 (different day), no same-day fatigue risk.
+
+---
+
 ## 2026-04-06 -- PGL Bucharest 2026, Round 3 (Tier A, LAN)
 
 ### Value Bets (2)
