@@ -9,31 +9,34 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 ---
 
-## 2026-04-06 — PGL Bucharest 2026, Round 3 (Tier A, LAN)
+## 2026-04-06 -- PGL Bucharest 2026, Round 3 (Tier A, LAN)
 
 ### Value Bets (2)
 
-| # | Match | Bet on | Odds | Model prob | Bookie impl | Edge | Kelly | Result | Correct |
-|---|-------|--------|------|-----------|-------------|------|-------|--------|---------|
-| 1 | B8 vs 3DMAX | **B8** | 1.73 | 69% | 56% | +10.8% | 13.6% | - | - |
-| 2 | PARIVISION vs FUT | **PARIVISION** | 1.67 | 79% | 59% | +18.7% | 25.0% | - | - |
+| # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
+|---|-------|--------|------|--------|---------|------|-------|--------|---------|
+| 1 | B8 vs 3DMAX | **B8** | 1.60 (GGBet) | 69% | 62% | +6.2% | 9.4% | - | - |
+| 2 | PARIVISION vs FUT | **PARIVISION** | 1.71 (1xbet) | 79% | 58% | +20.1% | 25.0% | - | - |
 
-### Full card analysis
+### Model picks -- все матчи (winner prediction)
 
-| Match | Model | Odds | Edge T1 / T2 | Verdict |
-|-------|-------|------|-------------|---------|
-| FOKUS @1.30 vs Wildcard | 74%-26% | 1.30/3.52 | -3.2% / -2.2% | No bet |
-| Legacy @1.46 vs MIBR | 59%-41% | 1.46/2.74 | -9.4% / +4.4% | No bet (edge<5%) |
-| B8 @1.73 vs 3DMAX | 69%-31% | 1.73/2.11 | +10.8% / -16.0% | **BET B8** |
-| NRG @1.68 vs EYEBALLERS | 59%-41% | 1.68/2.19 | -0.5% / -4.7% | No bet |
-| Inner Circle @3.05 vs FaZe | 45%-55% | 3.05/1.38 | +12.7% / -17.9% | Filtered (odds>2.50) |
-| Astralis @2.08 vs MongolZ | 49%-51% | 2.08/1.75 | +1.4% / -6.6% | No bet |
-| PARIVISION @1.67 vs FUT | 79%-21% | 1.67/2.21 | +18.7% / -23.8% | **BET PARIVISION** |
+| Match | Our pick | Model% | Odds | Edge | Key argument | Result | Correct |
+|-------|----------|--------|------|------|--------------|--------|---------|
+| FOKUS vs Wildcard | **FOKUS** | 74% | 1.30/3.52 | -3.2% | H2H 2-0 (12d ago), Ancient 91% WR, Wildcard форма 44% | - | - |
+| Legacy vs MIBR | **Legacy** | 59% | 1.46/2.74 | -9.4% | Форма 67% (1мес), Ancient 69% + Inferno 65%. MIBR 40% (1мес) | - | - |
+| B8 vs 3DMAX | **B8** [BET] | 69% | 1.60/2.30 | +6.2% | 5 побед подряд, H2H 75%, 3DMAX 3 поражения подряд | - | - |
+| NRG vs EYEBALLERS | **NRG** | 59% | 1.68/2.19 | -0.5% | Model slight fav. EYEBALLERS горячий (70% 1мес) -- неуверенный пик | - | - |
+| Inner Circle vs FaZe | **FaZe** | 55% | 3.05/1.38 | -17.9% | 4 победы подряд, Nuke 75%. Inner Circle 46% (1мес), 3/5 проигрышей | - | - |
+| Astralis vs The MongolZ | **Astralis** | 49% | 2.08/1.75 | +1.4% | H2H 75% (3-1), форма 67% + 3 победы подряд. Model 49% но аргументы за Astralis | - | - |
+| PARIVISION vs FUT | **PARIVISION** [BET] | 79% | 1.71/2.17 | +20.1% | Model 79%, Dust2 68% + Ancient 79%, форма 71%. FUT пикает Mirage -- PARIVISION банит | - | - |
+| BC.Game vs Voca | **BC.Game** | 70% | 1.44/2.80 | +0.4% | Model 70% (s1mple/electronic Glicko). Но форма 0% за месяц -- stale data риск | - | - |
+
+**Tracking:** picks = 8 | value bets = 2 | correctness to be filled after results
 
 ### Notes
-- B8: 5 wins in a row, 75% H2H vs 3DMAX, 3DMAX on 3-game losing streak
-- PARIVISION: model 79% vs bookmaker implied 59% -- huge gap, highest confidence bet
-- Inner Circle @3.05: +12.7% edge but filtered by MAX_ODDS=2.50
+- Inner Circle @3.05: edge +12.7% но filtered (MAX_ODDS=2.50) -- manual small bet option
+- BC.Game: модель доверяет историческому Glicko, но 5 поражений подряд = stale data warning
+- Astralis выбран против модели (49%) из-за H2H 75% и формы -- пример overriding model
 
 ---
 
