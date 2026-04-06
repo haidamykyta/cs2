@@ -73,6 +73,37 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
    - FaZe fatigue: 3rd LAN match, IC had full prep
    - Lesson: for Swiss final rounds (R3+), consider relaxing MAX_ODDS to 3.50
 
+**Per-match breakdown (3 detailed reports):**
+
+**Astralis 2-0 MongolZ (our pick: Astralis ✓)**
+- Mirage 13-4, Ancient 13-9 -- total domination
+- jabbi: 38K/25D +13, 7.2 overall rating -- carried Mirage hard
+- MongolZ Techno4K EVP 6.4 but team couldn't keep up
+- MongolZ came in 2-0 (beat EYEBALLERS + BC.Game) but Astralis class was clear
+- H2H read was correct: Astralis 3-1 historically, formula held
+- Model had 49% (slight MongolZ lean) -- we overrode correctly based on H2H + momentum
+
+**BC.Game 2-1 Voca (our pick: BC.Game ✓)**
+- Lost Dust II 10-13, won Overpass 13-9, won Nuke 13-4
+- electronic MVP 7.2: 54K/37D +17 -- best player on server
+- s1mple 44K +10, both stars delivered despite terrible recent form
+- Voca junior had 50K +9 -- strong showing, lost only because BC.Game stars peaked
+- BC.Game form was 5 losses in a row (model "stale data" warning was accurate) -- but historical Glicko still reflected real ceiling
+- Voca had 0 H2H vs BC.Game (no prior meetings in 6mo) -- BC.Game advantage in unknown matchup
+
+**PARIVISION 0-2 FUT (our bet: PAR @1.71, 25% kelly, LOSS ❌)**
+- Dust II 11-13, Mirage 6-13 -- two close maps became blowout
+- FUT's Mirage: **77% WR on 39 picks, 0 bans** -- their best map, nobody ever bans it
+- PARIVISION's veto completely failed: picked Dust II (PAR 70% WR) but lost 11-13
+- FUT picked Mirage with 77% WR and destroyed 13-6
+- nota: -18 diff (worst on server), BELCHONOKK: -16 -- form shows -34% and -27% decline
+- Only Jame was dominant: MVP 7.5 on LOSING side (38K/24D +15, 8.4 on Dust II) -- single-player vs team collapse
+- lauNX (FUT) EVP 7.4: 39K +12, carried support role
+- H2H: PARIVISION beat FUT 2-1 just 1 month ago -- but this tournament FUT had momentum (2-0 NRG, 2-1 IC)
+- Root cause confirmed: PARIVISION was on match 3 of the day + nota/BELCHONOKK had 0 form
+- FUT Mirage pick was correct -- we predicted PARIVISION would ban it but they couldn't (Nuke already banned by opponents before the veto even started)
+- FUT's Nuke WR is 92% (12 picks) -- opponents banned it, so FUT was left with Mirage as their second-best option and it worked perfectly
+
 **Key metrics comparison:**
 | Metric | Apr 1-5 (retroactive) | Apr 6 (live) |
 |--------|-----------------------|--------------|
@@ -86,6 +117,7 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 - Swiss R3+ matches should get higher uncertainty discount (fatigue, match #3 same day)
 - Consider adding filter: if team plays 3rd match in same day -> require +10% higher edge threshold
 - MAX_ODDS filter cost today: 1 correct filtered bet (IC @3.05)
+- FUT Mirage 77% WR was the deciding factor -- map-specific veto analysis needs to check opponent's most-picked map, not just our team's map pool
 
 ---
 
