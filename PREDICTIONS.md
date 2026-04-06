@@ -9,6 +9,34 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 ---
 
+## 2026-04-06 — PGL Bucharest 2026, Round 3 (Tier A, LAN)
+
+### Value Bets (2)
+
+| # | Match | Bet on | Odds | Model prob | Bookie impl | Edge | Kelly | Result | Correct |
+|---|-------|--------|------|-----------|-------------|------|-------|--------|---------|
+| 1 | B8 vs 3DMAX | **B8** | 1.73 | 69% | 56% | +10.8% | 13.6% | - | - |
+| 2 | PARIVISION vs FUT | **PARIVISION** | 1.67 | 79% | 59% | +18.7% | 25.0% | - | - |
+
+### Full card analysis
+
+| Match | Model | Odds | Edge T1 / T2 | Verdict |
+|-------|-------|------|-------------|---------|
+| FOKUS @1.30 vs Wildcard | 74%-26% | 1.30/3.52 | -3.2% / -2.2% | No bet |
+| Legacy @1.46 vs MIBR | 59%-41% | 1.46/2.74 | -9.4% / +4.4% | No bet (edge<5%) |
+| B8 @1.73 vs 3DMAX | 69%-31% | 1.73/2.11 | +10.8% / -16.0% | **BET B8** |
+| NRG @1.68 vs EYEBALLERS | 59%-41% | 1.68/2.19 | -0.5% / -4.7% | No bet |
+| Inner Circle @3.05 vs FaZe | 45%-55% | 3.05/1.38 | +12.7% / -17.9% | Filtered (odds>2.50) |
+| Astralis @2.08 vs MongolZ | 49%-51% | 2.08/1.75 | +1.4% / -6.6% | No bet |
+| PARIVISION @1.67 vs FUT | 79%-21% | 1.67/2.21 | +18.7% / -23.8% | **BET PARIVISION** |
+
+### Notes
+- B8: 5 wins in a row, 75% H2H vs 3DMAX, 3DMAX on 3-game losing streak
+- PARIVISION: model 79% vs bookmaker implied 59% -- huge gap, highest confidence bet
+- Inner Circle @3.05: +12.7% edge but filtered by MAX_ODDS=2.50
+
+---
+
 ## 2026-04-05 -- RETROACTIVE BACKTEST: Jan 31 - Apr 5, 2026 (217 matches, 6 tournaments)
 
 ### Full retroactive backtest results
