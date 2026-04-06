@@ -15,28 +15,77 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 | # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
 |---|-------|--------|------|--------|---------|------|-------|--------|---------|
-| 1 | B8 vs 3DMAX | **B8** | 1.60 (GGBet) | 69% | 62% | +6.2% | 9.4% | - | - |
-| 2 | PARIVISION vs FUT | **PARIVISION** | 1.71 (1xbet) | 79% | 58% | +20.1% | 25.0% | - | - |
+| 1 | B8 vs 3DMAX | **B8** | 1.60 (GGBet) | 69% | 62% | +6.2% | 9.4% | LOSS | NO ❌ |
+| 2 | PARIVISION vs FUT | **PARIVISION** | 1.71 (1xbet) | 79% | 58% | +20.1% | 25.0% | LOSS | NO ❌ |
 
 ### Model picks -- все матчи (winner prediction)
 
 | Match | Our pick | Model% | Odds | Edge | Key argument | Result | Correct |
 |-------|----------|--------|------|------|--------------|--------|---------|
-| FOKUS vs Wildcard | **FOKUS** | 74% | 1.30/3.52 | -3.2% | H2H 2-0 (12d ago), Ancient 91% WR, Wildcard форма 44% | - | - |
-| Legacy vs MIBR | **Legacy** | 59% | 1.46/2.74 | -9.4% | Форма 67% (1мес), Ancient 69% + Inferno 65%. MIBR 40% (1мес) | - | - |
-| B8 vs 3DMAX | **B8** [BET] | 69% | 1.60/2.30 | +6.2% | 5 побед подряд, H2H 75%, 3DMAX 3 поражения подряд | - | - |
-| NRG vs EYEBALLERS | **NRG** | 59% | 1.68/2.19 | -0.5% | Model slight fav. EYEBALLERS горячий (70% 1мес) -- неуверенный пик | - | - |
-| Inner Circle vs FaZe | **FaZe** | 55% | 3.05/1.38 | -17.9% | 4 победы подряд, Nuke 75%. Inner Circle 46% (1мес), 3/5 проигрышей | - | - |
-| Astralis vs The MongolZ | **Astralis** | 49% | 2.08/1.75 | +1.4% | H2H 75% (3-1), форма 67% + 3 победы подряд. Model 49% но аргументы за Astralis | - | - |
-| PARIVISION vs FUT | **PARIVISION** [BET] | 79% | 1.71/2.17 | +20.1% | Model 79%, Dust2 68% + Ancient 79%, форма 71%. FUT пикает Mirage -- PARIVISION банит | - | - |
-| BC.Game vs Voca | **BC.Game** | 70% | 1.44/2.80 | +0.4% | Model 70% (s1mple/electronic Glicko). Но форма 0% за месяц -- stale data риск | - | - |
+| FOKUS vs Wildcard | **FOKUS** | 74% | 1.30/3.52 | -3.2% | H2H 2-0 (12d ago), Ancient 91% WR, Wildcard форма 44% | Wildcard 2-1 | NO ❌ |
+| Legacy vs MIBR | **Legacy** | 59% | 1.46/2.74 | -9.4% | Форма 67% (1мес), Ancient 69% + Inferno 65%. MIBR 40% (1мес) | MIBR 2-1 | NO ❌ |
+| B8 vs 3DMAX | **B8** [BET] | 69% | 1.60/2.30 | +6.2% | 5 побед подряд, H2H 75%, 3DMAX 3 поражения подряд | 3DMAX 2-1 | NO ❌ |
+| NRG vs EYEBALLERS | **NRG** | 59% | 1.68/2.19 | -0.5% | Model slight fav. EYEBALLERS горячий (70% 1мес) -- неуверенный пик | EYEBALLERS 2-0 | NO ❌ |
+| Inner Circle vs FaZe | **FaZe** | 55% | 3.05/1.38 | -17.9% | 4 победы подряд, Nuke 75%. Inner Circle 46% (1мес), 3/5 проигрышей | Inner Circle 2-0 | NO ❌ |
+| Astralis vs The MongolZ | **Astralis** | 49% | 2.08/1.75 | +1.4% | H2H 75% (3-1), форма 67% + 3 победы подряд. Model 49% но аргументы за Astralis | Astralis 2-0 | YES ✓ |
+| PARIVISION vs FUT | **PARIVISION** [BET] | 79% | 1.71/2.17 | +20.1% | Model 79%, Dust2 68% + Ancient 79%, форма 71%. FUT пикает Mirage -- PARIVISION банит | FUT 2-0 | NO ❌ |
+| BC.Game vs Voca | **BC.Game** | 70% | 1.44/2.80 | +0.4% | Model 70% (s1mple/electronic Glicko). Но форма 0% за месяц -- stale data риск | BC.Game 2-1 | YES ✓ |
 
-**Tracking:** picks = 8 | value bets = 2 | correctness to be filled after results
+**Results: picks 2/8 = 25% | value bets 0/2 = 0% | bankroll impact: -9.4% (B8) -25.0% (PAR) = -34.4%**
 
 ### Notes
 - Inner Circle @3.05: edge +12.7% но filtered (MAX_ODDS=2.50) -- manual small bet option
 - BC.Game: модель доверяет историческому Glicko, но 5 поражений подряд = stale data warning
 - Astralis выбран против модели (49%) из-за H2H 75% и формы -- пример overriding model
+
+### Apr 6 Post-Mortem (Calibration Analysis)
+
+**What happened:** 5 upsets in 8 matches (62.5% upset rate) -- anomalous even for Swiss R3.
+
+**Root causes:**
+
+1. **Swiss multi-match fatigue (not in model):**
+   - PARIVISION played match #3 on the same day (R1 AM, R2 midday, R3 PM)
+   - FUT also 3rd match but on a hot 76% Mirage streak -- stamina/preparation edge went to FUT
+   - Model has no "matches played today" or "rest hours between matches" feature
+   - Fix candidate: add `matches_today` feature, scale down Kelly if team on 3rd match
+
+2. **Single-player variance (B8 vs 3DMAX):**
+   - Ex3rcice (3DMAX) 7.2 MVP rating, carried -- one player can override team model
+   - Model aggregates team-level Glicko, cannot detect star-player hot streak
+   - B8 had 5-win streak but 3DMAX were actually 1-2 not 0-3 (misread in pre-match)
+
+3. **Stale Glicko data (PARIVISION, BC.Game):**
+   - PARIVISION Glicko inflated by early 2026 results, recent form declining
+   - BC.Game model_prob=70% but 5 losses in a row -- won today but signal was risky
+   - Glicko RD increases over time (uncertainty), but features don't reflect recent form collapse
+   - Fix candidate: add form_decay weight: if last 5 = <40% win rate, scale down model_prob
+
+4. **Swiss R3 structural factor:**
+   - R3 is 2-0 vs 2-0 and 1-1 vs 1-1 brackets
+   - Teams that went 2-0 in R1/R2 may have peaked or be overconfident
+   - Teams that clawed back from 0-1 (like FUT: 0-1 -> 1-1 -> won) are mentally stronger
+   - Data point: FOKUS was 2-0, MIBR was 0-2 clawback -- model didn't weight this
+
+5. **Inner Circle was actually the best pick (filtered):**
+   - IC edge +12.7% @3.05 was correct -- IC won 2-0 vs FaZe
+   - MAX_ODDS=2.50 filtered the only winning value bet
+   - FaZe fatigue: 3rd LAN match, IC had full prep
+   - Lesson: for Swiss final rounds (R3+), consider relaxing MAX_ODDS to 3.50
+
+**Key metrics comparison:**
+| Metric | Apr 1-5 (retroactive) | Apr 6 (live) |
+|--------|-----------------------|--------------|
+| Model picks accuracy | 84.6% | 25% (2/8) |
+| Value bet WR | 90% (in-sample) | 0% (0/2) |
+| Upset rate | ~15% | 62.5% |
+| Swiss fatigue factor | N/A | High |
+
+**Model calibration update:**
+- Real out-of-sample sample size: 2 live value bets (0 wins) -- too small to update long-run estimate
+- Swiss R3+ matches should get higher uncertainty discount (fatigue, match #3 same day)
+- Consider adding filter: if team plays 3rd match in same day -> require +10% higher edge threshold
+- MAX_ODDS filter cost today: 1 correct filtered bet (IC @3.05)
 
 ---
 
