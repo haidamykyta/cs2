@@ -17,7 +17,7 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 | # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
 |---|-------|--------|------|--------|---------|------|-------|--------|---------|
-| 1 | B8 vs Legacy | **B8** | 2.33 | ~50% | 43% | +7% | 3-4% | - | - |
+| 1 | B8 vs Legacy | **B8** | 2.33 | ~50% | 43% | +7% | **10%** | - | - |
 
 ### Model picks
 
@@ -27,12 +27,26 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 | B8 vs Legacy [BET] | **B8** | Medium | H2H 3-0 (Legacy 0% vs B8). Ancient 76% first pick. kensizor in form (7.6 MVP). @2.33 implied 43%, real ~50% | - | - |
 | PARIVISION vs Wildcard | **PARIVISION** | High | Rank #5 vs #74. nota issue irrelevant vs rank 74. PAR Dust2 68%, Nuke removed (Wildcard best map). No value at 1.13 | - | - |
 
-**Tracking:** picks = 3 | value bets = 1 (B8 @2.33, kelly 3-4%)
+**Tracking:** picks = 3 | value bets = 1 (B8 @2.33, kelly 10%)
 
 ### Notes
 - **B8 value logic**: H2H 3-0 vs Legacy is key signal. Ignored H2H vs 3DMAX (Apr 7) and lost. Applying lesson: H2H 3/3 dominance -> value bet when odds undervalue it (2.33 implies 43% vs real ~50%).
 - **PAR skip**: nota pattern, but rank gap too large for Wildcard upset. @1.13 no value.
-- **FOKUS vs EYE (live)**: EYE played 2 matches Apr 7 (09:00 PGL + 19:10 CCT Omega). Same fatigue pattern as PAR Apr 6. Slight FOKUS lean.
+- **FOKUS vs EYE (live)**: EYE played 2 matches Apr 7 (09:00 PGL + 19:10 CCT Omega). Same fatigue pattern as PAR Apr 6.
+  - Match went 1-1: EYE won Inferno 16-13 (FOKUS own pick!), FOKUS won Nuke 13-5 (EYE own pick!)
+  - Dust2 decider: EYE 43% WR vs FOKUS 38%. Ro1f dominant (1.35 rating across both maps).
+  - Polymarket live: FOKUS 55c / EYE 46c. EYE @46c = thin value (+4-6% edge) on Dust2 stats. Small position only.
+  - FOKUS stats: Banjo 1.24, volt 1.17, Jorko 1.13, ztr 1.14 -- all solid. Matheos 0.94 (dropped after Inferno pick).
+
+### Kelly Formula Correction (IMPORTANT)
+WRONG formula used in earlier analysis: kelly = edge / (odds - 1)
+CORRECT Kelly formula: kelly = (p * b - (1-p)) / b   where b = odds - 1
+Example B8 @2.33, p=0.50: kelly = (0.50*1.33 - 0.50)/1.33 = 0.165/1.33 = 12.4%
+With conf_mult(50%) = 0.66: kelly_safe = 12.4% * 0.66 = 8.2%
+Manual override to 10% given strong H2H signal.
+
+For 10-25% range need: model_prob >= 65% OR edge >= 20%+ at good odds.
+Low prob bets (50%) naturally produce smaller Kelly even with real edge.
 
 ---
 
