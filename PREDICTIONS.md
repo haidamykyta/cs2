@@ -17,17 +17,17 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 | # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
 |---|-------|--------|------|--------|---------|------|-------|--------|---------|
-| 1 | B8 vs Legacy | **B8** | 2.33 | ~50% | 43% | +7% | **10%** | - | - |
+| 1 | B8 vs Legacy | **B8** | 2.33 | ~50% | 43% | +7% | **10%** | WIN | YES ✓ |
 
 ### Model picks
 
 | Match | Our pick | Confidence | Key argument | Result | Correct |
 |-------|----------|-----------|--------------|--------|---------|
-| FOKUS vs EYEBALLERS | **FOKUS** | Low | FOKUS momentum (2-0 BC.Game), EYE fatigue (2 matches yesterday). Decider Dust2 near coin flip (38% vs 43%) | - | - |
-| B8 vs Legacy [BET] | **B8** | Medium | H2H 3-0 (Legacy 0% vs B8). Ancient 76% first pick. kensizor in form (7.6 MVP). @2.33 implied 43%, real ~50% | - | - |
-| PARIVISION vs Wildcard | **PARIVISION** | High | Rank #5 vs #74. nota issue irrelevant vs rank 74. PAR Dust2 68%, Nuke removed (Wildcard best map). No value at 1.13 | - | - |
+| FOKUS vs EYEBALLERS | **FOKUS** | Low | FOKUS momentum (2-0 BC.Game), EYE fatigue (2 matches yesterday). Decider Dust2 near coin flip (38% vs 43%) | EYE 2-1 | NO ❌ |
+| B8 vs Legacy [BET] | **B8** | Medium | H2H 3-0 (Legacy 0% vs B8). Ancient 76% first pick. kensizor in form (7.6 MVP). @2.33 implied 43%, real ~50% | B8 2-0 | YES ✓ |
+| PARIVISION vs Wildcard | **PARIVISION** | High | Rank #5 vs #74. nota issue irrelevant vs rank 74. PAR Dust2 68%, Nuke removed (Wildcard best map). No value at 1.13 | LIVE OT Mirage 21-21 | ? |
 
-**Tracking:** picks = 3 | value bets = 1 (B8 @2.33, kelly 10%)
+**Tracking:** picks = 3 | value bets = 1/1 WIN | bankroll: 65.6u -> 72.2u (+10%)
 
 ### Notes
 - **B8 value logic**: H2H 3-0 vs Legacy is key signal. Ignored H2H vs 3DMAX (Apr 7) and lost. Applying lesson: H2H 3/3 dominance -> value bet when odds undervalue it (2.33 implies 43% vs real ~50%).
@@ -37,6 +37,32 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
   - Dust2 decider: EYE 43% WR vs FOKUS 38%. Ro1f dominant (1.35 rating across both maps).
   - Polymarket live: FOKUS 55c / EYE 46c. EYE @46c = thin value (+4-6% edge) on Dust2 stats. Small position only.
   - FOKUS stats: Banjo 1.24, volt 1.17, Jorko 1.13, ztr 1.14 -- all solid. Matheos 0.94 (dropped after Inferno pick).
+
+### Apr 8 R5 Post-Mortem (partial)
+
+**B8 2-0 Legacy -- VALUE BET WIN ✓ (+10% bankroll)**
+- Dust II 13-9, Ancient 13-4 -- clean 2-0
+- kensizor MVP 7.3 (3rd consecutive strong showing: 7.6, 7.6, 7.3)
+- s1zzi 7.1, esenthial 6.8 -- B8 trio completely outclassed Legacy
+- H2H pattern confirmed: Legacy 0/4 vs B8 now (added this match)
+- latto dropped to 5.6 rating (from 7.7 vs NRG) -- momentum evaporated vs B8
+- arT 5.6, n1ssim 5.0 -- Legacy had no answers
+- Lesson: H2H 3-0 is a STRONG signal. Kelly 10% was correct sizing.
+
+**FOKUS 1-2 EYEBALLERS -- our pick WRONG ❌**
+- Inferno 13-16 (FOKUS own pick lost), Nuke 13-5 (FOKUS won), Dust2 9-13 (lost decider)
+- Dust2 result confirmed our pre-match analysis: EYE edge (43% WR vs FOKUS 38%). EYE won 13-9.
+- Ro1f EVP 6.8 across all 3 maps -- most consistent player
+- Banjo MVP 6.9 for FOKUS but team couldn't hold Dust2
+- Polymarket had EYE @46c on Dust2 -- that was the correct value (EYE won Dust2)
+- Lesson: When Dust2 stats favor EYE AND Dust2 is decider -- lean EYE, not FOKUS
+
+**PARIVISION vs Wildcard -- LIVE, Mirage OT 21-21**
+- MASSIVE upset potential: reck (Wildcard) 44K/27D, PAR nota -5 only on Mirage so far
+- BUT: this is nota being average, not collapsing (-5 at 21-21 is not the -16 pattern)
+- PAR xiELO 36K, Jame 33K -- carrying as expected
+- Wildcard Mirage 64% WR (14 maps) vs PAR Mirage 39% -- Wildcard picked their best map
+- If Wildcard wins Mirage, PAR in huge trouble (Dust2 next = PAR 62% WR, better)
 
 ### Kelly Formula Correction (IMPORTANT)
 WRONG formula used in earlier analysis: kelly = edge / (odds - 1)
