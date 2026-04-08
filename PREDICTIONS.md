@@ -9,6 +9,33 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 ---
 
+## 2026-04-08 -- PGL Bucharest 2026, Round 5 (Tier A, LAN)
+
+### Swiss bracket: all remaining teams 2-2 (win = playoffs, loss = eliminated)
+
+### Value Bets (1)
+
+| # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
+|---|-------|--------|------|--------|---------|------|-------|--------|---------|
+| 1 | B8 vs Legacy | **B8** | 2.33 | ~50% | 43% | +7% | 3-4% | - | - |
+
+### Model picks
+
+| Match | Our pick | Confidence | Key argument | Result | Correct |
+|-------|----------|-----------|--------------|--------|---------|
+| FOKUS vs EYEBALLERS | **FOKUS** | Low | FOKUS momentum (2-0 BC.Game), EYE fatigue (2 matches yesterday). Decider Dust2 near coin flip (38% vs 43%) | - | - |
+| B8 vs Legacy [BET] | **B8** | Medium | H2H 3-0 (Legacy 0% vs B8). Ancient 76% first pick. kensizor in form (7.6 MVP). @2.33 implied 43%, real ~50% | - | - |
+| PARIVISION vs Wildcard | **PARIVISION** | High | Rank #5 vs #74. nota issue irrelevant vs rank 74. PAR Dust2 68%, Nuke removed (Wildcard best map). No value at 1.13 | - | - |
+
+**Tracking:** picks = 3 | value bets = 1 (B8 @2.33, kelly 3-4%)
+
+### Notes
+- **B8 value logic**: H2H 3-0 vs Legacy is key signal. Ignored H2H vs 3DMAX (Apr 7) and lost. Applying lesson: H2H 3/3 dominance -> value bet when odds undervalue it (2.33 implies 43% vs real ~50%).
+- **PAR skip**: nota pattern, but rank gap too large for Wildcard upset. @1.13 no value.
+- **FOKUS vs EYE (live)**: EYE played 2 matches Apr 7 (09:00 PGL + 19:10 CCT Omega). Same fatigue pattern as PAR Apr 6. Slight FOKUS lean.
+
+---
+
 ## 2026-04-07 -- PGL Bucharest 2026, Round 4 (Tier A, LAN)
 
 ### Swiss bracket status going into R4
