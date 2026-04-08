@@ -28,14 +28,14 @@ Note: model probability needed to confirm edge > 5%. Manual analysis flags these
 
 | Match | Our pick | Confidence | Key argument | Result | Correct |
 |-------|----------|-----------|--------------|--------|---------|
-| MIBR vs EYEBALLERS | **MIBR** | Low | Inferno 73% first pick. EYE event form higher but MIBR can avoid Nuke (ban it) → decider Anubis 88% | - | - |
-| NRG vs Legacy | **Legacy** | High | Rank #14 vs #32. NRG Dust2 7-loss streak + Nuke 5-loss streak -- both will appear in veto | - | - |
-| The MongolZ vs Wildcard | **MongolZ** | Very High | Rank #8 vs #74. No contest. No bet (odds 1.06-1.10) | - | - |
-| B8 vs Inner Circle | **Inner Circle** | Low | IC handicap data better (32% 2-0 vs B8 14%), beat FaZe yesterday. Decider veto favors IC if they ban Ancient (B8 73%) | - | - |
-| PARIVISION vs 3DMAX | **PARIVISION** | High | Rank #5, Ancient 82% + Anubis 75% + Dust2 65%. 3DMAX Mirage perma-banned. Map pool locks out 3DMAX | - | - |
-| FOKUS vs BC.Game | **FOKUS** | Medium-High | Ancient 91% (5 streak!) vs BC.Game 14%. Inferno 70% vs BC.Game 20%. BC.Game Mirage perma-banned. Veto strongly favors FOKUS | - | - |
+| MIBR vs EYEBALLERS | **MIBR** | Low | Inferno 73% first pick. EYE event form higher but MIBR can avoid Nuke (ban it) → decider Anubis 88% | ? | ? |
+| NRG vs Legacy | **Legacy** | High | Rank #14 vs #32. NRG Dust2 7-loss streak + Nuke 5-loss streak -- both will appear in veto | ? | ? |
+| The MongolZ vs Wildcard | **MongolZ** | Very High | Rank #8 vs #74. No contest. No bet (odds 1.06-1.10) | MongolZ 2-0 | YES ✓ |
+| B8 vs Inner Circle | **Inner Circle** | Low | IC handicap data better (32% 2-0 vs B8 14%), beat FaZe yesterday. Decider veto favors IC if they ban Ancient (B8 73%) | B8 2-0 | NO ❌ |
+| PARIVISION vs 3DMAX | **PARIVISION** | High | Rank #5, Ancient 82% + Anubis 75% + Dust2 65%. 3DMAX Mirage perma-banned. Map pool locks out 3DMAX | 3DMAX 2-0 | NO ❌ |
+| FOKUS vs BC.Game | **FOKUS** | Medium-High | Ancient 91% (5 streak!) vs BC.Game 14%. Inferno 70% vs BC.Game 20%. BC.Game Mirage perma-banned. Veto strongly favors FOKUS | FOKUS 2-0 | YES ✓ |
 
-**Tracking:** picks = 6 | value bets = 0 (2 flagged) | correctness to be filled after results
+**Results (4/6 known): picks 2/4 = 50% | value bets: FOKUS flag confirmed WIN (missed -- no model run)**
 
 ### Notes
 - EYEBALLERS event ratings massively overperforming (JW +0.30, dex +0.15 vs 3mo avg). MIBR underperforming. Flip MIBR pick if EYE gets Nuke decider.
@@ -44,6 +44,47 @@ Note: model probability needed to confirm edge > 5%. Manual analysis flags these
 - MongolZ vs Wildcard: Wildcard HexT 1.31 event rating (overperforming) but gap too large for value at 6-7.5 odds.
 - Elimination context: 1-2 teams fighting for survival often show elevated performance. Accounts for IC/FOKUS higher motivation vs opponents in same bracket.
 - Swiss fatigue lesson from Apr 6: today all matches are on Apr 7 (different day), no same-day fatigue risk.
+
+### Apr 7 Post-Mortem (4 completed matches)
+
+**FOKUS 2-0 BC.Game -- our pick CORRECT ✓**
+- Ancient 13-3: veto analysis was 100% right. FOKUS picked Ancient first (91% WR), destroyed BC.Game 13-3
+- Matheos MVP 7.6 (35K/22D +13), Jorko 7.4, volt 6.8 -- all FOKUS players above 6.0
+- BC.Game aragornN -17, MUTiRiS -15 -- same collapse pattern as vs Voca
+- Overpass 13-10: BC.Game picked their 67% WR map but lost anyway
+- **MISSED VALUE BET**: FOKUS @1.75-1.79 was the correct call. Manual veto analysis identified it, but without model confirmation we didn't bet. Loss = estimated +40-50% ROI on this match.
+- Rule: when veto analysis gives 90%+ map to one side AND opponent has perma-ban on their best map = high confidence bet even without model run
+
+**PARIVISION 0-2 3DMAX -- our pick WRONG ❌**
+- Inferno 9-13, Dust II 9-13 -- PAR LOST BOTH THEIR OWN MAPS (Inferno 62% WR, Dust II 65% WR)
+- Veto went exactly as predicted (PAR bans Nuke, 3DMAX bans Mirage) but PAR still lost
+- nota AGAIN: -16 diff, 4.9 rating. 3rd straight match with nota at -16 to -18 in elimination situations
+- Graviti MVP 6.9 for 3DMAX -- Graviti was supposed to be the weakest link (0.96 3mo rating)
+- 3DMAX overperformance pattern is real: Lucky 1.28 event, Ex3rcice 1.06, Graviti 1.03 -- entire team peaking
+- H2H data pointed the way: 3DMAX beat PAR 1-2 4 months ago, 4/5 historical H2H wins for 3DMAX
+- **KEY MISS**: Bookmaker had PAR at 1.21-1.27 (79-83% implied) -- this was wrong. Real 3DMAX win prob was >35-40%
+- Pattern: PAR nota is a structural liability for high-pressure matches. Model needs nota_recent_form as feature.
+
+**B8 2-0 Inner Circle -- our pick IC WRONG ❌**
+- Dust II 13-11 (close), Mirage 13-6 (dominant)
+- Veto confirmed our analysis: B8 banned Nuke, IC banned Inferno, B8 took Dust II, IC took Mirage
+- kensizor MVP 7.6 (8.5 Mirage!), s1zzi 6.9 (18D only!), esenthial 6.8 -- B8 trio dominated
+- IC Dawy: 4.4 rating, -17 diff. Dawy who was hero vs FaZe completely collapsed vs B8
+- IC handicap distribution (32% 2-0 wins) was misleading -- those wins were vs weaker opponents
+- B8 kensizor hero factor: 8.5 Mirage = another single-player carry (Ex3rcice was Apr 6, kensizor Apr 7)
+- Lesson: survival match pressure can either unlock hero plays (kensizor) or cause complete collapse (Dawy)
+
+**MongolZ 2-0 Wildcard -- our pick CORRECT ✓**
+- Dust II 13-11, Nuke 13-8 -- controlled win as expected
+- 910 MVP 6.7, cobrazera 6.6 -- solid performance
+- Wildcard HexT EVP 6.0 -- performed but gap too large
+- Confirmed: at 1.06-1.10 this is a "safe" pick but never a bet
+
+**Apr 7 calibration update:**
+1. **FOKUS veto analysis = new value detection method**: when a team has 90%+ WR on their best map AND opponent has perma-ban on their own best map -- bet regardless of model, if odds allow (1.60-1.85 range)
+2. **nota liability confirmed**: PAR nota underperforms severely in elimination/pressure matches (-16 to -18 diff 3 consecutive times). This is structural, not variance. Future PAR bets: discount if nota hasn't been benched.
+3. **3DMAX event overperformance**: Lucky 1.28 event, Graviti 1.03→MVP -- entire team peaking beyond Glicko. This tournament 3DMAX beat B8 (twice), Voca, now PAR. 4 wins at this event.
+4. **Single-player hero/collapse variance**: kensizor 8.5 (B8), Ex3rcice 7.2 (3DMAX Apr 6) -- elimination matches produce extreme individual performances in both directions.
 
 ---
 
