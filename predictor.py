@@ -155,7 +155,9 @@ def calculate_value_bet(t1_name: str, t2_name: str,
     def _vb(team_name, model_prob, odds) -> ValueBet:
         bm_prob = 1.0 / odds if odds > 1 else 0.5
         edge = model_prob - bm_prob
-        kelly = edge / (odds - 1) if odds > 1 else 0.0
+        # Correct Kelly: (p*b - (1-p)) / b  where b = odds - 1
+        b = odds - 1
+        kelly = (model_prob * b - (1.0 - model_prob)) / b if odds > 1 else 0.0
         ev_pct = (model_prob * odds - 1.0) * 100.0
         is_value = (
             edge >= VALUE_EDGE_THRESHOLD
