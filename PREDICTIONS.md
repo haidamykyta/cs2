@@ -9,6 +9,57 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 ---
 
+## 2026-04-09 -- PGL Bucharest 2026, Playoffs Upper Bracket QF (Tier A, LAN)
+
+### Qualified teams (Swiss R5 results):
+- Playoffs (won R5): MIBR (3-1), The MongolZ (3-0), Astralis (3-2), EYEBALLERS (3-2), B8 (3-2), PARIVISION (3-2), 3DMAX (3-1)
+- Eliminated in R5: FOKUS, Legacy, Wildcard
+
+### Value Bets
+
+| # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
+|---|-------|--------|------|--------|---------|------|-------|--------|---------|
+| - | MIBR vs 3DMAX | **3DMAX** | TBD | ~55-60% | TBD | TBD | TBD | pending | - |
+
+### Model picks
+
+| Match | Our pick | Confidence | Key argument | Result | Correct |
+|-------|----------|-----------|--------------|--------|---------|
+| MIBR vs 3DMAX | **3DMAX** | High | H2H 3-0 (all 2-0 sweeps). Lucky 1.28 event form. MIBR Dust2 perma-ban (36 bans). 3DMAX Inferno 30 maps. Decider Ancient/Overpass favors 3DMAX. | pending | - |
+
+### Pre-Match Analysis: MIBR vs 3DMAX
+
+**H2H:** 3DMAX 3-0 vs MIBR -- all wins were 2-0 sweeps. MIBR has never beaten 3DMAX.
+
+**Veto projection:**
+- 3DMAX bans: Mirage (perma, 60+ bans)
+- MIBR bans: Dust2 (perma, 36 bans)
+- MIBR pick: Anubis (89% WR -- strongest map)
+- 3DMAX pick: Inferno (30 maps experience, 47% WR)
+- Decider: Ancient or Overpass (both 3DMAX edge)
+
+**Map comparison:**
+| Map | MIBR WR | 3DMAX WR | Edge |
+|-----|---------|----------|------|
+| Anubis | 89% | ~40% | MIBR EDGE (their pick) |
+| Inferno | 73% | 47% | MIBR structural edge, but 3DMAX picks it |
+| Ancient | 33% | ~55% | 3DMAX EDGE |
+| Overpass | ~45% | ~60% | 3DMAX edge |
+| Nuke | ~50% | ~50% | even |
+
+**Event form (PGL Bucharest):**
+- 3DMAX: Lucky 1.28 event, Ex3rcice 1.25, Graviti 1.03 (below-avg to MVP level). 4 wins this event (B8x2, Voca, PAR). Full team peaking.
+- MIBR: insani 8.0 MVP vs EYE but event avg 1.07. brnz4n 7.2, kl1m 6.8. Consistent but not dominant.
+
+**Pick logic:** MIBR wins Anubis (89% WR) with high probability. If Inferno goes to 3DMAX (46-50/50), decider is Ancient or Overpass where 3DMAX has clear edge. H2H 3-0 adds additional signal. Model pick: 3DMAX.
+
+**Kelly sizing (once odds arrive):**
+- 3DMAX @1.70: need p >= 65% for edge -- borderline, check model
+- 3DMAX @1.90-2.00: p >= 58% = edge +7-10% -- kelly_safe 10-15%
+- 3DMAX @2.10+: confirmed value bet even at p=55%
+
+---
+
 ## 2026-04-08 -- PGL Bucharest 2026, Round 5 (Tier A, LAN)
 
 ### Swiss bracket: all remaining teams 2-2 (win = playoffs, loss = eliminated)
@@ -25,9 +76,9 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 |-------|----------|-----------|--------------|--------|---------|
 | FOKUS vs EYEBALLERS | **FOKUS** | Low | FOKUS momentum (2-0 BC.Game), EYE fatigue (2 matches yesterday). Decider Dust2 near coin flip (38% vs 43%) | EYE 2-1 | NO ❌ |
 | B8 vs Legacy [BET] | **B8** | Medium | H2H 3-0 (Legacy 0% vs B8). Ancient 76% first pick. kensizor in form (7.6 MVP). @2.33 implied 43%, real ~50% | B8 2-0 | YES ✓ |
-| PARIVISION vs Wildcard | **PARIVISION** | High | Rank #5 vs #74. nota issue irrelevant vs rank 74. PAR Dust2 68%, Nuke removed (Wildcard best map). No value at 1.13 | LIVE OT Mirage 21-21 | ? |
+| PARIVISION vs Wildcard | **PARIVISION** | High | Rank #5 vs #74. nota issue irrelevant vs rank 74. PAR Dust2 68%, Nuke removed (Wildcard best map). No value at 1.13 | PAR 2-0 | YES ✓ |
 
-**Tracking:** picks = 3 | value bets = 1/1 WIN | bankroll: 65.6u -> 72.2u (+10%)
+**Tracking:** picks = 3/3 | value bets = 1/1 WIN | bankroll: 65.6u -> 72.2u (+10%)
 
 ### Notes
 - **B8 value logic**: H2H 3-0 vs Legacy is key signal. Ignored H2H vs 3DMAX (Apr 7) and lost. Applying lesson: H2H 3/3 dominance -> value bet when odds undervalue it (2.33 implies 43% vs real ~50%).
@@ -57,12 +108,14 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 - Polymarket had EYE @46c on Dust2 -- that was the correct value (EYE won Dust2)
 - Lesson: When Dust2 stats favor EYE AND Dust2 is decider -- lean EYE, not FOKUS
 
-**PARIVISION vs Wildcard -- LIVE, Mirage OT 21-21**
-- MASSIVE upset potential: reck (Wildcard) 44K/27D, PAR nota -5 only on Mirage so far
-- BUT: this is nota being average, not collapsing (-5 at 21-21 is not the -16 pattern)
-- PAR xiELO 36K, Jame 33K -- carrying as expected
-- Wildcard Mirage 64% WR (14 maps) vs PAR Mirage 39% -- Wildcard picked their best map
-- If Wildcard wins Mirage, PAR in huge trouble (Dust2 next = PAR 62% WR, better)
+**PARIVISION 2-0 Wildcard -- our pick CORRECT ✓**
+- Mirage 28-26 OT: PAR survived despite Wildcard's 64% Mirage WR and reck 44K/27D performance
+- Dust2 13-11: PAR closed it out on their stronger map
+- Jame MVP 7.0 -- carried both maps despite nota pressure pattern
+- nota pattern: -5 on Mirage (NOT -16/-18 collapse) -- rank #74 gap prevented nota effect
+- Wildcard reck 6.3 EVP -- gave real fight but gap too large in the end
+- Confirmed: nota structural liability only activates vs quality opponents (R4+). vs rank 74+ nota effect neutralized.
+- Lesson: nota discount rule = apply only when opponent rank ≤ 50. vs rank 74 Wildcard = no nota penalty.
 
 ### Kelly Formula Correction (IMPORTANT)
 WRONG formula used in earlier analysis: kelly = edge / (odds - 1)
