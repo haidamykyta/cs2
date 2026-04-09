@@ -11,6 +11,10 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 ## 2026-04-09 -- PGL Bucharest 2026, Playoffs Upper Bracket QF (Tier A, LAN)
 
+### ⚠️ PROCESS ERROR (Apr 9)
+Used wrong odds for Astralis vs EYE (1.32/3.38 instead of real 1.14/5.40). Caused MISSED 15% kelly value bet on EYE.
+**Rule: always confirm odds directly with user before Kelly calculation. Never use odds from secondary source.**
+
 ### Qualified teams (Swiss R5 results):
 - Playoffs (won R5): MIBR (3-1), The MongolZ (3-0), Astralis (3-2), EYEBALLERS (3-2), B8 (3-2), PARIVISION (3-2), 3DMAX (3-1)
 - Eliminated in R5: FOKUS, Legacy, Wildcard
@@ -19,13 +23,19 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 | # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
 |---|-------|--------|------|--------|---------|------|-------|--------|---------|
-| - | MIBR vs 3DMAX | **3DMAX** | TBD | ~55-60% | TBD | TBD | TBD | pending | - |
+| - | MIBR vs 3DMAX | **3DMAX** | 1.65 | ~60% | 60.6% | +4.4% | NO BET (< 1.85 threshold) | WIN | - |
+| ⚠️ | Astralis vs EYE | **EYE** | **5.40** | ~43% | 18.5% | **+24.5%** | **~15% MISSED** | LIVE 1-0 EYE | - |
+
+**⚠️ ODDS ERROR: EYE pre-match were 1.14/5.40, NOT 1.32/3.38. Used wrong odds in analysis. At 5.40 EYE was a 15% kelly value bet. MISSED.**
 
 ### Model picks
 
 | Match | Our pick | Confidence | Key argument | Result | Correct |
 |-------|----------|-----------|--------------|--------|---------|
-| MIBR vs 3DMAX | **3DMAX** | High | H2H 3-0 (all 2-0 sweeps). Lucky 1.28 event form. MIBR Dust2 perma-ban (36 bans). 3DMAX Inferno 30 maps. Decider Ancient/Overpass favors 3DMAX. | pending | - |
+| MIBR vs 3DMAX | **3DMAX** | High | H2H 3-0 (all 2-0 sweeps). Lucky 1.28 event form. MIBR Dust2 perma-ban. Decider Nuke favors 3DMAX. | 3DMAX 2-1 | YES ✓ |
+| Astralis vs EYE | **EYE** | Medium (veto-based) | Mirage: Astralis 33% WR -- EYE dominant pick. Inferno decider: EYE chose it over Nuke 78% -- confidence signal. | LIVE 1-0 EYE (Mirage 13-8) | TBD |
+| FUT vs B8 | **FUT** | Medium-High | Mirage 77% locked pick. H2H: FUT 2-0 B8 (recent). No value on B8 @3.03 | pending | - |
+| MongolZ vs PAR | **PAR** | Low-Medium | Map pool: Ancient 78% + Dust2 69% + Inferno 57% on all deciders. MongolZ Train/Anubis perma-bans. | pending | - |
 
 ### Pre-Match Analysis: MIBR vs 3DMAX
 
@@ -53,10 +63,57 @@ DATE | MATCH | TOURNAMENT | FORMAT | OUR_PROB | BOOKMAKER_ODDS | EDGE | BET | RE
 
 **Pick logic:** MIBR wins Anubis (89% WR) with high probability. If Inferno goes to 3DMAX (46-50/50), decider is Ancient or Overpass where 3DMAX has clear edge. H2H 3-0 adds additional signal. Model pick: 3DMAX.
 
-**Kelly sizing (once odds arrive):**
-- 3DMAX @1.70: need p >= 65% for edge -- borderline, check model
-- 3DMAX @1.90-2.00: p >= 58% = edge +7-10% -- kelly_safe 10-15%
-- 3DMAX @2.10+: confirmed value bet even at p=55%
+**Actual odds: MIBR @2.23, 3DMAX @1.65.** Edge +4.4% -- below 5% threshold. No bet.
+
+### MIBR vs 3DMAX Result: 3DMAX 2-1 ✓
+
+**Actual veto:**
+1. 3DMAX ban Mirage, MIBR ban Dust2
+2. 3DMAX pick Inferno, MIBR pick Ancient
+3. MIBR ban Overpass, 3DMAX ban Anubis → **Nuke decider** (not Ancient/Overpass as predicted)
+
+**Map results:**
+- Inferno: MIBR 13-9 (MIBR won their structural map)
+- Ancient: **3DMAX 16-13** (3DMAX won MIBR's supposed 89% WR map -- brnz4n 4.4/-11)
+- Nuke: 3DMAX 13-9 (decider win)
+
+**Key stats:**
+- Maka MVP 6.7 (55K/40D +15), Lucky 6.4 (53K/45D +8)
+- brnz4n 0.88 rating overall, 4.4 on Ancient -- collapsed on MIBR's own pick
+- H2H: 3DMAX now **4-0** vs MIBR
+
+**Calibration lesson:** MIBR's 89% Ancient WR did NOT hold in playoff pressure. brnz4n was the weak link -- single-player collapse overrode map statistics. 3DMAX won the map MIBR was supposed to dominate. WR% is less reliable under elimination/playoff pressure.
+
+---
+
+### Pre-Match Analysis: Astralis vs EYEBALLERS
+
+**Pre-match odds: Astralis @1.14, EYE @5.40** (margin ~6.2%)
+
+**⚠️ ODDS ERROR IN ANALYSIS:** Earlier I used 1.32/3.38 (wrong source). Correct odds were 1.14/5.40.
+
+At 5.40, EYE value calculation:
+- Real EYE prob (veto-based): ~43%
+- Edge = 43% - 18.5% = **+24.5%** → strong value
+- kelly = (0.43×4.40 - 0.57)/4.40 = 30%
+- kelly_safe = 30% × 0.495 = **15%**
+- This was a **MISSED 15% kelly value bet** due to wrong odds
+
+**Veto (confirmed):**
+1. EYE ban Overpass, AST ban Anubis
+2. EYE pick Mirage, AST pick Ancient
+3. AST ban Dust2, EYE ban Nuke
+4. Inferno decider
+
+**Key veto insight:** EYE banned their own Nuke (78% WR) to force Inferno as decider -- they're confident on Inferno vs AST.
+- Astralis Mirage: **33% WR (21 maps)** -- Map 1 = EYE structural advantage
+- Astralis Ancient: **75% WR** -- Map 2 = AST structural advantage
+- Inferno: EYE chose it, likely edge
+
+**Live status: EYE 1-0 (Mirage 13-8)**
+- JW 20K/11D, ADR 95 -- dominant
+- HooXi 5K/15D -- disaster on Astralis weakest map
+- Result confirmed veto read
 
 ---
 
