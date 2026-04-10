@@ -297,6 +297,81 @@ Veto went differently than predicted (Dust2 and Overpass played, not Ancient+Inf
 
 ---
 
+## 2026-04-11 -- PGL Bucharest 2026, LB 3rd Place + Grand Final (Tier A, LAN)
+
+### Matches
+- **3DMAX vs MongolZ** — Lower Bracket (14:00)
+- **Astralis vs FUT** — Grand Final Bo5 (17:00)
+
+### Value Bets
+
+| # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
+|---|-------|--------|------|--------|---------|------|-------|--------|---------|
+| - | 3DMAX vs MongolZ | **MongolZ** | 1.42 | ~62% | 70.4% | N/A | NO BET (margin 7.7%) | pending | - |
+| - | Astralis vs FUT (Bo5) | **FUT** | 1.68 | ~61% | 59.5% | +1.5% | NO BET (edge < 5%) | pending | - |
+
+### Model picks
+
+| Match | Our pick | Confidence | Key argument | Result | Correct |
+|-------|----------|-----------|--------------|--------|---------|
+| 3DMAX vs MongolZ | **MongolZ** | Medium | Rank #8 vs #15. Nuke 64% pick. 3DMAX Inferno first pick edge countered by MongolZ Nuke/Ancient. | pending | - |
+| Astralis vs FUT (Bo5) | **FUT** | Low-Medium | Dust2 decider: FUT 50% vs AST 33%. Nuke 92% FUT pick. Both teams win own picks → 2-2 → Dust2. | pending | - |
+
+---
+
+### Pre-Match Analysis: 3DMAX vs MongolZ
+
+**Odds: 3DMAX @2.68, MongolZ @1.42** (margin 7.7% → ABOVE 7% threshold → auto NO BET)
+
+**Veto projection:**
+- 3DMAX bans: Mirage (100% first ban, perma 61)
+- MongolZ bans: Anubis (54% ban, perma)
+- 3DMAX picks: Inferno (3DMAX 57% vs MongolZ 33%) ← 3DMAX key advantage
+- MongolZ picks: Nuke (MongolZ 64% vs 3DMAX 62%) ← near-even
+- Decider: Ancient (3DMAX 36% vs MongolZ 44%) or Dust2 (3DMAX 52% vs MongolZ 50%) → slight MongolZ both
+
+**Player event ratings:**
+- 3DMAX: Lucky 1.17, misutaaa 1.13, Maka 1.07 -- solid
+- MongolZ: 910 1.13, cobrazera 1.08, Techno 1.01 -- 910 star carries
+
+**Pick: MongolZ. NO BET (margin 7.7%).**
+
+---
+
+### Pre-Match Analysis: Astralis vs FUT Grand Final (Bo5)
+
+**Odds: Astralis @2.15, FUT @1.68** (margin 6.0% ✓)
+
+**H2H (5 meetings):** Astralis 3-2 FUT. Most recent: Astralis 2-1. But FUT won 2 in a row before that.
+FUT H2H: 40% win rate historically (analytics note) → Astralis has historical edge.
+
+**Bo5 veto (2 bans, 4 picks, 1 decider):**
+| Map | Picker | AST WR | FUT WR | Edge |
+|-----|--------|--------|--------|------|
+| Mirage | FUT pick | 32% (22m) | **77% (22m)** | FUT DOMINANT |
+| Overpass | AST pick | **72% (18m)** | 50% (12m) | AST DOMINANT |
+| Ancient | AST pick | **86% (14m, 6 streak!)** | 56% (16m) | AST DOMINANT |
+| Nuke | FUT pick | 62% (8m) | **83-92% (6-13m)** | FUT DOMINANT |
+| Dust2 | decider | 33% (15m) | 50% (16m) | FUT EDGE |
+
+**Series logic:** Each team wins own 2 picks (high prob) → 2-2 → Dust2 decider.
+- FUT wins Dust2 decider: ~60% (50% vs 33%)
+- Overall FUT series prob: ~61%
+
+**Kelly: p=0.61, b=0.68, kelly=(0.61×0.68-0.39)/0.68=(0.415-0.39)/0.68=3.7%**
+Edge = 61%-59.5% = **+1.5% → below 5% threshold. NO BET.**
+
+**Player event ratings (key signals):**
+- jabbi 1.31 (AST top performer) vs dziugss 1.26 (FUT) -- AST star slightly better
+- HooXi 0.90 vs dem0n 1.09 -- FUT clear edge at bottom of lineup
+- FUT avg individual rating higher: ~1.17 vs ~1.13 for AST
+
+**Risk:** AST Ancient 86% WR on 6-map winning streak is the real danger for FUT. If AST picks up Ancient convincingly AND gets clutch Overpass rounds = AST 2-0 advantage early.
+
+**Pick: FUT (Dust2 decider + higher avg player ratings). NO BET (edge +1.5%).**
+
+---
+
 ## 2026-04-08 -- PGL Bucharest 2026, Round 5 (Tier A, LAN)
 
 ### Swiss bracket: all remaining teams 2-2 (win = playoffs, loss = eliminated)
