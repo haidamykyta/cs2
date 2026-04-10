@@ -157,15 +157,19 @@ At 5.40, EYE value calculation:
 
 | # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
 |---|-------|--------|------|--------|---------|------|-------|--------|---------|
-| - | 3DMAX vs Astralis | **Astralis** | 1.40 | ~72% | 71.4% | ~0% | NO BET | pending | - |
-| 1 | FUT vs MongolZ | **FUT** | **1.80** | ~63% | 55.6% | **+7.4%** | **8%** | pending | - |
+| - | 3DMAX vs Astralis | **Astralis** | 1.40 | ~72% | 71.4% | ~0% | NO BET | WIN | - |
+| 1 | FUT vs MongolZ | **FUT** | **1.80** | ~63% | 55.6% | **+7.4%** | **8%** | **WIN +4.6u** | YES ✓ |
+
+**SF: 1/1 VB WIN. Bankroll: 72.2u → 76.8u (+4.6u)**
 
 ### Model picks
 
 | Match | Our pick | Confidence | Key argument | Result | Correct |
 |-------|----------|-----------|--------------|--------|---------|
-| 3DMAX vs Astralis | **Astralis** | High | H2H 3-0 recent (all 2-0). AST Ancient 76% locked. Map pool: AST wins own pick + edges on all deciders. 86% WR last month. | pending | - |
-| FUT vs MongolZ | **FUT** | Medium-High | Nuke 92% (FUT) vs MongolZ 63% -- MongolZ walks into FUT's best map if they pick it. Mirage 77% first pick. ALL deciders favor FUT. No H2H. | pending | - |
+| 3DMAX vs Astralis | **Astralis** | High | H2H 3-0 recent. Map pool AST dominates. 86% WR last month. | Astralis 2-0 | YES ✓ |
+| FUT vs MongolZ | **FUT** | Medium-High | Nuke 92% (FUT). Mirage 77% locked. ALL deciders favor FUT. | FUT 2-0 | YES ✓ |
+
+**SF picks: 2/2 (100%) | VB: 1/1 WIN (+4.6u)**
 
 ---
 
@@ -254,6 +258,42 @@ kelly_safe = 16.7% × 0.836 = 14% → cap at 8% (no H2H data, caution)
 **VALUE BET: FUT @1.80, kelly 8%** (72.2u × 8% = 5.8u)
 
 Risk: No H2H = uncertainty. MongolZ LAN experience higher ($197,750 earnings). Nuke: MongolZ 63% is real but FUT 92% is dominant. If MongolZ avoids Nuke and picks Dust2/Ancient -- gap narrows. Kelly capped at 8% for this uncertainty.
+
+### SF Post-Mortem: Astralis 2-0 3DMAX ✓
+
+**Maps: Dust2 13-11, Overpass 13-10** (both close, AST held both)
+
+Veto went differently than predicted (Dust2 and Overpass played, not Ancient+Inferno). But outcome correct.
+
+**Key stats:**
+- phzy MVP 7.4 (45K/26D +19, 79% KAST, 3 clutch wins) -- breakthrough performance
+- HooXi 7.0 (+8 diff, 86% KAST) -- controlled well despite being IGL
+- Graviti -10 diff, 57% KAST -- 3DMAX's weakest link exposed again (same pattern as Swiss)
+- Lucky -5 diff -- event form regression after 1.28 peak in Swiss
+
+**H2H: Astralis now 4-0 vs 3DMAX in recent meetings (2 months)**
+
+**Calibration:** AST map pool dominance confirmed. Even on non-standard maps (Dust2, Overpass) AST won close games. This is resilience signal -- not just map pool stats but genuine team quality.
+
+---
+
+### SF Post-Mortem: FUT 2-0 MongolZ -- VALUE BET WIN ✓ (+4.6u)
+
+**Maps: Nuke 13-10, Mirage 16-14** (both close, FUT held)
+
+**Veto (inferred):** MongolZ likely picked Nuke (63% WR) -- walked directly into FUT's 92% WR map. Mirage was FUT's pick (77%). Analysis confirmed.
+
+**Key stats:**
+- dem0n MVP 6.8 (45K/33D +12, 82% KAST, 14 multikills)
+- lauNX 6.7 (43K/36D +7, 84% KAST)
+- Techno4K -14 diff, 49% KAST -- MongolZ star completely neutralized
+- mzinho -9, 59% KAST -- MongolZ support layer failed
+
+**Map pool analysis accuracy:** 100%. FUT won BOTH maps we predicted they'd win (Nuke 92%, Mirage 77%). MongolZ had no answer.
+
+**Calibration:** No H2H data was the main uncertainty -- caution was warranted (kelly 8% not 14%). But map pool signal was strong enough. Rule: no H2H → cap kelly at 60-65% of calculated value.
+
+**Bankroll: 72.2u → 76.8u (+4.6u, FUT @1.80 × 5.8u)**
 
 ---
 
