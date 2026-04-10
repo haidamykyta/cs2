@@ -24,18 +24,20 @@ Used wrong odds for Astralis vs EYE (1.32/3.38 instead of real 1.14/5.40). Cause
 | # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
 |---|-------|--------|------|--------|---------|------|-------|--------|---------|
 | - | MIBR vs 3DMAX | **3DMAX** | 1.65 | ~60% | 60.6% | +4.4% | NO BET (< 1.85 threshold) | WIN | - |
-| ⚠️ | Astralis vs EYE | **EYE** | **5.40** | ~43% | 18.5% | **+24.5%** | **~15% MISSED** | LIVE 1-0 EYE | - |
+| ⚠️ | Astralis vs EYE | **EYE** | **5.40** | ~43% | 18.5% | ~+24% (wrong) | **~15% MISSED** | LOSS (AST 2-1) | N/A |
 
-**⚠️ ODDS ERROR: EYE pre-match were 1.14/5.40, NOT 1.32/3.38. Used wrong odds in analysis. At 5.40 EYE was a 15% kelly value bet. MISSED.**
+**⚠️ ODDS ERROR + ANALYSIS ERROR: EYE Inferno WR = 9% (from map data). Decider was death sentence for EYE. Real EYE prob was ~35%, not 43%. At real prob 35%, edge = 35%-18.5% = +16.5% -- still value, but smaller. Both errors compound: wrong odds AND missed EYE Inferno WR.**
 
-### Model picks
+### Model picks (QF results)
 
 | Match | Our pick | Confidence | Key argument | Result | Correct |
 |-------|----------|-----------|--------------|--------|---------|
-| MIBR vs 3DMAX | **3DMAX** | High | H2H 3-0 (all 2-0 sweeps). Lucky 1.28 event form. MIBR Dust2 perma-ban. Decider Nuke favors 3DMAX. | 3DMAX 2-1 | YES ✓ |
-| Astralis vs EYE | **EYE** | Medium (veto-based) | Mirage: Astralis 33% WR -- EYE dominant pick. Inferno decider: EYE chose it over Nuke 78% -- confidence signal. | LIVE 1-0 EYE (Mirage 13-8) | TBD |
-| FUT vs B8 | **FUT** | Medium-High | Mirage 77% locked pick. H2H: FUT 2-0 B8 (recent). No value on B8 @3.03 | pending | - |
-| MongolZ vs PAR | **PAR** | Low-Medium | Map pool: Ancient 78% + Dust2 69% + Inferno 57% on all deciders. MongolZ Train/Anubis perma-bans. | pending | - |
+| MIBR vs 3DMAX | **3DMAX** | High | H2H 3-0, Lucky 1.28 event form, Nuke decider | 3DMAX 2-1 | YES ✓ |
+| Astralis vs EYE | **Astralis** | Medium | 88% WR за місяць, Ancient 75% locked pick | Astralis 2-1 | YES ✓ |
+| FUT vs B8 | **FUT** | Medium-High | Mirage 77%, H2H 2-0, dziugss/cmtry в формі | FUT 2-0 | YES ✓ |
+| MongolZ vs PAR | **PAR** | Low-Medium | Dust2 69% + Ancient 74% edge on deciders | MongolZ 2-1 | NO ❌ |
+
+**QF: 3/4 picks = 75% | Value bets: 0 placed (1 missed due to odds error)**
 
 ### Pre-Match Analysis: MIBR vs 3DMAX
 
@@ -110,10 +112,148 @@ At 5.40, EYE value calculation:
 - Astralis Ancient: **75% WR** -- Map 2 = AST structural advantage
 - Inferno: EYE chose it, likely edge
 
-**Live status: EYE 1-0 (Mirage 13-8)**
-- JW 20K/11D, ADR 95 -- dominant
-- HooXi 5K/15D -- disaster on Astralis weakest map
-- Result confirmed veto read
+**Result: Astralis 2-1 EYE**
+- Mirage 8-13 (EYE won as predicted)
+- Ancient 16-14 (AST survived — 2OT! Staehr MVP, ryu Inferno 9.3)
+- Inferno 13-2 (AST demolished EYE -- EYE Inferno 9% WR confirmed death sentence)
+
+**Final stats:**
+- Staehr MVP 7.2 (57K/38D +19, 99 KAST across 3 maps)
+- ryu 7.0 (52K/39D +13, Inferno 9.3 rating)
+- bobeksde 4.3 rating on Inferno (-26 diff) -- EYE completely collapsed
+
+**Calibration lesson:** EYE Inferno WR was 9% in map data -- we missed this in veto analysis. They banned their own Nuke 78% to force Inferno as decider where they had NINE PERCENT win rate. Critical mistake was not checking Inferno WR for EYE before assigning 43% win prob to them. Inferno WR 9% should have dropped real EYE prob to ~35% or lower. With correct prob: edge was still +16% at 5.40, but our analysis overstated EYE's Inferno strength. Lesson: **always check DECIDER map WR for both teams before assigning series probability.**
+
+**QF picks summary: 3/4 correct (75%)**
+
+### QF Post-Mortem: MongolZ 2-1 PAR (our pick: PAR ❌)
+
+**Result:** MongolZ 2-1 PAR
+- Dust2 6-13 (PAR won as expected, Dust2 69% WR)
+- Mirage 13-8 (MongolZ won -- PAR Mirage 39%!)
+- Ancient 13-9 (MongolZ won -- PAR Ancient 74% didn't hold)
+
+**zweih MVP 6.9** for PAR -- carried but teammates BELCHONOKK (-8), xiELO (-14) collapsed.
+**Techno4K EVP 6.8** for MongolZ -- +10 diff, 92% KAST, dominant Ancient carry.
+
+**Why we were wrong:**
+- MongolZ map pool data showed Ancient 53% vs PAR 74% → should favor PAR
+- But Techno4K individually dominated Ancient despite team stats
+- PAR map pool advantage existed on paper; MongolZ individual excellence overrode it
+- xiELO (-14) and BELCHONOKK (-8) -- two players underperforming critically
+- nota was -5 (not the -16 collapse pattern), but PAR still lost due to other players failing
+
+**Calibration:** PAR individual variance is the issue -- not just nota. xiELO and BELCHONOKK are inconsistent in high-pressure playoff maps. Future PAR analysis must account for all 5 players, not just nota.
+
+---
+
+## 2026-04-10 -- PGL Bucharest 2026, Playoffs Upper Bracket SF (Tier A, LAN)
+
+### Upper Bracket SF matchups:
+- **3DMAX vs Astralis** (~3 hours)
+- **FUT vs The MongolZ** (~6 hours)
+
+### Value Bets
+
+| # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
+|---|-------|--------|------|--------|---------|------|-------|--------|---------|
+| - | 3DMAX vs Astralis | **Astralis** | 1.40 | ~72% | 71.4% | ~0% | NO BET | pending | - |
+| 1 | FUT vs MongolZ | **FUT** | **1.80** | ~63% | 55.6% | **+7.4%** | **8%** | pending | - |
+
+### Model picks
+
+| Match | Our pick | Confidence | Key argument | Result | Correct |
+|-------|----------|-----------|--------------|--------|---------|
+| 3DMAX vs Astralis | **Astralis** | High | H2H 3-0 recent (all 2-0). AST Ancient 76% locked. Map pool: AST wins own pick + edges on all deciders. 86% WR last month. | pending | - |
+| FUT vs MongolZ | **FUT** | Medium-High | Nuke 92% (FUT) vs MongolZ 63% -- MongolZ walks into FUT's best map if they pick it. Mirage 77% first pick. ALL deciders favor FUT. No H2H. | pending | - |
+
+---
+
+### Pre-Match Analysis: 3DMAX vs Astralis
+
+**Odds: 3DMAX @2.97, Astralis @1.40** (margin 5.1% ✓)
+
+**H2H (recent):**
+- 1 month ago: Astralis 2-0 3DMAX (x2 in same period)
+- 5 months ago: Astralis 2-0 3DMAX
+- 1 year ago: 3DMAX 2-1 Astralis (only 3DMAX win in dataset)
+- **Astralis 3-0 in last 3 meetings**
+
+**Map pool:**
+| Map | 3DMAX WR | AST WR | Edge |
+|-----|----------|--------|------|
+| Anubis | 71% (7m) | 0% (perma ban 27) | 3DMAX -- but AST bans it |
+| Ancient | 36% (22m) | **76% (17m)** | **AST DOMINANT** |
+| Overpass | 38% (8m) | **72% (18m)** | **AST DOMINANT** |
+| Inferno | 57% (30m) | 67% (12m) | AST edge |
+| Nuke | 58% (24m) | 56% (18m) | even |
+| Dust2 | 47% (36m) | 29% (14m) | 3DMAX slight -- but AST near-perma bans (25b) |
+| Mirage | 0% (PERMA) | 32% (22m) | banned by 3DMAX |
+
+**Veto projection:**
+1. 3DMAX bans Mirage (perma 61 bans)
+2. AST bans Anubis (perma 27 bans)
+3. AST picks Ancient (76%) 
+4. 3DMAX picks Inferno (57%) or Nuke (58%)
+5. 3DMAX bans Overpass (AST 72% -- removes AST's second-best map)
+6. AST bans Dust2 (near-perma 25 bans)
+7. Decider: Nuke (3DMAX 58% vs AST 56%) -- **even/slight 3DMAX edge**
+
+**Map breakdown:**
+- Ancient (AST pick): AST 76% vs 3DMAX 36% → **AST dominant**
+- Inferno (3DMAX pick): 3DMAX 57% vs AST 67% → **AST still edges it** -- even 3DMAX's own pick is AST's stronger map
+- Nuke (decider): 3DMAX 58% vs AST 56% → **even, slight 3DMAX**
+
+**Pick: Astralis (High confidence). NO BET -- implied 71.4% matches real ~70-73%, edge ~0-2%.**
+
+3DMAX real prob ~27-30%. Implied 33.7% → NEGATIVE edge on 3DMAX. No bet either direction.
+
+---
+
+### Pre-Match Analysis: FUT vs The MongolZ
+
+**Odds: FUT @1.80, MongolZ @2.01** (margin 5.3% ✓)
+**H2H: NO MEETINGS in last 6 months.**
+
+**Map pool:**
+| Map | FUT WR | MongolZ WR | Edge |
+|-----|--------|-----------|------|
+| Inferno | 0% (PERMA BAN 46) | 42% (12m) | banned by FUT |
+| Nuke | **92% (12m)** | 63% (16m) | **FUT DOMINANT** |
+| Anubis | 25% (8m) | 0% (perma ban 21) | banned by MongolZ |
+| Mirage | **77% (39m, 0 bans)** | 54% (24m) | **FUT EDGE** |
+| Overpass | 53% (15m) | 43% (7m, 25b near-perma) | FUT edge |
+| Ancient | 59% (29m) | 53% (17m) | FUT slight |
+| Dust2 | 52% (27m) | 47% (17m) | FUT slight |
+
+**Veto projection:**
+1. FUT bans Inferno (perma)
+2. MongolZ bans Anubis (perma)
+3. FUT picks Mirage (77%, NEVER banned -- 0 bans in dataset)
+4. MongolZ picks Nuke (63%) -- walks into FUT's 92% WR map
+5. FUT bans Overpass (removes MongolZ neutral map)
+6. MongolZ bans Ancient (FUT 59% vs MongolZ 53% -- FUT edge, MongolZ prefers Dust2)
+7. Decider: Dust2 (FUT 52% vs MongolZ 47%) → **FUT slight edge**
+
+**CRITICAL:** On ALL 3 maps FUT has statistical advantage:
+- Mirage: FUT 77% vs MongolZ 54%
+- Nuke: FUT 92% vs MongolZ 63% (MongolZ picks into FUT's best map)
+- Dust2 decider: FUT 52% vs MongolZ 47%
+
+**FUT form:** 4 wins in a row (PAR 2-0, NRG 2-0, IC 2-1, B8 2-0). dziugss/cmtry peaking.
+**MongolZ form:** Beat PAR 2-1 yesterday (Techno4K dominant), but lost Astralis 0-2 two days ago.
+
+**Kelly calculation:**
+```
+p = 0.63, odds = 1.80, b = 0.80
+kelly = (0.63×0.80 - 0.37) / 0.80 = (0.504-0.37)/0.80 = 16.7%
+conf_mult(63%) = 0.25 + 0.75×(0.63-0.20)/0.55 = 0.836
+kelly_safe = 16.7% × 0.836 = 14% → cap at 8% (no H2H data, caution)
+```
+
+**VALUE BET: FUT @1.80, kelly 8%** (72.2u × 8% = 5.8u)
+
+Risk: No H2H = uncertainty. MongolZ LAN experience higher ($197,750 earnings). Nuke: MongolZ 63% is real but FUT 92% is dominant. If MongolZ avoids Nuke and picks Dust2/Ancient -- gap narrows. Kelly capped at 8% for this uncertainty.
 
 ---
 
