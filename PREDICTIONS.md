@@ -372,6 +372,126 @@ Edge = 61%-59.5% = **+1.5% → below 5% threshold. NO BET.**
 
 ---
 
+## 2026-04-13 -- IEM Rio 2026, Group A Upper Bracket QF (Tier S, LAN)
+
+### Matches overview
+
+| Match | Odds T1 | Odds T2 | Margin | Value Bet |
+|-------|---------|---------|--------|-----------|
+| Gentle Mates vs G2 | **GM @2.66** | G2 @1.48 | 5.5% ✓ | **GM @2.66, kelly 6%** |
+| Vitality vs RED Canids | VIT @1.06 | RED @9.00 | 5.6% ✓ | NO BET |
+| 3DMAX vs Falcons | 3DMAX @5.39 | FAL @1.14 | 6.3% ✓ | NO BET |
+
+### Value Bets
+
+| # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
+|---|-------|--------|------|--------|---------|------|-------|--------|---------|
+| 1 | GM vs G2 | **GM** | **2.66** | ~51% | 37.6% | **+13-16%** | **6%** | pending | - |
+| - | VIT vs RED | Vitality | 1.06 | ~95% | 94.3% | ~0% | NO BET | pending | - |
+| - | 3DMAX vs Falcons | Falcons | 1.14 | ~85% | 87.7% | 0% | NO BET | pending | - |
+
+### Model picks
+
+| Match | Our pick | Confidence | Key argument | Result | Correct |
+|-------|----------|-----------|--------------|--------|---------|
+| GM vs G2 | **GM** | Medium | G2 stand-in tAk (replacing huNter-). GM Inferno 88% WR. Real prob ~48-54% vs implied 37.6% | pending | - |
+| VIT vs RED | **Vitality** | Very High | Rank #1, ZywOo 1.43, 16-win streak. RED rank #73 with stand-in reNTU. No value at 1.06 | pending | - |
+| 3DMAX vs Falcons | **Falcons** | High | Falcons rank #4, NiKo+m0NESY. 3DMAX post-Bucharest fatigue. H2H Falcons 71% (3-1 recent) | pending | - |
+
+---
+
+### Pre-Match Analysis: Gentle Mates vs G2
+
+**Odds: GM @2.66, G2 @1.48** (margin 5.5% ✓)
+
+**KEY FACTOR: G2 stand-in tAk replacing huNter-**
+- huNter- is G2's primary rifler and entry fragger (#2 impact player behind NiKo/m0NESY)
+- tAk is a significantly lower-rated replacement — drops G2 effective ceiling from rank #3 to ~rank #10-12 quality
+- In CS2, stand-ins in BO3 playoff matches historically produce upsets ~30-35% of time (team chemistry/veto communication)
+
+**Gentle Mates recent form:**
+- Rank #28, European team with solid map pool
+- Inferno **88% WR (8 maps)** — dominant first pick
+- Strong on Mirage (70% WR), solid Overpass (62%)
+- No Nuke/Anubis in pool → those are likely bans
+
+**G2 map pool (with tAk):**
+- Ancient 80% WR (G2 classic strong pick)
+- Nuke 89% WR — will be banned (near-perma, GM weak here)
+- Dust2 perma ban (GM likely)
+- Without huNter- the entry role suffers on aggressive maps
+
+**Veto projection:**
+1. GM bans Dust2 (perma) / Anubis (weak)
+2. G2 bans Nuke (89%, GM likely weak there too — GM will pre-ban)
+3. GM picks Inferno (88% WR)
+4. G2 picks Ancient (80% WR)
+5. Decider: Overpass or Mirage (50/50)
+
+**Map breakdown:**
+| Map | GM WR | G2 WR | Edge |
+|-----|-------|-------|------|
+| Inferno | **88%** (8m) | ~50% | **GM DOMINANT** |
+| Ancient | ~40% | **80%** | **G2 DOMINANT** |
+| Overpass | 62% | ~55% | GM slight |
+| Mirage | 70% | ~55% | GM edge |
+
+**Kelly calculation:**
+```
+p = 0.51, odds = 2.66, b = 1.66
+kelly = (0.51×1.66 - 0.49) / 1.66 = (0.847-0.49)/1.66 = 21.5%
+conf_mult(51%) = 0.25 + 0.75×(0.51-0.20)/0.55 = 0.673
+kelly_safe = 21.5% × 0.673 = 14.5% → cap at 6% (stand-in uncertainty, first IEM Rio match)
+```
+
+**Edge = 51% - 37.6% = +13.4%** → value bet confirmed.
+Capped at 6% due to: stand-in quality is hard to quantify precisely, first match of new tournament.
+
+**VALUE BET: GM @2.66, kelly 6%**
+
+---
+
+### Pre-Match Analysis: Vitality vs RED Canids
+
+**Odds: VIT @1.06, RED @9.00** (margin 5.6% ✓)
+
+**No value possible at 1.06.**
+- Vitality: rank #1, ZywOo 1.43 avg rating, 16-win streak, 100% WR last 30 days
+- RED Canids: rank #73, Brazilian squad, stand-in reNTU replacing key player
+- Implied prob: 94.3% Vitality. Real prob: ~95-97%. Edge = 0% or negative.
+- @1.06 you risk 1u to win 0.06u on a coin flip to see if RED can steal a map
+
+**Pick: Vitality. NO BET.**
+
+---
+
+### Pre-Match Analysis: 3DMAX vs Falcons
+
+**Odds: 3DMAX @5.39, Falcons @1.14** (margin 6.3% ✓)
+
+**Falcons rank #4 — genuine top team:**
+- NiKo 1.10 avg, m0NESY 1.25 avg (one of best AWPers), kyousuke 1.19 — star-laden roster
+- 71% H2H vs 3DMAX in last 4 meetings (3-1 in Falcons' favor)
+- Strong map pool: Mirage, Ancient, Inferno all >65% WR
+
+**3DMAX post-Bucharest:**
+- Just played 5+ days of PGL Bucharest (Apr 8-11)
+- Lost GF/LB to Astralis and MongolZ — mentally and physically fatigued
+- Form peaked at Bucharest; returning to IEM Rio in <48h of rest
+
+**Veto projection:**
+- 3DMAX bans: Mirage (perma)
+- Falcons bans: likely Overpass (3DMAX not strong there)
+- Falcons picks: Ancient or Inferno (both >65%)
+- 3DMAX picks: Nuke (58% WR, their best remaining map)
+- Decider: Dust2 or Overpass (Falcons edge)
+
+**Kelly:** Falcons @1.14 (87.7% implied) vs real ~85-88% → edge = 0%. No bet.
+
+**Pick: Falcons. NO BET (0% edge at 1.14).**
+
+---
+
 ## 2026-04-08 -- PGL Bucharest 2026, Round 5 (Tier A, LAN)
 
 ### Swiss bracket: all remaining teams 2-2 (win = playoffs, loss = eliminated)
