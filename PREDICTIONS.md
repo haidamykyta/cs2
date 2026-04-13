@@ -545,6 +545,9 @@ Edge = 61%-59.5% = **+1.5% → below 5% threshold. NO BET.**
 | 3DMAX vs Falcons | 3DMAX @5.39 | FAL @1.14 | 6.3% ✓ | NO BET |
 | Spirit vs Liquid | SPR @1.13 | LIQ @5.67 | ~5.3% ✓ | NO BET |
 | Legacy vs MOUZ | LEG @3.25 | MOUZ @1.34 | 5.4% ✓ | **LEG @3.25, kelly 8%** |
+| B8 vs NaVi | B8 @4.31 | NaVi @1.21 | 5.8% ✓ | **B8 @4.31, kelly 4%** ⚠️ |
+| Aurora vs HOTU | AUR @1.22 | HOTU @4.19 | 5.9% ✓ | **HOTU @4.19, kelly 5%** |
+| FURIA vs Passion UA | FUR @1.13 | PAS @5.67 | 5.2% ✓ | **Passion UA @5.67, kelly 4%** ⚠️ |
 
 ### Value Bets
 
@@ -555,6 +558,9 @@ Edge = 61%-59.5% = **+1.5% → below 5% threshold. NO BET.**
 | - | 3DMAX vs Falcons | Falcons | 1.14 | ~85% | 87.7% | 0% | NO BET | pending | - |
 | - | Spirit vs Liquid | Spirit | 1.13 | ~89% | 88.5% | ~0% | NO BET | pending | - |
 | 2 | Legacy vs MOUZ | **Legacy** | **3.25** | ~45-53% | 30.8% | **+14-22%** | **8%** | pending | - |
+| 3 ⚠️ | B8 vs NaVi | **B8** | **4.31** | ~38-40% | 23.2% | **+15-17%** | **4%** | pending | - |
+| 4 | Aurora vs HOTU | **HOTU** | **4.19** | ~45-52% | 23.9% | **+21-28%** | **5%** | pending | - |
+| 5 ⚠️ | FURIA vs Passion UA | **Passion UA** | **5.67** | ~38-42% | 17.6% | **+20-24%** | **4%** | pending | - |
 
 ### Model picks
 
@@ -565,6 +571,9 @@ Edge = 61%-59.5% = **+1.5% → below 5% threshold. NO BET.**
 | 3DMAX vs Falcons | **Falcons** | High | Falcons rank #4, NiKo+m0NESY. 3DMAX post-Bucharest fatigue. H2H Falcons 71% (3-1 recent) | pending | - |
 | Spirit vs Liquid | **Spirit** | Very High | H2H 5-0 recent. Dust2 88% WR (first pick). Liquid Nuke 4-loss streak. No value at 1.13 | pending | - |
 | Legacy vs MOUZ | **Legacy** | Medium | MOUZ 0% LAN form (3 losses). Map pool near-equal after Overpass removed. Decider Mirage 78%/78% = 50/50 | pending | - |
+| B8 vs NaVi | **B8** ⚠️ | Low-Medium | B8 bans NaVi Nuke 80%. Ancient 69% strong. Nuke removed = map pool balanced. H2H 4-0 NaVi is risk. | pending | - |
+| Aurora vs HOTU | **HOTU** | Medium-High | HOTU Anubis 89% (5-streak). Aurora Inferno 71% PERMA-BANNED. Decider Nuke: Aurora 30% vs HOTU 45% | pending | - |
+| FURIA vs Passion UA | **FURIA** pick, **Passion UA** value | Low-Medium | FURIA Overpass 38% WR (structural weakness). Passion Inferno 75% (5-streak). Stand-in FaNg = risk | pending | - |
 
 ---
 
@@ -805,6 +814,170 @@ Cap at 8% — MOUZ rank #3, form can reverse, H2H only 1 prior meeting
 - Legacy dumau 1.16 (3mo), latto 1.09, saadzin 1.09 — solid team avg
 
 **VALUE BET: Legacy @3.25, kelly 8%**
+
+---
+
+### Pre-Match Analysis: B8 vs NaVi
+
+**Odds: B8 @4.31, NaVi @1.21** (margin 5.8% ✓)
+
+**⚠️ H2H: NaVi 4-0 B8** (25d ago 2-1, 1mo ago 2-0, 4mo ago 2-0 x2) — systematic dominance, biggest counter-signal.
+
+**NaVi current form:** 86% WR last month, BLAST finalist (0-3 Vitality). makazze 1.16, b1t 1.11 — elite level.
+**B8 current form:** 69% WR last month, 4-win streak at Bucharest. Just eliminated by FUT 0-2 (3 days ago).
+
+**Key map dynamics:**
+| Map | B8 WR | NaVi WR | Comment |
+|-----|-------|---------|---------|
+| Nuke | 38% (8m, **45% ban**) | **80% (5m)** | **B8 BANS → NaVi loses dominant map** |
+| Overpass | 0% (3m) | - (perma 95%) | both remove |
+| Ancient | **69% (13m, 31% pick)** | 62% (8m) | **B8 edge** |
+| Mirage | 56% (18m, **50% pick**) | 44% (18m) | **B8 edge** |
+| Inferno | 22% (9m) | **55% (11m)** | **NaVi DOMINANT** |
+| Dust2 | 58% (12m) | 60% (15m) | even |
+| Anubis | 0% (2m) | 40% (5m) | both weak |
+
+**Veto projection:**
+1. B8 bans Nuke (removes NaVi's 80% WR)
+2. NaVi bans Overpass (95% perma)
+3. B8 picks Ancient (69% WR — B8's best)
+4. NaVi picks Inferno (55% — best remaining)
+5. NaVi ban2: Mirage (B8 56% — removes B8's fallback)
+6. B8 ban2: Anubis (B8 0% WR)
+7. Decider: Dust2 (B8 58% vs NaVi 60%) → even
+
+**Series math:**
+```
+P(B8 wins Ancient) = 0.64  (home map + 69% WR vs NaVi 62%)
+P(B8 wins Inferno) = 0.25  (B8 22% WR — devastating)
+P(B8 wins Dust2)   = 0.50  (58% vs 60%, essentially even)
+
+P(B8 series win) = 0.64×0.25 + 0.64×0.75×0.50 + 0.36×0.25×0.50
+= 0.16 + 0.24 + 0.045 = 44.5%
+H2H penalty (-5%) → B8 real prob ~38-40%
+```
+
+**Kelly:** p=0.38, b=3.31 → kelly_safe 9.5% → **cap at 4%** (H2H 4-0 risk)
+
+**⚠️ MARGINAL VALUE BET: B8 @4.31, kelly 4%**
+Edge +15-17% is real, but NaVi's 4-0 H2H suggests systemic counter. First bet to drop if sizing down.
+
+---
+
+### Pre-Match Analysis: Aurora vs HOTU
+
+**Odds: Aurora @1.22, HOTU @4.19** (margin 5.9% ✓)
+
+**THE STRUCTURAL TRAP for Aurora:**
+- Aurora Inferno 71% WR (14m) — **PERMA-BANNED by HOTU (84% ban rate)**
+- Aurora Ancient — **PERMA-BANNED by Aurora herself (87%)**
+- HOTU Anubis **89% WR (9m, 5-streak)** — Aurora CANNOT deny without sacrificing Dust2
+
+**Map pool:**
+| Map | Aurora WR | HOTU WR | Edge |
+|-----|-----------|---------|------|
+| Dust2 | **75% (24m, 4-streak)** | 67% (27m) | Aurora edge (their pick) |
+| Anubis | 60% (10m) | **89% (9m, 5-streak)** | **HOTU DOMINANT (their pick)** |
+| Overpass | 46% (13m) | **67% (15m)** | HOTU edge |
+| Nuke | 30% (10m) | 45% (11m) | **HOTU decider edge** |
+| Mirage | 46% (13m) | 53% (17m) | HOTU slight |
+| Ancient | banned (87%) | 40% (15m, 4-loss streak) | both irrelevant |
+| Inferno | 71% (14m) | banned (84%) | **Aurora's best map — GONE** |
+
+**Veto projection:**
+1. Aurora bans Ancient (87% perma)
+2. HOTU bans Inferno (84% perma) — kills Aurora's 71% map
+3. Aurora picks Dust2 (75%, 4-streak)
+4. HOTU picks Anubis (89%, 5-streak)
+5. HOTU ban2: Mirage (force Nuke as decider where HOTU 45% > Aurora 30%)
+6. Aurora ban2: Overpass (HOTU 67% — must remove)
+7. Decider: Nuke (Aurora **30%** vs HOTU **45%**) → **HOTU advantage**
+
+**Series math:**
+```
+P(Aurora wins Dust2) = 0.68
+P(Aurora wins Anubis) = 0.20 (HOTU 89% dominant)
+P(Aurora wins Nuke)   = 0.42
+
+P(Aurora series win) = 0.68×0.20 + 0.68×0.80×0.42 + 0.32×0.20×0.42
+= 0.136 + 0.228 + 0.027 = 39.1%
+
+Conservative (more generous to Aurora): ~47%
+Aurora real: 39-47% vs implied 82% → HOTU real: 53-61% vs implied 23.9%
+```
+
+**Kelly:** p(HOTU)=0.53, b=3.19 → kelly_safe 26.8% → **cap at 5%** (rank gap, LAN S-tier)
+
+**H2H:** Aurora 2-0 HOTU (both 2-1 series — close). HOTU overall 3mo series WR: 63.1% — better than Aurora's 60%.
+
+**VALUE BET: HOTU @4.19, kelly 5%**
+Clearest value case of the tournament: veto structure systematically removes Aurora's best map while giving HOTU their 89% Anubis.
+
+---
+
+### Pre-Match Analysis: FURIA vs Passion UA
+
+**Odds: FURIA @1.13, Passion UA @5.67** (margin 5.2% ✓)
+
+**⚠️ Passion UA stand-in: FaNg replacing Senzu (<5 matches with core)**
+Stand-in effect: reduces chemistry, especially on team-coordination maps (Inferno).
+
+**FURIA structural weakness — Overpass trap:**
+- FURIA picks Overpass **36% of the time** (most common first pick)
+- FURIA actual Overpass WR: only **38% (8 maps)** — they systematically pick a losing map
+- Passion Overpass: **69% WR (13m)** — if FURIA uses their default, they're picking Passion's strong map
+
+**Map pool (from map stats table):**
+| Map | FURIA WR | Passion WR | Edge |
+|-----|----------|------------|------|
+| Ancient | - (perma 86%) | - (perma 91%) | both ban |
+| Dust2 | **69% (16m)** | 56% (9m) | **FURIA edge — correct pick** |
+| Overpass | 38% (8m, 36% fp!) | **69% (13m, 39% fp)** | **Passion DOMINANT ← FURIA trap** |
+| Inferno | 42% (12m) | **75% (8m, 5-streak)** | **Passion DOMINANT** |
+| Mirage | 50% (18m) | 38% (16m) | FURIA edge |
+| Nuke | 56% (9m) | 42% (12m) | FURIA edge (banned by Passion) |
+| Anubis | 75% (4m) | 40% (10m) | FURIA edge |
+
+**Veto projection (assuming FURIA avoids Overpass trap):**
+1. FURIA bans Ancient (perma)
+2. Passion bans Nuke (FURIA 56%)
+3. FURIA picks Dust2 (69% WR — NOT Overpass)
+4. Passion picks Inferno (75%, 5-streak)
+5. Passion ban2: Anubis (FURIA 75% — remove dominant decider)
+6. FURIA ban2: Overpass (Passion 69% — remove trap map)
+7. Decider: Mirage (FURIA 50% vs Passion 38%) → FURIA edge
+
+**Map breakdown:**
+- Dust2 (FURIA pick): FURIA 69% vs Passion 56% → **FURIA ~65%**
+- Inferno (Passion pick): Passion 75% (stand-in penalty → ~65%) vs FURIA 42% → **Passion ~62%**
+- Mirage (decider): FURIA 50% vs Passion 38% → **FURIA ~60%**
+
+**Series math:**
+```
+P(FURIA wins Dust2) = 0.64
+P(FURIA wins Inferno) = 0.32 (stand-in reduces Passion Inferno from 75% → ~65%)
+P(FURIA wins Mirage) = 0.60
+
+P(FURIA series) = 0.64×0.32 + 0.64×0.68×0.60 + 0.36×0.32×0.60
+= 0.205 + 0.261 + 0.069 = 53.5%
+
+Without stand-in penalty (Passion full 75%):
+P(FURIA wins Inferno) = 0.28
+P(FURIA series) = 0.64×0.28 + 0.64×0.72×0.60 + 0.36×0.28×0.60 = 0.51
+```
+
+**FURIA real prob: ~53-63% (rank #3, quality gap)**
+**Passion real prob: ~37-47% vs implied 17.6%** → edge = +20-30%
+
+**Kelly (Passion):** p=0.40, b=4.67 → kelly_safe 14.2% → **cap at 4%** (stand-in risk)
+
+**Overpass trap scenario (if FURIA defaults to Overpass pick):**
+- Map 1 Overpass: Passion 69% → Passion wins
+- Map 2 Inferno (Passion pick): Passion 75% → likely sweep
+- FURIA could be 0-2'd → Passion wins at @5.67
+
+**⚠️ MARGINAL VALUE BET: Passion UA @5.67, kelly 4%**
+Map analysis supports value, but stand-in chemistry and FURIA rank #3 are real risks. Smallest bet of the 5 VBs.
 
 ---
 
