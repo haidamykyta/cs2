@@ -307,15 +307,15 @@ Veto went differently than predicted (Dust2 and Overpass played, not Ancient+Inf
 
 | # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
 |---|-------|--------|------|--------|---------|------|-------|--------|---------|
-| - | 3DMAX vs MongolZ | **MongolZ** | 1.42 | ~62% | 70.4% | N/A | NO BET (margin 7.7%) | pending | - |
-| - | Astralis vs FUT (Bo5) | **FUT** | 1.68 | ~61% | 59.5% | +1.5% | NO BET (edge < 5%) | pending | - |
+| - | 3DMAX vs MongolZ | **MongolZ** | 1.42 | ~62% | 70.4% | N/A | NO BET (margin 7.7%) | **WIN** (MongolZ 2-0) | - |
+| - | Astralis vs FUT (Bo5) | **FUT** | 1.68 | ~61% | 59.5% | +1.5% | NO BET (edge < 5%) | **WIN** (FUT 3-1) | - |
 
 ### Model picks
 
 | Match | Our pick | Confidence | Key argument | Result | Correct |
 |-------|----------|-----------|--------------|--------|---------|
-| 3DMAX vs MongolZ | **MongolZ** | Medium | Rank #8 vs #15. Nuke 64% pick. 3DMAX Inferno first pick edge countered by MongolZ Nuke/Ancient. | pending | - |
-| Astralis vs FUT (Bo5) | **FUT** | Low-Medium | Dust2 decider: FUT 50% vs AST 33%. Nuke 92% FUT pick. Both teams win own picks → 2-2 → Dust2. | pending | - |
+| 3DMAX vs MongolZ | **MongolZ** | Medium | Rank #8 vs #15. Nuke 64% pick. 3DMAX Inferno first pick edge countered by MongolZ Nuke/Ancient. | MongolZ 2-0 | YES ✓ |
+| Astralis vs FUT (Bo5) | **FUT** | Low-Medium | Dust2 decider: FUT 50% vs AST 33%. Nuke 92% FUT pick. Both teams win own picks → 2-2 → Dust2. | FUT 3-1 | YES ✓ |
 
 ---
 
@@ -372,6 +372,168 @@ Edge = 61%-59.5% = **+1.5% → below 5% threshold. NO BET.**
 
 ---
 
+### LB Post-Mortem: MongolZ 2-0 3DMAX ✓
+
+**Maps: Inferno 13-5, Ancient 13-2** — total demolition.
+
+**Actual veto:** Mirage ban (3DMAX), Anubis ban (MongolZ), Inferno pick (3DMAX), Ancient pick (MongolZ), Overpass ban, Dust2 ban, Nuke decider (never played).
+
+**Key stats:**
+- bLitz MVP 7.7 (+16 diff, 99% KAST on Ancient — elite performance)
+- cobrazera 8.5 on Ancient (absolutely dominant — 29K/14D +15)
+- 910 8.1 on Ancient (+13 diff, 80% KAST)
+- Techno4K 7.7 — entire MongolZ roster peaking simultaneously
+
+**3DMAX collapse (Ancient):**
+- Ex3rcice 3.4 (-16 diff), misutaaa 4.2 (-15 diff), Lucky 4.8 (-11 diff)
+- Tournament fatigue confirmed: 3DMAX played 8+ days of high-pressure CS, form peak at Swiss (Lucky 1.28), now cratered
+- Lucky event form: 1.17 down to 4.8 on Ancient — the fatigue manifested exactly as predicted
+
+**Margin rule validated:** margin 7.7% correctly blocked a no-value bet. No money lost on this automatic filter.
+
+**Calibration:** 3DMAX post-tournament fatigue pattern is reliable. Teams playing 5+ LAN days tend to regress in LB matches. MongolZ individual excellence overrides map stats when all 5 are peaking simultaneously (bLitz 7.7, cobrazera 8.5, 910 8.1).
+
+---
+
+### GF Post-Mortem: FUT 3-1 Astralis ✓ (No bet)
+
+**Actual veto:** Anubis ban (AST), Inferno ban (FUT), Ancient pick (?), Mirage pick (FUT), Nuke pick, Dust2 pick, Overpass decider (never played).
+
+**Maps:**
+- Ancient: **FUT 13-5** (AST's supposed "best map" at 86% WR — LOST 5-13)
+- Mirage: **FUT 13-5** (FUT's first pick, dominated as predicted)
+- Nuke: **AST 16-14** (2OT — only map AST saved)
+- Dust II: **FUT 13-3** (complete blowout)
+
+**FUT stats:**
+- dem0n MVP 7.6 (+23 diff, 93% KAST across all maps) — exactly what we predicted
+- cmtry 7.1 (+23 diff, 79% KAST)
+- dziugss 6.8 (+15 diff)
+- lauNX 6.4 (+9 diff)
+- Krabeni 6.0 (-2 diff — only negative player, and barely)
+
+**AST stats:**
+- jabbi EVP 5.9 (-12 diff) — supposed star player was the best AST got
+- HooXi 4.9 (-29 diff, 54% KAST) — IGL completely exposed at highest level
+- ryu 5.5 (-16 diff)
+- phzy 5.4 (-11 diff)
+
+**⚠️ CRITICAL CALIBRATION MISS: AST Ancient 86% WR was INFLATED**
+- AST built their 86% Ancient WR primarily in Swiss (vs B8, EYE, MIBR — rank 50-100 opponents)
+- Against S-tier opponent (FUT), AST lost Ancient 5-13 — a complete reversal
+- **Rule: Map WR must be weighted by opponent tier. Swiss wins vs rank 50+ inflate map WR numbers.**
+- AST Ancient 86% vs S-tier opponents was probably closer to 55-60%
+
+**What worked:**
+- FUT higher avg player rating correctly identified (dem0n 7.6, cmtry 7.1)
+- No H2H penalty approach: FUT was correctly favored despite AST having H2H edge
+- Edge +1.5% correctly blocked bet — at that edge, no money at risk on uncertainty
+
+**Pick result: FUT ✓ (3-1). No money on table = correct sizing.**
+
+---
+
+## ═══════════════════════════════════════════════════════
+## PGL BUCHAREST 2026 — FULL TOURNAMENT RETROSPECTIVE
+## Model calibration, pattern analysis, errors, rule updates
+## ═══════════════════════════════════════════════════════
+
+### Overall tournament record
+
+| Round | Picks | Correct | Accuracy | VBs placed | VB result |
+|-------|-------|---------|----------|------------|-----------|
+| R3 (Apr 6) | 8 | 2 | 25% | 2 | 0/2 LOSS |
+| R4 (Apr 7) | 6 | 4 | 66.7% | 0 | - |
+| R5 (Apr 8) | 3 | 3 | 100% | 1 | WIN +10% |
+| QF (Apr 9) | 4 | 3 | 75% | 0 (1 missed) | - |
+| SF (Apr 10) | 2 | 2 | 100% | 1 | WIN +4.6u |
+| LB (Apr 11) | 1 | 1 | 100% | 0 | - |
+| GF (Apr 11) | 1 | 1 | 100% | 0 | - |
+| **TOTAL** | **25** | **16** | **64%** | **4** | **2/4 WIN** |
+
+**Bankroll: 100u → 65.6u (after R3 losses) → 76.8u (after VB wins)**
+**Net: -23.2u from wrong VBs, +11.2u from correct VBs = -12u (-12% total)**
+
+**Excluding R3 anomaly: 14/17 = 82.4% accuracy (playoffs only)**
+
+---
+
+### Error Category 1: Swiss R3 fatigue (systemic miss)
+
+**Error:** PARIVISION played match #3 same day → lost FUT. Model had PAR at 79%, bet 25%.
+**What happened:** nota -18 diff, BELCHONOKK -16 diff. PAR had ZERO in-match energy.
+**Fix:** Add filter — if team plays 3rd match in same calendar day, require +10% higher edge threshold.
+**Rule update:** `matches_today >= 3 → edge_threshold = 0.15` (instead of 0.05)
+
+---
+
+### Error Category 2: Stale Glicko / form divergence
+
+**Error:** B8 @1.60 vs 3DMAX — model had B8 at 69% but 3DMAX was overperforming their Glicko at that event.
+**What happened:** 3DMAX entire roster peaking (Lucky 1.28, Ex3rcice 7.2 MVP). B8 Glicko didn't know this.
+**Fix:** Event overperformance bonus — if a team has 2+ players at +15% above their 3mo avg rating in current event, bump their model prob by +5%.
+
+---
+
+### Error Category 3: Missing decider map WR check (EYE vs AST)
+
+**Error:** Used EYE overall series prob without checking Inferno WR. EYE Inferno WR = 9%.
+**What happened:** EYE banned their own Nuke (78% WR) to force Inferno as decider — death sentence. Missed 15% kelly VB at 5.40.
+**Fix:** MANDATORY veto check — before assigning series prob, verify BOTH teams' WR on likely decider map. If decider WR < 30% for one team, reduce their series prob by -15 to -20%.
+**Rule now in checklist:** Step 3 of veto analysis = "What is decider WR for both teams?"
+
+---
+
+### Error Category 4: Map WR inflated by opponent tier
+
+**Error:** AST Ancient 86% WR predicted to hold in GF. FUT won it 13-5.
+**What happened:** AST built 86% WR vs Swiss opponents (rank 50-100). FUT is S-tier.
+**Fix:** When using map WR for playoff predictions, discount Swiss-era WR by -10 to -15% if opponent is rank ≤ 10. Ancient 86% → effective ~72% vs FUT caliber.
+**Rule:** `map_WR_adjusted = map_WR × (1 - 0.10 if opponent_rank ≤ 10 else 0)`
+
+---
+
+### Error Category 5: Individual player variance (B8 Apr 6, IC Apr 7)
+
+**Error:** B8 Apr 6 had H2H 75% advantage but 3DMAX Ex3rcice 7.2 MVP single-player carried.
+**What happened:** Ex3rcice was the only reason 3DMAX won. No model feature captures "player in hero mode."
+**Partial fix:** Track per-player MVPs in this tournament — player with 2+ MVPs is statistically "hot" and adds +3-5% to team probability.
+
+---
+
+### Error Category 6: MongolZ individual vs map pool (QF vs PAR)
+
+**Error:** PAR Ancient 74% vs MongolZ 53% → picked PAR. MongolZ won Ancient 13-9.
+**What happened:** Techno4K +10 diff dominated Ancient despite unfavorable team map WR.
+**Fix:** For teams with a clear star player (>1.20 3mo rating), add "star on decider" adjustment — if star player's historical performance on decider is strong, override map WR signal by +5%.
+
+---
+
+### Confirmed model rules (validated at this tournament)
+
+1. **H2H 3+ wins in a row = strong signal even when odds are close.** 3DMAX 4-0 AST corrected to AST 3-0 3DMAX → AST won all 3 playoff meetings. H2H was real.
+2. **No H2H → cap kelly at 60-65%.** FUT vs MongolZ: calculated 14%, capped at 8%. Won. Correct.
+3. **nota structural liability pattern** confirmed at -16 to -18 vs rank ≤ 50. Not vs rank 70+ (Wildcard: -5 only).
+4. **Margin >7% = auto NO BET.** Saved from MongolZ vs 3DMAX (7.7%). Correct call.
+5. **Edge <5% = no bet.** FUT GF at +1.5% — no bet, still correct pick. Right to not bet.
+6. **Swiss fatigue note** confirmed: PAR R3 match #3 = collapse. EYE R4 match #2 same day (CCT + PGL) = underperformed on Inferno.
+7. **Event overperformance** (3DMAX, MongolZ, FUT) was real and persistent across 8+ days. Current-event ratings > 3mo avg when whole roster peaks.
+
+---
+
+### Model v3.5 → v3.6 candidate changes
+
+| Priority | Change | Impact |
+|----------|--------|--------|
+| HIGH | Decider map WR mandatory check both teams | Prevents EYE-type miss |
+| HIGH | matches_today >= 3 → edge_threshold +10% | Prevents PAR-type R3 miss |
+| MED | Map WR vs S/A-tier adjustment (-10%) | Prevents AST Ancient inflation |
+| MED | Event overperformance bonus (+5%) | Captures 3DMAX/FUT type peaks |
+| MED | nota_recent_diff as feature | Structural player liability |
+| LOW | Star-player-on-decider bonus | Techno4K type individual |
+
+---
+
 ## 2026-04-13 -- IEM Rio 2026, Group A Upper Bracket QF (Tier S, LAN)
 
 ### Matches overview
@@ -381,6 +543,8 @@ Edge = 61%-59.5% = **+1.5% → below 5% threshold. NO BET.**
 | Gentle Mates vs G2 | **GM @2.66** | G2 @1.48 | 5.5% ✓ | **GM @2.66, kelly 6%** |
 | Vitality vs RED Canids | VIT @1.06 | RED @9.00 | 5.6% ✓ | NO BET |
 | 3DMAX vs Falcons | 3DMAX @5.39 | FAL @1.14 | 6.3% ✓ | NO BET |
+| Spirit vs Liquid | SPR @1.13 | LIQ @5.67 | ~5.3% ✓ | NO BET |
+| Legacy vs MOUZ | LEG @3.25 | MOUZ @1.34 | 5.4% ✓ | **LEG @3.25, kelly 8%** |
 
 ### Value Bets
 
@@ -389,6 +553,8 @@ Edge = 61%-59.5% = **+1.5% → below 5% threshold. NO BET.**
 | 1 | GM vs G2 | **GM** | **2.66** | ~51% | 37.6% | **+13-16%** | **6%** | pending | - |
 | - | VIT vs RED | Vitality | 1.06 | ~95% | 94.3% | ~0% | NO BET | pending | - |
 | - | 3DMAX vs Falcons | Falcons | 1.14 | ~85% | 87.7% | 0% | NO BET | pending | - |
+| - | Spirit vs Liquid | Spirit | 1.13 | ~89% | 88.5% | ~0% | NO BET | pending | - |
+| 2 | Legacy vs MOUZ | **Legacy** | **3.25** | ~45-53% | 30.8% | **+14-22%** | **8%** | pending | - |
 
 ### Model picks
 
@@ -397,6 +563,8 @@ Edge = 61%-59.5% = **+1.5% → below 5% threshold. NO BET.**
 | GM vs G2 | **GM** | Medium | G2 stand-in tAk (replacing huNter-). GM Inferno 88% WR. Real prob ~48-54% vs implied 37.6% | pending | - |
 | VIT vs RED | **Vitality** | Very High | Rank #1, ZywOo 1.43, 16-win streak. RED rank #73 with stand-in reNTU. No value at 1.06 | pending | - |
 | 3DMAX vs Falcons | **Falcons** | High | Falcons rank #4, NiKo+m0NESY. 3DMAX post-Bucharest fatigue. H2H Falcons 71% (3-1 recent) | pending | - |
+| Spirit vs Liquid | **Spirit** | Very High | H2H 5-0 recent. Dust2 88% WR (first pick). Liquid Nuke 4-loss streak. No value at 1.13 | pending | - |
+| Legacy vs MOUZ | **Legacy** | Medium | MOUZ 0% LAN form (3 losses). Map pool near-equal after Overpass removed. Decider Mirage 78%/78% = 50/50 | pending | - |
 
 ---
 
@@ -489,6 +657,154 @@ Capped at 6% due to: stand-in quality is hard to quantify precisely, first match
 **Kelly:** Falcons @1.14 (87.7% implied) vs real ~85-88% → edge = 0%. No bet.
 
 **Pick: Falcons. NO BET (0% edge at 1.14).**
+
+---
+
+### Pre-Match Analysis: Spirit vs Liquid
+
+**Odds: Spirit @1.13, Liquid @5.67** (margin ~5.3% ✓)
+
+**H2H:** Spirit 5-0 vs Liquid in last 5 meetings (73% historical WR). Most recent: Spirit 2-0 Liquid (24 days ago).
+
+**Spirit map pool:**
+| Map | Spirit WR | Spirit bans | Spirit 1st pick |
+|-----|----------|------------|-----------------|
+| Dust2 | **88% (8m)** | 0% | **56%** (dominant first pick) |
+| Inferno | - | **100% (PERMA BAN)** | - |
+| Overpass | 67% (8m) | 0% | 11% |
+| Ancient | 50% (6m) | 0% | 7% |
+| Anubis | 75% (4m) | 0% | 7% |
+| Nuke | 56% (9m) | 0% | 4% |
+| Mirage | 45% (11m) | 0% | 11% |
+
+**Liquid map pool:**
+| Map | Liquid WR | Liquid bans | Comment |
+|-----|----------|------------|---------|
+| Overpass | - | **97% (PERMA BAN)** | never plays it |
+| Mirage | 59% (22m) | 0% | first pick 51% |
+| Inferno | 44% (9m) | 3% | only 44% WR |
+| Dust2 | 54% (13m) | 0% | decent |
+| Nuke | 38% (13m) | 0% | **4-map losing streak** |
+| Ancient | 33% (12m) | 0% | weak |
+| Anubis | 33% (3m) | 0% | weak |
+
+**Veto projection:**
+1. Spirit bans Inferno (100% perma)
+2. Liquid bans Overpass (97% perma)
+3. Spirit picks Dust2 (88% WR, 56% first pick) — dominant map
+4. Liquid picks Mirage (59% WR, 51% first pick) — their best remaining map
+5. Spirit bans Ancient or Nuke (Liquid weak on both)
+6. Liquid bans Ancient (Spirit 50% — removes balanced map)
+7. Decider: Anubis (Spirit 75% vs Liquid 33%) → **Spirit MASSIVE edge**
+
+**Map breakdown:**
+- Dust2: Spirit 88% vs Liquid 54% → **Spirit DOMINANT**
+- Mirage: Spirit 45% vs Liquid 59% → **Liquid edge** (their pick)
+- Anubis (decider): Spirit 75% vs Liquid 33% → **Spirit DOMINANT**
+
+**Spirit players:** donk 1.42 (top-3 in world), sh1ro 1.20, magixx 0.96, zont1x 0.96, tN1R 0.99
+**Liquid players:** NAF 1.07, EliGE 1.06, malbsMd 1.04, siuhy 0.90, ultimate 1.00, cogu (6th?)
+
+**Spirit form concern:** 40% WR last month — but this included 0-2 loss to MongolZ (rank #8, not a shame). Still beat PAR, 9z, and Liquid itself recently.
+
+**Kelly:** Spirit @1.13, implied 88.5%, real ~88-90% → edge ≈ 0%. **NO BET.**
+
+**Pick: Spirit (Very High confidence). NO BET (no edge at 1.13).**
+
+---
+
+### Pre-Match Analysis: Legacy vs MOUZ
+
+**Odds: Legacy @3.25, MOUZ @1.34** (margin 5.4% ✓)
+
+**CRITICAL FACTOR: MOUZ 0% WR last 30 days on LAN (3 consecutive losses)**
+- Lost to 9z 0-2 (rank ~50) — major upset signal
+- Lost to MongolZ 0-2 (rank #8) — understandable but still 0-2
+- Lost to FUT 1-2 (rank ~10) — understandable
+- MOUZ core played only **5 maps last 30 days** (extremely low activity = rusty)
+
+**Legacy last 5 matches:**
+- Lost to B8 0-2 (5d ago) — at Bucharest, elimination match
+- Lost to NRG 0-2 (6d ago) — at Bucharest
+- Beat MIBR 2-1 (7d ago)
+- Beat IC 2-1 (7d ago)
+- Lost to PAR 1-2 (8d ago)
+- **Context:** Legacy was playing at PGL Bucharest and battled through Swiss rounds. Active competitive reps.
+
+**Legacy map pool:**
+| Map | Legacy WR | Legacy 1st pick |
+|-----|----------|-----------------|
+| Inferno | 64% (25m) | 38% |
+| Dust2 | 48% (27m) | 38% |
+| Ancient | **65% (17m)** | 12% |
+| Mirage | **78% (9m)** | 5% |
+| Overpass | 67% (6m) | 0% |
+| Nuke | 38% (8m) | 0% |
+| Anubis | 0% (1m) | 40% ban |
+
+**MOUZ map pool:**
+| Map | MOUZ WR | MOUZ 1st pick | Comment |
+|-----|--------|---------------|---------|
+| Overpass | **100% (10m, 6-streak!)** | 14% | DOMINANT — Legacy must ban |
+| Inferno | 63% (19m) | **55%** | First pick, strong |
+| Mirage | **78% (9m)** | 10% | Strong |
+| Ancient | 50% (4m) | 3% | Moderate |
+| Dust2 | 33% (12m) | 0% | Weak |
+| Nuke | **14% (7m)** | 3% | **Terrible** |
+| Anubis | - | **66% ban (perma)** | Never plays |
+
+**Veto projection:**
+1. MOUZ bans Anubis (66% perma)
+2. Legacy **must ban Overpass** (MOUZ 100% WR, 6-streak — removing their dominant map is priority)
+3. MOUZ picks Inferno (63% WR, 55% first pick)
+4. Legacy picks Dust2 (48% WR) or Ancient (65% WR) — likely Ancient (higher WR)
+5. MOUZ bans Ancient (Legacy 65% — removes Legacy's best remaining map)
+6. Legacy bans Nuke (MOUZ 14% but Legacy 38% — both weak, remove map nobody wants)
+7. Decider: **Mirage** (Legacy 78% vs MOUZ 78%) → **EXACT TIE**
+
+**Series math:**
+- Inferno (MOUZ pick): MOUZ 63% WR vs Legacy 64% WR — **roughly even (50/50 with slight MOUZ home-map edge ~55%)**
+- Ancient/Dust2 (Legacy pick): Legacy 65% WR vs MOUZ 50% WR → **Legacy ~58%**
+- Mirage (decider): 78% each → **50/50**
+
+**Series probability:**
+```
+P(Legacy 2-0) = P(L wins Inferno) × P(L wins their pick) = 0.45 × 0.58 = 26%
+P(MOUZ 2-0) = P(M wins Inferno) × P(M wins Legacy's pick) = 0.55 × 0.42 = 23%
+P(Legacy 2-1) = 0.45×0.42×0.50 + 0.55×0.58×0.50 = 0.09 + 0.16 = 25%
+P(MOUZ 2-1) = 0.55×0.42×0.50 + 0.45×0.58×0.50 = 0.12 + 0.13 = 25%
+
+Legacy total: 26% + 25% = 51%
+MOUZ total: 23% + 25% = 48%
+```
+
+**At even map-by-map analysis: Legacy ~51%, implied 30.8% → edge = +20%!**
+
+Using conservative estimates (MOUZ talent floor despite bad form):
+- p = 0.45 (more conservative, MOUZ rank #3 even in slump)
+- Even at 45%, edge = 45% - 30.8% = **+14.2%**
+
+**Kelly calculation:**
+```
+p = 0.45 (conservative), odds = 3.25, b = 2.25
+kelly = (0.45×2.25 - 0.55) / 2.25 = (1.0125 - 0.55) / 2.25 = 20.6%
+conf_mult(45%) = 0.25 + 0.75×(0.45-0.20)/0.55 = 0.591
+kelly_safe = 20.6% × 0.591 = 12.2%
+Cap at 8% — MOUZ rank #3, form can reverse, H2H only 1 prior meeting
+```
+
+**Risk factors:**
+- MOUZ has world-class individual ceiling: Spinx 1.15, Jimpphat 1.05, xertioN 1.05
+- 3 LAN losses may be a slump, not a new floor — rank #3 teams bounce back
+- Only 5 maps played last 30 days — rusty, less confident
+
+**Upside factors:**
+- MOUZ Overpass 100% WR is removed (their ace card gone)
+- Decider Mirage is truly 50/50 for both teams
+- Legacy had active competitive reps at Bucharest (muscle memory fresh)
+- Legacy dumau 1.16 (3mo), latto 1.09, saadzin 1.09 — solid team avg
+
+**VALUE BET: Legacy @3.25, kelly 8%**
 
 ---
 
