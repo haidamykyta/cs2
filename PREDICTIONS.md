@@ -981,6 +981,61 @@ Map analysis supports value, but stand-in chemistry and FURIA rank #3 are real r
 
 ---
 
+### MAP WINNER TRACK — IEM Rio 2026 UB QF
+
+Map-by-map side picks (no odds needed — structural analysis only).
+Rule: Map 1 = team's first pick (their strongest map), Map 2 = opponent's pick.
+
+| Match | Map 1 pick | Map 2 pick | Map 3 (decider) | Confidence |
+|-------|-----------|-----------|----------------|-----------|
+| GM vs G2 | **GM** (Inferno 88%) | **G2** (Ancient 80%) | **G2** (S-tier edge, stand-in less relevant on neutral) | Map1 High / Map2 High / Map3 Low |
+| VIT vs RED | **VIT** | **VIT** | **VIT** | All VIT (rank #1 vs #73) |
+| 3DMAX vs Falcons | **Falcons** (pick) | **3DMAX** (pick, Nuke 58%) | **Falcons** (rank #4 class) | Map1 Medium / Map2 Medium / Map3 Medium |
+| Spirit vs Liquid | **Spirit** (Dust2 88%) | **Liquid** (Mirage 59%) | **Spirit** (Anubis 75% vs Liquid 33%) | Map1 Very High / Map2 Medium / Map3 High |
+| Legacy vs MOUZ | **MOUZ** (Inferno — class) | **Legacy** (Dust2 56>33%) | **MOUZ** (Mirage — rank gap) | Map1 Medium / Map2 High / Map3 Medium |
+| B8 vs NaVi | **B8** (Ancient 69%) | **NaVi** (Inferno 55%) | **NaVi** (Dust2 — historical) | Map1 Medium / Map2 Medium / Map3 Low |
+| Aurora vs HOTU | **Aurora** (Dust2 75%) | **HOTU** (Anubis 89%) | **HOTU** (Nuke 45% vs Aurora 30%) | Map1 High / Map2 Very High / Map3 Medium |
+| FURIA vs Passion UA | **FURIA** (Dust2 69%) | **Passion** (Inferno 75%) | **FURIA** (Mirage 50% vs Passion 38%) | Map1 High / Map2 High / Map3 Medium |
+
+**High-confidence individual map picks (bet when map odds available):**
+1. Spirit Map1 (Dust2) — Spirit 88% WR vs Liquid 54% → Spirit ~85% favourite
+2. Spirit Map3 (Anubis) — Spirit 75% vs Liquid 33% → Spirit ~80%
+3. HOTU Map2 (Anubis) — HOTU 89% WR, 5-map streak → HOTU ~85%
+4. FURIA Map1 (Dust2) — FURIA 69% vs Passion 56% → FURIA ~65%
+5. Aurora Map1 (Dust2) — Aurora 75%, Inferno banned → Aurora ~72%
+
+| Map pick | Team | Est. prob | Notes |
+|----------|------|-----------|-------|
+| Spirit Map1 (Dust2) | **Spirit** | ~85% | Spirit 88% WR, best map; Liquid 54% |
+| Spirit Map3 (Anubis) | **Spirit** | ~78% | Spirit 75% vs Liquid 33% — massive gap |
+| HOTU Map2 (Anubis) | **HOTU** | ~85% | HOTU 89% WR, 5-streak; Inferno perma-banned |
+| FURIA Map1 (Dust2) | **FURIA** | ~65% | FURIA 69% vs Passion 56%, Dust2 fav |
+| Aurora Map1 (Dust2) | **Aurora** | ~72% | Aurora 75% WR on Dust2, strong opener |
+
+Map bet results: pending
+
+---
+
+### SCORE BET TRACK — IEM Rio 2026 UB QF
+
+Separate bankroll for exact score bets. Max 20% of total per match.
+Logic: both teams win their own pick map ~65-75% → X 2-1 underpriced by bookmakers.
+
+| Match | Score pick | Est. prob | Rationale |
+|-------|-----------|-----------|-----------|
+| GM vs G2 | **GM 2-1** | ~35% | GM wins Inferno (88%), G2 wins Ancient (80%), decider ~50/50. 2-1 most likely outcome |
+| Spirit vs Liquid | **Spirit 2-1** | ~45% | Spirit wins Dust2 (88%), Liquid wins Mirage (59%), Spirit wins Anubis (75%). 2-1 expected |
+| Legacy vs MOUZ | **MOUZ 2-1** | ~40% | MOUZ wins Inferno (class), Legacy wins Dust2 (56%), MOUZ wins decider (rank) |
+| B8 vs NaVi | **NaVi 2-1** | ~35% | NaVi wins Inferno + Dust2 decider, B8 wins Ancient (69%) |
+| Aurora vs HOTU | **HOTU 2-1** | ~37% | HOTU Anubis (89%), Aurora Dust2 (75%), HOTU Nuke decider. 2-1 = most likely outcome |
+| FURIA vs Passion | **FURIA 2-1** | ~35% | FURIA Dust2, Passion Inferno, FURIA Mirage decider |
+
+**Key insight:** Bookmakers price 2-1 for underdogs at ~15-20% implied. Real probability is ~35-45% because map pool structure forces deciders. Systematic edge on 2-1 outcomes when veto is predictable.
+
+Score bet results: pending
+
+---
+
 ## 2026-04-08 -- PGL Bucharest 2026, Round 5 (Tier A, LAN)
 
 ### Swiss bracket: all remaining teams 2-2 (win = playoffs, loss = eliminated)
