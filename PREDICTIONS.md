@@ -639,20 +639,243 @@ Actual maps: Nuke 13-4, Overpass 13-6
 
 **Model calibration:** Vitality Dust2 94% WR (16 maps) is significantly higher than our assumed value. Update for future Vitality analysis.
 
-**Remaining post-mortems: awaiting full data for Spirit, Legacy, B8, Aurora, FURIA matches**
+#### Spirit 2-0 Liquid — correct pick, no bet ✓
+Actual maps: Ancient 13-2 (Spirit), Dust2 13-11 (Spirit close)
 
-**⚠️ CRITICAL PATTERN: 0/5 VB round**
-This is the second catastrophic VB round (Apr 6: 0/2 VB, -34.4%). Both times:
-- Multiple underdogs picked simultaneously
-- All lost
-- Common factor: S-tier teams performing to rank even vs good lower-tier teams
-**Rule candidate: Max 2 VBs per day, never more than 3 underdogs simultaneously**
+**Veto reconstruction:**
+1. Spirit bans Inferno (perma, 28 bans) ✓
+2. Liquid bans Overpass (perma, 43 bans) ✓
+3. Spirit picks **Ancient (67% WR)** — NOT Dust2 as we predicted
+4. Liquid picks Mirage or similar, but Mirage wasn't played → Spirit likely banned Mirage
+5. Liquid picks Dust2 (50% WR) — only decent option remaining
+6. Decider: N/A (2-0)
 
-**Key anomalies still to investigate (awaiting map data):**
-1. **HOTU Anubis (89% WR) — Aurora 2-0 sweep:** Did Aurora ban Anubis? If yes — our veto prediction was wrong. If no — inflated WR confirmed again (Bucharest lesson)
-2. **B8 vs NaVi — H2H 4-0 NaVi signal was correct:** We flagged ⚠️ and still bet. Hard stop rule needed
-3. **Legacy vs MOUZ — MOUZ 0% LAN form reversed:** 30d form stat too stale. Need tighter recency window
-4. **GM counter-pick lesson:** G2 took Mirage (GM 31% WR) instead of their own best Ancient. New rule documented above.
+**New Spirit map pool data:**
+- Overpass: 63% WR (8m, 3b) [old estimate was similar]
+- Inferno: 0% WR, 28 bans (PERMA) ✓
+- Ancient: **67%** WR (12m, 6b) [we overestimated at 75%]
+- Dust2: **72%** WR (18m, 0b) [we had 88% — stale 8-map sample!]
+- Anubis: 50% WR (4m, 4b)
+- Mirage: 45% WR (11m, 6b)
+- Nuke: 56% WR (9m, 9b)
+
+**Calibration note:** Spirit Dust2 was 88% (8 maps) in our analysis. Real WR is 72% (18 maps). 8-map sample inflated by 16 ppts. Confirms: minimum 15 maps for reliable WR.
+H2H: Spirit 5-0 vs Liquid confirmed. Ancient 13-2 showed complete Spirit domination. Our pick very high confidence = correct.
+
+#### 3DMAX 0-2 Falcons — correct pick, no bet ✓
+Actual maps: Inferno 10-13 (Falcons), Ancient 1-13 (Falcons dominated)
+
+**New 3DMAX map WR data:**
+- Mirage: 0% WR, **62 bans** (perma) ✓
+- Overpass: 33% WR (9m, 32b)
+- Ancient: **35%** WR (23m) — vs Falcons' **58%** WR: huge gap
+- Nuke: 61% WR (23m, 3b) — decent
+- Anubis: 71% WR (7m, 6b)
+- Dust2: 46% WR (37m, 7b)
+- Inferno: 52% WR (31m, 5b)
+
+**Falcons map WR:**
+- Mirage: **72%** WR (18m, 5b)
+- Ancient: **58%** WR (12m, 2b)
+- Nuke: **73%** WR (11m, 5b) ← strongest map
+- Anubis: 60% WR (5m, 1b)
+- Inferno: 53% WR (17m, 10b)
+
+**Key:** 3DMAX picked Inferno (52% — their "least bad" remaining). Falcons picked Ancient (58% vs 3DMAX's 35%) → 13-1 blowout. H2H 3-0 Falcons vs 3DMAX confirmed.
+Post-Bucharest fatigue on 3DMAX was visible: all 5 players below 6.0 rating on Ancient.
+
+#### B8 1-2 NaVi — VB LOSS ❌ (-3.1u)
+Actual maps: Ancient 0-13 (NaVi dominated), Inferno 13-4 (B8), Dust2 5-13 (NaVi)
+
+**CRITICAL FINDING: NaVi ALSO has 71% WR on Ancient**
+
+B8 map WR (actual):
+- Anubis: 0% WR (2m, 20b) — perma-ban
+- Dust2: 52% WR (21m, 8b)
+- Nuke: 38% WR (8m, 30b)
+- Mirage: 54% WR (26m, 1b)
+- Inferno: 36% WR (14m, 23b) — weak, often banned
+- Overpass: 0% WR (5m, 20b) — barely plays
+- Ancient: **71% WR (24m, 2b)** — B8's best map
+
+NaVi map WR (actual):
+- Overpass: 0% WR (37 bans) — PERMA BAN ✓
+- Anubis: 40% WR (5m, 2b)
+- Dust2: **65%** WR (20m, 9b)
+- Nuke: 46% WR (13m, 13b)
+- Mirage: 58% WR (26m, 2b)
+- Inferno: **39%** WR (18m, 13b) — weak
+- Ancient: **71%** WR (14m, 2b) ← SAME AS B8!
+
+**Veto reconstruction:**
+1. NaVi bans Overpass (perma)
+2. B8 bans Anubis (0%)
+3. B8 picks Ancient (71%) — their strongest
+4. NaVi picks Dust2 (65% NaVi vs 52% B8 — NaVi edge)
+5. B8 bans Mirage (58% NaVi — remove their second best)
+6. NaVi bans Nuke (38% B8)
+7. Decider: Inferno (B8 36%, NaVi 39%) — both weak, but B8 won 13-4 (too late)
+
+**The fatal error:** B8 picked Ancient (71% WR). NaVi ALSO has 71% WR on Ancient (14 maps). We only looked at B8's WR on their own pick, not the opponent's WR on the same map. Result: Ancient 0-13 for B8. Complete destruction on their supposed "dominant" map.
+
+**H2H confirmed:** NaVi 4-0 B8 (all within 4 months). The ⚠️ flag was correct — we should have stopped there.
+
+**RULE (new):** Before betting on "team X wins their pick (MapA)", check opponent's WR on MapA. If opponent WR ≥ team X WR on MapA → the "map pick advantage" doesn't exist. Hard rule: map pick edge requires team_X_WR(MapA) > opponent_WR(MapA) by ≥ 15%.
+
+#### Legacy 1-2 MOUZ — VB LOSS ❌ (-6.1u)
+Actual maps: Dust2 13-9 (Legacy won ✓), Inferno 10-13 (MOUZ won), Mirage 4-13 (MOUZ dominated)
+
+**CRITICAL FINDING: MOUZ Inferno 65% WR, 20 maps, NEVER BANNED**
+
+Legacy map WR (actual):
+- Nuke: 50% WR (16m, 9b)
+- Dust2: **50%** WR (28m, 3b) — moderate
+- Ancient: 65% WR (17m, 13b)
+- Overpass: 67% WR (6m, 19b)
+- Inferno: 62% WR (26m, 2b)
+- Mirage: 63% WR (16m, 15b)
+- Anubis: 0% WR (1m, 19b) — perma-ban
+
+MOUZ map WR (actual):
+- Nuke: **14%** WR (7m, 6b) — terrible ← we mentioned this
+- Dust2: **31%** WR (13m, 14b) — weak
+- Ancient: 50% WR (6m, 13b)
+- Overpass: **80%** WR (10m, 3b) — strong, but Legacy perma-bans it (19b)
+- Inferno: **65%** WR (20m, **0 bans** — NEVER BANNED!) ← we missed this
+- Mirage: 62% WR (13m, 7b)
+- Anubis: 0% WR, 19 bans for Legacy
+
+**Veto reconstruction:**
+1. Legacy bans Anubis, MOUZ bans Nuke (14% — garbage)
+2. Legacy picks Dust2 (50% Legacy vs 31% MOUZ — counter-pick exploit) ← SMART, Legacy won this 13-9
+3. MOUZ picks Inferno (65% WR, 20 maps, never banned) ← we never flagged this properly, MOUZ won 13-10
+4. Legacy bans Overpass (MOUZ 80%)
+5. MOUZ bans Ancient (Legacy 65%)
+6. Decider: Mirage (Legacy 63%, MOUZ 62%) → MOUZ wins 13-4 (dominant)
+
+**Key errors:**
+1. We flagged MOUZ 0% LAN form over 30 days but this was based on results at other tournaments. First match of new event — MOUZ reset.
+2. MOUZ Inferno: 65% WR, 20 maps, **0 bans** — this is their strongest map and opponents never ban it. We should have caught this as MOUZ's "primary pick" and given them higher probability.
+3. Decider Mirage: both 62-63%, we predicted 50/50. But MOUZ won 13-4 — individual quality (xertioN MVP 6.8, rank gap) overcame equal WR stats.
+
+**RULE (new):** A map with 0 bans over 20+ maps = team's default first pick. Check ban count, not just WR.
+
+#### FURIA 2-0 Passion UA — correct pick ✓, VB LOSS ❌ (-3.1u)
+Actual maps: Inferno 13-3 (FURIA), Mirage 13-7 (FURIA)
+
+**CRITICAL FINDING: FURIA Overpass WR = 67% (18m), NOT 38% (8m) — stale data**
+
+FURIA map WR (actual):
+- Ancient: 100% WR (1m, 39b) — perma-ban
+- Anubis: 75% WR (4m, 8b)
+- Nuke: 69% WR (16m, 7b)
+- Mirage: **58%** WR (26m, 6b) ← was 50% (18m)
+- Dust2: **70%** WR (20m, 12b) ← was 69% (similar)
+- Inferno: **55%** WR (22m, 6b) ← was 42% (12m!) — drastically underestimated
+- Overpass: **67%** WR (18m, 4b) ← was 38% (8m!) — **our "Overpass trap" was based on stale data**
+
+Passion UA map WR (actual):
+- Ancient: 0% WR (0m, 44b) — PERMA BAN (both teams)
+- Anubis: 40% WR (10m, 4b)
+- Nuke: 40% WR (15m, 11b)
+- Mirage: 30% WR (23m, 13b) — weak
+- Dust2: 50% WR (12m, 15b)
+- Inferno: **71%** WR (17m, 10b) ← Passion's best map, confirmed
+- Overpass: **59%** WR (17m, 2b)
+
+**Veto reconstruction:**
+1. Both ban Ancient (perma for both)
+2. FURIA picks Inferno (55% FURIA vs... why pick here?) OR Passion picks Inferno
+
+Result: Inferno 13-3 FURIA. If Passion picked Inferno (71% WR) and lost 3-13 — stand-in effect completely destroyed map coordination. FaNg (stand-in replacing Senzu) hadn't played enough matches with the core. Inferno is heavily team-coordination dependent (specific roles: B-site anchor, A-site executes, CT setups) → stand-in breaks all of this.
+
+OR: FURIA picked Inferno knowing stand-in FaNg would collapse coordination.
+
+Either way: stand-in on Inferno = 30-40% WR discount confirmed in practice.
+
+**FURIA Overpass trap was fiction:** Our "Overpass 38% structural weakness" analysis was based on 8 outdated maps. Real WR is 67% (18 current maps). The entire VB premise (Passion wins Overpass/Inferno because FURIA weak) was wrong.
+
+**RULE (new):** Map WR with < 15 maps is unreliable. When pre-match data shows different sample size than VB analysis, re-fetch. In this case: our 38% (8m) was from an earlier stage. Current 67% (18m) completely changes the picture.
+
+#### Aurora 2-0 HOTU — VB LOSS ❌ (-3.8u) — BIGGEST ERROR OF ROUND
+Actual maps: Mirage 13-4 (Aurora), Dust2 16-13 (Aurora barely)
+
+**ANUBIS WAS BANNED. HOTU's entire VB case collapsed on the veto.**
+
+Aurora map WR (actual):
+- Inferno: 61% WR (18m, 9b) — strong
+- Ancient: 0% WR (1m, 43b) — PERMA BAN (Aurora)
+- Anubis: 60% WR (10m, 0b) — decent
+- Overpass: 47% WR (19m, 4b)
+- Dust2: **76%** WR (25m, 5b) ← confirmed strong
+- Mirage: **46%** WR (24m, 14b) — moderate
+- Nuke: 50% WR (18m, 18b)
+
+HOTU map WR (actual):
+- Inferno: 0% WR (0m, 39b) — PERMA BAN (HOTU) ✓
+- Ancient: 44% WR (18m, 11b)
+- Anubis: **90%** WR (10m, 4b) ← confirmed near-90%
+- Overpass: 59% WR (17m, 2b)
+- Dust2: **65%** WR (34m, 2b) — strong, many games
+- Mirage: 54% WR (24m, 6b)
+- Nuke: 54% WR (13m, 16b)
+
+**HOTU recent form (missed completely): 1 WIN / 4 LOSSES in last 5 matches**
+- HOTU lost to BET-M (minor team), ARCRED, 100 Thieves, ACROBATS
+- Only 1 win vs WW
+- frontales listed as "—" (stand-in or roster change?)
+
+**Veto reconstruction:**
+Phase 1 bans:
+1. **Aurora bans Anubis (strategic deny!)** ← HOTU's 90% weapon denied in step 1
+2. HOTU bans Inferno (perma)
+
+Picks:
+3. Aurora picks Dust2 (76% vs HOTU's 65% — Aurora edge)
+4. HOTU picks Mirage (54% vs Aurora's 46% — small HOTU edge) → HOTU LOST 4-13
+
+Phase 2 bans:
+5. Aurora bans Ancient (their perma)
+6. HOTU bans Overpass or Nuke
+
+Result: Mirage 4-13 (HOTU lost their pick — Wicadia MVP 7.9), Dust2 16-13 (Aurora barely won)
+
+**Why this was a catastrophic analysis error:**
+1. We built the entire VB around HOTU winning Anubis (89/90% WR). We didn't model the probability Aurora bans Anubis in step 1.
+2. Any competent Aurora coach watching HOTU's recent matches would see the 90% Anubis stat and ban it.
+3. Without Anubis, HOTU's map pool is: Dust2 65%, Overpass 59%, Mirage 54%, Nuke 54%, Ancient 44%. These are all BELOW Aurora's Dust2 76%.
+4. HOTU had 1/5 recent form — we never checked this.
+
+**RULE (critical, new):** When underdog's VB case rests on a single dominant map (WR ≥ 80%):
+- Step 1: Calculate probability opponent bans it in Phase 1
+- If opponent has no better use for their Phase 1 ban AND they've likely scouted → ban probability = 70-80%
+- If ban probability ≥ 60% → reduce VB edge by (ban_prob × win_advantage_on_that_map)
+- In this case: 75% chance Aurora bans Anubis → HOTU's +21-28% edge collapses to ~+5%
+
+---
+
+### Model v3.7 — Rules Added From IEM Rio UB QF
+
+1. **Counter-pick logic:** Favored teams will often pick opponent's WEAK map (exploit), not their own STRONGEST map. Check "what is opponent's worst map?" when predicting T2 pick.
+
+2. **Map pick advantage check:** Before claiming "team wins their pick map," verify: opponent WR on that same map must be ≤ team WR − 15%. If both teams have similar WR on the map, no pick advantage exists. (B8 71% Ancient = NaVi 71% Ancient → no B8 edge)
+
+3. **Phase 1 ban probability for dominant maps:** When underdog has ≥ 80% WR on one map and VB depends on winning it, calculate ban probability. Favored team bans dominant map ~70-80% of time. Discount VB edge proportionally.
+
+4. **Ban count reveals true first pick:** Map with 0 bans over 15+ maps = team's standard first pick. More predictive than WR alone for veto analysis. (MOUZ Inferno: 65% WR, 0 bans/20 maps → guaranteed MOUZ first pick)
+
+5. **Recent form check mandatory (last 5 matches):** Before any underdog VB, check last 5 results. WR < 40% last 5 = hard stop. (HOTU 1/5 = 20% form → should have been hard stop)
+
+6. **Stand-in on coordination maps:** Stand-in playing team's best map (e.g., Inferno/Nuke) → discount WR by 30-40%. These maps require rehearsed setups. (Passion Inferno 71% → lost 3-13 with stand-in FaNg)
+
+7. **Stale WR data (< 15 maps):** Sample under 15 maps is unreliable. In our Spirit Dust2: 88% (8m stale) → real 72% (18m). FURIA Overpass: 38% (8m stale) → real 67% (18m). Swing of 16-29 ppts possible. Always prefer recent data with larger sample.
+
+8. **30-day LAN form decay:** 0% WR over 30 days loses predictive power if 2+ weeks of inactivity. Teams reset at new tournaments. Apply 50% weight discount to LAN form stats >10 days old.
+
+9. **Max 2 VBs per day rule:** Taking 5 simultaneous underdogs = correlated risk. All underdogs can fail together when S-tier teams are performing (tournament start effect — teams sharper). Hard cap: 2 VBs per round, max 3 underdog bets per tournament stage.
+
+**⚠️ CRITICAL PATTERN: 0/5 VB round (second occurrence)**
+Apr 6: 0/2 VB (PAR + B8). Apr 13: 0/5 VB. Both times: multiple underdogs, S-tier event start. Teams play to their ceiling at major tournament starts (audience, prize money, fresh preparation).
 
 ---
 
