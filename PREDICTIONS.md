@@ -594,18 +594,65 @@ Total: -20.7u → new bankroll = 56.1u
 **Correct picks:** Vitality ✓, Falcons ✓, Spirit ✓, FURIA pick ✓
 **Wrong picks:** GM (G2 won), Legacy (MOUZ won), B8 (NaVi won), HOTU (Aurora swept 2-0)
 
-**Key anomalies to investigate (awaiting full map data):**
-1. **HOTU Anubis (89% WR) — Aurora 2-0 sweep:** HOTU's supposedly dominant map was swept. Two possibilities: (a) Aurora banned Anubis, forcing different veto; (b) HOTU lost Anubis anyway — Bucharest lesson about inflated WR vs tier B/C not applied correctly
-2. **B8 vs NaVi — H2H 4-0 NaVi signal was correct:** We flagged it as ⚠️ but still bet. Rule candidate: H2H 4-0+ for the favorite = hard stop on underdog value bet regardless of map analysis
-3. **Legacy vs MOUZ — MOUZ 0% LAN form reversed:** Fresh tournament, MOUZ recovered. Form stat over 30 days was stale. Lesson: recency weight must be higher than 30d window
-4. **GM vs G2 — Stand-in effect not enough:** tAk didn't prevent G2 from winning 2-1. G2 quality floor even with stand-in is higher than rank #28 GM ceiling
+**Post-mortems (map data confirmed):**
+
+#### GM 1-2 G2 — VB LOSS ❌ (-4.6u)
+Actual maps: Inferno 13-8 (GM won), Mirage 8-13 (G2 won), Overpass 3-13 (G2 dominated)
+
+**Veto reconstruction:**
+1. GM bans Dust2 (perma, 0 maps played)
+2. G2 bans Nuke (perma, 38 bans)
+3. GM picks Inferno (75% WR) ← our prediction ✓
+4. G2 picks **Mirage (58%)** ← we predicted Ancient (78%). WRONG
+5. GM bans Ancient (78% G2 — smart defensive ban)
+6. G2 bans Anubis (71% GM)
+7. Decider: Overpass — GM 44% WR vs G2 42% WR → coin flip
+
+**New map WR data (actual from match):**
+- GM: Nuke 72% (18m), Inferno 75% (16m), Ancient 63% (19m), Mirage **31%** (13m), Anubis 71% (7m), Overpass 44% (9m)
+- G2: Ancient **78%** (18m), Dust2 64% (22m), Mirage 58% (19m), Inferno **43%** (14m!), Overpass 42% (12m), Anubis 44% (9m)
+
+**Key error:** We predicted G2 picks Ancient (78%). Reality: G2 counter-picked **Mirage** knowing GM has only 31% WR there. This is counter-pick logic (exploit opponent weakness) > own strength pick. We missed this.
+
+**Why we lost:**
+- Our veto was correct in outcome (GM wins Inferno, G2 wins their pick) but wrong on WHICH G2 pick
+- Decider Overpass was 50/50 statistically but G2 won 13-3 (dominant — Nertz MVP 6.9, even tAk performed)
+- G2's S-tier quality floor on neutral maps > rank #28 GM ceiling. Stand-in effect insufficient.
+
+**Map picks accuracy:** GM Map1 ✓, G2 Map2 ✓, G2 Map3 ✓ — all correct, but series VB was wrong direction
+
+**MODEL RULE (new):** When making veto prediction, check if opponent will counter-pick (pick map where your team is WEAK) rather than own best map. If the map where team B is weakest coincides with a map where team A has moderate WR → counter-pick likely. In this case: GM Mirage 31% → G2 will take Mirage, not their own 78% Ancient.
+
+#### VIT 2-0 RED Canids — no bet ✓
+Actual maps: Nuke 13-4, Overpass 13-6
+- VIT ZywOo MVP 9.2 — complete domination (+27 diff total)
+- RED kauez -14, drop -18 — no fight
+
+**New Vitality map pool data (actual):**
+- Overpass: **87%** WR (15m, 4 bans) — dominant
+- Inferno: **71%** WR (21m) — main map
+- Dust2: **94%** WR (16m) — surprisingly dominant (our model had lower estimate)
+- Nuke: **65%** WR (17m)
+- Mirage: **77%** WR (13m)
+- Ancient: 50% WR (2m) — barely plays it
+- Anubis: 100% WR (4m, mostly banned)
+
+**Model calibration:** Vitality Dust2 94% WR (16 maps) is significantly higher than our assumed value. Update for future Vitality analysis.
+
+**Remaining post-mortems: awaiting full data for Spirit, Legacy, B8, Aurora, FURIA matches**
 
 **⚠️ CRITICAL PATTERN: 0/5 VB round**
-This is the second time we've had a catastrophic VB round (Apr 6: 0/2 VB, -34.4%). Both times:
+This is the second catastrophic VB round (Apr 6: 0/2 VB, -34.4%). Both times:
 - Multiple underdogs picked simultaneously
 - All lost
 - Common factor: S-tier teams performing to rank even vs good lower-tier teams
-Rule candidate: **Max 2 VBs per day, never more than 3 underdogs simultaneously**
+**Rule candidate: Max 2 VBs per day, never more than 3 underdogs simultaneously**
+
+**Key anomalies still to investigate (awaiting map data):**
+1. **HOTU Anubis (89% WR) — Aurora 2-0 sweep:** Did Aurora ban Anubis? If yes — our veto prediction was wrong. If no — inflated WR confirmed again (Bucharest lesson)
+2. **B8 vs NaVi — H2H 4-0 NaVi signal was correct:** We flagged ⚠️ and still bet. Hard stop rule needed
+3. **Legacy vs MOUZ — MOUZ 0% LAN form reversed:** 30d form stat too stale. Need tighter recency window
+4. **GM counter-pick lesson:** G2 took Mirage (GM 31% WR) instead of their own best Ancient. New rule documented above.
 
 ---
 
