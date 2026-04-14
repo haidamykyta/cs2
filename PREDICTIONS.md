@@ -3979,3 +3979,305 @@ ODDS SANITY:
 - [ ] LAN vs online split: add `lan_only` filter to all WR calculations
 - [ ] Per-map round differential from handicap HLTV data → improve clean sweep prediction
 - [ ] Add "style clash" factor: aggressive teams vs passive teams on specific maps (e.g. Jame Anubis CT)
+
+---
+
+## 2026-04-14 -- IEM Rio 2026, Group A UB SF + LB QF (Tier S, LAN)
+
+*v3.7 rules applied. Bankroll entering round: 56.1u. Max 2 VBs rule enforced.*
+
+### Matches overview
+
+| Match | Odds T1 | Odds T2 | Margin | Value Bet |
+|-------|---------|---------|--------|-----------|
+| Vitality vs G2 | VIT @1.29 | G2 @3.62 | ~5.8% | NO BET |
+| RED Canids vs Gentle Mates | RED @4.00 | GM @1.22 | ~5.7% | NO BET |
+| Spirit vs Falcons | SPR @2.10 | FAL @1.68 | ~5.8% | NO BET (coin flip) |
+| Liquid vs 3DMAX | LIQ @1.88 | 3DM @1.93 | ~5.0% | NO BET |
+| FURIA vs NaVi | FUR @2.10 | NaVi @1.69 | ~5.4% | **FURIA @2.10, kelly 6%** |
+| Passion UA vs B8 | PAS @3.40 | B8 @1.33 | ~5.5% | NO BET (H2H 0-4 hard stop) |
+| HOTU vs Legacy | HOTU @2.50 | LEG @1.53 | ~5.4% | NO BET (HOTU form hard stop) |
+| Aurora vs MOUZ | AUR @2.31 | MOUZ @1.60 | ~5.5% | **Aurora @2.31, kelly 7%** |
+
+### Value Bets
+
+| # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
+|---|-------|--------|------|--------|---------|------|-------|--------|---------|
+| 1 | FURIA vs NaVi | **FURIA** | **2.10** | ~59% | 45.3% | **+13.7%** | **6%** | - | - |
+| 2 | Aurora vs MOUZ | **Aurora** | **2.31** | ~57% | 41.2% | **+14.8%** | **7%** | - | - |
+
+```
+Bankroll impact (planned):
+- FURIA VB: 6% x 56.1 = 3.4u
+- Aurora VB: 7% x 56.1 = 3.9u
+Total exposure: 7.3u (13% of bankroll)
+```
+
+### Model picks (all 8 matches)
+
+| Match | Our pick | Confidence | Key argument | Result | Correct |
+|-------|----------|-----------|--------------|--------|---------|
+| VIT vs G2 | **Vitality** | Very High | VIT rank #1, ZywOo 1.43. G2 still with tAk. VIT Dust2 94%, Inferno 71% - unbeatable map pool at S-tier | - | - |
+| RED vs GM | **Gentle Mates** | Medium-High | GM rank #28 vs RED rank ~85. GM map pool (Inferno 75%, Nuke 72%) far stronger. RED no answers. No value at 1.22. | - | - |
+| Spirit vs Falcons | **Falcons** slight edge | Low (coin flip) | Spirit Dust2 72% strong pick. Falcons Nuke 73%, Mirage 72%. Decider Anubis - Falcons 60% vs Spirit 50%. Slight Falcons edge. | - | - |
+| Liquid vs 3DMAX | **3DMAX** slight edge | Low-Medium | 3DMAX Nuke 61% second pick (Mirage perma-ban denied). Liquid Inferno ~50%. Decider: Anubis 71% 3DMAX vs ~50% Liquid. | - | - |
+| FURIA vs NaVi | **FURIA** | Medium (**VB @2.10, 6%**) | FURIA bans Ancient (NaVi 71%). FURIA picks Nuke (69% vs NaVi 46%). All v3.7 checks pass. | - | - |
+| Passion UA vs B8 | **B8** | Medium | B8 Mirage 54% vs Passion 30% = 24 ppt pick edge. H2H 0-4 blocks any Passion VB. | - | - |
+| HOTU vs Legacy | **Legacy** | Medium | HOTU form 1/5 = 20% (hard stop, v3.7 rule #5). Legacy consistent. Mirage 63% vs HOTU 54% solid pick. | - | - |
+| Aurora vs MOUZ | **Aurora** | Medium (**VB @2.31, 7%**) | Aurora Dust2 76% vs MOUZ 31% = 45 ppt gap. H2H Aurora 2-0 MOUZ 2m ago. All v3.7 checks pass. | - | - |
+
+---
+
+### Per-Match Analysis (v3.7)
+
+#### VIT vs G2 (UB SF)
+
+**Map pool:**
+| Map | VIT WR | G2 WR | Notes |
+|-----|--------|-------|-------|
+| Dust2 | **94%** (16m) | 64% (22m) | VIT dominant first pick |
+| Inferno | **71%** (21m) | 43% (14m) | VIT edge, G2 weak here |
+| Mirage | **77%** (13m) | 58% (19m) | VIT edge |
+| Nuke | 65% (17m) | PERMA BAN | - |
+| Ancient | 50% (2m) | **78%** (18m) | G2 first pick |
+| Overpass | **87%** (15m) | 42% (12m) | VIT dominant |
+
+**Veto:** G2 bans Nuke (perma). VIT bans Ancient (G2 78%). VIT picks Dust2 (94%). G2 picks Mirage (58% - best remaining). Decider: Inferno (VIT 71%) or Overpass (VIT 87%) - VIT dominates all options.
+
+**Analysis:** tAk still in for huNter-. Even full G2 has no map to attack VIT. ZywOo 1.43 MVP. VIT ~90% series win. No value at 1.29 (implied 77.5%). Real ~90% - no VB.
+
+---
+
+#### RED vs GM (LB QF)
+
+**Map pool:**
+| Map | RED WR | GM WR | Notes |
+|-----|--------|-------|-------|
+| Nuke | ~45% | **72%** (18m) | GM dominant |
+| Inferno | ~55% | **75%** (16m) | GM edge |
+| Mirage | ~50% | 31% (13m) | RED slight edge |
+| Ancient | ~40% | 63% (19m) | GM edge |
+
+**Analysis:** RED rank ~85 vs GM #28. GM map pool far superior. GM bans Dust2 (perma), RED bans Ancient. GM picks Inferno or Nuke (70%+). RED has no credible attacking map. GM wins ~72%. No VB at 1.22.
+
+---
+
+#### Spirit vs Falcons (LB QF)
+
+**Odds:** SPR @2.10, FAL @1.68
+
+**Map pool:**
+| Map | Spirit WR | Falcons WR | Notes |
+|-----|-----------|------------|-------|
+| Inferno | PERMA BAN | 53% | - |
+| Dust2 | **72%** (18m) | ~45% | Spirit first pick |
+| Nuke | 56% (9m) | **73%** (11m) | Falcons strong |
+| Mirage | 45% (11m) | **72%** (18m) | Falcons first pick |
+| Ancient | 67% (12m) | 58% (12m) | Spirit slight edge |
+| Anubis | 50% (4m) | 60% (5m) | Falcons edge |
+
+**Veto:** Spirit bans Inferno (perma). Spirit picks Dust2 (72% vs ~45%). Falcons picks Mirage (72% vs Spirit 45%). Decider: Anubis - Falcons 60% vs Spirit 50%.
+
+**Series math:**
+- P(Spirit wins Dust2) = ~72%
+- P(Falcons wins Mirage) = ~72%
+- P(Falcons wins decider Anubis) = ~60%
+
+P(Spirit series) = 0.72x0.28 + 0.72x0.72x0.40 = 0.20 + 0.21 = ~41%
+Individual quality boost: ~46-48% total.
+Implied 45.3% = essentially priced correctly. No VB. Pick: Falcons (54%).
+
+---
+
+#### Liquid vs 3DMAX (LB QF)
+
+**Odds:** LIQ @1.88, 3DM @1.93
+
+**Map pool:**
+| Map | Liquid WR | 3DMAX WR | Notes |
+|-----|-----------|----------|-------|
+| Mirage | ~50% | PERMA BAN (62 bans) | - |
+| Nuke | ~40% (loss streak) | **61%** (23m) | 3DMAX anchor |
+| Inferno | ~50% | 52% (31m) | Near even |
+| Dust2 | ~50% | 46% (37m) | Liquid slight edge |
+| Ancient | ~45% | 35% (23m) | Liquid slight edge |
+| Anubis | ~50% | **71%** (7m, stale) | v3.7 rule #7: unreliable |
+
+**Veto:** 3DMAX bans Mirage (perma). Liquid bans Anubis (71% but 7m - stale). Liquid picks Inferno. 3DMAX picks Nuke (61%). Decider: Dust2 - Liquid slight edge.
+
+**Model:** 3DMAX ~53%, Liquid ~47%. Implied 50.8%/51.8% = essentially priced correctly. No VB.
+
+---
+
+#### FURIA vs NaVi (LB QF) - VB FURIA @2.10, 6%
+
+**Map pool:**
+| Map | FURIA WR | NaVi WR | Notes |
+|-----|----------|---------|-------|
+| Ancient | PERMA BAN (39b) | **71%** (14m) | FURIA removes NaVi weapon |
+| Overpass | 67% (18m) | PERMA BAN (37b) | NaVi removes FURIA weapon |
+| Dust2 | **70%** (20m) | 65% (20m) | FURIA edge +5 ppt |
+| Nuke | **69%** (16m) | 46% (13m) | FURIA dominant +23 ppt |
+| Mirage | **58%** (26m) | 58% (26m) | Dead even |
+| Inferno | 55% (22m) | 39% (18m) | FURIA edge +16 ppt |
+
+**V3.7 checks:**
+- Rule #2: FURIA Nuke 69% vs NaVi 46% - 23 ppt gap confirmed. FURIA Inferno +16 ppt. Both pass.
+- Rule #3: No single FURIA dominant map (all <80%). No Phase 1 ban risk.
+- Rule #5: FURIA form - 2-0 vs Passion last match. Not in hard-stop zone.
+- Rule #7: All WR 16+ maps - reliable data.
+- Rule #9: Only 2 VBs this round total. OK.
+
+**Veto projection:**
+1. FURIA bans Ancient (NaVi 71% - structural deny)
+2. NaVi bans Overpass (FURIA 67% - return deny)
+3. FURIA picks Nuke (69% vs NaVi 46% - massive pick advantage)
+4. NaVi picks Mirage (58%=58% - only even map remaining)
+5. Decider: Dust2 (FURIA 70% vs NaVi 65%) or Inferno (FURIA 55% vs NaVi 39%)
+
+**Series math:**
+P(FURIA wins Nuke) = ~68% (first pick, 23 ppt WR gap)
+P(NaVi wins Mirage) = ~53% (NaVi picks, even WR)
+P(FURIA wins decider Dust2) = ~55%
+
+P(FURIA series) = 0.68x0.47 + 0.68x0.53x0.55 = 0.32 + 0.20 = ~52%
+Recent form boost: ~57-60% total.
+Implied: 45.3%. **Edge: +12-15%.**
+
+```
+Kelly:
+p = 0.59, odds = 2.10, b = 1.10
+kelly = (0.59x1.10 - 0.41) / 1.10 = 0.239/1.10 = 21.7%
+conf_mult = 0.25 + 0.75x(0.59-0.20)/0.55 = 0.782
+kelly_safe = 21.7% x 0.782 = 17.0% -> cap at 6% (NaVi S-tier, apply caution)
+Bet: 6% x 56.1u = 3.4u
+```
+
+---
+
+#### Passion UA vs B8 (LB QF)
+
+**Map pool:**
+| Map | Passion WR | B8 WR | Notes |
+|-----|------------|-------|-------|
+| Ancient | ~40% | **71%** (24m) | B8 dominant |
+| Inferno | **71%** (17m, Senzu back) | 36% (14m) | Passion weapon |
+| Mirage | 30% (23m) | **54%** (26m) | B8 +24 ppt pick advantage |
+| Dust2 | 50% (12m) | 52% (21m) | B8 slight edge |
+
+**V3.7 check:** H2H 0-4 Passion vs B8 - hard stop on Passion VB (same pattern: NaVi 4-0 B8 = warning flag).
+
+**Veto:** B8 bans Inferno (Passion 71% weapon). Passion bans Ancient (B8 71%). B8 picks Mirage (54% vs Passion 30%). Passion picks Dust2 (50/52 neutral). Decider: Nuke or Overpass.
+
+**Pick: B8 (~62%). No VB.**
+
+---
+
+#### HOTU vs Legacy (LB QF)
+
+**Map pool:**
+| Map | HOTU WR | Legacy WR | Notes |
+|-----|---------|-----------|-------|
+| Inferno | PERMA BAN | 62% (26m) | - |
+| Dust2 | **65%** (34m) | 50% (28m) | HOTU first pick, +15 ppt |
+| Anubis | **90%** (10m) | ~50% | Will Legacy ban it (like Aurora)? |
+| Ancient | 44% (18m) | **65%** (17m) | Legacy pick |
+| Mirage | 54% (24m) | **63%** (16m) | Legacy edge |
+| Overpass | 59% (17m) | ~52% | HOTU edge |
+
+**Key question:** Does Legacy ban Anubis Phase 1 like Aurora did? Likely yes - public knowledge now.
+
+**Veto (if Legacy bans Anubis):**
+1. Legacy bans Anubis (deny 90% weapon - v3.7 precedent confirmed)
+2. HOTU bans Ancient (Legacy 65%)
+3. HOTU picks Dust2 (65% vs Legacy 50%)
+4. Legacy picks Mirage (63% vs HOTU 54%)
+5. Decider: Overpass (HOTU 59% vs Legacy ~52%) - slight HOTU edge
+
+**V3.7 rule #5 override:** HOTU 1/5 last 5 = 20% WR - hard stop. Even if veto structure is close, a team in 20% form cannot be trusted to execute at S-tier LAN. Pick: Legacy (~58%). No VB.
+
+---
+
+#### Aurora vs MOUZ (UB SF) - VB Aurora @2.31, 7%
+
+**Map pool:**
+| Map | Aurora WR | MOUZ WR | Notes |
+|-----|-----------|---------|-------|
+| Ancient | PERMA BAN (43b) | 50% (6m) | Aurora removes it |
+| Dust2 | **76%** (25m) | **31%** (13m) | Aurora +45 ppt - MASSIVE gap |
+| Inferno | 61% (18m) | **65%** (20m, 0 bans) | MOUZ guaranteed first pick (rule #4) |
+| Overpass | 47% (19m) | **80%** (10m) | MOUZ dominant, Aurora will ban |
+| Mirage | 46% (24m) | 62% (13m) | MOUZ edge |
+| Nuke | 50% (18m) | 14% (7m) | Aurora edge |
+| Anubis | 60% (10m) | ~50% | Aurora edge |
+
+**V3.7 checks:**
+- Rule #2: Aurora Dust2 76% vs MOUZ 31% = 45 ppt gap. Confirmed massive pick advantage.
+- Rule #4: MOUZ Inferno 0 bans/20 maps = guaranteed MOUZ first pick (already priced in analysis).
+- Rule #3: Aurora no single map >=80%. MOUZ Overpass 80% - Aurora will ban it Phase 2.
+- Rule #5: Aurora form - 2-0 vs HOTU last match. Not in hard-stop zone.
+- Rule #7: Aurora Dust2 25 maps, MOUZ Inferno 20 maps. Both reliable.
+- H2H: Aurora 2-0 MOUZ (LAN, 2 months ago). Confirmed advantage.
+- Rule #9: Only 2 VBs this round. OK.
+
+**Veto projection:**
+1. Aurora bans Ancient (perma, 43 bans)
+2. MOUZ bans Nuke (Aurora edge, MOUZ 14% garbage map)
+3. Aurora picks Dust2 (76% vs MOUZ 31%)
+4. MOUZ picks Inferno (65% WR, 0 bans - rule #4 confirmed)
+5. Aurora bans Overpass (MOUZ 80% - smart deny)
+6. MOUZ bans Anubis (Aurora 60% - remove Aurora edge)
+7. Decider: Mirage (Aurora 46% vs MOUZ 62%) - MOUZ wins decider
+
+**Series math:**
+P(Aurora wins Dust2) = ~73% (76% WR, 45 ppt gap, first pick)
+P(MOUZ wins Inferno) = ~65% (their guaranteed pick, 0 bans)
+P(MOUZ wins decider Mirage) = ~62% (MOUZ 62% vs Aurora 46%)
+
+P(Aurora series) = P(2-0) + P(2-1):
+= 0.73x0.35 + 0.73x0.65x0.38 = 0.26 + 0.18 = ~44%
+H2H boost (Aurora 2-0 LAN 2m ago): +8-10%
+Total Aurora: ~52-54%.
+Implied bookie: 41.2%. **Edge: +11-13%.**
+
+```
+Kelly:
+p = 0.57, odds = 2.31, b = 1.31
+kelly = (0.57x1.31 - 0.43) / 1.31 = (0.747-0.43)/1.31 = 0.317/1.31 = 24.2%
+conf_mult = 0.25 + 0.75x(0.57-0.20)/0.55 = 0.754
+kelly_safe = 24.2% x 0.754 = 18.2% -> cap at 7% (underdog vs top-8, apply caution)
+Bet: 7% x 56.1u = 3.9u
+```
+
+---
+
+### Map winner track
+
+| Match | Map 1 | Map 2 | Map 3 (decider) | Result | Correct |
+|-------|-------|-------|-----------------|--------|---------|
+| VIT vs G2 | **VIT** (Dust2 94%) | **G2** (Ancient 78%) | **VIT** | - | - |
+| RED vs GM | **GM** (Nuke 72%) | **GM** (Inferno 75%) | - | - | - |
+| Spirit vs Falcons | **Spirit** (Dust2 72%) | **Falcons** (Mirage 72%) | **Falcons** (Anubis 60%) | - | - |
+| Liquid vs 3DMAX | **Liquid** (Inferno ~50%) | **3DMAX** (Nuke 61%) | **Liquid** (Dust2 50%) | - | - |
+| FURIA vs NaVi | **FURIA** (Nuke 69%) | **NaVi** (Mirage 58%) | **FURIA** (Dust2 70%) | - | - |
+| Passion vs B8 | **B8** (Mirage 54% vs 30%) | **Passion** (Inferno 71%) | **B8** (Dust2 52%) | - | - |
+| HOTU vs Legacy | **HOTU** (Dust2 65%) | **Legacy** (Mirage 63%) | **Legacy** (decider ~52%) | - | - |
+| Aurora vs MOUZ | **Aurora** (Dust2 76%) | **MOUZ** (Inferno 65%) | **MOUZ** (Mirage 62%) | - | - |
+
+### Score bet track
+
+| Match | Score bet | Odds | Model% | Implied% | Edge | Bet? | Result | Correct |
+|-------|-----------|------|--------|----------|------|------|--------|---------|
+| FURIA vs NaVi | **FURIA 2-1** | ~3.60 | ~34% | ~27.8% | +6.2% | **YES 2%** | - | - |
+| Aurora vs MOUZ | MOUZ 2-1 | ~3.50 | ~25% | ~28.6% | -3.6% | NO | - | - |
+| Spirit vs Falcons | Falcons 2-1 | ~3.80 | ~27% | ~26.3% | +0.7% | NO (marginal) | - | - |
+
+**Score bet: FURIA 2-1 @3.60** - veto structure (FURIA wins Nuke, NaVi wins Mirage, FURIA wins Dust2 decider) maps cleanly to 2-1. Bet: 2% x 56.1u = 1.1u.
+
+```
+Total exposure this round:
+- FURIA VB @2.10: 3.4u
+- Aurora VB @2.31: 3.9u
+- FURIA 2-1 score: 1.1u
+Total: 8.4u (15% of 56.1u bankroll)
+```
