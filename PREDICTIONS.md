@@ -553,27 +553,59 @@ Edge = 61%-59.5% = **+1.5% → below 5% threshold. NO BET.**
 
 | # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
 |---|-------|--------|------|--------|---------|------|-------|--------|---------|
-| 1 | GM vs G2 | **GM** | **2.66** | ~51% | 37.6% | **+13-16%** | **6%** | pending | - |
-| - | VIT vs RED | Vitality | 1.06 | ~95% | 94.3% | ~0% | NO BET | pending | - |
-| - | 3DMAX vs Falcons | Falcons | 1.14 | ~85% | 87.7% | 0% | NO BET | pending | - |
-| - | Spirit vs Liquid | Spirit | 1.13 | ~89% | 88.5% | ~0% | NO BET | pending | - |
-| 2 | Legacy vs MOUZ | **Legacy** | **3.25** | ~45-53% | 30.8% | **+14-22%** | **8%** | pending | - |
-| 3 ⚠️ | B8 vs NaVi | **B8** | **4.31** | ~38-40% | 23.2% | **+15-17%** | **4%** | pending | - |
-| 4 | Aurora vs HOTU | **HOTU** | **4.19** | ~45-52% | 23.9% | **+21-28%** | **5%** | pending | - |
-| 5 ⚠️ | FURIA vs Passion UA | **Passion UA** | **5.67** | ~38-42% | 17.6% | **+20-24%** | **4%** | pending | - |
+| 1 | GM vs G2 | **GM** | **2.66** | ~51% | 37.6% | **+13-16%** | **6%** | LOSS ❌ | NO |
+| - | VIT vs RED | Vitality | 1.06 | ~95% | 94.3% | ~0% | NO BET | WIN | ✓ |
+| - | 3DMAX vs Falcons | Falcons | 1.14 | ~85% | 87.7% | 0% | NO BET | WIN | ✓ |
+| - | Spirit vs Liquid | Spirit | 1.13 | ~89% | 88.5% | ~0% | NO BET | WIN | ✓ |
+| 2 | Legacy vs MOUZ | **Legacy** | **3.25** | ~45-53% | 30.8% | **+14-22%** | **8%** | LOSS ❌ | NO |
+| 3 ⚠️ | B8 vs NaVi | **B8** | **4.31** | ~38-40% | 23.2% | **+15-17%** | **4%** | LOSS ❌ | NO |
+| 4 | Aurora vs HOTU | **HOTU** | **4.19** | ~45-52% | 23.9% | **+21-28%** | **5%** | LOSS ❌ | NO |
+| 5 ⚠️ | FURIA vs Passion UA | **Passion UA** | **5.67** | ~38-42% | 17.6% | **+20-24%** | **4%** | LOSS ❌ | NO |
 
 ### Model picks
 
 | Match | Our pick | Confidence | Key argument | Result | Correct |
 |-------|----------|-----------|--------------|--------|---------|
-| GM vs G2 | **GM** | Medium | G2 stand-in tAk (replacing huNter-). GM Inferno 88% WR. Real prob ~48-54% vs implied 37.6% | pending | - |
-| VIT vs RED | **Vitality** | Very High | Rank #1, ZywOo 1.43, 16-win streak. RED rank #73 with stand-in reNTU. No value at 1.06 | pending | - |
-| 3DMAX vs Falcons | **Falcons** | High | Falcons rank #4, NiKo+m0NESY. 3DMAX post-Bucharest fatigue. H2H Falcons 71% (3-1 recent) | pending | - |
-| Spirit vs Liquid | **Spirit** | Very High | H2H 5-0 recent. Dust2 88% WR (first pick). Liquid Nuke 4-loss streak. No value at 1.13 | pending | - |
-| Legacy vs MOUZ | **Legacy** | Medium | MOUZ 0% LAN form (3 losses). Map pool near-equal after Overpass removed. Decider Mirage 78%/78% = 50/50 | pending | - |
-| B8 vs NaVi | **B8** ⚠️ | Low-Medium | B8 bans NaVi Nuke 80%. Ancient 69% strong. Nuke removed = map pool balanced. H2H 4-0 NaVi is risk. | pending | - |
-| Aurora vs HOTU | **HOTU** | Medium-High | HOTU Anubis 89% (5-streak). Aurora Inferno 71% PERMA-BANNED. Decider Nuke: Aurora 30% vs HOTU 45% | pending | - |
-| FURIA vs Passion UA | **FURIA** pick, **Passion UA** value | Low-Medium | FURIA Overpass 38% WR (structural weakness). Passion Inferno 75% (5-streak). Stand-in FaNg = risk | pending | - |
+| GM vs G2 | **GM** | Medium | G2 stand-in tAk (replacing huNter-). GM Inferno 88% WR. Real prob ~48-54% vs implied 37.6% | G2 2-1 | NO ❌ |
+| VIT vs RED | **Vitality** | Very High | Rank #1, ZywOo 1.43, 16-win streak. RED rank #73 with stand-in reNTU. No value at 1.06 | VIT 2-0 | YES ✓ |
+| 3DMAX vs Falcons | **Falcons** | High | Falcons rank #4, NiKo+m0NESY. 3DMAX post-Bucharest fatigue. H2H Falcons 71% (3-1 recent) | FAL 2-0 | YES ✓ |
+| Spirit vs Liquid | **Spirit** | Very High | H2H 5-0 recent. Dust2 88% WR (first pick). Liquid Nuke 4-loss streak. No value at 1.13 | Spirit 2-0 | YES ✓ |
+| Legacy vs MOUZ | **Legacy** | Medium | MOUZ 0% LAN form (3 losses). Map pool near-equal after Overpass removed. Decider Mirage 78%/78% = 50/50 | MOUZ 2-1 | NO ❌ |
+| B8 vs NaVi | **B8** ⚠️ | Low-Medium | B8 bans NaVi Nuke 80%. Ancient 69% strong. Nuke removed = map pool balanced. H2H 4-0 NaVi is risk. | NaVi 2-1 | NO ❌ |
+| Aurora vs HOTU | **HOTU** | Medium-High | HOTU Anubis 89% (5-streak). Aurora Inferno 71% PERMA-BANNED. Decider Nuke: Aurora 30% vs HOTU 45% | Aurora 2-0 | NO ❌ |
+| FURIA vs Passion UA | **FURIA** pick, **Passion UA** value | Low-Medium | FURIA Overpass 38% WR (structural weakness). Passion Inferno 75% (5-streak). Stand-in FaNg = risk | FURIA 2-0 | pick YES ✓ / VB NO ❌ |
+
+---
+
+### IEM Rio UB QF Post-Mortem (preliminary — full analysis pending map data)
+
+**Model picks: 4/8 = 50% | Value bets: 0/5 = 0% | Bankroll: 76.8u → 56.1u (-27%)**
+
+```
+Bankroll impact:
+- GM VB: -6% × 76.8 = -4.6u
+- Legacy VB: -8% × 76.8 = -6.1u
+- B8 VB: -4% × 76.8 = -3.1u
+- HOTU VB: -5% × 76.8 = -3.8u
+- Passion VB: -4% × 76.8 = -3.1u
+Total: -20.7u → new bankroll = 56.1u
+```
+
+**Correct picks:** Vitality ✓, Falcons ✓, Spirit ✓, FURIA pick ✓
+**Wrong picks:** GM (G2 won), Legacy (MOUZ won), B8 (NaVi won), HOTU (Aurora swept 2-0)
+
+**Key anomalies to investigate (awaiting full map data):**
+1. **HOTU Anubis (89% WR) — Aurora 2-0 sweep:** HOTU's supposedly dominant map was swept. Two possibilities: (a) Aurora banned Anubis, forcing different veto; (b) HOTU lost Anubis anyway — Bucharest lesson about inflated WR vs tier B/C not applied correctly
+2. **B8 vs NaVi — H2H 4-0 NaVi signal was correct:** We flagged it as ⚠️ but still bet. Rule candidate: H2H 4-0+ for the favorite = hard stop on underdog value bet regardless of map analysis
+3. **Legacy vs MOUZ — MOUZ 0% LAN form reversed:** Fresh tournament, MOUZ recovered. Form stat over 30 days was stale. Lesson: recency weight must be higher than 30d window
+4. **GM vs G2 — Stand-in effect not enough:** tAk didn't prevent G2 from winning 2-1. G2 quality floor even with stand-in is higher than rank #28 GM ceiling
+
+**⚠️ CRITICAL PATTERN: 0/5 VB round**
+This is the second time we've had a catastrophic VB round (Apr 6: 0/2 VB, -34.4%). Both times:
+- Multiple underdogs picked simultaneously
+- All lost
+- Common factor: S-tier teams performing to rank even vs good lower-tier teams
+Rule candidate: **Max 2 VBs per day, never more than 3 underdogs simultaneously**
 
 ---
 
@@ -1004,15 +1036,15 @@ Rule: Map 1 = team's first pick (their strongest map), Map 2 = opponent's pick.
 4. FURIA Map1 (Dust2) — FURIA 69% vs Passion 56% → FURIA ~65%
 5. Aurora Map1 (Dust2) — Aurora 75%, Inferno banned → Aurora ~72%
 
-| Map pick | Team | Est. prob | Notes |
-|----------|------|-----------|-------|
-| Spirit Map1 (Dust2) | **Spirit** | ~85% | Spirit 88% WR, best map; Liquid 54% |
-| Spirit Map3 (Anubis) | **Spirit** | ~78% | Spirit 75% vs Liquid 33% — massive gap |
-| HOTU Map2 (Anubis) | **HOTU** | ~85% | HOTU 89% WR, 5-streak; Inferno perma-banned |
-| FURIA Map1 (Dust2) | **FURIA** | ~65% | FURIA 69% vs Passion 56%, Dust2 fav |
-| Aurora Map1 (Dust2) | **Aurora** | ~72% | Aurora 75% WR on Dust2, strong opener |
+| Map pick | Team | Est. prob | Notes | Result |
+|----------|------|-----------|-------|--------|
+| Spirit Map1 (Dust2) | **Spirit** | ~85% | Spirit 88% WR, best map; Liquid 54% | WIN ✓ (Spirit 2-0) |
+| Spirit Map3 (Anubis) | **Spirit** | ~78% | Spirit 75% vs Liquid 33% — massive gap | N/A (2-0, no Map3) |
+| HOTU Map2 (Anubis) | **HOTU** | ~85% | HOTU 89% WR, 5-streak; Inferno perma-banned | **LOSS ❌** (Aurora 2-0!) |
+| FURIA Map1 (Dust2) | **FURIA** | ~65% | FURIA 69% vs Passion 56%, Dust2 fav | WIN ✓ (FURIA 2-0) |
+| Aurora Map1 (Dust2) | **Aurora** | ~72% | Aurora 75% WR on Dust2, strong opener | WIN ✓ (Aurora 2-0) |
 
-Map bet results: pending
+Map bet results: 3/4 played = 75% (HOTU Anubis the catastrophic miss — Aurora swept 2-0)
 
 ---
 
@@ -1021,18 +1053,19 @@ Map bet results: pending
 Separate bankroll for exact score bets. Max 20% of total per match.
 Logic: both teams win their own pick map ~65-75% → X 2-1 underpriced by bookmakers.
 
-| Match | Score pick | Est. prob | Rationale |
-|-------|-----------|-----------|-----------|
-| GM vs G2 | **GM 2-1** | ~35% | GM wins Inferno (88%), G2 wins Ancient (80%), decider ~50/50. 2-1 most likely outcome |
-| Spirit vs Liquid | **Spirit 2-1** | ~45% | Spirit wins Dust2 (88%), Liquid wins Mirage (59%), Spirit wins Anubis (75%). 2-1 expected |
-| Legacy vs MOUZ | **MOUZ 2-1** | ~40% | MOUZ wins Inferno (class), Legacy wins Dust2 (56%), MOUZ wins decider (rank) |
-| B8 vs NaVi | **NaVi 2-1** | ~35% | NaVi wins Inferno + Dust2 decider, B8 wins Ancient (69%) |
-| Aurora vs HOTU | **HOTU 2-1** | ~37% | HOTU Anubis (89%), Aurora Dust2 (75%), HOTU Nuke decider. 2-1 = most likely outcome |
-| FURIA vs Passion | **FURIA 2-1** | ~35% | FURIA Dust2, Passion Inferno, FURIA Mirage decider |
+| Match | Score pick | Est. prob | Rationale | Result |
+|-------|-----------|-----------|-----------|--------|
+| GM vs G2 | **GM 2-1** | ~35% | GM wins Inferno (88%), G2 wins Ancient (80%), decider ~50/50 | G2 2-1 ❌ (direction wrong, score 2-1 correct) |
+| Spirit vs Liquid | **Spirit 2-1** | ~45% | Spirit wins Dust2, Liquid wins Mirage, Spirit wins Anubis | Spirit 2-0 ❌ (Spirit 2-0, no Map3) |
+| Legacy vs MOUZ | **MOUZ 2-1** | ~40% | MOUZ wins Inferno (class), Legacy wins Dust2, MOUZ wins decider | MOUZ 2-1 ✓ |
+| B8 vs NaVi | **NaVi 2-1** | ~35% | NaVi wins Inferno + Dust2 decider, B8 wins Ancient | NaVi 2-1 ✓ |
+| Aurora vs HOTU | **HOTU 2-1** | ~37% | HOTU Anubis (89%), Aurora Dust2 (75%), HOTU Nuke decider | Aurora 2-0 ❌ |
+| FURIA vs Passion | **FURIA 2-1** | ~35% | FURIA Dust2, Passion Inferno, FURIA Mirage decider | FURIA 2-0 ❌ |
 
-**Key insight:** Bookmakers price 2-1 for underdogs at ~15-20% implied. Real probability is ~35-45% because map pool structure forces deciders. Systematic edge on 2-1 outcomes when veto is predictable.
+Score pick accuracy: 2/6 correct (33%) — MOUZ 2-1 ✓ + NaVi 2-1 ✓
+Note: 3 matches ended 2-0 instead of 2-1 (Spirit, Aurora, FURIA) — favorites swept when expected. Score 2-1 bias too strong this round.
 
-Score bet results: pending
+**Key insight:** Bookmakers price 2-1 for underdogs at ~15-20% implied. Real probability is ~35-45% because map pool structure forces deciders. Systematic edge on 2-1 outcomes when veto is predictable. But 3/8 matches ended 2-0 this round (above usual rate) — Anubis HOTU collapse is the biggest anomaly.
 
 ---
 
