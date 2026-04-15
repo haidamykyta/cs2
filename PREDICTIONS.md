@@ -4003,28 +4003,29 @@ ODDS SANITY:
 
 | # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
 |---|-------|--------|------|--------|---------|------|-------|--------|---------|
-| 1 | FURIA vs NaVi | **FURIA** | **2.10** | ~59% | 45.3% | **+13.7%** | **6%** | - | - |
-| 2 | Aurora vs MOUZ | **Aurora** | **2.31** | ~57% | 41.2% | **+14.8%** | **7%** | - | - |
+| 1 | FURIA vs NaVi | **FURIA** | **2.10** | ~59% | 45.3% | **+13.7%** | **6%** | WIN ✓ | YES |
+| 2 | Aurora vs MOUZ | **Aurora** | **2.31** | ~57% | 41.2% | **+14.8%** | **7%** | LOSS ❌ | NO |
 
 ```
-Bankroll impact (planned):
-- FURIA VB: 6% x 56.1 = 3.4u
-- Aurora VB: 7% x 56.1 = 3.9u
-Total exposure: 7.3u (13% of bankroll)
+Bankroll impact (actual):
+- FURIA VB WIN: +3.70u (3.4u x 1.10)
+- Aurora VB LOSS: -3.93u
+- FURIA 2-1 score WIN: +2.92u (1.1u x 2.60)
+Net: +2.69u | Bankroll: 56.1u -> 58.8u (+4.8%)
 ```
 
 ### Model picks (all 8 matches)
 
 | Match | Our pick | Confidence | Key argument | Result | Correct |
 |-------|----------|-----------|--------------|--------|---------|
-| VIT vs G2 | **Vitality** | Very High | VIT rank #1, ZywOo 1.43. G2 still with tAk. VIT Dust2 94%, Inferno 71% - unbeatable map pool at S-tier | - | - |
-| RED vs GM | **Gentle Mates** | Medium-High | GM rank #28 vs RED rank ~85. GM map pool (Inferno 75%, Nuke 72%) far stronger. RED no answers. No value at 1.22. | - | - |
-| Spirit vs Falcons | **Falcons** slight edge | Low (coin flip) | Spirit Dust2 72% strong pick. Falcons Nuke 73%, Mirage 72%. Decider Anubis - Falcons 60% vs Spirit 50%. Slight Falcons edge. | - | - |
-| Liquid vs 3DMAX | **3DMAX** slight edge | Low-Medium | 3DMAX Nuke 61% second pick (Mirage perma-ban denied). Liquid Inferno ~50%. Decider: Anubis 71% 3DMAX vs ~50% Liquid. | - | - |
-| FURIA vs NaVi | **FURIA** | Medium (**VB @2.10, 6%**) | FURIA bans Ancient (NaVi 71%). FURIA picks Nuke (69% vs NaVi 46%). All v3.7 checks pass. | - | - |
-| Passion UA vs B8 | **B8** | Medium | B8 Mirage 54% vs Passion 30% = 24 ppt pick edge. H2H 0-4 blocks any Passion VB. | - | - |
-| HOTU vs Legacy | **Legacy** | Medium | HOTU form 1/5 = 20% (hard stop, v3.7 rule #5). Legacy consistent. Mirage 63% vs HOTU 54% solid pick. | - | - |
-| Aurora vs MOUZ | **Aurora** | Medium (**VB @2.31, 7%**) | Aurora Dust2 76% vs MOUZ 31% = 45 ppt gap. H2H Aurora 2-0 MOUZ 2m ago. All v3.7 checks pass. | - | - |
+| VIT vs G2 | **Vitality** | Very High | VIT rank #1, ZywOo 1.43. G2 still with tAk. VIT Dust2 94%, Inferno 71% - unbeatable map pool at S-tier | VIT 2-1 | YES ✓ |
+| RED vs GM | **Gentle Mates** | Medium-High | GM rank #28 vs RED rank ~85. GM map pool (Inferno 75%, Nuke 72%) far stronger. RED no answers. No value at 1.22. | RED 2-1 | NO ❌ |
+| Spirit vs Falcons | **Falcons** slight edge | Low (coin flip) | Spirit Dust2 72% strong pick. Falcons Nuke 73%, Mirage 72%. Decider Anubis - Falcons 60% vs Spirit 50%. Slight Falcons edge. | FAL 2-0 | YES ✓ |
+| Liquid vs 3DMAX | **3DMAX** slight edge | Low-Medium | 3DMAX Nuke 61% second pick (Mirage perma-ban denied). Liquid Inferno ~50%. Decider: Anubis 71% 3DMAX vs ~50% Liquid. | 3DM 2-0 | YES ✓ |
+| FURIA vs NaVi | **FURIA** | Medium (**VB @2.10, 6%**) | FURIA bans Ancient (NaVi 71%). FURIA picks Nuke (69% vs NaVi 46%). All v3.7 checks pass. | FUR 2-1 | YES ✓ |
+| Passion UA vs B8 | **B8** | Medium | B8 Mirage 54% vs Passion 30% = 24 ppt pick edge. H2H 0-4 blocks any Passion VB. | B8 2-0 | YES ✓ |
+| HOTU vs Legacy | **Legacy** | Medium | HOTU form 1/5 = 20% (hard stop, v3.7 rule #5). Legacy consistent. Mirage 63% vs HOTU 54% solid pick. | HOTU 2-0 | NO ❌ |
+| Aurora vs MOUZ | **Aurora** | Medium (**VB @2.31, 7%**) | Aurora Dust2 76% vs MOUZ 31% = 45 ppt gap. H2H Aurora 2-0 MOUZ 2m ago. All v3.7 checks pass. | MOUZ 2-0 | NO ❌ |
 
 ---
 
@@ -4255,29 +4256,111 @@ Bet: 7% x 56.1u = 3.9u
 
 | Match | Map 1 | Map 2 | Map 3 (decider) | Result | Correct |
 |-------|-------|-------|-----------------|--------|---------|
-| VIT vs G2 | **VIT** (Dust2 94%) | **G2** (Ancient 78%) | **VIT** | - | - |
-| RED vs GM | **GM** (Nuke 72%) | **GM** (Inferno 75%) | - | - | - |
-| Spirit vs Falcons | **Spirit** (Dust2 72%) | **Falcons** (Mirage 72%) | **Falcons** (Anubis 60%) | - | - |
-| Liquid vs 3DMAX | **Liquid** (Inferno ~50%) | **3DMAX** (Nuke 61%) | **Liquid** (Dust2 50%) | - | - |
-| FURIA vs NaVi | **FURIA** (Nuke 69%) | **NaVi** (Mirage 58%) | **FURIA** (Dust2 70%) | - | - |
-| Passion vs B8 | **B8** (Mirage 54% vs 30%) | **Passion** (Inferno 71%) | **B8** (Dust2 52%) | - | - |
-| HOTU vs Legacy | **HOTU** (Dust2 65%) | **Legacy** (Mirage 63%) | **Legacy** (decider ~52%) | - | - |
-| Aurora vs MOUZ | **Aurora** (Dust2 76%) | **MOUZ** (Inferno 65%) | **MOUZ** (Mirage 62%) | - | - |
+| VIT vs G2 | **VIT** (Dust2) | **G2** (Ancient) | **VIT** | Mirage(G2) / Inferno(VIT) / Dust2(VIT) | Map1❌ Map2❌ Map3✓ |
+| RED vs GM | **GM** (Nuke) | **GM** (Inferno) | - | Mirage(RED) / Ancient(GM) / Overpass(RED) | Map1❌ Map2✓ |
+| Spirit vs Falcons | **Spirit** (Dust2) | **Falcons** (Mirage) | **Falcons** (Anubis) | Anubis(FAL) / Mirage(FAL) | Map1❌ Map2✓ |
+| Liquid vs 3DMAX | **Liquid** (Inferno) | **3DMAX** (Nuke) | **Liquid** (Dust2) | Nuke(3DM) / Ancient(3DM) | Map1❌ Map2✓ |
+| FURIA vs NaVi | **FURIA** (Nuke) | **NaVi** (Mirage) | **FURIA** (Dust2) | Mirage(NaVi) / Dust2(FUR) / Nuke(FUR) | Map1❌ Map2❌ Map3✓ |
+| Passion vs B8 | **B8** (Mirage) | **Passion** (Inferno) | **B8** (Dust2) | Overpass(B8) / Mirage(B8) | Map1✓ Map2❌ |
+| HOTU vs Legacy | **HOTU** (Dust2) | **Legacy** (Mirage) | **Legacy** (decider) | Dust2(HOTU) / Ancient(HOTU) | Map1✓ Map2❌ |
+| Aurora vs MOUZ | **Aurora** (Dust2) | **MOUZ** (Inferno) | **MOUZ** (Mirage) | Dust2(MOUZ!) / Mirage(MOUZ) | Map1❌ Map2✓ |
 
 ### Score bet track
 
 | Match | Score bet | Odds | Model% | Implied% | Edge | Bet? | Result | Correct |
 |-------|-----------|------|--------|----------|------|------|--------|---------|
-| FURIA vs NaVi | **FURIA 2-1** | ~3.60 | ~34% | ~27.8% | +6.2% | **YES 2%** | - | - |
+| FURIA vs NaVi | **FURIA 2-1** | ~3.60 | ~34% | ~27.8% | +6.2% | **YES 2%** | WIN ✓ | YES |
 | Aurora vs MOUZ | MOUZ 2-1 | ~3.50 | ~25% | ~28.6% | -3.6% | NO | - | - |
-| Spirit vs Falcons | Falcons 2-1 | ~3.80 | ~27% | ~26.3% | +0.7% | NO (marginal) | - | - |
+| Spirit vs Falcons | Falcons 2-1 | ~3.80 | ~27% | ~26.3% | +0.7% | NO (marginal) | FAL 2-0 | - |
 
-**Score bet: FURIA 2-1 @3.60** - veto structure (FURIA wins Nuke, NaVi wins Mirage, FURIA wins Dust2 decider) maps cleanly to 2-1. Bet: 2% x 56.1u = 1.1u.
+**Score bet: FURIA 2-1 @3.60 WIN ✓** - result confirmed: Mirage(NaVi) / Dust2(FURIA) / Nuke(FURIA). Profit: +2.92u
 
 ```
 Total exposure this round:
-- FURIA VB @2.10: 3.4u
-- Aurora VB @2.31: 3.9u
-- FURIA 2-1 score: 1.1u
-Total: 8.4u (15% of 56.1u bankroll)
+- FURIA VB @2.10: +3.70u WIN
+- Aurora VB @2.31: -3.93u LOSS
+- FURIA 2-1 score: +2.92u WIN
+Net: +2.69u | Bankroll: 56.1u -> 58.8u
 ```
+
+---
+
+### Post-Mortem: IEM Rio UB SF + LB QF
+
+**Series: 5/8 (63%) | VBs: 1/2 | Score: 1/1 | Net: +2.69u**
+
+#### RED 2-1 GM -- MISS ❌
+Actual: Mirage 13-9 (RED), Ancient 4-13 (GM), Overpass 13-10 (RED)
+
+**What happened:** RED played significantly above rank. dav1g MVP 6.8, reN7U solid. GM won Ancient as expected but RED won both Mirage and Overpass. Our model had GM at 72% -- RED outperformed rank ~85 ceiling.
+
+**New data from match:**
+- RED map pool is more Mirage-centered than we modeled (Mirage 52% vs our ~50% estimate, but RED won 13-9 which is solid)
+- GM Mirage confirmed 31% WR (lost 9-13 on their own -- no surprise)
+- RED: dav1deuS + chay underestimated as individual performers vs lower-tier teams
+
+**Error:** Overestimated GM ceiling on Overpass (44% WR). RED took it 13-10. Rank gap was more predictive than map WR here. RED had nothing to lose = no pressure = performed to ceiling.
+
+**Rule consideration:** Underdog with no pressure (already eliminated if they lose) performs above expected WR. Apply +5% boost to underdog when they have elimination pressure.
+
+---
+
+#### HOTU 2-0 Legacy -- MISS ❌
+Actual: Dust2 13-7 (HOTU), Ancient 16-14 (HOTU close)
+
+**What happened:** We applied v3.7 rule #5 (form 1/5 = 20% hard stop). HOTU won regardless. frontales MVP 7.0. Legacy lost Ancient in overtime (16-14) -- they came very close.
+
+**Veto:** HOTU first picked Dust2 (65% WR -- correct). Legacy responded with Ancient (65%). HOTU won Dust2 convincingly (13-7). Then won Ancient 16-14 in what was a coin-flip result.
+
+**Analysis of miss:**
+- Rule #5 said "hard stop" on underdog VB. We didn't take a HOTU VB -- correct. But our series pick was still Legacy.
+- The 20% form metric flagged unreliability, not guaranteed loss.
+- Ancient was genuinely close (16-14 -- one or two rounds decided the series).
+- Legacy's arT + dumau underperformed. latto 5 deaths in a row at key moments.
+
+**Lesson:** Rule #5 correctly blocked VB. But picking the opponent as series winner when form is the ONLY negative factor is also risky. In future: if form is bad but veto structure favors the "bad form" team, pick coin flip (not the opponent).
+
+---
+
+#### Aurora 0-2 MOUZ -- VB LOSS ❌ (-3.93u)
+Actual: Dust2 4-13 (MOUZ!!!), Mirage 8-13 (MOUZ)
+
+**CRITICAL: Aurora Dust2 76% WR was completely overridden. 4-13 scoreline = total domination.**
+
+**What happened:**
+- Aurora was supposed to win Dust2 (their "guaranteed" Map1, 76% WR vs MOUZ 31%).
+- MOUZ won Dust2 13-4. Score was never close.
+- Brollan MVP 7.0, Brollan alone outperformed entire Aurora on Dust2.
+
+**MOUZ recent form that we discounted:**
+- Lost to MongolZ, FUT, 9z in the month before IEM Rio.
+- BUT: v3.7 rule #8 (LAN form decay) should have flagged this differently.
+- MOUZ tournament reset at IEM Rio was complete: they played like a top-3 team.
+
+**Aurora actual map WR problems:**
+- Dust2 76% WR (25 maps) = correct sample size, reliable by v3.7 rule #7.
+- BUT: these 25 maps are vs mixed opponents. MOUZ Dust2 31% (13m) vs Aurora = MOUZ was losing at lower tier.
+- At S-tier IEM vs a revived MOUZ with Brollan in form: individual quality completely overwhelmed map WR advantage.
+
+**CRITICAL NEW FINDING: Map WR advantage is opponent-tier sensitive.**
+Aurora's 76% Dust2 WR includes wins vs rank 50-100 opponents. MOUZ individual quality (xertioN 1.15 rating, Brollan 1.20 rating) operates above map WR statistics. At S-tier, a 45-ppt WR advantage can be irrelevant if the individual quality gap is large enough in opponent's favor.
+
+MOUZ H2H was actually 0-2 to Aurora 2 months ago. But those were different conditions (MOUZ in slump). Now MOUZ is reset and performing at ceiling.
+
+**New rule (v3.8 candidate):** Before using map WR advantage as VB driver, check opponent individual quality ratings. If opponent has 2+ players rated 1.15+ on the specific map, discount WR advantage by 40-50%. Map WR is a baseline, not a ceiling.
+
+**Note on H2H:** Aurora 2-0 MOUZ 2 months ago. H2H at 2 months = team state 2 months ago. MOUZ was in slump (3 losses before Rio). This H2H was misleading -- it reflected past MOUZ, not IEM Rio MOUZ.
+
+**Additional rule (v3.8 candidate):** H2H weight = max 2 months, and only if team form in the 2 weeks before matches confirms similar form. If a team had multiple consecutive losses before H2H was played, discount H2H by 50%.
+
+---
+
+### Model v3.8 Rules (candidates from this round)
+
+10. **Elimination-pressure underdog boost:** When underdog has nothing to lose (next loss = elimination), apply +5% series probability boost. (RED vs GM: RED had elimination pressure, won).
+
+11. **Individual quality override for map WR:** At S-tier events, if opponent has 2+ players rated 1.15+ rating on specific map, reduce your WR advantage by 40-50%. Map stats are baseline; elite individuals can dominate any map. (MOUZ Dust2: Brollan 7.0 rating despite 31% team WR).
+
+12. **H2H currency decay:** H2H is only reliable if team form in the 2 weeks prior was similar to today. If team was in slump during H2H period but has since recovered, discount H2H by 50-70%. (MOUZ 0-2 H2H to Aurora when MOUZ was in slump -- misleading).
+
+13. **Form metric limits:** Form rule #5 correctly blocks VBs (HOTU VB avoided). But series picks against "bad form" teams are also unreliable -- form is only one factor. If veto structure favors the "bad form" team, call it a coin flip, not a pick for the opponent.
