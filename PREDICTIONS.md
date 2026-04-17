@@ -4364,3 +4364,284 @@ MOUZ H2H was actually 0-2 to Aurora 2 months ago. But those were different condi
 12. **H2H currency decay:** H2H is only reliable if team form in the 2 weeks prior was similar to today. If team was in slump during H2H period but has since recovered, discount H2H by 50-70%. (MOUZ 0-2 H2H to Aurora when MOUZ was in slump -- misleading).
 
 13. **Form metric limits:** Form rule #5 correctly blocks VBs (HOTU VB avoided). But series picks against "bad form" teams are also unreliable -- form is only one factor. If veto structure favors the "bad form" team, call it a coin flip, not a pick for the opponent.
+---
+
+## 2026-04-15 -- IEM Rio 2026, Group A/B LB SF + UB Finals (Tier S, LAN)
+
+*v3.7 + v3.8 rules applied. Bankroll entering round: 58.8u. Max 2 VBs rule enforced.*
+
+### Matches overview
+
+| Match | Odds T1 | Odds T2 | Margin | Value Bet |
+|-------|---------|---------|--------|-----------|
+| G2 vs 3DMAX | G2 @1.38 | 3DM @3.08 | ~5.5% | NO BET |
+| Spirit vs RED Canids | SPR @1.06 | RED @8.80 | ~4.5% | NO BET |
+| Aurora vs B8 | AUR @1.48 | B8 @2.65 | ~5.4% | NO BET |
+| NaVi vs HOTU | NaVi @1.15 | HOTU @5.35 | ~5.5% | **HOTU @5.35, kelly 5%** |
+| Vitality vs Falcons | VIT @1.44 | FAL @2.79 | ~5.3% | NO BET |
+| FURIA vs MOUZ | FUR @2.01 | MOUZ @1.80 | ~5.3% | NO BET |
+
+### Value Bets
+
+| # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
+|---|-------|--------|------|--------|---------|------|-------|--------|---------|
+| 1 | NaVi vs HOTU | **HOTU** | **5.35** | ~46% | 18.7% | **+27.3%** | **5%** | - | - |
+
+```
+Bankroll impact (planned):
+- HOTU VB: 5% x 58.8 = 2.9u
+- HOTU 2-1 score: 2% x 58.8 = 1.2u
+Total exposure: 4.1u (7% of bankroll)
+```
+
+### Model picks (all 6 matches)
+
+| Match | Our pick | Confidence | Key argument | Result | Correct |
+|-------|----------|-----------|--------------|--------|---------|
+| G2 vs 3DMAX | **G2** | High | huNter- back (full roster). Ancient 78% vs 3DMAX 38% = +40 ppt. 3DMAX Nuke anchor banned by G2. | - | - |
+| Spirit vs RED | **Spirit** | Very High | Spirit rank #10 vs RED rank #64. RED bans Dust2 but Spirit still has Ancient 67%. RED wins Nuke (63%, 43m). Spirit Overpass 63% decider edge. Spirit implied 94% = already overpriced. | - | - |
+| Aurora vs B8 | **Aurora** | Medium | H2H 5-0 Aurora. Aurora bans Ancient (B8 71% weapon). Dust2 73% Aurora pick. Inferno 61% vs B8 36% = decider edge. Aurora implied 67.6% vs real 62% = slightly overpriced but pick remains Aurora. | - | - |
+| NaVi vs HOTU | **HOTU** | Medium (**VB @5.35, 5%**) | Veto: NaVi wins Ancient (71%), HOTU wins Dust2 (66%), HOTU wins Nuke decider (54% vs NaVi 43%!). NaVi bans Anubis in Phase 2 (HOTU 90%). HOTU series real ~46% vs implied 18.7%. | - | - |
+| VIT vs Falcons | **VIT** | Medium-Low | VIT Dust2 94% first pick. Falcons Mirage 74%. Decider Anubis: VIT 100% stale (4m) vs FAL 53% (17m). H2H Falcons 3-2. VIT implied 69.4% vs real 57% = overpriced. | - | - |
+| FURIA vs MOUZ | **MOUZ** | Low (coin flip) | FURIA wins Nuke (71% vs MOUZ 14% = near certain Map1). MOUZ wins Inferno (65%, 0 bans). Mirage decider MOUZ 64% vs FURIA 56%. H2H MOUZ 71% vs FURIA. ~52% MOUZ. | - | - |
+
+---
+
+### Per-Match Analysis (v3.7 + v3.8)
+
+#### G2 vs 3DMAX (LB SF, Group A)
+
+**huNter- is back. Full G2 roster: huNter-, Nertz, SunPayus, HeavyGod, MATYS.**
+
+**Map pool:**
+| Map | G2 WR | 3DMAX WR | Notes |
+|-----|-------|----------|-------|
+| Ancient | **78%** (18m) | 38% (24m) | G2 dominant +40 ppt |
+| Nuke | PERMA BAN (39b) | **59%** (22m) | 3DMAX anchor destroyed by G2 ban |
+| Mirage | 60% (20m) | PERMA BAN (61b) | G2 ok here, 3DMAX perma-bans |
+| Dust2 | 61% (23m) | 47% (36m) | G2 decider edge |
+| Inferno | 40% (15m) | 53% (30m) | 3DMAX slight edge |
+| Anubis | 44% (9m) | 71% (7m, stale) | v3.7 rule #7: stale |
+
+**Veto:**
+1. G2 bans Nuke (perma, 39b) | 3DMAX bans Mirage (perma, 61b)
+2. G2 picks Ancient (78% vs 3DMAX 38% = +40 ppt)
+3. 3DMAX picks Anubis (71% but 7m stale) or Inferno (53%)
+4. Phase 2: G2 bans Anubis (3DMAX 71%), 3DMAX bans Overpass or Inferno
+5. Decider: Dust2 (G2 61% vs 3DMAX 47%) → G2 edge
+
+**H2H:** G2 3-2 vs 3DMAX last 5. 3DMAX 33% historical vs G2.
+
+**G2 ~72%. Implied 72.5% = fair. No VB. Pick: G2.**
+
+---
+
+#### Spirit vs RED Canids (LB SF, Group A)
+
+**CRITICAL: RED Canids perma-bans Dust2 (35 bans, 100% frequency). Spirit loses their 72% weapon.**
+
+**Map pool:**
+| Map | Spirit WR | RED WR | Notes |
+|-----|-----------|--------|-------|
+| Inferno | PERMA BAN | 50% (16m) | - |
+| Dust2 | **72%** (18m) | PERMA BAN (35b) | Spirit weapon removed |
+| Nuke | 56% (9m) | **63%** (43m, 80% pick freq) | RED anchor, very reliable |
+| Ancient | **67%** (12m) | 45% (11m) | Spirit pick +22 ppt |
+| Overpass | 63% (8m) | 50% (24m) | Spirit decider edge |
+| Mirage | 42% (12m) | 52% (21m) | RED slight edge |
+
+**Veto:**
+1. Spirit bans Inferno (perma) | RED bans Dust2 (perma - removes Spirit weapon)
+2. Spirit picks Ancient (67% vs RED 45%)
+3. RED picks Nuke (63%, 43 maps = extremely reliable)
+4. Spirit bans Mirage (RED 52%) | RED bans Anubis
+5. Decider: Overpass (Spirit 63% vs RED 50%)
+
+**v3.8 rule #10:** RED elimination pressure. But Spirit >> GM in quality. RED ~18%.
+**Spirit implied 94.3% (1.06) = massively overpriced (real ~82%). RED edge only +6.6%. No VB. Pick: Spirit.**
+
+---
+
+#### Aurora vs B8 (LB SF, Group B)
+
+**H2H: Aurora 5-0 all-time vs B8 (2-0 one month ago, 2-1 five months ago).**
+
+**Map pool:**
+| Map | Aurora WR | B8 WR | Notes |
+|-----|-----------|-------|-------|
+| Ancient | PERMA BAN (44b) | **71%** (24m) | Aurora removes B8 weapon |
+| Dust2 | **73%** (26m) | 55% (20m) | Aurora pick +18 ppt |
+| Inferno | **61%** (18m) | 36% (14m) | Aurora decider +25 ppt |
+| Mirage | 44% (25m) | **56%** (27m) | B8 pick |
+| Anubis | 60% (10m) | 0% (2m, 21b) | - |
+
+**Veto:**
+1. Aurora bans Ancient (44b perma) | B8 bans Anubis (0% WR)
+2. Aurora picks Dust2 (73% vs B8 55%)
+3. B8 picks Mirage (56% vs Aurora 44%)
+4. Decider: Inferno (Aurora 61% vs B8 36% = +25 ppt)
+
+**V3.8 rule #11 note:** Aurora Dust2 failed vs MOUZ (Brollan 7.0 MVP). B8 s1zzi strong but not MOUZ-level individual quality. Discount: -5% on Dust2 map. Still Aurora favored.
+
+**Aurora ~62%. Implied 67.6% (1.48) = Aurora overpriced. B8 fairly priced at 2.65. No VB. Pick: Aurora.**
+
+---
+
+#### NaVi vs HOTU (LB SF, Group B) - VB HOTU @5.35, 5%
+
+**Veto is the key: NaVi bans Anubis (HOTU 90% denied), then Nuke becomes decider -- HOTU 54% vs NaVi 43%.**
+
+**Map pool:**
+| Map | NaVi WR | HOTU WR | Notes |
+|-----|---------|---------|-------|
+| Overpass | PERMA BAN (38b) | 59% (17m) | NaVi removes in Phase 1 |
+| Inferno | 39% (18m) | PERMA BAN (40b) | HOTU removes in Phase 1 |
+| Ancient | **71%** (14m) | 47% (19m) | NaVi first pick +24 ppt |
+| Dust2 | 59% (27m) | **66%** (35m!) | HOTU pick +7 ppt (35 maps = very reliable) |
+| Anubis | 40% (5m) | **90%** (10m) | NaVi bans in Phase 2 (strategic deny) |
+| Mirage | **62%** (21m) | 54% (24m) | HOTU bans in Phase 2 |
+| Nuke | 43% (14m) | **54%** (13m) | HOTU decider +11 ppt |
+
+**V3.7 checks:**
+- Rule #2: NaVi Ancient 71% vs HOTU 47% = +24 ppt NaVi pick edge. Confirmed.
+- Rule #3: HOTU Anubis 90% -- NaVi WILL ban it in Phase 2 (Aurora set precedent). Moot.
+- Rule #5: HOTU form -- last 5: LEGACY WIN, Aurora loss, BET-M loss, ARCRED loss, WW win = 2/5 = 40%. At boundary. Not hard stop.
+- Rule #7: HOTU Dust2 66% on 35 maps = very reliable. NaVi Nuke 43% on 14 maps = reliable.
+- v3.8 rule #10: HOTU elimination pressure +3%.
+- v3.8 rule #11: NaVi individual quality (w0nderful AWP, iM, b1t) can close some gaps. Discount HOTU edges by ~10%.
+- Note: HOTU's frontales (MVP vs Legacy) likely not playing -- gokushima returns as main roster.
+
+**Veto projection:**
+1. NaVi bans Overpass (perma, 38b)
+2. HOTU bans Inferno (perma, 40b)
+3. NaVi picks Ancient (71% vs HOTU 47%)
+4. HOTU picks Dust2 (66% vs NaVi 59%)
+5. NaVi bans Anubis (HOTU 90% -- strategic deny, same as Aurora did)
+6. HOTU bans Mirage (NaVi 62% -- remove NaVi weapon)
+7. Decider: Nuke (HOTU 54% vs NaVi 43% -- HOTU edge)
+
+**Series math:**
+```
+P(NaVi wins Ancient) = ~68% (24 ppt pick advantage)
+P(HOTU wins Dust2) = ~55% (7 ppt + first pick psychology)
+P(HOTU wins Nuke decider) = ~55% (11 ppt gap)
+
+P(NaVi 2-0) = 0.68 x 0.45 = 30.6%
+P(NaVi 2-1) = (0.68x0.55x0.45) + (0.32x0.45x0.45) = 16.8 + 6.5 = 23.3%
+P(HOTU 2-1) = (0.68x0.55x0.55) + (0.32x0.45x0.55) = 20.6 + 7.9 = 28.5%
+P(HOTU 2-0) = 0.32 x 0.55 = 17.6%
+
+NaVi: 53.9% | HOTU: 46.1%
+```
+v3.8 rule #10 boost: HOTU ~49%
+NaVi quality discount on HOTU edges: HOTU ~46%
+**HOTU real ~46%. Implied 18.7% (5.35). Edge: +27.3%.**
+
+```
+Kelly:
+p = 0.46, odds = 5.35, b = 4.35
+kelly = (0.46x4.35 - 0.54)/4.35 = (2.001-0.54)/4.35 = 33.6%
+conf_mult = 0.25 + 0.75x(0.46-0.20)/0.55 = 0.605
+kelly_safe = 33.6% x 0.605 = 20.3% -> cap at 5% (rank 46 vs rank 2, caution)
+Bet: 5% x 58.8u = 2.9u
+```
+
+---
+
+#### VIT vs Falcons (UB Final, Group A)
+
+**H2H: Falcons 3-2 last 5 (Falcons won 2-1 two months ago, 2-0 five months ago).**
+
+**Map pool:**
+| Map | VIT WR | Falcons WR | Notes |
+|-----|--------|------------|-------|
+| Ancient | PERMA BAN (36b) | 67% (6m) | VIT removes |
+| Inferno | **73%** (22m) | PERMA BAN (33b) | Falcons removes |
+| Dust2 | **94%** (17m) | 58% (12m) | VIT first pick +36 ppt |
+| Mirage | 71% (14m) | **74%** (19m) | Falcons pick |
+| Nuke | 65% (17m) | **73%** (11m) | Falcons strong |
+| Overpass | **87%** (15m) | 53% (15m) | VIT dominant, Falcons will ban |
+| Anubis | 100% (4m, stale) | 53% (17m) | v3.7 rule #7: VIT 100% on 4m = unreliable |
+
+**Veto:**
+1. VIT bans Ancient (perma) | Falcons bans Inferno (perma)
+2. VIT picks Dust2 (94% vs FAL 58% = +36 ppt)
+3. Falcons picks Mirage (74% vs VIT 71%)
+4. Falcons bans Overpass (VIT 87% -- smart deny)
+5. VIT bans Nuke (FAL 73% -- deny Falcons weapon)
+6. Decider: Anubis (VIT 100% stale 4m vs FAL 53% 17m = essentially coin flip)
+
+```
+P(VIT wins Dust2) = ~82% (94% WR, 36 ppt gap)
+P(FAL wins Mirage) = ~55%
+Decider Anubis: ~50/50
+
+P(VIT series) = 0.82x0.45 + 0.82x0.55x0.50 = 0.37+0.23 = ~60%
+H2H adjustment (Falcons 3-2 recent): -3% -> VIT ~57%
+```
+
+VIT implied 69.4% (1.44) vs real 57% = VIT overpriced by 12%.
+FAL implied 35.8% (2.79) vs real 43% = edge +7.2%. Below 10% threshold. No VB. Pick: VIT (57%).
+
+---
+
+#### FURIA vs MOUZ (UB Final, Group B)
+
+**FURIA wins Nuke (~82% certain). MOUZ wins Inferno (~65%). Mirage decider MOUZ 64% vs FURIA 56%.**
+
+**Map pool:**
+| Map | FURIA WR | MOUZ WR | Notes |
+|-----|----------|---------|-------|
+| Ancient | PERMA BAN (39b) | 50% (6m) | FURIA removes |
+| Anubis | 75% (4m, stale) | PERMA BAN (20b) | MOUZ removes |
+| Nuke | **71%** (17m) | **14%** (7m stale) | FURIA +57 ppt!! |
+| Inferno | 55% (22m) | **65%** (20m, 0 bans) | MOUZ guaranteed pick (rule #4) |
+| Dust2 | **71%** (21m) | 36% (14m) | FURIA weapon -- MOUZ bans |
+| Overpass | 67% (18m) | **80%** (10m) | MOUZ weapon -- FURIA bans |
+| Mirage | 56% (27m) | **64%** (14m) | MOUZ decider edge |
+
+**Veto:**
+1. FURIA bans Ancient (perma) | MOUZ bans Anubis (perma-ish)
+2. FURIA picks Nuke (71% vs MOUZ 14% = +57 ppt, near-certain win)
+3. MOUZ picks Inferno (65%, 0 bans -- rule #4)
+4. FURIA bans Overpass (MOUZ 80%) | MOUZ bans Dust2 (FURIA 71%)
+5. Decider: Mirage (MOUZ 64% vs FURIA 56%)
+
+```
+P(FURIA wins Nuke) = ~82%
+P(MOUZ wins Inferno) = ~65%
+P(MOUZ wins Mirage) = ~58%
+
+P(FURIA series) = 0.82x0.35 + 0.82x0.65x0.42 = 0.29+0.22 = ~51%
+H2H MOUZ 71% vs FURIA -> -3% -> FURIA ~48%, MOUZ ~52%
+```
+
+FURIA implied 49.8% (@2.01) vs real 48% = essentially fair. No VB. Pick: MOUZ (52%).
+
+---
+
+### Map winner track
+
+| Match | Map 1 | Map 2 | Map 3 (decider) | Result | Correct |
+|-------|-------|-------|-----------------|--------|---------|
+| G2 vs 3DMAX | **G2** (Ancient 78%) | **3DMAX** (Anubis 71%) | **G2** (Dust2 61%) | - | - |
+| Spirit vs RED | **Spirit** (Ancient 67%) | **RED** (Nuke 63%) | **Spirit** (Overpass 63%) | - | - |
+| Aurora vs B8 | **Aurora** (Dust2 73%) | **B8** (Mirage 56%) | **Aurora** (Inferno 61%) | - | - |
+| NaVi vs HOTU | **NaVi** (Ancient 71%) | **HOTU** (Dust2 66%) | **HOTU** (Nuke 54%) | - | - |
+| VIT vs Falcons | **VIT** (Dust2 94%) | **Falcons** (Mirage 74%) | **Falcons** (Anubis ~50/50) | - | - |
+| FURIA vs MOUZ | **FURIA** (Nuke 71%) | **MOUZ** (Inferno 65%) | **MOUZ** (Mirage 64%) | - | - |
+
+### Score bet track
+
+| Match | Score bet | Odds | Model% | Implied% | Edge | Bet? | Result | Correct |
+|-------|-----------|------|--------|----------|------|------|--------|---------|
+| NaVi vs HOTU | **HOTU 2-1** | 8.70 | ~28.5% | ~11.5% | **+17%** | **YES 2%** | - | - |
+| VIT vs Falcons | Falcons 2-1 | 4.97 | ~23% | ~20.1% | +2.9% | NO | - | - |
+| FURIA vs MOUZ | MOUZ 2-1 | 3.68 | ~31% | ~27.2% | +3.8% | NO | - | - |
+
+```
+Total exposure this round:
+- HOTU VB @5.35: 2.9u
+- HOTU 2-1 score @8.70: 1.2u
+Total: 4.1u (7% of 58.8u bankroll)
+```
