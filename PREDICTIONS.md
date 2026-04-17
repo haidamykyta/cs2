@@ -4761,3 +4761,40 @@ Running total IEM Rio: -4.12u + 2.69u = -1.43u
 **Bankroll: 54.7u**
 
 ---
+
+
+---
+
+## IEM Rio 2026 — LB Finals / Playoff Bracket Matches (Context)
+
+*No model predictions for these matches — results recorded as tournament context.*
+
+### Results
+
+| Match | Score | Notes |
+|-------|-------|-------|
+| Spirit vs G2 | **Spirit 2-0** | Spirit advances to playoffs. G2 eliminated. |
+| Aurora vs NaVi | **NaVi 2-1** | NaVi advances to playoffs. Aurora eliminated. |
+
+### Bracket context (post Round 2+3)
+
+Teams advancing to IEM Rio 2026 Playoffs:
+- **FURIA** (UB Final Group B winner)
+- **Falcons** (UB Final Group A winner)
+- **Spirit** (LB Final Group A winner)
+- **NaVi** (LB Final Group B winner)
+
+---
+
+### Falcons @9.50 Post-Mortem (VIT vs Falcons)
+
+**Market implied:** Falcons 10.5% (@9.50) | **Our model:** VIT 57% / Falcons 43%
+**Result:** Falcons 2-1 VIT
+
+Both our model AND the market severely underestimated Falcons. Market was at 10.5% implied vs our 43% = market was far more bearish on Falcons than we were. Falcons won.
+
+**Key lesson:** When market has an extreme discount vs model (10.5% vs 43% = 4x mismatch), that gap is the signal to investigate harder. Either market knows something (lineup issues, tilt) or there's a VB opportunity. H2H Falcons 3-2 vs VIT was visible in our data — we correctly noted it but only applied -3% discount.
+
+**Rule update candidate (v3.8 Rule #15):** When market implied < 15% AND model says 40%+ → this is a flag for deeper investigation, not automatic VB. Could be insider info (roster) OR massive market inefficiency. Check recent 7-day news before dismissing.
+
+---
