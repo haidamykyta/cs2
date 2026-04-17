@@ -4903,3 +4903,182 @@ MOUZ останні 5 матчів до цього турніру:
 Якщо це плейофф SF → **Grand Final: FURIA vs Falcons**
 
 ---
+
+---
+
+## IEM Rio 2026 — Playoffs QF Analysis
+
+**Date:** 2026-04-17 | **Bankroll entering round:** 54.7u | **Max 2 VBs rule**
+
+*Дані з офіційних матч-сторінок (bo3.gg). Одси підтверджені користувачем.*
+
+### Matches overview
+
+| Match | Odds T1 | Odds T2 | Margin | Value Bet |
+|-------|---------|---------|--------|-----------|
+| Spirit vs MOUZ | Spirit @1.66 | MOUZ @2.23 | ~5.1% | **SPIRIT @1.66, kelly 6%** |
+| Vitality vs NaVi | VIT @1.31 | NaVi @3.46 | ~5.2% | NO BET |
+
+### Value Bets
+
+| # | Match | Bet on | Odds | Model% | Bookie% | Edge | Kelly | Result | Correct |
+|---|-------|--------|------|--------|---------|------|-------|--------|---------|
+| 1 | Spirit vs MOUZ | **Spirit** | **1.66** | ~74.5% | 60.2% | **+14.2%** | **6%** | - | - |
+
+### Model picks (both matches)
+
+| Match | Our pick | Confidence | Key argument | Result | Correct |
+|-------|----------|-----------|--------------|--------|---------|
+| Spirit vs MOUZ | **Spirit** (VB @1.66, 6%) | High | Veto locks Nuke decider (Spirit 56% vs MOUZ 14% = +42 ppt). Spirit kills MOUZ Inferno (perma-ban). MOUZ 0/2 tournament form. H2H 4-1 Spirit. Rule #16 MOUZ form penalty. | - | - |
+| VIT vs NaVi | **VIT** | Medium-High | VIT kills NaVi Ancient (38b perma-ban). VIT Dust2 94% vs NaVi 62% = +32 ppt. H2H VIT 4-1 including 3-0 just 19 days ago. NaVi form bad (3 recent losses: FURIA, VIT 0-3, Aurora 0-2). Model VIT 72.6% ≈ market 72.5% = fair price. | - | - |
+
+---
+
+### Per-Match Analysis
+
+#### Spirit vs MOUZ — VB Spirit @1.66
+
+**Map pool:**
+| Map | Spirit WR | MOUZ WR | Edge | Notes |
+|-----|-----------|---------|------|-------|
+| Inferno | **PERMA BAN** (32b) | 65% (20m, 1b) | - | Spirit eliminates MOUZ's best map |
+| Anubis | 40% (5m, 7b) | **PERMA BAN** (22b) | - | MOUZ self-eliminates |
+| Dust II | **74%** (19m, 1b) | 33% (15m, 14b) | +41 ppt Spirit | Spirit guaranteed pick |
+| Overpass | 67% (9m, 3b) | **80%** (10m, 4b) | +13 ppt MOUZ | MOUZ weapon |
+| Mirage | 43% (14m, 6b) | **60%** (15m, 7b) | +17 ppt MOUZ | MOUZ pick option |
+| Ancient | **69%** (13m, 6b) | 50% (6m, 13b stale) | +19 ppt Spirit | MOUZ denies |
+| Nuke | **56%** (9m, 9b) | 14% (7m, 7b stale) | **+42 ppt Spirit** | DECIDER weapon |
+
+**Veto projection:**
+1. Spirit bans Inferno (PERMA 32b) → kills MOUZ's 65% weapon
+2. MOUZ bans Anubis (PERMA 22b)
+3. Spirit picks Dust2 (74% vs MOUZ 33% = +41 ppt)
+4. MOUZ picks Overpass (80%) or Mirage (60%) → best available after Inferno gone
+5. Spirit bans MOUZ's remaining weapon (Mirage 60% or Overpass 80%)
+6. MOUZ bans Ancient (Spirit 69% = deny)
+7. **Decider: Nuke (Spirit 56% vs MOUZ 14% = +42 ppt) — Spirit near-lock**
+
+*Both MOUZ pick scenarios (Overpass or Mirage) lead to Nuke decider.*
+
+**v3.x rules check:**
+- Rule #4 (0 bans = guaranteed pick): Spirit Dust2 1 ban = near-guaranteed pick ✓
+- Rule #11 (individual quality): MOUZ Brollan 7.0 MVP vs Aurora, but MOUZ 0/2 tournament. Spirit donk + sh1ro + iM ≈ higher combined output.
+- Rule #16 (3+ recent losses): MOUZ 0/2 at IEM Rio + Lost to MongolZ, 9z, Aurora before. 5/5 recent = 1W/4L including vs underdogs. Hard form penalty. -15% WR discount applied.
+- H2H: Spirit 4-1 vs MOUZ last 5 (Spirit won 2-0, 2-1, 2-0, 2-0). Dominant.
+
+**Series math:**
+```
+Map1 (Spirit pick: Dust2): Spirit wins ~72% (74% WR with context discount)
+Map2 (MOUZ pick: Overpass 80% or Mirage 60%): MOUZ wins ~57%
+Map3 (Decider: Nuke): Spirit wins ~82% (56% vs MOUZ 14% = huge gap)
+
+P(Spirit 2-0) = 0.72 × 0.43 = 31.0%
+P(Spirit 2-1) = (0.72×0.57×0.82) + (0.28×0.43×0.82) = 33.7% + 9.9% = 43.5%
+P(MOUZ 2-1) = (0.72×0.57×0.18) + (0.28×0.43×0.18) = 9.6%
+P(MOUZ 2-0) = 0.28 × 0.57 = 16.0%
+
+Spirit: 74.5% | MOUZ: 25.5%
+Market implied Spirit: 60.2% | Edge: +14.2% ✓ (>10% threshold)
+Margin: 5.1% ✓ (<7%)
+Odds: 1.66 ✓ (1.40-2.50 range)
+```
+
+```
+Kelly Spirit @1.66:
+b = 0.66, p = 0.745
+kelly = (0.745×0.66 - 0.255)/0.66 = 35.8%
+conf_mult = 0.993 (p=0.745 → capped at 1.0)
+kelly_safe = 25% (cap) → manual cap at 6% (QF favorite, not underdog VB)
+Bet: 6% × 54.7u = 3.28u
+```
+
+---
+
+#### Spirit vs MOUZ — Score Bet: Spirit 2-1 @4.15
+
+```
+P(Spirit 2-1) = 43.5% vs implied 24.1% (1/4.15)
+Edge: +19.5% — massive
+
+Kelly: b=3.15, p=0.435
+kelly = 25.6% → conf 0.571 → safe 14.6% → manual cap 2%
+Bet: 2% × 54.7u = 1.09u
+```
+
+*Logic: MOUZ will win their map pick (Overpass 80% or Mirage 60%), so 3-map series is likely (53% chance). Nuke decider Spirit 82% → Spirit 2-1 is the most probable specific outcome at 43.5%.*
+
+---
+
+#### Vitality vs NaVi — No VB
+
+**Map pool:**
+| Map | VIT WR | NaVi WR | Notes |
+|-----|--------|---------|-------|
+| Ancient | 50% (2m, **38b = PERMA**) | **73%** (15m, 2b) | VIT kills NaVi's weapon |
+| Overpass | **87%** (15m, 5b) | PERMA BAN (39b) | NaVi kills VIT's weapon |
+| Dust II | **94%** (18m, 3b) | 62% (21m, 9b) | VIT first pick +32 ppt |
+| Nuke | **73%** (22m, 7b) | 42% (12m, 13b) | VIT weapon, NaVi denies |
+| Inferno | **61%** (18m, 4b) | 42% (19m, 13b) | Likely decider +19 ppt VIT |
+| Mirage | 67% (15m, 7b) | **58%** (26m, 3b) | NaVi's best available pick |
+| Anubis | 100% (4m, stale) | 40% (5m, stale) | Both stale |
+
+**Veto projection:**
+1. VIT bans Ancient (PERMA 38b) → kills NaVi 73% weapon
+2. NaVi bans Overpass (PERMA 39b) → kills VIT 87% weapon
+3. VIT picks Dust2 (94% vs NaVi 62% = +32 ppt) — VIT 91% first pick rate
+4. NaVi picks Mirage (58% = best available after Ancient banned)
+5. VIT bans Anubis (stale, unpredictable) or Nuke
+6. NaVi bans Nuke (VIT 73% — deny VIT's weapon)
+7. Decider: Inferno (VIT 61% vs NaVi 42% = VIT +19 ppt)
+
+**Series math:**
+```
+Map1 (VIT Dust2): VIT wins ~78%
+Map2 (NaVi Mirage): VIT wins ~55% (67% vs 58%)
+Map3 (Inferno decider): VIT wins ~63% (61% vs 42%)
+
+P(VIT series) = 72.6% vs market 72.5% = FAIR PRICE. No VB.
+P(NaVi series) = 27.4% vs market 28.9% = also fair.
+```
+
+**Additional factors:**
+- H2H VIT 4-1 vs NaVi (3-0 just 19 days ago at BLAST!)
+- NaVi last 5: L vs FURIA (this tournament), L vs VIT 0-3, L vs Aurora 0-2 = 3 losses
+- Rule #16: NaVi -15% WR discount → NaVi real ~23-25%
+- VIT 88% winrate last month
+- But: NaVi iM + makazze MVP performances at this tournament (dominating vs HOTU, Aurora)
+
+Model VIT ~73-75%. Market VIT 72.5%. **No edge. Pick: VIT.**
+
+---
+
+### Score bet track
+
+| Match | Score bet | Odds | Model% | Implied% | Edge | Bet? | Result | Correct |
+|-------|-----------|------|--------|----------|------|------|--------|---------|
+| Spirit vs MOUZ | **Spirit 2-1** | **4.15** | ~43.5% | ~24.1% | **+19.5%** | **YES 2%** | - | - |
+| VIT vs NaVi | VIT 2-0 | 2.06 | ~42.9% | ~48.5% | -5.6% | NO | - | - |
+| VIT vs NaVi | NaVi 2-1 | 5.94 | ~17.5% | ~16.8% | +0.7% | NO | - | - |
+
+### Map winner track
+
+| Match | Map 1 | Map 2 | Map 3 (decider) | Result | Correct |
+|-------|-------|-------|-----------------|--------|---------|
+| Spirit vs MOUZ | **Spirit** (Dust2 74%) | **MOUZ** (Overpass 80%) | **Spirit** (Nuke 56%) | - | - |
+| VIT vs NaVi | **VIT** (Dust2 94%) | **NaVi** (Mirage 58%) | **VIT** (Inferno 61%) | - | - |
+
+---
+
+### Bankroll impact (planned)
+
+```
+Spirit VB @1.66: 6% × 54.7u = 3.28u
+Spirit 2-1 score @4.15: 2% × 54.7u = 1.09u
+Total exposure: 4.37u (8.0% of bankroll)
+
+If Spirit wins 2-1: +3.28×0.66 + 1.09×3.15 = +2.16u + 3.43u = +5.59u
+If Spirit wins 2-0: +2.16u - 1.09u = +1.07u
+If MOUZ wins: -3.28u - 1.09u = -4.37u
+```
+
+---
