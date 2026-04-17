@@ -4798,3 +4798,108 @@ Both our model AND the market severely underestimated Falcons. Market was at 10.
 **Rule update candidate (v3.8 Rule #15):** When market implied < 15% AND model says 40%+ → this is a flag for deeper investigation, not automatic VB. Could be insider info (roster) OR massive market inefficiency. Check recent 7-day news before dismissing.
 
 ---
+
+
+---
+
+## Post-Mortem Corrections + Data Extract (April 17)
+
+### CORRECTION: HOTU vs NaVi — frontales ДІВ ГРАВ
+
+Попередній post-mortem написав: "gokushima returned, frontales benched". НЕПРАВИЛЬНО.
+HOTU склад vs NaVi: dukefissura, **frontales** (позначений "—" = stand-in статус), mizu, kAlash, n0rb3r7.
+frontales ГРАВ. Просто NaVi (iM 8.1 MVP, +17 K/D; makazze +16; w0nderful +8) домінували в індивідуальних дуелях на обох картах.
+
+Скасовую Rule #14 у сформульованому вигляді ("lineup change from stand-in to main"). Реальна причина: **NaVi rank #2 individual quality = 3 гравці 1.15+ rating = абсолютне домінування навіть з правильним вето.**
+
+**Rule #14 (revised):** Якщо 3+ гравці суперника мають рейтинг 1.15+, вето перевага <15 ppt на карті НЕ конвертується в VB. Потрібно мінімум +20 ppt І відсутність у суперника 2+ зірок.
+
+---
+
+### КРИТИЧНЕ ВІДКРИТТЯ: Falcons roster = NiKo + m0NESY
+
+Falcons склад: kyousuke, kyxsan, **m0NESY**, **NiKo**, TeSeS.
+
+m0NESY (колишній G2, топ AWP світу) + NiKo (колишній G2, topfrag) = дві зірки 1.15+.
+Ринок мав їх @9.50 (10.5% implied). Наша модель: VIT 57% / Falcons 43%.
+**Реальна ймовірність за індивідуальною якістю: Falcons ~50-55%.**
+
+Вето Falcons: Mirage 75% (20m, 5b), Nuke 75% (12m, 5b), Ancient 58% (12m, 3b).
+Falcons перма-банить Overpass (0%, 0m, 35b).
+
+Що відбулось: Falcons взяли Mirage (75%), VIT взяли Dust2 (94%). Nuke decider — Falcons 75% vs VIT 73% = по суті рівно. Falcons виграли Nuke 16-14 (OT).
+
+**Rule #15 (confirmed + refined):** Market implied < 15% AND model 40%+ → ЗАВЖДИ перевіряти склад обох команд вручну. У цьому кейсі: NiKo + m0NESY = реальна сила. Це НЕ була неефективність ринку — це була відсутність інформації про склад у нашій базі.
+
+---
+
+### MOUZ форма (red flag який пропустили)
+
+MOUZ останні 5 матчів до цього турніру:
+- MOUZ vs 9z: LOSS (MOUZ @7.70)
+- MOUZ vs MongolZ: LOSS (MOUZ @4.08)
+- MOUZ vs FUT: LOSS (MOUZ @7.00)
+- Legacy vs MOUZ: WIN (MOUZ @4.62)
+
+3/4 поразки + в серіях де MOUZ був фаворитом? Це Hard Stop сигнал.
+
+**Rule #16 (новий):** Якщо команда програла 3 з 5 останніх матчів ВКЛЮЧНО з матчами де вона була фаворитом → понизити прогнозований WR на 15%. Застосовується навіть для команд з хорошою загальною статистикою.
+
+---
+
+### Playoff Team Map Pool (оновлено)
+
+#### FURIA
+| Карта | WR | Матчів | Банів | Нотатки |
+|-------|-----|--------|-------|---------|
+| Nuke | 71% | 17 | 7 | Перший пік |
+| Dust II | 73% | 22 | 12 | Сильна зброя |
+| Inferno | 55% | 22 | 7 | OK |
+| Mirage | 57% | 28 | 6 | Надійна |
+| Overpass | 67% | 18 | 5 | Хороша |
+| Anubis | 75% | 4 | 10 | Stale (4m) |
+| Ancient | PERMA BAN | 1 | 41 | - |
+
+#### Falcons (NiKo + m0NESY!)
+| Карта | WR | Матчів | Банів | Нотатки |
+|-------|-----|--------|-------|---------|
+| Mirage | 75% | 20 | 5 | Перший пік |
+| Nuke | 75% | 12 | 5 | Decider зброя |
+| Ancient | 58% | 12 | 3 | OK |
+| Anubis | 67% | 6 | 1 | Stale (6m) |
+| Inferno | 53% | 17 | 11 | Нейтральна |
+| Dust II | 50% | 16 | 5 | Середня |
+| Overpass | PERMA BAN | 0 | 35 | - |
+
+#### Spirit
+| Карта | WR | Матчів | Банів | Нотатки |
+|-------|-----|--------|-------|---------|
+| Dust II | 74% | 19 | 1 | Перший пік (майже 0 банів!) |
+| Ancient | 69% | 13 | 6 | Другий пік |
+| Overpass | 67% | 9 | 3 | Хороша |
+| Nuke | 56% | 9 | 9 | Нейтральна |
+| Mirage | 43% | 14 | 6 | Слабка |
+| Anubis | 40% | 5 | 7 | Слабка/stale |
+| Inferno | PERMA BAN | 0 | 32 | - |
+
+#### NaVi (iM + makazze + w0nderful)
+| Карта | WR | Матчів | Банів | Нотатки |
+|-------|-----|--------|-------|---------|
+| Ancient | 73% | 15 | 2 | Перший пік |
+| Dust II | 65% | 23 | 9 | Сильна |
+| Mirage | 57% | 28 | 3 | Надійна |
+| Inferno | 42% | 19 | 14 | Нейтральна/слабка |
+| Nuke | 43% | 14 | 13 | Слабка |
+| Anubis | 40% | 5 | 4 | Stale |
+| Overpass | PERMA BAN | 0 | 41 | - |
+
+---
+
+### З form-секцій (post-group results)
+
+- Falcons recent form: **Spirit Falcons 1.90 $190 0-2 п** (2 дні тому) = Falcons 2-0 Spirit
+- FURIA/NaVi recent form: **FURIA Natus Vincere 13.50 $1350 2-1 п** (2 дні тому) = FURIA 2-1 NaVi
+
+Якщо це плейофф SF → **Grand Final: FURIA vs Falcons**
+
+---
