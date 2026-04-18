@@ -5082,3 +5082,94 @@ If MOUZ wins: -3.28u - 1.09u = -4.37u
 ```
 
 ---
+
+---
+
+## IEM Rio 2026 — Playoff Round 3: QF + SF Results (April 18)
+
+### Results Table
+
+| Match | Round | Pick | VB? | Bet | Result | Score | +/- |
+|-------|-------|------|-----|-----|--------|-------|-----|
+| Spirit vs MOUZ | QF | **Spirit** ✓ | YES @1.66, 6% | 3.28u | WIN | 2-0 | **+2.16u** |
+| Spirit 2-1 score | QF | score | YES @4.15, 2% | 1.09u | LOSS (2-0) | - | **-1.09u** |
+| VIT vs NaVi | QF | **VIT** ✓ | NO | 0 | WIN | 2-0 | 0 |
+| Spirit vs Falcons | SF | **Spirit** ✓ | NO std VB | 0 | WIN | 2-0 | 0 |
+| PM: FAL Map2 @61¢ | SF live | FAL Mirage | Speculative PM | ~0.56u | LOSS (Spirit 13-4) | - | **-0.56u** |
+
+**Net April 18: +2.16u - 1.09u - 0.56u (if PM bet placed) = +0.51u**
+*Note: Polymarket Map2 bet was speculative/borderline — edge was only +7%, below standard 10% threshold*
+
+**Bankroll: 55.8u + 0.51u = 56.31u** *(if PM bet placed; if not: 55.8u + 1.07u = 56.87u)*
+
+---
+
+### QF Post-mortem
+
+**Spirit 2-0 MOUZ:**
+- Dust2 result unknown from page (Spirit 2-0 sweep confirmed)
+- Score VB 2-1 miss: Spirit swept MOUZ, 2-0 not 2-1. Spirit map dominance too strong.
+- Pattern: when Spirit is hot (5-game win streak), they tend to sweep, not grind 3 maps
+- **Lesson:** Score bets on hot teams = risk of sweep. Better to avoid score bets for teams on hot streaks.
+
+**VIT 2-0 NaVi:**
+- Veto: Overpass(VIT ban), Ancient(NaVi ban), Mirage(VIT pick), Dust2(NaVi pick)
+  - Actual: Overpass(VIT ban) ✓, Ancient(NaVi ban?) — wait, veto data shows picks/bans
+  - Actual veto from page: VIT picked Mirage, NaVi picked Dust2 — inverse of our prediction
+  - Result: Mirage VIT 13-4 (dominant), Dust2 VIT 13-6 (dominant)
+- Even on NaVi's own Dust2 pick, VIT won 13-6. ZywOo MVP, total domination.
+- Rule #16 confirmed: NaVi was right to discount (-15%)
+- Our H2H read was correct: VIT 4-1 H2H, NaVi had consecutive losses, Rule #16 applied
+
+**Veto correction (VIT vs NaVi):**
+- We predicted: VIT picks Dust2, NaVi picks Mirage
+- Actual: VIT picks Mirage, NaVi picks Dust2 (order flipped)
+- HOWEVER: result was the same — VIT won both maps convincingly
+- Our WR read was correct: VIT Mirage 67% vs NaVi 58%, VIT Dust2 94% vs NaVi 62%
+- Veto order flipped but edge assessment was correct (VIT wins regardless of pick order)
+
+---
+
+### SF Post-mortem
+
+**Spirit 2-0 Falcons:**
+- Dust2 (Spirit pick): Spirit 13-7 ✓ (Spirit 56% vs Falcons 47%, Spirit +9 ppt)
+- Mirage (Falcons pick): **Spirit 13-4 (!!)** — Falcons' 75% WR weapon DESTROYED
+- Falcons on their best map: 4 rounds only. Total team meltdown.
+- m0NESY EVP but NiKo underperformed badly (0:5 first kills on Mirage)
+- magixx MVP: +14 +/-
+
+**What went wrong (Falcons Mirage prediction):**
+- We had Falcons Mirage 75% → real model ~68% → PM odds 61% → bet recommended
+- Reality: Spirit dominated Falcons' best map 13-4
+- Spirit Mirage WR was listed as 50% (16m) — this was understated. Spirit's current form elevated their ceiling
+- **v3.8 Rule #16 lesson:** When opponent is on 5+ win streak with high ratings, discount WR tables further
+- Falcons' NiKo psychological factor: after being swept on Dust2, NiKo tilt visible (0:5 first kills)
+
+**PM Map2 bet retrospective:**
+- Edge was +7% (below standard 10% threshold)
+- Recommended as "small speculative 1%" — correct risk sizing
+- Loss outcome validates the threshold. 7% edge = coin flip variance territory
+- **Lesson confirmed:** <10% edge = do not bet even on PM. Stick to ≥10%.
+
+---
+
+### Updated Score Bet Track
+
+| Match | Score bet | Odds | Model% | Result | Correct |
+|-------|-----------|------|--------|--------|---------|
+| Spirit vs MOUZ | Spirit 2-1 @4.15 | 4.15 | 43.5% | Spirit 2-0 | ✗ (direction right, score wrong) |
+
+---
+
+### Tournament Status (After QF + SF1)
+
+**Remaining:**
+- SF2: VIT vs FURIA (or TBD) — needs result
+- Grand Final: Spirit vs [SF2 winner]
+
+**Spirit position:** Red hot. 6-0 at IEM Rio including group. Dominant 2-0 on Falcons' best map. Favorites for GF.
+**VIT position:** 2-0 NaVi convincingly. ZywOo in MVP form. H2H vs Spirit = unknown from recent data.
+
+**H2H Spirit vs VIT (6 months):** Need to check before GF analysis.
+
