@@ -5173,3 +5173,308 @@ If MOUZ wins: -3.28u - 1.09u = -4.37u
 
 **H2H Spirit vs VIT (6 months):** Need to check before GF analysis.
 
+
+---
+
+## IEM Rio 2026 — SF2: FURIA vs VIT Result (April 18)
+
+### Result
+
+**VIT 2-0 FURIA** ✓
+- Map1: Overpass (FURIA pick) 13-10 VIT
+- Map2: Ancient (VIT pick) 13-10 VIT
+- Decider: Dust2 — never played
+- MVP: ZywOo 7.9 | EVP: KSCERATO 7.0 (FURIA)
+
+No VB placed. Series pick VIT ✓.
+
+### Veto Post-mortem
+
+**Predicted:**
+1. VIT ban Ancient, 2. FURIA ban Overpass, 3. VIT pick Dust2, 4. FURIA pick Mirage, 5-6 bans, 7. Inferno decider
+
+**Actual:**
+1. Mirage ban, 2. Inferno ban, 3. FURIA pick Overpass (!), 4. VIT pick Ancient (!), 5. Anubis ban, 6. Nuke ban, 7. Dust2 decider (not played)
+
+**What went wrong:**
+- FURIA Overpass WR was STALE in my data: had 38% over 8 maps → actual per updated stats is **63% over 19 maps**
+- This was a critical data error. FURIA's Overpass improved massively (38% → 63%) over the last 3 months
+- VIT picked Ancient despite 90% historical ban rate — and won it 13-10 (ZywOo carrying)
+- Both maps were close (10-13) not dominant, showing FURIA competitive despite loss
+
+**v3.8 Data Rule (NEW — Rule #17):**
+> **Always cross-check map WR with match count context.** If same site shows two different WR figures, use the higher-map-count version. Old/sparse data (≤8 maps) = stale → cross-reference with veto % to detect improvement trends.
+> 
+> FURIA Overpass: 38% over 8 maps (6-month table bottom) vs 63% over 19 maps (FURIA-specific view) — 2+ months old data was wrong. The 19-map figure was correct.
+
+**VIT +1.5 @1.275 retrospective:**
+- If placed: WIN (VIT 2-0) → +0.47u on 1.7u stake
+- Identified as borderline (9-11% edge) — would have been correct call
+
+### Bankroll
+
+```
+SF2: No official bet placed → bankroll unchanged: ~56.3u
+```
+
+### Grand Final Setup
+
+**GF: Spirit vs Vitality**
+- Spirit: tournament record ~6-1 (lost to Falcons in group, 5 straight wins since)
+- VIT: ZywOo in peak form (7.9 vs FURIA, 6.9 vs NaVi), 88% win rate last month
+- GF analysis needed: veto + map pool + H2H + player ratings
+
+
+---
+
+## IEM Rio 2026 — 3rd Place + Grand Final Analysis (April 19)
+
+### 3rd Place: Falcons vs FURIA @15:30 (Bo3)
+
+**Odds:** Falcons @1.72 (58.1%), FURIA @2.12 (47.2%) | Margin: 5.3%
+
+**Map pool:**
+| Map | Falcons WR | F-M | FURIA WR | F-M | Edge |
+|-----|-----------|-----|----------|-----|------|
+| Ancient | PERMA BAN | 0 | PERMA BAN | 2 | Both ban |
+| Overpass | PERMA BAN | 0 | 61% | 19 | FURIA weapon (Falcons always ban) |
+| Dust2 | 71% | 21 | 71% | 21 | EVEN |
+| Nuke | 75% | 12 | 69% | 16 | Falcons +6 ppt |
+| Inferno | 53% | 17 | 52% | 21 | EVEN |
+| Mirage | 58% | 12 | 56% | 27 | Falcons tiny +2 |
+| Anubis | 47% | 17 | 75% | 4 (stale) | stale |
+
+**Veto:** Falcons ban Overpass (PERMA 36b), FURIA ban Ancient (91%). FURIA pick Dust2, Falcons pick Nuke. Decider: Inferno (53% vs 52% = coin flip).
+
+**Series model:** P(Falcons) ≈ 52-55% | Market 58.1% | NO VB — market slightly overprices Falcons but not enough.
+
+**Pick: Falcons** (H2H 2-0 recent, Nuke weapon 75%). No bet.
+
+**H2H:** Falcons 2-0 in last 2 vs FURIA (26 days + 2 months).
+
+---
+
+### Grand Final: Spirit vs VIT @19:00 (Bo5)
+
+**Odds:** Spirit @3.44 (29.1%), VIT @1.31 (76.3%) | Margin: 5.4%
+
+**Map pool:**
+| Map | Spirit WR | S-M | VIT WR | V-M | Edge |
+|-----|-----------|-----|--------|-----|------|
+| Ancient | PERMA BAN | 0 | PERMA BAN | 3 | Both ban |
+| Dust2 | 76% | 21 | 95% | 19 | VIT +19 ppt |
+| Inferno | 69% | 13 | 73% | 22 | VIT +4 ppt |
+| Mirage | 50% | 16 | 69% | 16 | VIT +19 ppt |
+| Nuke | 56% | 9 | 61% | 18 | VIT +5 ppt |
+| Overpass | 67% | 9 | 88% | 16 | VIT +21 ppt |
+| Anubis | 40% | 5 | 100% | 4 | stale, VIT massive |
+
+VIT edges Spirit on EVERY map. H2H: VIT 77% vs Spirit historically.
+
+**Veto (Bo5 — 2 bans, 4 picks, 1 decider):**
+1. Spirit ban Ancient (perma)
+2. VIT ban Inferno (Spirit's best competitive map, +4 ppt only)
+3. Spirit pick Dust2 (76%)
+4. VIT pick Overpass (88%)
+5. Spirit pick Nuke (56%) or Mirage (50%)
+6. VIT pick Mirage (69%)
+7. Decider: Nuke or Anubis
+
+**Series math (ratio model):**
+```
+Map1 Spirit Dust2:  VIT 55.6% (95/(95+76))
+Map2 VIT Overpass:  VIT 56.8% (88/(88+67))
+Map3 Spirit pick2:  VIT 51.4-52.1% (Inferno or Nuke)
+Map4 VIT Mirage:    VIT 58.0% (69/(69+50))
+Map5 Decider:       VIT 52-54%
+
+Avg per-map VIT: ~55%
+P(VIT series Bo5, ratio model): ~67%
+H2H adjusted (VIT 77% history): ~73-75%
+Market VIT 76.3% → FAIR. No VB.
+```
+
+**P(VIT 3-0):** 0.556 × 0.568 × 0.514 = 16.2% (ratio) → 20% (H2H adj) → midpoint ~18%
+
+**Betting:**
+| Bet | Odds | Market% | Model% | Edge | Action |
+|-----|------|---------|--------|------|--------|
+| VIT series | 1.31 | 76.3% | ~74% | Fair | NO BET |
+| Spirit series | 3.44 | 29.1% | ~26% | -3% | NO BET |
+| **Spirit ≥1 map** | **1.35** | **74%** | **~82%** | **+8%** | **2% placed** |
+
+**Spirit ≥1 map @1.35:**
+```
+p = 0.82, b = 0.35
+kelly = (0.82×0.35 - 0.18)/0.35 = 30.6% → safe 25% → manual 2%
+Bet: 2% × 56.3u = 1.13u | return if win: +0.39u | return if loss: -1.13u
+```
+
+Logic: For VIT to sweep 3-0, they must win Spirit's own Dust2 pick (Spirit 76% WR), their Nuke/Inferno pick AND the decider — P(VIT 3-0) only ~18%. Spirit winning at least 1 map (82%) is underpriced at 1.35.
+
+**Pick: VIT wins GF.** Spirit ≥1 map = speculative hedge.
+
+**Score odds note (margin 16.3% — skip all score bets):**
+VIT 3-0 @11.70 (8.5% implied vs model ~18%) looks interesting but margin too high.
+
+---
+
+### Bankroll
+
+Spirit ≥1 map: 1.13u bet
+Current: 56.3u - 1.13u exposure = net 55.17u risk
+
+If Spirit wins ≥1 map: +0.39u → 56.69u
+If VIT 3-0: -1.13u → 55.17u
+
+
+---
+
+### EXTENDED ANALYSIS: Spirit vs VIT Grand Final (Bo5)
+
+#### Player Duels (event ratings at IEM Rio)
+
+| Role | Spirit | Rating | VIT | Rating | Edge |
+|------|--------|--------|-----|--------|------|
+| Primary star | donk | ~1.15 | **ZywOo** | **1.36** | VIT ★★ |
+| AWP | sh1ro | ~1.10 | **ZywOo** (dual) | 1.36 | VIT ★ |
+| Entry | tN1R | ~1.10 | flameZ | 1.16 | VIT slight |
+| Support/IGL | magixx | **1.19** (MVP) | apEX | 1.01 | Spirit |
+| Rifler | zont1x | ~1.05 | ropz | 1.08 | Even |
+| Weakest | — | — | mezii | 0.98 | Spirit tiny |
+
+**ZywOo dominance factor:** ZywOo has been untouchable — 7.9 vs FURIA, 6.9 vs NaVi. Spirit's donk is elite but ZywOo is currently #1 world. This is the key matchup.
+
+**magixx wild card:** Spirit's IGL had a breakout tournament (MVP SF vs Falcons, +14 +/-). If magixx clicks as IGL + fragger, Spirit can punch above their weight.
+
+#### Spirit's realistic winning conditions
+
+1. **Win Dust2 (their pick):** Spirit 76% WR vs VIT 95% → using ratio 44%. Spirit needs donk/sh1ro to overcome ZywOo individual dominance on CT side.
+
+2. **Win Inferno/Nuke (second pick):** Inferno bannable by VIT but if played, Spirit 69% vs VIT 73% = competitive. If VIT bans Nuke (Spirit 56%), Spirit may be stuck with Mirage (50%) as their second pick.
+
+3. **Force 5-map series:** Spirit's best path — split picks, take VIT to Map5. Spirit's decider WR (Nuke/Overpass) vs VIT's unfamiliar maps.
+
+4. **Historical upsets context:** Spirit swept Falcons on THEIR own Mirage (13-4). Spirit CAN peak at elite level. But Falcons ≠ VIT.
+
+#### VIT's strength breakdown
+
+- **Dust2 streak: 12 maps 100% WR** — including vs top teams. This is historic dominance.
+- **ZywOo 89% win rate last month** — entire team riding peak performance window.
+- **Depth:** 4/5 players above 1.0 event rating. Even mezii's 0.98 doesn't hurt them badly.
+- **Tactical:** apEX as IGL calling vs Spirit = experienced. vs Spirit's magixx (newer IGL).
+- **No weak map:** VIT's lowest WR available = Nuke (61%) — still higher than Spirit Nuke (56%).
+
+#### Bo5 map scenario matrix
+
+Scenario A (most likely — VIT bans Inferno):
+```
+Map1: Spirit Dust2    | Spirit 44% | VIT 56%
+Map2: VIT Overpass    | Spirit 34% | VIT 66%
+Map3: Spirit Nuke     | Spirit 48% | VIT 52%
+Map4: VIT Mirage      | Spirit 42% | VIT 58%
+Map5: Anubis decider  | Spirit 30% | VIT 70% (stale VIT advantage)
+
+P(VIT 3-0) = 0.56×0.66×0.52 = 19.2%
+P(Spirit ≥1 map) = 80.8%
+```
+
+Scenario B (VIT bans Nuke):
+```
+Map1: Spirit Dust2    | Spirit 44% | VIT 56%
+Map2: VIT Overpass    | Spirit 34% | VIT 66%
+Map3: Spirit Inferno  | Spirit 49% | VIT 51%
+Map4: VIT Mirage      | Spirit 42% | VIT 58%
+Map5: Nuke decider    | Spirit 48% | VIT 52%
+
+P(VIT 3-0) = 0.56×0.66×0.51 = 18.8%
+P(Spirit ≥1 map) = 81.2%
+```
+
+Both scenarios: P(Spirit ≥1) ≈ **81%** vs market 74%. Edge confirmed +7%.
+
+#### Score odds analysis (skip — too high margin)
+
+| Score | Odds | Market% | Model% | Raw edge | After 16% margin |
+|-------|------|---------|--------|----------|-----------------|
+| VIT 3-0 | 11.70 | 8.5% | ~19% | +10.5% | ~-5.5% |
+| VIT 3-1 | 8.00 | 12.5% | ~24% | +11.5% | ~-4.5% |
+| VIT 3-2 | 7.03 | 14.2% | ~20% | +5.8% | ~-10.2% |
+| Spirit 1-3 | 3.42 | 29.2% | ~24% | -5.2% | neg |
+| Spirit 0-3 | 3.24 | 30.9% | ~19% | -11.9% | neg |
+
+All score bets destroyed by 16.3% book margin. Skip.
+
+---
+
+### EXTENDED ANALYSIS: Falcons vs FURIA 3rd Place (Bo3)
+
+#### Player comparison (IEM Rio event ratings)
+
+| Player | Team | 3M rating | Event rating | Role |
+|--------|------|-----------|-------------|------|
+| m0NESY | Falcons | **1.41** | 6.7 (EVP) | AWP/Star |
+| NiKo | Falcons | 1.06 | ~0.90 (struggled) | Rifler |
+| kyousuke | Falcons | ~1.00 | ~0.90 | Entry |
+| TeSeS | Falcons | ~0.95 | ~0.95 | Support |
+| kyxsan | Falcons | ~0.85 | ~0.80 | IGL |
+| yuurih | FURIA | **1.27** | **1.27** | Star |
+| YEKINDAR | FURIA | 1.21 | **1.21** | Entry/Star |
+| KSCERATO | FURIA | 1.12 | **1.12** | Rifler |
+| molodoy | FURIA | 1.13 | 1.13 | Support |
+| FalleN | FURIA | 0.91 | 1.06 | IGL/AWP |
+
+**Rating comparison:** FURIA has 4/5 players above 1.10. Falcons have m0NESY elite (1.41) but NiKo/kyxsan underperformed this tournament. FURIA roster depth is better.
+
+**Key matchup:** m0NESY (1.41) vs yuurih (1.27) — both stars in form. But FURIA's depth wins the secondary duels.
+
+#### Falcons form concerns
+
+- Lost to Spirit 0-2 yesterday. Demolished 13-4 on their own Mirage.
+- NiKo went 0:5 entry frags on Mirage. Still recovering mentally?
+- But: Falcons beat Spirit 0-2 earlier in tournament (they know they can beat elite teams).
+- 3rd place = new series, fresh start.
+
+#### FURIA momentum
+
+- Beat NaVi 2-1 as @13.50 underdogs = huge confidence boost
+- Beat MOUZ 2-0 cleanly
+- Lost to VIT 0-2 but both maps competitive (10-13)
+- yuurih/YEKINDAR in peak form (1.21-1.27 event ratings)
+- But: FURIA's H2H vs Falcons = 2-0 LOSSES in last 2 meetings.
+
+#### Veto detailed
+
+```
+Step 1: Falcons ban Overpass (36 bans, 0 maps — absolute perma)
+Step 2: FURIA ban Ancient (91% rate — they never play it)
+Remaining: Dust2, Mirage, Inferno, Nuke, Anubis
+
+Step 3: FURIA pick Dust2 (71% WR — their primary weapon, equal to Falcons)
+Step 4: Falcons pick Nuke (75% WR — their best available weapon; FURIA 69% = Falcons +6 ppt)
+Step 5: FURIA ban Mirage (Falcons 58% > FURIA 56% — small edge removed)
+   OR FURIA ban Anubis (Falcons 47% — remove their bad map)
+Step 6: Falcons ban Anubis (FURIA 75% stale — remove potential upset)
+   OR Falcons ban Inferno (roughly even, FURIA 52%)
+Step 7 (Decider): Inferno (Falcons 53% vs FURIA 52% = virtually coin flip)
+   OR Mirage depending on bans
+```
+
+**Most likely maps:** Dust2 (FURIA pick, 50/50), Nuke (Falcons pick, 52% Falcons), Inferno (decider, 50%).
+
+#### H2H deep dive
+
+| Date | Match | Score | Context |
+|------|-------|-------|---------|
+| Apr 2026 | Falcons 2-0 FURIA | Falcons WIN | This tournament group stage @4.94 |
+| Feb 2026 (26d) | Falcons 2-0 FURIA | Falcons WIN | @4.94 Falcons again big underdogs |
+| ~Nov 2025 | FURIA 3-1 Falcons | FURIA WIN | — |
+| ~Nov 2025 | Falcons 2-0 FURIA | Falcons WIN | — |
+| ~Oct 2025 | FURIA 2-0 Falcons | FURIA WIN | — |
+
+H2H total: 3-2 Falcons last 5. Falcons have figured out FURIA's tendencies.
+
+**Final verdict: Slight Falcons edge (~54%)**, but below threshold. No bet.
+
+---
+
